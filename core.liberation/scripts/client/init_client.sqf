@@ -143,7 +143,7 @@ addMissionEventHandler ["Draw3D",{
 	};
 
 	private _near_sign = player nearobjects [FOB_sign, 5];
-	if (count (_near_sign) > 0 && player distance2D lhd >= 1000) then {  
+	if (count (_near_sign) > 0 && player distance2D lhd >= 200) then {  
 		private _sign = _near_sign select 0;
 		private _gid = _sign getVariable ["GRLIB_vehicle_owner", "public"];
 		private _name = "- LRX";

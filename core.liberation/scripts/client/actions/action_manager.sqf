@@ -254,7 +254,7 @@ while { true } do {
 
 		// Build Menu
 		_idact_build = _id_actions select 18;
-		if (_fobdistance < _distfob && (player distance2D lhd) >= 1000 && ( ([player, 3] call fetch_permission) || (player == ([] call F_getCommander) || [] call is_admin)) ) then {
+		if (_fobdistance < _distfob && (player distance2D lhd) >= 200 && ( ([player, 3] call fetch_permission) || (player == ([] call F_getCommander) || [] call is_admin)) ) then {
 			if ( _idact_build == -1 ) then {
 				_idact = player addAction ["<t color='#FFFF00'>" + localize "STR_BUILD_ACTION" + "</t> <img size='1' image='res\ui_build.paa'/>","scripts\client\build\open_build_menu.sqf","",-985,false,true,"","build_confirmed == 0"];
 				_id_actions set [18, _idact];
@@ -312,7 +312,7 @@ while { true } do {
 		_idact_packfob = _id_actions select 22;
 		
 		// (score player >= GRLIB_perm_max) && (!_near_outpost)
-		if ( (_fobdistance < _distarsenal && (player distance2D lhd) >= 1000) && ( (is_commander) || (player == ( [] call F_getCommander ) || [] call is_admin) ) ) then {
+		if ( (_fobdistance < _distarsenal && (player distance2D lhd) >= 200) && ( (is_commander) || (player == ( [] call F_getCommander ) || [] call is_admin) ) ) then {
 			if ( _idact_packfob == -1 ) then {
 				_idact = player addAction ["<t color='#FF6F00'>" + localize "STR_FOB_REPACKAGE" + "</t> <img size='1' image='res\ui_deployfob.paa'/>","scripts\client\actions\do_repackage_fob.sqf",([] call F_getNearestFob),-981,false,true,"","build_confirmed == 0 && !(cursorObject getVariable ['fob_in_use', false])"];
 				_id_actions set [22, _idact];
@@ -328,7 +328,7 @@ while { true } do {
 		_idact_unpackfob = _id_actions select 23;
 		
 		//  && ( (is_commander) || (player == ( [] call F_getCommander ) || [] call is_admin) )
-		if ((_fobdistance > GRLIB_sector_size && (player distance2D lhd) >= 1000) && cursorObject in _near_fobbox ) then {
+		if ((_fobdistance > GRLIB_sector_size && (player distance2D lhd) >= 200) && cursorObject in _near_fobbox ) then {
 			if ( _idact_unpackfob == -1 ) then {
 				_str = localize "STR_FOB_ACTION";
 				if (typeOf cursorObject == FOB_box_outpost) then {
@@ -346,7 +346,7 @@ while { true } do {
 
 		// Pack Beacon
 		_idact_packtent = _id_actions select 24;
-		if ((player distance2D lhd) >= 1000 && typeOf cursorObject == mobile_respawn ) then {
+		if ((player distance2D lhd) >= 200 && typeOf cursorObject == mobile_respawn ) then {
 			if ( _idact_packtent == -1 ) then {
 				_idact = player addAction ["<t color='#FFFF00'>" + localize "STR_PACK_BEACON" + "</t> <img size='1' image='res\ui_deployfob.paa'/>","scripts\client\actions\do_beacon_pack.sqf",cursorObject,-950,true,true,"","!(cursorObject getVariable ['tent_in_use', false])"];
 				_id_actions set [24, _idact];
@@ -360,7 +360,7 @@ while { true } do {
 
 		// UnPack Beacon
 		_idact_unpacktent = _id_actions select 25;
-		if ((player distance2D lhd) >= 1000 && backpack player == mobile_respawn_bag ) then {
+		if ((player distance2D lhd) >= 200 && backpack player == mobile_respawn_bag ) then {
 			if ( _idact_unpacktent == -1 ) then {
 				_idact = player addAction ["<t color='#FFFF00'>" + localize "STR_UNPACK_BEACON" + "</t> <img size='1' image='res\ui_deployfob.paa'/>","scripts\client\actions\do_beacon_unpack.sqf","",-950,true,true,"",""];
 				_id_actions set [25, _idact];
@@ -404,7 +404,7 @@ while { true } do {
 
 		// Destroy Outpost
 		_idact_destroyfob = _id_actions select 28;
-		if ((_fobdistance < _distarsenal && (player distance2D lhd) >= 1000) && (_near_outpost) && ( (score player >= GRLIB_perm_log) || (player == ( [] call F_getCommander ) || [] call is_admin) )) then {
+		if ((_fobdistance < _distarsenal && (player distance2D lhd) >= 200) && (_near_outpost) && ( (score player >= GRLIB_perm_log) || (player == ( [] call F_getCommander ) || [] call is_admin) )) then {
 			if ( _idact_destroyfob == -1 ) then {
 				_idact = player addAction ["<t color='#FF6F00'>" + localize "STR_DESTROY_OUTPOST" + "</t> <img size='1' image='res\ui_deployfob.paa'/>","scripts\client\actions\do_destroy_fob.sqf",([] call F_getNearestFob),-981,false,true,"","build_confirmed == 0 && !(cursorObject getVariable ['fob_in_use', false])"];
 				_id_actions set [28, _idact];
@@ -434,7 +434,7 @@ while { true } do {
 
 		// Recycle PortableHelipadLight (simple objects)
 		_idact_recycle = _id_actions select 30;
-		if ((player distance2D lhd) >= 1000 && _fobdistance < _distfob && cursorObject isKindof "Land_PortableHelipadLight_01_F") then {
+		if ((player distance2D lhd) >= 200 && _fobdistance < _distfob && cursorObject isKindof "Land_PortableHelipadLight_01_F") then {
 			if ( _idact_recycle == -1 ) then {
 				_idact = player addAction ["<t color='#FFFF00'>" + localize "STR_RECYCLE_MANAGER" + "</t> <img size='1' image='res\ui_recycle.paa'/>",{deleteVehicle cursorObject},"",-950,false,true,"","[cursorObject] call is_recyclable",_distvehclose];
 				_id_actions set [30, _idact];
