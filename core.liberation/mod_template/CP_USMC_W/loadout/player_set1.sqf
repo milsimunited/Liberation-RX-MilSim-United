@@ -11,7 +11,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 //  "Add containers";
-// _unit forceAddUniform "CUP_I_B_PARA_Unit_5";
+// _unit forceAddUniform "CUP_U_B_GER_Tropentarn_5";
 
 //  "Add items";
 _unit linkItem "ItemMap";

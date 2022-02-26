@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=61;
+		nextID=64;
 	};
 	class Camera
 	{
-		pos[]={10754.609,291.66473,6376.7808};
-		dir[]={0.60442036,-0.41788802,-0.67826664};
-		up[]={0.27801919,0.90849859,-0.31198674};
-		aside[]={-0.74657977,0,-0.66529596};
+		pos[]={10515.457,323.41321,6554.0259};
+		dir[]={-0.093953438,-0.25358221,0.96274036};
+		up[]={-0.024629982,0.96731389,0.25238329};
+		aside[]={0.99527204,0,0.09712819};
 	};
 };
 binarizationWanted=0;
@@ -45,7 +45,7 @@ addons[]=
 	"A3_Structures_F_Mil_Fortification",
 	"A3_Weapons_F",
 	"tfar_handhelds",
-	"CUP_Creatures_Military_PMC",
+	"CUP_Creatures_Military_Germany",
 	"A3_Structures_F_Mil_Helipads"
 };
 class AddonsMetaData
@@ -138,8 +138,8 @@ class AddonsMetaData
 		};
 		class Item12
 		{
-			className="CUP_Creatures_Military_PMC";
-			name="CUP_Creatures_Military_PMC";
+			className="CUP_Creatures_Military_Germany";
+			name="CUP_Creatures_Military_Germany";
 		};
 	};
 };
@@ -2673,8 +2673,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={10502.997,258.98923,6328.7344};
-				angles[]={6.2575884,1.65353,0.10046153};
+				position[]={10555.339,262.08252,6314.9976};
+				angles[]={6.2687912,1.65353,0.011193314};
 			};
 			side="Empty";
 			flags=4;
@@ -2687,7 +2687,7 @@ class Mission
 			};
 			id=671;
 			type="Box_NATO_AmmoVeh_F";
-			atlOffset=-0.072570801;
+			atlOffset=-0.0031738281;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4114,7 +4114,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -4279,7 +4279,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -4444,7 +4444,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -4609,7 +4609,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -4774,7 +4774,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -4939,7 +4939,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -5102,7 +5102,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -5265,7 +5265,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -5428,7 +5428,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -5591,7 +5591,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -5756,7 +5756,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -5921,7 +5921,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -6084,7 +6084,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -6249,7 +6249,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -6414,7 +6414,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -6577,7 +6577,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -6740,7 +6740,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -6903,7 +6903,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -7066,7 +7066,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -7231,7 +7231,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -7396,7 +7396,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -7559,7 +7559,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -7722,7 +7722,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -7887,7 +7887,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -8050,7 +8050,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -8213,7 +8213,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -8376,7 +8376,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -8541,7 +8541,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -8704,7 +8704,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -8867,7 +8867,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -9032,7 +9032,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -9195,7 +9195,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="CUP_I_B_PARA_Unit_5";
+								typeName="CUP_U_B_GER_Tropentarn_5";
 								isBackpack=0;
 							};
 							map="ItemMap";
