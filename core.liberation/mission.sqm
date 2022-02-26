@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=864;
+		nextID=873;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=58;
+		nextID=61;
 	};
 	class Camera
 	{
-		pos[]={10727.105,318.95029,6539.7944};
-		dir[]={0.90070117,-0.11494551,0.41895694};
-		up[]={0.10422236,0.99337178,0.048478544};
-		aside[]={0.42175236,3.7252903e-009,-0.90671098};
+		pos[]={10754.609,291.66473,6376.7808};
+		dir[]={0.60442036,-0.41788802,-0.67826664};
+		up[]={0.27801919,0.90849859,-0.31198674};
+		aside[]={-0.74657977,0,-0.66529596};
 	};
 };
 binarizationWanted=0;
@@ -660,7 +660,7 @@ class Mission
 					type="Empty";
 					colorName="ColorGUER";
 					id=469;
-					atlOffset=6.7347603;
+					atlOffset=6.7347336;
 				};
 				class Item29
 				{
@@ -1793,6 +1793,7 @@ class Mission
 			name="opfor_airspawn_6";
 			type="Empty";
 			id=384;
+			atlOffset=7.6293945e-006;
 		};
 		class Item110
 		{
@@ -2755,7 +2756,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10699.912,272.09921,6391.2661};
-				angles[]={0,1.7842815,-0};
+				angles[]={0,1.7842815,0};
 			};
 			side="Empty";
 			flags=5;
@@ -3611,7 +3612,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10698.849,271.40784,6385.2441};
-				angles[]={0,1.8075655,-0};
+				angles[]={0,1.8075655,0};
 			};
 			side="Empty";
 			flags=5;
@@ -3849,6 +3850,7 @@ class Mission
 			};
 			id=697;
 			type="Land_HBarrierWall6_F";
+			atlOffset=-3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8876,6 +8878,7 @@ class Mission
 					};
 					id=763;
 					type="B_Soldier_F";
+					atlOffset=-0.00018310547;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9000,6 +9003,7 @@ class Mission
 			{
 			};
 			id=762;
+			atlOffset=-0.00018310547;
 		};
 		class Item244
 		{

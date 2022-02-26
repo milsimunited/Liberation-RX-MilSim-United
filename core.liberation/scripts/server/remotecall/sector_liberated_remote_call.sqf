@@ -39,18 +39,19 @@ if ( _liberated_sector in sectors_tower ) then {
 	_combat_readiness_increase = (floor (random 4));
 };
 
-private _income = (45 + floor(random 20));
+private _income = 50; // (45 + floor(random 20));
 private _text = format ["Reward Received: + %1 Ammo.", _income];
 {
-	if (_x distance2D (markerpos _liberated_sector) < GRLIB_sector_size ) then {
-		private _ammo_collected = _x getVariable ["GREUH_ammo_count",0];
-		
-		_x setVariable ["GREUH_ammo_count", _ammo_collected + _income, true];
-		
-		[_x, 5] remoteExec ["addScore", 2];
-		
-		[gamelogic, _text] remoteExec ["globalChat", owner _x];
-	};
+	// if (_x distance2D (markerpos _liberated_sector) < GRLIB_sector_size ) then {};
+	
+	private _ammo_collected = _x getVariable ["GREUH_ammo_count",0];
+	
+	_x setVariable ["GREUH_ammo_count", _ammo_collected + _income, true];
+	
+	[_x, 5] remoteExec ["addScore", 2];
+	
+	[gamelogic, _text] remoteExec ["globalChat", owner _x];
+	
 } forEach allPlayers;
 [markerPos _liberated_sector] call showlandmines;
 

@@ -27,7 +27,7 @@ Of course, the usual (behavioural) rules apply here as well as on the server. We
 
 _situation = '
 DE <br /><br />
-Das neue Militärbündnis CSAT unterstützt Konfliktparteien in strategisch und wirtschaftlich relevanten Regionen, um dort an Einfluss zu gewinnen. NATO und OVKS kooperieren gegen diesen gemeinsamen Feind.<br /><br />
+Das neue Militärbündnis CSAT unterstützt Konfliktparteien in strategisch und wirtschaftlich relevanten Regionen, um dort an Einfluss zu gewinnen. NATO und die Russische Föderation kooperieren gegen diesen gemeinsamen Feind.<br /><br />
 Kriegsführung: Symetrisch <br />
 Feind: Örtliche Truppen<br />
 Feind verfügt über:<br />
@@ -41,7 +41,7 @@ Als Basis dient der "Liberation" Modus von den Killah Potatoes. Allerdings wurde
 - Respawn und Disconnect, während man bewusstlos ist, kosten Ressourcen. Wartet also wenn immer möglich auf Hilfe!
 <br /><br /><br />
 EN <br /><br />
-The new military alliance CSAT supports conflict parties in strategically and economically relevant regions in order to gain influence there. NATO and CSTO cooperate against this common enemy.<br /><br />
+The new military alliance CSAT supports conflict parties in strategically and economically relevant regions in order to gain influence there. NATO and the Russian Federation cooperate against this common enemy.<br /><br />
 Warfare: Symetric<br />
 Enemy: Local troops<br />
 Enemy has:<br />
