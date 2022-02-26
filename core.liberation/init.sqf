@@ -144,8 +144,6 @@ if (!isDedicated && hasInterface) then {
 	[_vehicle, 150000] call ace_rearm_fnc_makeSource;
     [_vehicle, 15000] call ace_refuel_fnc_makeSource;
 	_vehicle setVariable ["ACE_isRepairVehicle",1];
-	[_vehicle, true] call ace_arsenal_fnc_initBox;
-	[_vehicle, blacklisted_weapon] call ace_arsenal_fnc_removeVirtualItems;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy", "InitPost", {

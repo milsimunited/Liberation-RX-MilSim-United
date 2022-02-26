@@ -23,23 +23,7 @@ A3W_BoxWps = "CUP_LocalBasicWeaponsBox";
 
 // [CLASSNAME, MANPOWER, AMMO, FUEL, RANK]
 infantry_units = [
-	["Alsatian_Random_F",0,0,0,GRLIB_perm_max],
-	["Fin_random_F",0,0,0,0],
-	["CUP_B_USMC_Soldier",1,0,0,0],
-	["CUP_B_USMC_Medic",1,0,0,0],
-	["CUP_B_USMC_Engineer",1,0,0,0],
-	["CUP_B_USMC_Soldier_GL",1,0,0,GRLIB_perm_inf],
-	["CUP_B_USMC_Spotter",1,0,0,GRLIB_perm_inf],
-	["CUP_B_USMC_Soldier_LAT",1,0,0,0],
-	["CUP_B_USMC_Soldier_AR",1,0,0,GRLIB_perm_log],
-	["CUP_B_USMC_Soldier_Marksman",1,0,0,GRLIB_perm_inf],
-	["CUP_B_USMC_Soldier_MG",1,0,0,GRLIB_perm_inf],
-	["CUP_B_USMC_Soldier_AT",1,0,0,GRLIB_perm_log],
-	["CUP_B_USMC_Soldier_AA",1,0,0,GRLIB_perm_log],
-	["CUP_B_USMC_Soldier_HAT",1,0,0,GRLIB_perm_log],
-	["CUP_B_USMC_Sniper_M107",1,0,0,GRLIB_perm_log],
-	[crewman_classname,1,0,0,GRLIB_perm_inf],
-	[pilot_classname,1,0,0,GRLIB_perm_log]
+	["CUP_B_GER_Operator_Medic",0,25,0,GRLIB_perm_inf]
 ];
 
 units_loadout_overide = [
@@ -49,65 +33,94 @@ units_loadout_overide = [
 ];	
 
 light_vehicles = [
-	["CUP_B_M1030_USMC",1,5,1,0],
-	["CUP_C_Golf4_camo_Civ",1,15,1,0],
-	["CUP_B_Zodiac_USMC",1,25,1,0],
-	["CUP_B_RHIB_USMC",4,50,4,GRLIB_perm_log],
-	["CUP_B_LCU1600_USMC",5,30,5,GRLIB_perm_log],
-	["C_Van_01_transport_F",1,15,1,0],
-	["CUP_B_T810_Unarmed_CZ_WDL",1,15,1,GRLIB_perm_inf],
-	["CUP_B_T810_Armed_CZ_WDL",5,30,5,GRLIB_perm_log],
-	["CUP_B_MTVR_USMC",5,30,5,GRLIB_perm_tank],
-	["CUP_B_nM1025_Unarmed_USMC_WDL",2,10,2,0],
-	["CUP_B_nM1025_M2_USMC_WDL",2,20,2,GRLIB_perm_inf],
-	["CUP_B_nM1025_Mk19_USMC_WDL",2,20,2,GRLIB_perm_log],
-	["CUP_B_nM1025_M240_USMC_WDL",2,30,2,GRLIB_perm_log],
-	["CUP_B_M1151_Deploy_USMC",1,100,1,GRLIB_perm_inf],
-	["CUP_B_M1151_Mk19_USMC",1,110,1,GRLIB_perm_inf],
-	["CUP_B_M1165_GMV_USMC",1,120,1,GRLIB_perm_inf],
-	["CUP_B_M1167_USMC",1,250,2,GRLIB_perm_log],
-	["CUP_B_RG31_M2_OD_USMC",1,150,1,GRLIB_perm_log],
-	["CUP_B_RG31_Mk19_OD_USMC",1,125,1,GRLIB_perm_log],
-	["CUP_B_RG31E_M2_OD_USMC",5,200,2,GRLIB_perm_log],
-	["CUP_B_M163_Vulcan_USA",10,300,10,GRLIB_perm_log],
-	["CUP_B_nM1097_AVENGER_USA_WDL",5,750,10,GRLIB_perm_air],
-	["CUP_B_LAV25_USMC",10,600,7,GRLIB_perm_log],
-    ["CUP_B_M1126_ICV_M2_Woodland",10,450,10,GRLIB_perm_log],
-	["CUP_B_M1126_ICV_MK19_Woodland",10,475,10,GRLIB_perm_log],
-	["CUP_B_M1129_MC_MK19_Woodland",10,1250,15,GRLIB_perm_max]
+	["CUP_B_M1030_USMC",0,40,0,GRLIB_perm_inf],
+	["CUP_C_Golf4_camo_Civ",0,60,0,GRLIB_perm_inf],
+	["CUP_O_UAZ_Open_RU",0,60,0,GRLIB_perm_inf],
+	["C_Van_01_transport_F",0,70,0,GRLIB_perm_inf],
+	["CUP_B_T810_Unarmed_CZ_WDL",0,100,0,GRLIB_perm_inf],
+
+	["CUP_B_T810_Armed_CZ_WDL",0,110,0,GRLIB_perm_inf],
+	["CUP_B_MTVR_USMC",0,110,0,GRLIB_perm_inf],
+	["CUP_B_nM1025_Unarmed_USMC_WDL",0,120,0,GRLIB_perm_inf],
+	["CUP_B_FENNEK_GER_Wdl",0,120,0,GRLIB_perm_inf],
+	["CUP_B_nM1025_M2_USMC_WDL",0,130,0,GRLIB_perm_inf],
+	["CUP_B_nM1025_Mk19_USMC_WDL",0,130,0,GRLIB_perm_inf],
+	["CUP_B_nM1025_M240_USMC_WDL",0,130,0,GRLIB_perm_inf],
+	["CUP_B_M1151_Deploy_USMC",0,140,0,GRLIB_perm_inf],
+	["CUP_B_M1151_Mk19_USMC",0,140,0,GRLIB_perm_inf],
+	["CUP_B_M1165_GMV_USMC",0,140,0,GRLIB_perm_inf],
+	["CUP_B_BAF_Coyote_L2A1_W",0,150,0,GRLIB_perm_inf],
+	["CUP_O_UAZ_METIS_RU",0,170,0,GRLIB_perm_inf],
+	["CUP_B_M1167_USMC",0,170,0,GRLIB_perm_inf],
+	["CUP_B_nM1097_AVENGER_USA_WDL",0,170,0,GRLIB_perm_inf],
+	
+	["CUP_B_RG31_M2_OD_USMC",0,220,0,GRLIB_perm_inf],
+	["CUP_B_RG31_Mk19_OD_USMC",0,220,0,GRLIB_perm_inf],
+	["CUP_B_RG31E_M2_OD_USMC",0,220,0,GRLIB_perm_inf],
+	["CUP_O_GAZ_Vodnik_AGS_RU",0,220,0,GRLIB_perm_inf],
+	["CUP_B_Dingo_GER_Wdl",0,220,0,GRLIB_perm_inf],
+	["CUP_B_Dingo_GL_GER_Wdl",0,220,0,GRLIB_perm_inf],
+	
+    ["B_Boat_Transport_01_F",0,30,0,GRLIB_perm_inf],
+	["CUP_B_Zodiac_USMC",0,30,0,GRLIB_perm_inf],
+    ["I_C_Boat_Transport_02_F",0,50,0,GRLIB_perm_inf],
+	["CUP_B_RHIB_USMC",0,50,0,GRLIB_perm_inf],
+	["CUP_B_LCU1600_USMC",0,30,0,GRLIB_perm_inf],
+    ["B_Boat_Armed_01_minigun_F",0,50,0,GRLIB_perm_inf]
 ];
 
 heavy_vehicles = [
-	["CUP_B_M1128_MGS_Woodland",12,600,15,GRLIB_perm_tank],
-	["CUP_B_M1135_ATGMV_Woodland",12,650,15,GRLIB_perm_tank],
-	["CUP_B_M7Bradley_USA_W",12,700,15,GRLIB_perm_tank],
-	["CUP_B_M2Bradley_USA_W",12,1000,15,GRLIB_perm_air],
-	["CUP_B_M2A3Bradley_USA_W",15,1750,15,GRLIB_perm_max],
-	["CUP_B_M60A3_TTS_USMC",15,1500,15,GRLIB_perm_air],
-	["CUP_B_M1A1SA_Woodland_US_Army",15,2000,15,GRLIB_perm_air],
-	["CUP_B_M1A2SEP_TUSK_Woodland_US_Army",15,2500,17,GRLIB_perm_air],
-	["CUP_B_M1A2C_TUSK_II_Woodland_US_Army",20,3000,20,GRLIB_perm_max],
-	["CUP_B_Frigate_ANZAC",50,5000,50,GRLIB_perm_max]
+	["CUP_B_M163_Vulcan_USA",3,300,3,GRLIB_perm_inf],
+	["CUP_B_LAV25_USMC",3,300,3,GRLIB_perm_inf],
+	["CUP_B_M113A3_GER",3,300,3,GRLIB_perm_inf],
+	["CUP_B_Boxer_HMG_GER_WDL",3,300,3,GRLIB_perm_inf],
+	["CUP_B_Boxer_GMG_GER_WDL",3,300,3,GRLIB_perm_inf],
+	
+    ["CUP_B_M1126_ICV_M2_Woodland",3,400,3,GRLIB_perm_inf],
+	["CUP_B_M1126_ICV_MK19_Woodland",3,400,3,GRLIB_perm_inf],
+	["CUP_B_M1129_MC_MK19_Woodland",3,400,3,GRLIB_perm_inf],
+	["CUP_B_M1128_MGS_Woodland",3,450,3,GRLIB_perm_inf],
+	["CUP_B_M1135_ATGMV_Woodland",3,450,3,GRLIB_perm_inf],
+	
+	["CUP_B_M7Bradley_USA_W",3,500,3,GRLIB_perm_inf],
+	["CUP_B_M2Bradley_USA_W",3,500,3,GRLIB_perm_inf],
+	["CUP_B_M2A3Bradley_USA_W",3,500,3,GRLIB_perm_inf],
+	["CUP_B_M60A3_TTS_USMC",3,550,3,GRLIB_perm_inf],
+	["CUP_B_Leopard2A6_GER",3,600,3,GRLIB_perm_inf],
+	["CUP_B_M1A1SA_Woodland_US_Army",3,600,3,GRLIB_perm_inf],
+	["CUP_B_M1A2SEP_TUSK_Woodland_US_Army",3,625,3,GRLIB_perm_inf],
+	["CUP_B_M1A2C_TUSK_II_Woodland_US_Army",3,650,3,GRLIB_perm_inf]
 ];
 
 air_vehicles = [
-	["CUP_B_CESSNA_T41_UNARMED_USA",1,50,5,GRLIB_perm_log],
-	["CUP_B_CESSNA_T41_ARMED_USA",5,200,10,GRLIB_perm_tank],
-	["CUP_B_AC47_Spooky_USA",5,300,5,GRLIB_perm_max],
-	["CUP_B_USMC_DYN_MQ9",10,1000,10,GRLIB_perm_air],
-	["CUP_B_MH6M_USA",1,150,5,GRLIB_perm_log],
-	["CUP_B_AH6M_USA",5,400,10,GRLIB_perm_air],	
-	["CUP_B_UH1Y_UNA_USMC",5,300,10,GRLIB_perm_tank],
-	["CUP_B_UH60S_USN",10,500,10,GRLIB_perm_air],
-	["CUP_B_MH60L_DAP_2x_USN",10,1000,10,GRLIB_perm_air],
-	["CUP_B_MH60L_DAP_4x_USN",10,1500,15,GRLIB_perm_max],
-	["CUP_B_MH47E_USA",10,1250,10,GRLIB_perm_air],
-	["CUP_B_MV22_USMC",15,1750,20,GRLIB_perm_max],
-	["CUP_B_CH53E_USMC",12,1500,15,GRLIB_perm_air],
-	["CUP_B_AH64D_DL_USA",20,2500,40,GRLIB_perm_max],
-	["CUP_B_A10_DYN_USA",20,3000,40,GRLIB_perm_max],
-	["CUP_B_F35B_USMC",20,4000,40,GRLIB_perm_max],
-	["CUP_B_C130J_Cargo_USMC",20,2000,20,GRLIB_perm_max]
+	["CUP_B_MH6M_USA",3,400,3,GRLIB_perm_inf],
+	["CUP_B_AW159_Unarmed_GER",3,400,3,GRLIB_perm_inf],
+	["CUP_B_CESSNA_T41_UNARMED_USA",3,500,3,GRLIB_perm_inf],
+	
+	["CUP_B_MH47E_USA",3,600,3,GRLIB_perm_inf],
+	["CUP_O_Mi8AMT_RU",3,600,3,GRLIB_perm_inf],
+	["CUP_B_CH53E_GER",3,600,3,GRLIB_perm_inf],
+	["CUP_B_C130J_Cargo_USMC",3,600,3,GRLIB_perm_inf],
+	
+	["CUP_B_AH6M_USA",3,550,3,GRLIB_perm_inf],	
+	["CUP_B_UH60S_USN",3,500,3,GRLIB_perm_inf],
+	["CUP_B_UH1Y_UNA_USMC",3,600,3,GRLIB_perm_inf],
+	["CUP_B_UH1D_gunship_GER_KSK",3,600,3,GRLIB_perm_inf],
+	["CUP_B_AW159_GERdd",3,600,3,GRLIB_perm_inf],
+	["CUP_B_MH60L_DAP_2x_USN",3,600,3,GRLIB_perm_inf],
+	["CUP_B_MH60L_DAP_4x_USN",3,650,3,GRLIB_perm_inf],
+	
+	["CUP_B_MV22_USMC",3,600,3,GRLIB_perm_inf], // Osprey
+	["CUP_B_AC47_Spooky_USA",3,650,3,GRLIB_perm_inf],
+	["CUP_B_CESSNA_T41_ARMED_USA",3,700,3,GRLIB_perm_inf],
+	
+	["CUP_B_USMC_DYN_MQ9",3,800,3,GRLIB_perm_inf], // Reaper
+	
+	["CUP_O_Mi24_V_Dynamic_RU",3,750,3,GRLIB_perm_inf],
+	["CUP_B_AH64D_DL_USA",3,800,3,GRLIB_perm_inf],
+	["CUP_O_Ka52_RU",3,800,3,GRLIB_perm_inf],
+	["CUP_B_A10_DYN_USA",3,900,3,GRLIB_perm_inf],
+	["CUP_B_F35B_USMC",3,900,3,GRLIB_perm_inf]
 ];
 
 blufor_air = [
@@ -122,17 +135,17 @@ boats_west = [
 ];
 
 static_vehicles = [
-	["CUP_B_SearchLight_static_USMC",0,10,0,GRLIB_perm_log],
-	["CUP_B_M2StaticMG_USMC",0,50,0,GRLIB_perm_log],
-	["CUP_B_M2StaticMG_MiniTripod_USMC",0,70,0,GRLIB_perm_tank],
-	["CUP_B_MK19_TriPod_USMC",0,70,0,GRLIB_perm_tank],
-	["CUP_B_Stinger_AA_pod_Base_USMC",0,150,0,GRLIB_perm_tank],
-	["CUP_B_TOW_TriPod_USMC",0,150,0,GRLIB_perm_tank],
-	["CUP_B_M252_USMC",0,100,0,GRLIB_perm_max],
-	["CUP_B_M119_USMC",0,150,0,GRLIB_perm_air],
-	["CUP_WV_B_CRAM",0,200,0,GRLIB_perm_air],
-	["CUP_WV_B_RAM_Launcher",0,250,0,GRLIB_perm_max],
-	["CUP_WV_B_SS_Launcher",0,250,0,GRLIB_perm_max]
+	["CUP_B_SearchLight_static_USMC",0,10,0,GRLIB_perm_inf],
+	["CUP_B_M2StaticMG_USMC",0,50,0,GRLIB_perm_inf],
+	["CUP_B_M2StaticMG_MiniTripod_USMC",0,70,0,GRLIB_perm_inf],
+	["CUP_B_MK19_TriPod_USMC",0,70,0,GRLIB_perm_inf],
+	["CUP_B_Stinger_AA_pod_Base_USMC",0,150,0,GRLIB_perm_inf],
+	["CUP_B_TOW_TriPod_USMC",0,150,0,GRLIB_perm_inf],
+	["CUP_B_M252_USMC",0,100,0,GRLIB_perm_inf],
+	["CUP_B_M119_USMC",0,150,0,GRLIB_perm_inf],
+	["CUP_WV_B_CRAM",0,200,0,GRLIB_perm_inf],
+	["CUP_WV_B_RAM_Launcher",0,250,0,GRLIB_perm_inf],
+	["CUP_WV_B_SS_Launcher",0,250,0,GRLIB_perm_inf]
 ];
 
 // *** Static Weapon with AI ***
@@ -143,18 +156,41 @@ static_vehicles_AI = [
 ];
 
 support_vehicles_west = [
-	["CUP_B_nM1038_Repair_USMC_WDL",5,15,5,GRLIB_perm_inf],
-	["CUP_B_MTVR_Refuel_USMC",5,15,20,GRLIB_perm_inf],
-	["CUP_BOX_USMC_WpsLaunch_F",0,150,0,GRLIB_perm_tank],
-	["CUP_B_AAV_Unarmed_USMC",10,2000,20,GRLIB_perm_max]
+    ["CargoNet_01_box_F",0,300,0,GRLIB_perm_inf],
+    ["B_CargoNet_01_ammo_F",0,300,0,GRLIB_perm_inf],
+    ["CargoNet_01_barrels_F",0,300,0,GRLIB_perm_inf],
+	
+	["CUP_B_nM1038_Repair_USMC_WDL",0,200,0,GRLIB_perm_inf],
+	["CUP_B_MTVR_Refuel_USMC",0,200,0,GRLIB_perm_inf],
+	
+    ["ACE_medicalSupplyCrate_advanced",0,0,0,GRLIB_perm_inf],
+    ["ACE_Track",0,0,0,GRLIB_perm_inf],
+    ["ACE_Wheel",0,0,0,GRLIB_perm_inf],
+    ["ACE_Box_82mm_Mo_HE",0,0,0,GRLIB_perm_inf],
+    ["ACE_Box_82mm_Mo_Smoke",0,0,0,GRLIB_perm_inf],
+    ["ACE_Box_82mm_Mo_Illum",0,0,0,GRLIB_perm_inf],
+	["Box_NATO_Equip_F",0,0,0,GRLIB_perm_inf]
 ];
 
 buildings_west = [
-	["Land_Cargo_Tower_V1_F",0,0,0,GRLIB_perm_tank],
-	["Land_Cargo_House_V1_F",0,0,0,GRLIB_perm_inf],
-	["Land_Cargo_Patrol_V1_F",0,0,0,GRLIB_perm_log],
-	["FlagCarrierUSA",0,0,0,0],
-	["WarfareBunkerSign",0,0,0,0]
+    ["Land_HBarrier_01_wall_6_green_F",0,0,0,GRLIB_perm_inf],
+    ["Land_HBarrier_01_line_3_green_F",0,0,0,GRLIB_perm_inf],
+    ["Land_HBarrierWall6_F",0,0,0,GRLIB_perm_inf],
+    ["Land_HBarrier_3_F",0,0,0,GRLIB_perm_inf],
+    ["Flag_UNO_F",0,0,0,GRLIB_perm_inf],
+    ["Flag_NATO_F",0,0,0,GRLIB_perm_inf],
+	["FlagCarrierGermany_EP1",0,0,0,GRLIB_perm_inf],
+    ["FlagCarrierRU",0,0,0,GRLIB_perm_inf],
+    ["Flag_UK_F",0,0,0,GRLIB_perm_inf],
+    ["Flag_US_F",0,0,0,GRLIB_perm_inf],
+    ["Land_PortableLight_single_F",0,0,0,GRLIB_perm_inf],
+    ["Land_Campfire_F",0,0,0,GRLIB_perm_inf],
+    ["Land_CampingChair_V1_F",0,0,0,GRLIB_perm_inf],
+    ["Land_CampingTable_F",0,0,0,GRLIB_perm_inf],
+    ["Land_fort_bagfence_long",0,0,0,GRLIB_perm_inf],
+    ["PortableHelipadLight_01_blue_F",0,0,0,GRLIB_perm_inf],
+    ["PortableHelipadLight_01_green_F",0,0,0,GRLIB_perm_inf],
+    ["Land_ClutterCutter_large_F",0,0,0,GRLIB_perm_inf]
 ];
 
 if ( isNil "blufor_squad_inf_light" ) then { blufor_squad_inf_light = [] };
@@ -215,11 +251,11 @@ if ( count blufor_squad_mix == 0 ) then { blufor_squad_mix = [
 };
 
 squads = [
-	[blufor_squad_inf_light,10,300,0,GRLIB_perm_max],
-	[blufor_squad_inf,20,400,0,GRLIB_perm_max],
-	[blufor_squad_at,25,600,0,GRLIB_perm_max],
-	[blufor_squad_aa,25,600,0,GRLIB_perm_max],
-	[blufor_squad_mix,25,600,0,GRLIB_perm_max]
+	[blufor_squad_inf_light,10,300,0,GRLIB_perm_inf],
+	[blufor_squad_inf,20,400,0,GRLIB_perm_inf],
+	[blufor_squad_at,25,600,0,GRLIB_perm_inf],
+	[blufor_squad_aa,25,600,0,GRLIB_perm_inf],
+	[blufor_squad_mix,25,600,0,GRLIB_perm_inf]
 ];
 
 // All the UAVs must be declared here

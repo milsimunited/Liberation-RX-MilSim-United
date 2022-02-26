@@ -501,7 +501,21 @@ _hs_hint = format['_crate: %1', typeOf _crate];
 
 
 // Arsenal
-[_vehicle, true] call ace_arsenal_fnc_initBox;
+	[_vehicle, true] call ace_arsenal_fnc_initBox;
+	[_vehicle, blacklisted_weapon] call ace_arsenal_fnc_removeVirtualItems;
+
+
+	
+// Everything
+["rhs_kamaz5350_ammo_vmf", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,12] call ace_cargo_fnc_setSpace;
+	[_vehicle, 150000] call ace_rearm_fnc_makeSource;
+    [_vehicle, 15000] call ace_refuel_fnc_makeSource;
+	_vehicle setVariable ["ACE_isRepairVehicle",1];
+	[_vehicle, true] call ace_arsenal_fnc_initBox;
+	[_vehicle, blacklisted_weapon] call ace_arsenal_fnc_removeVirtualItems;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 
 

@@ -88,6 +88,8 @@ class CfgFunctions {
 	#include "addons\LARs\blacklistArsenal\functions\blacklistArsenal.fncs"
 	#include "addons\GRAD\cfgFunctions.hpp"
 	#include "addons\SDB_DALE\CfgFunctions.hpp"
+	
+	#include "KPCF\KPCF_functions.hpp"
 };
 
 class cfgSounds {
@@ -137,3 +139,6 @@ class Repaint {
 #include "addons\VIRT\virtual_garage.hpp"
 #include "addons\SHOP\traders_shop.hpp"
 #include "addons\SDB_DALE\RscLoadout.hpp"
+
+#include "KPGUI\KPGUI_defines.hpp"
+#include "KPCF\ui\KPCF_dialog.hpp"
