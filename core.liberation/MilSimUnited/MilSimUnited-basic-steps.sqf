@@ -43,10 +43,10 @@ add condition (!is_commander)
 
 \scripts\client\init_client.sqf: Initialise player handlers including get_in
 ca. 46: [player] call player_EVH;
+ca. 48: if on whitelist, then commander (variable is_commander)
 ca. 105: comment virtual garage: [] execVM "addons\VIRT\virtual_garage_init.sqf";
 ca. 106: comment trader shop: [] execVM "addons\SHOP\traders_shop_init.sqf";
-ca. 48: if on whitelist, then commander
-variable is_commander
+ca. 157: comment chimera_sign addAction
 
 
 \scripts\client\actions\action_manager.sqf: 
@@ -88,6 +88,10 @@ same as above
 
 \scripts\client\build\open_build_menu.sqf:
 _iscommandant also for commander
+
+
+\scripts\client\commander\admin_menu.sqf
+ca. 44: comment map click teleport
 
 
 \mod_template\RHS_USAF\classnames_west.sqf
@@ -225,7 +229,11 @@ ca. 366: evtl. wegen owner aufgedoppelt.
 
 
 \addons\RPT\fn_repaintMenu.sqf
-ca. 366: uncomment owner restriction
+ca. 366: comment owner restriction
+
+
+\addons\RPT\RPT_init.sqf
+ca. 44: comment "Paint Shop Initialized"
 
 
 \scripts\server\init_server.sqf

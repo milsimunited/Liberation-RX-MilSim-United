@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=873;
+		nextID=884;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=64;
+		nextID=70;
 	};
 	class Camera
 	{
-		pos[]={10515.457,323.41321,6554.0259};
-		dir[]={-0.093953438,-0.25358221,0.96274036};
-		up[]={-0.024629982,0.96731389,0.25238329};
-		aside[]={0.99527204,0,0.09712819};
+		pos[]={11995.565,305.97311,-101.72752};
+		dir[]={0.91688329,0.00098302332,-0.39915428};
+		up[]={-0.00090131804,0.99999952,0.00039237813};
+		aside[]={-0.39915448,0,-0.91688377};
 	};
 };
 binarizationWanted=0;
@@ -162,7 +162,15 @@ class ScenarioData
 		minPlayers=1;
 		maxPlayers=32;
 	};
-	wreckRemovalMaxTime=3600;
+	wreckManagerMode=1;
+	wreckLimit=12;
+	wreckRemovalMinTime=600;
+	wreckRemovalMaxTime=1800;
+	corpseManagerMode=1;
+	corpseLimit=24;
+	corpseRemovalMinTime=600;
+	corpseRemovalMaxTime=1800;
+	minPlayerDistance=500;
 };
 class CustomAttributes
 {
@@ -258,17 +266,17 @@ class Mission
 	{
 		briefingName="-= Liberation RX =-";
 		resistanceEast=1;
-		startWeather=0.40000001;
+		startWeather=0;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.40000001;
+		forecastWeather=0;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		year=2009;
-		day=28;
-		hour=16;
-		minute=20;
+		month=6;
+		day=30;
+		minute=0;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
 	};
@@ -2812,13 +2820,13 @@ class Mission
 		class Item192
 		{
 			dataType="Trigger";
-			position[]={11925.974,280.90402,-50.048019};
+			position[]={11925.974,280.90402,-50.048};
 			class Attributes
 			{
 				condition="true";
 				timeout[]={1.5,1.5,1.5};
 				interuptable=1;
-				effectMusic="LeadTrack01_F";
+				effectMusic="LeadTrack04_F_Tacops";
 			};
 			id=675;
 			type="EmptyDetector";
@@ -2826,7 +2834,7 @@ class Mission
 		class Item193
 		{
 			dataType="Trigger";
-			position[]={11939.349,278.58832,-53.722824};
+			position[]={11939.349,278.58835,-53.723};
 			class Attributes
 			{
 				condition="!(player in thislist)";
@@ -2835,7 +2843,7 @@ class Mission
 				timeout[]={0.2,0.2,0.2};
 				interuptable=1;
 				activationBy="WEST";
-				effectMusic="EventTrack01_F_Curator";
+				effectMusic="CUP_A1_S_Riff";
 			};
 			id=676;
 			type="EmptyDetector";
@@ -3712,7 +3720,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={10707.038,272.5748,6394.9375};
+				position[]={10707.096,272.57831,6394.8896};
 				angles[]={6.2384152,0.31053552,0.098875321};
 			};
 			side="Empty";
@@ -3724,7 +3732,6 @@ class Mission
 			};
 			id=694;
 			type="Land_HBarrierWall6_F";
-			atlOffset=3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0

@@ -11,7 +11,7 @@
 // The Base object is for the player interaction, so at these object you can open the dialog
 KPCF_cratefillerBase = [
     "Land_Cargo10_military_green_F",
-	"B_Slingload_01_Ammo_F"
+	"Land_RepairDepot_01_green_F"
 ];
 
 // The Spawn object is the point where crates will spawn and acts the center for the KPCF_spawnRadius

@@ -112,13 +112,13 @@ class Params
 		title = $STR_PARAMS_DIFFICULTY;
 		values[] = { 0.5, 0.75, 1, 1.25, 1.5, 2, 4, 10 };
 		texts[] = { $STR_PARAMS_DIFFICULTY1, $STR_PARAMS_DIFFICULTY2, $STR_PARAMS_DIFFICULTY3, $STR_PARAMS_DIFFICULTY4, $STR_PARAMS_DIFFICULTY5, $STR_PARAMS_DIFFICULTY6, $STR_PARAMS_DIFFICULTY7, $STR_PARAMS_DIFFICULTY8 };
-		default = 2;
+		default = 4;
 	};
 	class Aggressivity{
 		title = $STR_AGGRESSIVITY_PARAM;
 		values[] = {0.25,0.5,1,2,4};
 		texts[] = {$STR_AGGRESSIVITY_PARAM0, $STR_AGGRESSIVITY_PARAM1,$STR_AGGRESSIVITY_PARAM2,$STR_AGGRESSIVITY_PARAM3,$STR_AGGRESSIVITY_PARAM4};
-		default = 1;
+		default = 2;
 	};
 	class AdaptToPlayercount{
 		title = $STR_PARAM_ADAPT_TO_PLAYERCOUNT;
@@ -148,7 +148,7 @@ class Params
 		title = $STR_WEATHER_PARAM;
 		values[] = { 1,2,3,4 };
 		texts[] = { $STR_WEATHER_PARAM1, $STR_WEATHER_PARAM2, $STR_WEATHER_PARAM3, $STR_WEATHER_PARAM4 };
-		default = 4;
+		default = 2;
 	};
 	class ResourcesMultiplier {
 		title = $STR_PARAMS_RESOURCESMULTIPLIER;
@@ -316,7 +316,7 @@ class Params
 		title = "Enable the Admin Menu";
 		values[] = { 1, 0 };
 		texts[] = { $STR_YES, $STR_NO };
-		default = 0;
+		default = 1;
 	};
 	class Space4 {
 		title = "";
