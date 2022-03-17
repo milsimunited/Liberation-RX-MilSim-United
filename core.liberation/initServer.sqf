@@ -44,7 +44,7 @@ addMissionEventHandler ['HandleDisconnect',{
 		params ["_vehicle"];
 		_vehicle addMPEventHandler ["MPHit", {
 			params ["_unit", "_causedBy", "_damage", "_instigator"];
-			if (isPlayer _causedBy) then {
+			if (isPlayer _causedBy && !(_causedBy == _unit)) then {
 				_msg = format ["Friendly fire from %1 to %2. Penalty: -1 rank and ammo", name _causedBy, name _unit];
 				[gamelogic, _msg] remoteExec ["globalChat", 0];
 				_causedBy setVariable ["GREUH_ammo_count", ( (_causedBy getVariable ["GREUH_ammo_count", 1]) - 1), true];
@@ -59,7 +59,7 @@ addMissionEventHandler ['HandleDisconnect',{
 		params ["_vehicle"];
 		_vehicle addMPEventHandler ["MPHit", {
 			params ["_unit", "_causedBy", "_damage", "_instigator"];
-			if (isPlayer _causedBy) then {
+			if (isPlayer _causedBy && !(_causedBy == _unit)) then {
 				_msg = format ["Friendly fire from %1 to %2. Penalty: -1 rank and ammo", name _causedBy, name _unit];
 				[gamelogic, _msg] remoteExec ["globalChat", 0];
 				_causedBy setVariable ["GREUH_ammo_count", ( (_causedBy getVariable ["GREUH_ammo_count", 1]) - 1), true];
