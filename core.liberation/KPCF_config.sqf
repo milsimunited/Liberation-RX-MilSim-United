@@ -27,7 +27,7 @@ KPCF_generateLists = true;
 KPCF_spawnRadius = 10;
 
 // Defines the distance for the interaction (addAction / ACE)
-KPCF_interactRadius = 12;
+KPCF_interactRadius = 15;
 
 // Defines the available crates
 KPCF_crates = [
@@ -39,7 +39,7 @@ KPCF_crates = [
 // Blacklisted items are used on every category with activated generatedLists and everytime on the magazines and attachments
 // So this variable will ensure the block of unwanted items
 KPCF_blacklistedItems = [
-    ""
+    "CUP_lunch_FIM92Stinger"
 ];
 
 // ----- This Variable will only be used with activated generatedLists -----
@@ -47,7 +47,7 @@ KPCF_blacklistedItems = [
 // Defines the whitelisted items
 // Whitelisted items will be added after the item detection to ensure the availability
 KPCF_whitelistedItems = [
-    "CUP_Stinger_M"
+    "CUP_lunch_FIM92Stinger_Loaded"
 ];
 
 // ----- These Variables will be replaced with activated generatedLists -----
