@@ -316,7 +316,6 @@ heavy_vehicles = [
     ["ffaa_et_toa_mando",0,heavy_vehicle_price_tier_3,0,GRLIB_perm_inf],
     ["ffaa_et_toa_m2",0,heavy_vehicle_price_tier_4,0,GRLIB_perm_inf],
     ["ffaa_et_toa_zapador",0,heavy_vehicle_price_tier_4,0,GRLIB_perm_inf],
-    ["ffaa_et_toa_spike",0,heavy_vehicle_price_tier_5,0,GRLIB_perm_inf],
     ["ffaa_ar_piranhaIIIC",0,heavy_vehicle_price_tier_8,0,GRLIB_perm_inf],
     ["ffaa_ar_piranhaIIIC_lance",0,heavy_vehicle_price_tier_10,0,GRLIB_perm_inf],
     ["ffaa_et_pizarro_mauser",0,heavy_vehicle_price_tier_11,0,GRLIB_perm_inf]
@@ -345,6 +344,7 @@ strong_heavy_vehicles = [
     ["rhsusf_m1a1aim_tuski_wd",0,strong_heavy_vehicle_price_tier_4,0,GRLIB_perm_inf],
     ["rhsusf_m1a2sep1tuskiwd_usarmy",0,strong_heavy_vehicle_price_tier_4,0,GRLIB_perm_inf],
     ["rhsusf_m1a2sep1tuskiiwd_usarmy",0,strong_heavy_vehicle_price_tier_4,0,GRLIB_perm_inf],
+    ["rhsusf_m109_usarmy",0,strong_heavy_vehicle_price_tier_4,0,GRLIB_perm_inf],
   // BW
     ["Redd_Tank_Gepard_1A2_Flecktarn",0,strong_heavy_vehicle_price_tier_1,0,GRLIB_perm_inf],
     ["BWA3_Panzerhaubitze2000_Fleck",0,strong_heavy_vehicle_price_tier_4,0,GRLIB_perm_inf],
@@ -449,6 +449,8 @@ air_vehicles = [
       ["CUP_B_AH64D_DL_USA",0,air_vehicle_price_tier_14,0,GRLIB_perm_inf],
     // BAF
       ["UK3CB_BAF_Apache_AH1_Generic",0,air_vehicle_price_tier_14,0,GRLIB_perm_inf],
+   // Vanilla
+      ["B_Heli_Attack_01_dynamicLoadout_F",0,air_vehicle_price_tier_11,0,GRLIB_perm_inf],   //RAH-66 Comanche
     // BW
       ["BWA3_Tiger_Gunpod_FZ",0,air_vehicle_price_tier_10,0,GRLIB_perm_inf],
       ["BWA3_Tiger_Gunpod_PARS",0,air_vehicle_price_tier_10,0,GRLIB_perm_inf],
@@ -485,6 +487,7 @@ fast_air_vehicle = [
       ["CUP_B_A10_DYN_USA",0,fast_air_vehicle_price_tier_6,0,GRLIB_perm_inf],
       ["CUP_B_AV8B_DYN_USMC",0,fast_air_vehicle_price_tier_5,0,GRLIB_perm_inf],
       ["CUP_B_F35B_USMC",0,fast_air_vehicle_price_tier_5,0,GRLIB_perm_inf],
+      ["CUP_B_L39_CZ",0,fast_air_vehicle_price_tier_5,0,GRLIB_perm_inf],
 
     //RHS 
       ["rhsusf_f22",0,fast_air_vehicle_price_tier_2,0,GRLIB_perm_inf],
@@ -511,6 +514,8 @@ fast_air_vehicle = [
     // FIR F-15
       ["FIR_F15C",0,fast_air_vehicle_price_tier_5,0,GRLIB_perm_inf],
       ["FIR_F15E",0,fast_air_vehicle_price_tier_10,0,GRLIB_perm_inf],
+      ["FIR_F15E_Demo",0,fast_air_vehicle_price_tier_10,0,GRLIB_perm_inf],
+      ["FIR_F15SE_LA",0,fast_air_vehicle_price_tier_10,0,GRLIB_perm_inf],
     // FIR F-16
       ["FIR_F16C",0,fast_air_vehicle_price_tier_7,0,GRLIB_perm_inf],
       ["FIR_F16D",0,fast_air_vehicle_price_tier_7,0,GRLIB_perm_inf],
@@ -562,7 +567,7 @@ static_vehicles = [
       ["CUP_B_M2StaticMG_USMC",0,0,0,GRLIB_perm_inf],
       ["CUP_B_M2StaticMG_MiniTripod_USMC",0,0,0,GRLIB_perm_inf],
       ["CUP_B_MK19_TriPod_USMC",0,0,0,GRLIB_perm_inf],
-      ["CUP_B_TOW_TriPod_USMC",0,0,0,GRLIB_perm_inf],
+      ["RHS_TOW_TriPod_D",0,0,0,GRLIB_perm_inf],
       ["CUP_B_M252_USMC",0,0,0,GRLIB_perm_inf],
   // Medium
     // CUP
@@ -575,15 +580,16 @@ static_vehicles = [
       ["CUP_WV_B_RAM_Launcher",150,0,0,GRLIB_perm_inf],
       ["CUP_WV_B_SS_Launcher",250,0,0,GRLIB_perm_inf],
     // Vanilla
-      ["B_SAM_System_03_F",200,0,0,GRLIB_perm_inf],
-      ["B_AAA_System_01_F",500,0,0,GRLIB_perm_inf],
+      ["B_SAM_System_03_F",100,0,0,GRLIB_perm_inf],
+      ["B_AAA_System_01_F",50,0,0,GRLIB_perm_inf],
+      ["B_SAM_System_01_F",150,0,0,GRLIB_perm_inf],
     // Mantis
-      ["rnt_mantis_base",200,0,0,GRLIB_perm_inf],
+      ["rnt_mantis_base",100,0,0,GRLIB_perm_inf],
       ["rnt_mantis_radar",0,0,0,GRLIB_perm_inf],
     // FFAA
       ["ffaa_lanzador_nasams",50,0,0,GRLIB_perm_inf],
     // CUP
-      ["CUP_B_M119_USMC",0,800,0,GRLIB_perm_inf],
+      ["CUP_B_M119_USMC",0,500,0,GRLIB_perm_inf],
   // Super heavy
       ["B_Ship_MRLS_01_F",0,20000,0,GRLIB_perm_inf]
 ];
@@ -598,7 +604,8 @@ static_vehicles_AI = [
     "B_AAA_System_01_F",
     "CUP_WV_B_SS_Launcher",
     "rnt_mantis_base",
-    "rnt_mantis_radar"
+    "rnt_mantis_radar",
+    "B_SAM_System_01_F",
 ];
 
 support_vehicles_west = [
@@ -613,6 +620,7 @@ support_vehicles_west = [
     ["BWA3_Multi_Fleck",0,logistic_ground_vehicle_price_tier_2,0,GRLIB_perm_inf],
   // CUP
     ["CUP_B_nM1038_Repair_DF_USA_WDL",0,logistic_ground_vehicle_price_tier_3,0,GRLIB_perm_inf],
+    ["CUP_B_TowingTractor_USMC",0,light_vehicle_price_tier_1 ,0,GRLIB_perm_inf],
     ["CUP_B_nM1038_Ammo_DF_USA_WDL",0,logistic_ground_vehicle_price_tier_3,0,GRLIB_perm_inf],
     ["CUP_B_MTVR_Repair_USMC",0,logistic_ground_vehicle_price_tier_3,0,GRLIB_perm_inf],
     ["CUP_B_MTVR_Refuel_USMC",0,logistic_ground_vehicle_price_tier_3,0,GRLIB_perm_inf],
@@ -866,7 +874,8 @@ buildings_west = [
   ["HeliHRescue",0,0,0,GRLIB_perm_inf],
   ["HeliHCivil",0,0,0,GRLIB_perm_inf],
   ["Land_strelecky_post_new",0,0,0,GRLIB_perm_inf],
-  ["Target_PopUp4_Moving_90deg_F",0,0,0,GRLIB_perm_inf]
+  ["Target_PopUp4_Moving_90deg_F",0,0,0,GRLIB_perm_inf],
+  ["Land_GuardTower_01_F",0,0,0,GRLIB_perm_inf],
   
 ];
 
