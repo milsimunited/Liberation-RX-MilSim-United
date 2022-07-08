@@ -499,6 +499,8 @@ fast_air_vehicle = [
       ["ffaa_ea_ef18m",0,fast_air_vehicle_price_tier_6,0,GRLIB_perm_inf],
     // USAF
       ["USAF_A10",0,fast_air_vehicle_price_tier_4,0,GRLIB_perm_inf],
+      ["USAF_F22",0,fast_air_vehicle_price_tier_2,0,GRLIB_perm_inf],
+      ["USAF_F22_Heavy",0,fast_air_vehicle_price_tier_5,0,GRLIB_perm_inf],
     // FIR F-14
       ["FIR_F14A_HBK1",0,fast_air_vehicle_price_tier_4,0,GRLIB_perm_inf],
     // FIR F-15
@@ -511,8 +513,6 @@ fast_air_vehicle = [
       ["FIR_F16D",0,fast_air_vehicle_price_tier_7,0,GRLIB_perm_inf],
       // F-35
       ["FIR_F35B_Standard",0,fast_air_vehicle_price_tier_6,0,GRLIB_perm_inf],
-     // F-22
-      ["FIR_F22",0,fast_air_vehicle_price_tier_6,0,GRLIB_perm_inf],
     // F-18 super hornet
       ["JS_JC_FA18F",0,fast_air_vehicle_price_tier_7,0,GRLIB_perm_inf],
       ["JS_JC_FA18E",0,fast_air_vehicle_price_tier_7,0,GRLIB_perm_inf],
