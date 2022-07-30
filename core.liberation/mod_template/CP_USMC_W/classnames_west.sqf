@@ -514,8 +514,8 @@ fast_air_vehicle = [
      // F-22
       ["FIR_F22",0,fast_air_vehicle_price_tier_6,0,GRLIB_perm_inf],
     // F-18 super hornet
-      ["FIR_F18C",0,fast_air_vehicle_price_tier_6 ,0,GRLIB_perm_inf],
-      ["FIR_F18D",0,fast_air_vehicle_price_tier_6 ,0,GRLIB_perm_inf],
+      ["FIR_F18C",0,999999,0,GRLIB_perm_inf],
+      ["FIR_F18D",0,999999,0,GRLIB_perm_inf],
     // Eurofighter
       ["EAWS_EF2000_GER_CAP",0,fast_air_vehicle_price_tier_7,0,GRLIB_perm_inf],
     // Vanilla
