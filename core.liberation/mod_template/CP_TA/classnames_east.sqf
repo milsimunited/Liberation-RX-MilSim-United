@@ -200,7 +200,8 @@ opfor_choppers = [
 
 opfor_air = [
 	//"O_Plane_CAS_02_Cluster_F",
-	"O_Plane_Fighter_02_F"
+	"O_Plane_Fighter_02_F",
+	"CUP_O_Su25_Dyn_SLA"
 ];
 
 opfor_statics = [
