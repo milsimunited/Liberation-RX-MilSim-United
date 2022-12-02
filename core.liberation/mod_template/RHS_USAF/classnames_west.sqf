@@ -36,6 +36,7 @@ light_vehicles = [
 
 // Bike
 ["CUP_B_M1030_USMC",0,20,0,GRLIB_perm_inf],
+["gm_ge_army_k125",0,20,0,GRLIB_perm_inf],
 
 // Vanilla
 
@@ -43,6 +44,14 @@ light_vehicles = [
 ["C_Van_01_transport_F",0,light_vehicle_price_tier_2,0,GRLIB_perm_inf],
 ["B_LSV_01_unarmed_F",0,light_vehicle_price_tier_6,0,GRLIB_perm_inf],
 ["B_LSV_01_AT_F",0,light_vehicle_price_tier_9,0,GRLIB_perm_inf],
+
+// GM
+
+["gm_ge_army_iltis_milan",0,light_vehicle_price_tier_9,0,GRLIB_perm_inf],
+["gm_ge_army_iltis_mg3",0,light_vehicle_price_tier_9,0,GRLIB_perm_inf],
+["gm_ge_army_u1300l_cargo",0,light_vehicle_price_tier_9,0,GRLIB_perm_inf],
+["gm_ge_army_u1300l_repair",0,light_vehicle_price_tier_9,0,GRLIB_perm_inf],
+["gm_ge_army_u1300l_medic",0,light_vehicle_price_tier_9,0,GRLIB_perm_inf],
 
 // CUP
 
@@ -189,6 +198,13 @@ strong_light_vehicles = [
 
 // Strong light vehicles
 
+// GM
+
+["gm_ge_army_luchsa2",0,strong_light_vehicle_price_tier_2,0,GRLIB_perm_inf],
+["gm_ge_army_fuchsa0_reconnaissance",0,strong_light_vehicle_price_tier_2,0,GRLIB_perm_inf],
+["gm_ge_army_fuchsa0_engineer",0,strong_light_vehicle_price_tier_2,0,GRLIB_perm_inf],
+["gm_ge_army_gepard1a1",0,strong_light_vehicle_price_tier_2,0,GRLIB_perm_inf],
+
 // CUP
 
 ["CUP_B_M1151_USA",0,strong_light_vehicle_price_tier_2,0,GRLIB_perm_inf],
@@ -309,6 +325,15 @@ heavy_vehicles = [
 
 
 // Heavy vehicles
+
+// GM
+
+["gm_ge_army_Leopard1a5",0,heavy_vehicle_price_tier_11,0,GRLIB_perm_inf],
+["gm_ge_army_marder1a2",0,heavy_vehicle_price_tier_11,0,GRLIB_perm_inf],
+["gm_ge_army_marder1a1plus",0,heavy_vehicle_price_tier_11,0,GRLIB_perm_inf],
+["gm_ge_army_kat1_463_mlrs",0,heavy_vehicle_price_tier_11,0,GRLIB_perm_inf],
+["gm_ge_army_m109g",0,heavy_vehicle_price_tier_11,0,GRLIB_perm_inf],
+["gm_ge_army_Leopard1a3a3",0,heavy_vehicle_price_tier_11,0,GRLIB_perm_inf],
 
 // BAF
 
@@ -464,6 +489,12 @@ air_vehicles = [
 
 // Light Transport
 
+// GM
+
+["gm_ge_army_bo105p1m_vbh_swooper",0,air_vehicle_price_tier_2,0,GRLIB_perm_inf],
+["gm_ge_army_bo105p_pah1a1",0,air_vehicle_price_tier_2,0,GRLIB_perm_inf],
+["gm_ge_army_bo105p1m_vbh",0,air_vehicle_price_tier_2,0,GRLIB_perm_inf],
+
 // FFAA
 
 ["ffaa_famet_ec135",0,air_vehicle_price_tier_1,0,GRLIB_perm_inf],
@@ -483,6 +514,11 @@ air_vehicles = [
 ["RHS_MELB_AH6M",0,air_vehicle_price_tier_8,0,GRLIB_perm_inf],
 
 // Medium Transport
+
+// GM
+
+["gm_ge_army_ch53g",0,air_vehicle_price_tier_4,0,GRLIB_perm_inf],
+["gm_ge_army_ch53gs",0,air_vehicle_price_tier_4,0,GRLIB_perm_inf],
 
 // CUP
 
@@ -663,6 +699,10 @@ fast_air_vehicle = [
 
 
 // Jets
+
+//GM
+["gm_ge_airforce_do28d2",0,fast_air_vehicle_price_tier_5,0,GRLIB_perm_inf],
+["gm_ge_airforce_do28d2_medevac",0,fast_air_vehicle_price_tier_5,0,GRLIB_perm_inf],
 
 // CUP
 ["CUP_B_L39_CZ",0,fast_air_vehicle_price_tier_5,0,GRLIB_perm_inf],
