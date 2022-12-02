@@ -44,6 +44,11 @@ light_vehicles = [
 ["B_LSV_01_unarmed_F",0,light_vehicle_price_tier_6,0,GRLIB_perm_inf],
 ["B_LSV_01_AT_F",0,light_vehicle_price_tier_9,0,GRLIB_perm_inf],
 
+// SOG
+
+["vn_b_wheeled_m54_mg_02",0,light_vehicle_price_tier_9,0,GRLIB_perm_inf],
+["vn_b_wheeled_m151_mg_03",0,light_vehicle_price_tier_9,0,GRLIB_perm_inf],
+
 // CUP
 
 ["CUP_I_SUV_ION",0,light_vehicle_price_tier_3,0,GRLIB_perm_inf],
@@ -484,6 +489,13 @@ air_vehicles = [
 
 // Medium Transport
 
+// SOG 
+
+["vn_b_air_uh1c_02_02",0,air_vehicle_price_tier_8,0,GRLIB_perm_inf],
+["vn_b_air_uh1c_01_02",0,air_vehicle_price_tier_8,0,GRLIB_perm_inf],
+["vn_b_air_uh1e_02_04",0,air_vehicle_price_tier_8,0,GRLIB_perm_inf],
+["vn_b_air_uh1c_03_01",0,air_vehicle_price_tier_8,0,GRLIB_perm_inf],
+
 // CUP
 
 ["CUP_B_UH60M_Unarmed_FFV_MEV_US",0,air_vehicle_price_tier_4,0,GRLIB_perm_inf],
@@ -663,6 +675,12 @@ fast_air_vehicle = [
 
 
 // Jets
+
+// SOG
+
+["vn_b_air_f4c_hcas",0,fast_air_vehicle_price_tier_2,0,GRLIB_perm_inf],
+["vn_b_air_f4b_navy_hcas",0,fast_air_vehicle_price_tier_2,0,GRLIB_perm_inf],
+["vn_b_air_f100d_hcas",0,fast_air_vehicle_price_tier_2,0,GRLIB_perm_inf],
 
 // CUP
 ["CUP_B_L39_CZ",0,fast_air_vehicle_price_tier_5,0,GRLIB_perm_inf],
