@@ -215,7 +215,7 @@ strong_light_vehicles = [
 ["CUP_B_LR_Special_CZ_W",0,light_vehicle_price_tier_5,0,GRLIB_perm_inf],
 
 
-// SOG 
+// SOG
 
 ["vn_b_air_uh1c_02_02",0,air_vehicle_price_tier_8,0,GRLIB_perm_inf],
 ["vn_b_air_uh1c_01_02",0,air_vehicle_price_tier_8,0,GRLIB_perm_inf],
@@ -595,7 +595,7 @@ air_vehicles = [
 
 // Heavy Transport
 
-// SOG 
+// SOG
 
 ["vn_b_air_uh1c_02_02",0,air_vehicle_price_tier_8,0,GRLIB_perm_inf],
 ["vn_b_air_uh1c_01_02",0,air_vehicle_price_tier_8,0,GRLIB_perm_inf],
@@ -650,7 +650,7 @@ air_vehicles = [
 ["CUP_I_Mi24_Mk3_UN",0,air_vehicle_price_tier_14,0,GRLIB_perm_inf],
 ["CUP_B_Mi171Sh_ACR",0,air_vehicle_price_tier_14,0,GRLIB_perm_inf],
 ["CUP_B_Mi35_Dynamic_CZ_Dark",0,air_vehicle_price_tier_14,0,GRLIB_perm_inf],
-
+["CUP_O_Ka50_DL_SLA",0,air_vehicle_price_tier_14,0,GRLIB_perm_inf],
 // BAF
 
 ["UK3CB_BAF_Apache_AH1_Generic",0,air_vehicle_price_tier_14,0,GRLIB_perm_inf],
