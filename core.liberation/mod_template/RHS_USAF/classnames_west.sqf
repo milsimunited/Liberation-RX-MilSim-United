@@ -475,6 +475,7 @@ air_vehicles = [
       ["CUP_B_AH64D_DL_USA",0,air_vehicle_price_tier_14,0,GRLIB_perm_inf],
       ["CUP_I_Mi24_Mk3_UN",0,air_vehicle_price_tier_14,0,GRLIB_perm_inf],
       ["CUP_B_Mi35_Dynamic_CZ_Ram",0,air_vehicle_price_tier_14,0,GRLIB_perm_inf],
+			["CUP_O_Ka50_DL_SLA",0,air_vehicle_price_tier_14,0,GRLIB_perm_inf],
     // BAF
       ["UK3CB_BAF_Apache_AH1_Generic",0,air_vehicle_price_tier_14,0,GRLIB_perm_inf],
     // BW
