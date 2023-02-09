@@ -353,8 +353,12 @@ strong_heavy_vehicles = [
     ["CUP_B_Leopard2A6DST_GER",0,strong_heavy_vehicle_price_tier_4,0,GRLIB_perm_inf],
     ["CUP_B_M270_HE_USMC",0,strong_heavy_vehicle_price_tier_6,0,GRLIB_perm_inf],
     ["CUP_B_RM70_CZ",0,strong_heavy_vehicle_price_tier_7,0,GRLIB_perm_inf],
-    //RHS
+  //RHS
     ["rhsusf_m109_usarmy",0,strong_heavy_vehicle_price_tier_4,0,GRLIB_perm_inf],
+  //ITC
+    ["itc_land_rhsusf_m109d_usarmy",0,strong_heavy_vehicle_price_tier_4,0,GRLIB_perm_inf],
+    ["itc_land_b_mlrs_seara2",0,strong_heavy_vehicle_price_tier_6,0,GRLIB_perm_inf],
+    ["itc_land_b_SPH_Sholef2",0,strong_heavy_vehicle_price_tier_4,0,GRLIB_perm_inf],
   // BW
     ["Redd_Tank_Gepard_1A2_Flecktarn",0,heavy_vehicle_price_tier_9 ,0,GRLIB_perm_inf],
     ["BWA3_Panzerhaubitze2000_Fleck",0,strong_heavy_vehicle_price_tier_4,0,GRLIB_perm_inf],
@@ -614,7 +618,8 @@ static_vehicles = [
     // Mantis
       ["rnt_mantis_base",100,0,0,GRLIB_perm_inf],
       ["rnt_mantis_radar",0,0,40,GRLIB_perm_inf],
-
+    // ITC
+      ["itc_land_COBRA01",0,0,40,GRLIB_perm_inf],
     // FFAA
       ["ffaa_lanzador_nasams",25,0,0,GRLIB_perm_inf],
     // CUP
