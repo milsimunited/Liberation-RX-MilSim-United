@@ -312,6 +312,14 @@ item_blacklist = [];
 
 
 MSU_blacklisted_from_arsenal = [
+"rhs_weap_fgm148",
+"CUP_launch_Javelin",
+"launch_O_Titan_short_ghex_F",
+"launch_O_Titan_short_F",
+"launch_I_Titan_short_F",
+"launch_B_Titan_short_F",
+"launch_B_Titan_short_tna_F",
+"CUP_launch_Javelin",
 "H_HelmetO_ViperSP_hex_F",
 "H_HelmetO_ViperSP_ghex_F",
 "U_O_V_Soldier_Viper_hex_F",
