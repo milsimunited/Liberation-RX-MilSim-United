@@ -584,9 +584,9 @@ fast_air_vehicle = [
 		["vn_b_air_f100d_hcas",0,fast_air_vehicle_price_tier_2,msu_fuel_plane,GRLIB_perm_inf],
 	// CUP
 		//["CUP_B_L39_CZ",0,fast_air_vehicle_price_tier_5,msu_fuel_plane,GRLIB_perm_inf],
-		["CUP_B_AV8B_DYN_USMC",0,fast_air_vehicle_price_tier_5,msu_fuel_plane,GRLIB_perm_inf],
-		//["CUP_B_CESSNA_T41_UNARMED_USA",0,air_vehicle_price_tier_1,msu_fuel_plane,GRLIB_perm_inf],
-		//["CUP_B_CESSNA_T41_ARMED_USA",0,fast_air_vehicle_price_tier_2,msu_fuel_plane,GRLIB_perm_inf],
+		["CUP_B_AV8B_DYN_USMC",0,fast_air_vehicle_price_tier_4,msu_fuel_plane,GRLIB_perm_inf],
+		["CUP_B_F35B_Stealth_BAF",0,fast_air_vehicle_price_tier_3,msu_fuel_plane,GRLIB_perm_inf],
+		["CUP_B_F35B_BAF",0,fast_air_vehicle_price_tier_4,msu_fuel_plane,GRLIB_perm_inf],
 	//RHS
 		//["RHS_A10",0,fast_air_vehicle_price_tier_2,msu_fuel_plane,GRLIB_perm_inf],
 		["rhsusf_f22",0,air_vehicle_price_tier_9,msu_fuel_plane,GRLIB_perm_inf],
@@ -631,7 +631,8 @@ fast_air_vehicle = [
 	// Vanilla
 		["I_Plane_Fighter_04_F",0,fast_air_vehicle_price_tier_5,msu_fuel_plane,GRLIB_perm_inf],
 		["B_Plane_Fighter_01_F",0,fast_air_vehicle_price_tier_7,msu_fuel_plane,GRLIB_perm_inf],
-		["B_Plane_Fighter_01_Stealth_F",0,fast_air_vehicle_price_tier_8,msu_fuel_plane,GRLIB_perm_inf],
+		["O_Plane_CAS_02_dynamicLoadout_F",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
+		["B_Plane_Fighter_01_Stealth_F",0,fast_air_vehicle_price_tier_4,msu_fuel_plane,GRLIB_perm_inf],
 // UAVs
 	// CUP
 		["CUP_B_USMC_DYN_MQ9",0,1250,msu_fuel_plane,GRLIB_perm_inf],
