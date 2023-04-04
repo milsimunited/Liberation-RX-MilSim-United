@@ -6,7 +6,7 @@ GRLIB_color_friendly = "ColorBLUFOR";
 // Advanced definition: scripts\shared\classnames.sqf
 
 huron_typename = "B_Heli_Transport_03_F"; // comment to use value from lobby/server.cfg
-FOB_typename = "WarfareBDepot";
+FOB_typename = "USMC_WarfareBBarracks";
 FOB_box_typename = "B_Slingload_01_Cargo_F";
 FOB_truck_typename = "rhsusf_m113_usarmy_unarmed";
 FOB_outpost = "";
