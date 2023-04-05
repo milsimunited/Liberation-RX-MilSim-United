@@ -890,6 +890,7 @@ MSU_blacklisted_from_arsenal = [
 "launch_I_Titan_short_F",
 "launch_B_Titan_short_F",
 "launch_O_Titan_short_ghex_F",
+"hlc_muzzle_apology",
 "launch_B_Titan_short_tna_F"
 ];
 
