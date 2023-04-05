@@ -470,6 +470,9 @@ air_vehicles = [
 		["CUP_B_MV22_USMC",0,air_vehicle_price_tier_4,msu_fuel_heli,GRLIB_perm_inf], // Osprey
 		["CUP_B_MV22_VIV_USMC",0,air_vehicle_price_tier_4,msu_fuel_heli,GRLIB_perm_inf], // Osprey
 		["CUP_B_MV22_USMC_RAMPGUN",0,air_vehicle_price_tier_4,msu_fuel_heli,GRLIB_perm_inf], // Osprey
+       //V280
+                ["Valor_Transport_Unarmed_F",0,air_vehicle_price_tier_4,msu_fuel_heli,GRLIB_perm_inf],
+		["Valor_Transport_Armed_F",0,air_vehicle_price_tier_7,msu_fuel_heli,GRLIB_perm_inf],
 // Transport planes
 	//CUP
 	    ["CUP_B_C130J_USMC",0,fast_air_vehicle_price_tier_1,0,GRLIB_perm_inf],
