@@ -511,7 +511,6 @@ MSU_blacklisted_from_arsenal = [
 "I_HMG_02_weapon_F",
 "I_Mortar_01_support_F",
 "I_Mortar_01_weapon_F",
-"I_UAV_01_backpack_F",
 "I_UAV_06_backpack_F",
 "I_UAV_06_medical_backpack_F",
 "I_UGV_02_Demining_backpack_F",
