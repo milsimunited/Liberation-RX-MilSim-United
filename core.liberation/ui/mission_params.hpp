@@ -110,9 +110,9 @@ class Params
 	};
 	class Difficulty {
 		title = $STR_PARAMS_DIFFICULTY;
-		values[] = { 0.5, 0.75, 1, 1.25, 1.5, 2, 4, 6 };
+		values[] = { 0.5, 0.75, 1, 1.25, 1.5, 2, 4, 8 };
 		texts[] = { $STR_PARAMS_DIFFICULTY1, $STR_PARAMS_DIFFICULTY2, $STR_PARAMS_DIFFICULTY3, $STR_PARAMS_DIFFICULTY4, $STR_PARAMS_DIFFICULTY5, $STR_PARAMS_DIFFICULTY6, $STR_PARAMS_DIFFICULTY7, $STR_PARAMS_DIFFICULTY8 };
-		default = 4;
+		default = 8;
 	};
 	class Aggressivity{
 		title = $STR_AGGRESSIVITY_PARAM;

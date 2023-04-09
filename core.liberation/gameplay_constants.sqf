@@ -63,7 +63,7 @@ opfor_kill_score_infantry = 3;
 opfor_kill_ammo_infantry = 6;
 kamikaze_kill_score = 6;
 kamikaze_kill_ammo = 12;
-civkill_score = -55;
+civkill_score = -50;
 civkill_ammo = -275;
 civkill_combat_readiness = 5;
 tkill_score = -6;
@@ -80,10 +80,10 @@ box_recycle_value = 40;
 // Increases the ammo for logistics and decreasese the ammo for everyone
 logistics_ammo_increase = true;
 
-prisoner_intel = 5;
-prisoner_score = 30;
+prisoner_intel = 4;
+prisoner_score = 25;
 prisoner_ammo = 50;
-prisoner_combat_readiness = 7;
+prisoner_combat_readiness = 6;
 prisoner_i = 0;
 
 // Building Penalty
