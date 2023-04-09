@@ -38,8 +38,8 @@ GRLIB_date_month = 7;
 GRLIB_date_day = 30;
 GRLIB_nights_start = 21;
 GRLIB_nights_stop = 4;
-GRLIB_blufor_cap = 32;
-GREUH_start_ammo = 1200;
+GRLIB_blufor_cap = 15;
+GREUH_start_ammo = 100;
 
 // defines if everyone gets ammo from sector liberations
 Sector_ammo_for_all = false;
