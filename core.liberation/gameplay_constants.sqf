@@ -14,8 +14,8 @@ GRLIB_vulnerability_timer = 1000;
 GRLIB_defended_buildingPos_part = 0.2;
 GRLIB_sector_military_value = 2;
 GRLIB_secondary_objective_impact = 0.4;
-GRLIB_sector_spawn_factor = 2.5;
-GRLIB_sector_cap = 85 * GRLIB_unitcap;
+GRLIB_sector_spawn_factor = 2.8;
+GRLIB_sector_cap = 90 * GRLIB_unitcap;
 GRLIB_battlegroup_cap = 95 * GRLIB_unitcap;
 GRLIB_patrol_cap = 10 * GRLIB_unitcap;
 GRLIB_blufor_cap = 10 * GRLIB_unitcap;
@@ -40,9 +40,6 @@ GRLIB_nights_start = 21;
 GRLIB_nights_stop = 4;
 GRLIB_blufor_cap = 15;
 GREUH_start_ammo = 100;
-
-// defines if everyone gets ammo from sector liberations
-Sector_ammo_for_all = false;
 
 // don't forget that the human commander manages those, not the server
 GRLIB_offload_diag = false;
@@ -75,16 +72,33 @@ tk_active = false; //NEW Tkillscript with dialog
 // SNC_VehRestriction in init.sqf
 
 
-// Only use by 2 dividable numbers
-box_recycle_value = 40;
-// Increases the ammo for logistics and decreasese the ammo for everyone
-logistics_ammo_increase = true;
-
+// logistics
 prisoner_intel = 4;
-prisoner_score = 25;
-prisoner_ammo = 50;
+prisoner_score = 2;
+prisoner_ammo = 5;
 prisoner_combat_readiness = 6;
 prisoner_i = 0;
+
+box_recycle_value = 40; // Only use by 2 dividable numbers
+logistics_ammo_for_all = false;
+logistics_ammo_increase = false;
+
+
+// Sector config
+sector_rank_gain = 10;
+fallback_income = 85;
+income_sectors_bigtown = 85;
+income_sectors_capture = 85;
+income_sectors_military = 85;
+income_sectors_factory = 85;
+income_sectors_tower = 85;
+readiness_increase_bigtown = 4;
+readiness_increase_capture = 4;
+readiness_increase_military = 4;
+readiness_increase_factory = 4;
+readiness_increase_tower = 4;
+Sector_ammo_for_all = false;
+
 
 // Building Penalty
 building_penalty_isActive = false;
@@ -92,19 +106,6 @@ building_penalty_isActive = false;
 // Do not allow air vehicles to trigger zones. 
 air_cannot_trigger_on = true;
 
-// Sector config
-sector_rank_gain = 15;
-fallback_income = 90;
-income_sectors_bigtown = 90;
-income_sectors_capture = 90;
-income_sectors_military = 90;
-income_sectors_factory = 90;
-income_sectors_tower = 90;
-readiness_increase_bigtown = 4;
-readiness_increase_capture = 4;
-readiness_increase_military = 4;
-readiness_increase_factory = 4;
-readiness_increase_tower = 4;
 
 // resources
 msu_resource_min_players = 10;
@@ -150,6 +151,10 @@ fob_hunting_readiness = 40;
 // Battlegroup readiness
 bg_readiness_cooldown = false;
 bg_readiness_min = 33;
+
+// msu loops
+msu_heartbeat = 180;
+huber_commandos = true;
 
 // Battlegroup sleeping (divided with csat aggressivity)
 bg_sleeptimer = 1800; 

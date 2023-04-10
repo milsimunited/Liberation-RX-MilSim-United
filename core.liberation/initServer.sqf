@@ -96,6 +96,65 @@ addMissionEventHandler ['EntityKilled', {
 
 
 
+hs_spawn_init = '[this] spawn loadout_militia;';
+
+hs_spawn = compileFinal "
+	if( huber_commandos && (diag_fps > 25.0) ) then {
+		_headlessClients = entities 'HeadlessClient_F';
+		_humanPlayers = allPlayers - _headlessClients;
+		_count_players = count _humanPlayers;
+		
+		if(_count_players > 0) then {
+			_player = selectRandom _humanPlayers;
+			_too_close = false;
+			
+			_spawn_position = [ [ [getPos _player, GRLIB_sector_size+GRLIB_capture_size] ], ['water'] ] call BIS_fnc_randomPos;
+
+			if ( ((combat_readiness < bg_readiness_min*2) && (_spawn_position distance2D ([] call F_getNearestFob) < GRLIB_sector_size*2)) || (_spawn_position distance2D lhd < GRLIB_sector_size*2) || (_spawn_position isEqualTo [0,0]) ) then {
+				_too_close = true;
+			};
+			
+			if (_too_close == false) then {
+				{
+					if (_spawn_position distance _x < GRLIB_sector_size) then {
+						_too_close = true;
+					};
+				} forEach allPlayers;
+			};
+			
+			if (_too_close == false) then {
+				_group_spawn = createGroup opfor;
+				
+				opfor_at createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.2, 'private']; sleep 1;
+				opfor_sharpshooter createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.2, 'private']; sleep 1;
+				opfor_machinegunner createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.2, 'private']; sleep 1;
+				opfor_aa createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.2, 'private']; sleep 1;
+
+				_wp1_spawn = _group_spawn addWaypoint [getPosWorld _player, GRLIB_capture_size];
+				_wp1_spawn setwaypointtype 'MOVE';
+				_wp1_spawn setWaypointBehaviour 'AWARE';
+				_wp1_spawn setWaypointSpeed 'FULL';
+
+				_wp2_spawn = _group_spawn addWaypoint [getPos _player, GRLIB_capture_size*2];
+
+				_wp3_spawn = _group_spawn addWaypoint [getPos _player, GRLIB_capture_size*2];
+
+				_wp4_spawn = _group_spawn addWaypoint [getPos _player, GRLIB_capture_size*2];
+
+				_wp5_spawn = _group_spawn addWaypoint [getPos _player, GRLIB_capture_size*2];
+
+				_wp6_spawn = _group_spawn addWaypoint [getpos _player, GRLIB_capture_size*2];
+				_wp6_spawn setWaypointStatements ['true', '{deleteVehicle _x} forEach thisList;'];
+			};
+		};
+		
+	};
+
+";
+
+
+
+
 
 
 ["Initialize", [true]] call BIS_fnc_dynamicGroups;
@@ -104,7 +163,7 @@ addMissionEventHandler ['EntityKilled', {
 
 
 while { true } do {
-	sleep 300;
+	sleep msu_heartbeat;
 	_hs_time = systemTime;
 
 	if (((_hs_time select 3) == 1) && ((_hs_time select 4) >= 30)) then {
@@ -123,7 +182,8 @@ while { true } do {
 		_msg = format['Server restart at the next full hour. Recycle your vehicles in time! Server-Neustart zur nächsten vollen Stunde. Fahrzeuge rechtzeitig recyceln!'];
 		[gamelogic, _msg] remoteExec ["globalChat", 0];
 	};
-	
+
+	[] spawn hs_spawn;
 };
 
 
