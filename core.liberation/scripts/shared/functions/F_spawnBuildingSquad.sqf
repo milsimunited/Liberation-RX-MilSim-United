@@ -37,7 +37,7 @@ _idxposit = 0;
 	[ _nextunit, _sector ] spawn building_defence_ai;
 	
 	// if ( _infsquad == "militia" ) then {};
-	[ _nextunit ] call loadout_militia;
+	[ _nextunit ] spawn loadout_militia;
 	
 
 	_idxposit = _idxposit + 1;
