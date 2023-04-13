@@ -1,30 +1,25 @@
 _unit = _this select 0;
 
-_unit forceAddUniform "U_I_CombatUniform";
+
 _unit addHeadgear "H_HelmetIA";
 
-if ( floor(random 100) < 60 ) then {
-    _unit addPrimaryWeaponItem "acc_flashlight";
-};
 
-/*
-if ( (typeOf _unit) in militia_loadout_overide ) then {
-    [_unit] call compile preprocessFileLineNumbers format ["mod_template\%1\loadout\%2.sqf", GRLIB_mod_east, toLower (typeOf _unit)];
-} else {
-    // Global overide militia default loadout
+_oldContentU = uniformItems _unit;
+_unit forceAddUniform "U_I_CombatUniform";
+{
+    _unit addItemToUniform _x;
+} forEach _oldContentU;
 
-    // removeHeadgear _unit;
-    // removeGoggles _unit;
-    // sleep 0.5;
-    // _unit forceAddUniform (selectRandom _militia_uniforms);
-    // _unit addHeadgear "H_Booniehat_oli";
-    // _unit addGoggles "G_Balaclava_lowprofile";
-    // _unit addVest "V_BandollierB_oli";
-    // _unit addWeapon "srifle_DMR_03_woodland_F";
-    // _unit addPrimaryWeaponItem "optic_Hamr";
-    // _unit addPrimaryWeaponItem "bipod_03_F_oli";
-    // _unit addWeapon "hgun_P07_F";
-    _unit linkItem "ItemMap";
-    _unit linkItem "ItemCompass";
-};
-*/
+
+_oldContentV = vestItems _unit;
+_unit addVest "V_PlateCarrierIA1_dgtl";
+{
+    _unit addItemToVest _x;
+} forEach _oldContentV;
+
+
+_unit addPrimaryWeaponItem "acc_flashlight";
+
+
+_unit linkItem "ACE_NVG_Gen4_Black";
+
