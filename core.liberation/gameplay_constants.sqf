@@ -60,9 +60,9 @@ opfor_kill_score_infantry = 3;
 opfor_kill_ammo_infantry = 6;
 kamikaze_kill_score = 6;
 kamikaze_kill_ammo = 12;
-civkill_score = -50;
-civkill_ammo = -275;
-civkill_combat_readiness = 5;
+civkill_score = -45;
+civkill_ammo = -250;
+civkill_combat_readiness = 6;
 tkill_score = -6;
 tkill_ammo = -9;
 tk_active = false; //NEW Tkillscript with dialog
@@ -74,14 +74,14 @@ tk_active = false; //NEW Tkillscript with dialog
 
 // logistics
 prisoner_intel = 4;
-prisoner_score = 2;
-prisoner_ammo = 5;
-prisoner_combat_readiness = 6;
+prisoner_score = 6;
+prisoner_ammo = 15;
+prisoner_combat_readiness = 7;
 prisoner_i = 0;
 
 box_recycle_value = 40; // Only use by 2 dividable numbers
 logistics_ammo_for_all = false;
-logistics_ammo_increase = false;
+logistics_ammo_increase = true;
 
 
 // Sector config
