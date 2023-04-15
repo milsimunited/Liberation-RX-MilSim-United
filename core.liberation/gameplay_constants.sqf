@@ -63,8 +63,8 @@ kamikaze_kill_ammo = 12;
 civkill_score = -50;
 civkill_ammo = -275;
 civkill_combat_readiness = 5;
-tkill_score = -6;
-tkill_ammo = -9;
+tkill_score = -5;
+tkill_ammo = -10;
 tk_active = false; //NEW Tkillscript with dialog
 
 // tkill_script in init.sqf
@@ -73,13 +73,19 @@ tk_active = false; //NEW Tkillscript with dialog
 
 
 // logistics
-prisoner_intel = 4;
-prisoner_score = 2;
-prisoner_ammo = 5;
-prisoner_combat_readiness = 6;
 prisoner_i = 0;
+prisoner_combat_readiness = 6;
+prisoner_intel = 4;
 
-box_recycle_value = 40; // Only use by 2 dividable numbers
+prisoner_score = opfor_kill_score_infantry*10;
+prisoner_ammo = opfor_kill_ammo_infantry*10;
+
+box_recycle_score = opfor_kill_score_infantry*7;
+box_recycle_value = opfor_kill_ammo_infantry*7;
+
+vehicle_recycle_score = opfor_kill_score_infantry*9;
+vehicle_recycle_value = opfor_kill_ammo_infantry*9;
+
 logistics_ammo_for_all = false;
 logistics_ammo_increase = false;
 
