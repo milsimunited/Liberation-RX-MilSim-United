@@ -110,7 +110,7 @@ hs_spawn = compileFinal "
 			
 			_spawn_position = [ [ [getPos _player, GRLIB_sector_size+GRLIB_capture_size] ], ['water'] ] call BIS_fnc_randomPos;
 
-			if ( ((combat_readiness < bg_readiness_min*2) && (_spawn_position distance2D ([] call F_getNearestFob) < GRLIB_sector_size*2)) || (_spawn_position distance2D lhd < GRLIB_sector_size*2) || (_spawn_position isEqualTo [0,0]) ) then {
+			if ( ((combat_readiness < bg_readiness_min*2) && (_spawn_position distance2D ([] call F_getNearestFob) < GRLIB_sector_size*2)) || (_spawn_position distance2D lhd < GRLIB_sector_size*2) || (_spawn_position distance2D myLARsBox < GRLIB_sector_size*2) || (_spawn_position isEqualTo [0,0]) ) then {
 				_too_close = true;
 			};
 			
