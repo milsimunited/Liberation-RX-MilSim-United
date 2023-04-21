@@ -305,6 +305,13 @@ if (isNil "frdl_fire_dmg_threshold") then { frdl_fire_dmg_threshold = 0.1; };
 
 
 
+// opfor
+["rhs_mvd_izlom_arifleman_rpk", "InitPost", {
+	params ["_vehicle"];
+	[_vehicle] spawn loadout_militia;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+
 
 
 log_on_server = compileFinal "

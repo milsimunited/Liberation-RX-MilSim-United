@@ -296,6 +296,16 @@ MSU_Eng_Div = 1;
 
 
 
+
+// opfor loadout
+msu_opfor_helmet = 'H_HelmetIA';
+msu_opfor_uniform = 'Alpine_white_Crye_camo'; // U_I_CombatUniform
+msu_opfor_vest = 'V_PlateCarrierIA1_dgtl';
+
+
+
+
+
 /*
 If we need a specific whitelist someday the following array needs to be set: 
 MSU_whitelisted_from_arsenal = [];
