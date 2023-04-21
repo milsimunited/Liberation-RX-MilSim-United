@@ -173,7 +173,7 @@ force_datalink = true;
 force_sensorTarget_opfor = false;
 
 //Enemy IEDs
-ied_enemy_sector = ["ATMine", "APERSMine", "APERSBoundingMine", "SLAMDirectionalMine", "APERSTripMine"];
+ied_enemy_sector = ["ACE_IEDLandBig_Range", "APERSMine", "APERSBoundingMine", "IEDUrbanBig_F", "APERSTripMine"];
 
 
 
