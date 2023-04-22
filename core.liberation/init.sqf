@@ -314,6 +314,15 @@ if (isNil "frdl_fire_dmg_threshold") then { frdl_fire_dmg_threshold = 0.1; };
 
 
 
+// civ
+["C_Man_4_enoch_F", "InitPost", {
+	params ["_vehicle"];
+	_vehicle forceAddUniform msu_civ_uniform;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+
+
+
 log_on_server = compileFinal "
 		params ['_msg'];
 		diag_log _msg;

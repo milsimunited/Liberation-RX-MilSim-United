@@ -1,35 +1,7 @@
 // *** CIVILIAN ***
 
 civilians = [
-	"LOP_CHR_Civ_Citizen_03",
-	"LOP_CHR_Civ_Citizen_04",
-	"LOP_CHR_Civ_Priest_01",
-	"LOP_CHR_Civ_Profiteer_02",
-	"LOP_CHR_Civ_Rocker_02",
-	"LOP_CHR_Civ_Villager_01",
-	"LOP_CHR_Civ_Villager_03",
-	"LOP_CHR_Civ_Woodlander_03",
-	"LOP_CHR_Civ_Worker_02",
-	"LOP_CHR_Civ_Random",
-	"C_man_1_2_F",
-	"C_man_p_fugitive_F",
-	"C_man_hunter_1_F",
-	"C_Man_Fisherman_01_F",
-	"C_man_sport_1_F",
-	"C_man_sport_3_F",
-	"C_man_sport_2_F",
-	"C_Man_Messenger_01_F",
-	"C_Story_Mechanic_01_F",
-	"C_Man_casual_2_F",
-	"C_Man_casual_4_F",
-	"C_Man_casual_1_F",
-	"C_Man_casual_3_F",
-	"C_Man_casual_5_F",
-	"C_journalist_F",
-	"C_man_shorts_2_F",
-	"C_man_w_worker_F",
-	"C_Paramedic_01_base_F",
-	"C_Man_UtilityWorker_01_F"
+	"C_Man_4_enoch_F"
 ];
 
 civilian_vehicles = [

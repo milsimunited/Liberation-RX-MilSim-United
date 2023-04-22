@@ -297,11 +297,12 @@ MSU_Eng_Div = 1;
 
 
 
-// opfor loadout
+// default loadouts
 msu_opfor_helmet = 'H_HelmetIA';
 msu_opfor_uniform = 'U_I_CombatUniform'; // Alpine_white_Crye_camo
 msu_opfor_vest = 'V_PlateCarrierIA1_dgtl';
 
+msu_civ_uniform = 'U_BG_Guerilla3_1';
 
 
 
