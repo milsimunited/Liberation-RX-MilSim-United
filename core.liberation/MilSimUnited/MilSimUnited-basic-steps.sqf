@@ -3,6 +3,19 @@
 
 
 
+
+
+admin menu
+------------------------------------------------------------------------------------------
+ui\liberation_admin.hpp
+\scripts\client\commander\admin_menu.sqf
+// ca. 44: comment map click teleport -> not any more
+
+
+
+
+
+
 loadout override
 ------------------------------------------------------------------------------------------
 scripts\shared\functions\F_spawnRegularSquad.sqf
@@ -267,9 +280,6 @@ same as above
 \scripts\client\build\open_build_menu.sqf:
 _iscommandant also for commander
 
-
-\scripts\client\commander\admin_menu.sqf
-ca. 44: comment map click teleport
 
 
 \mod_template\RHS_USAF\classnames_west.sqf
