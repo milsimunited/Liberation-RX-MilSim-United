@@ -422,17 +422,6 @@ class liberation_admin {
     w = 0.09 * safezoneW;
     h = 0.035 * safezoneH;
   };
-  class Header: StdHeader {
-= COLOR_GREEN;
-    x = 0.1985 * safezoneW + safezoneX;
-    y = 0.1916 * safezoneH + safezoneY;
-    w = 0.2375 * safezoneW;
-    h = 0.512 * safezoneH;
-  };
-  class InnerBG_F1: InnerBG1
-  {
-  	style = ST_FRAME;
-  };
   class Header: StdHeader
   {
     text = $STR_ADMIN_MENUMENU;

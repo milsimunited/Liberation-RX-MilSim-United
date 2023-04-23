@@ -182,8 +182,6 @@ ied_enemy_sector = ["ACE_IEDLandBig_Range", "APERSMine", "APERSBoundingMine", "I
 moderators = [
     "76561198057808323", // Johannes
     "76561198019854511", // Voltaren
-    "76561198132964589", // Sound_wave
-    "76561197991090099", // Jenkins
     "76561198203314980", // Bobi
     "76561198094301584", // Devin
     "76561198161654836", // Napu
