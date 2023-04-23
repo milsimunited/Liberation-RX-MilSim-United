@@ -57,7 +57,7 @@ private _output_controls = [531,532,533,534,535,536];
 
 // Action buttons
 private _button_controls = [1600,1601,1602,1603,1604,1609,1610,1611,1612,1613,1614,1615,1616,1617,1618,1619];
-private _disabled_controls = [1600,1601,1609,1610,1613,1614,1617,1618];
+private _disabled_controls = [1606,1607,1608,1609,1610,1613,1614,1620];
 
 (_display displayCtrl 1603) ctrlSetText getMissionPath "res\ui_confirm.paa";
 (_display displayCtrl 1603) ctrlSetToolTip "Add XP Score";
@@ -80,9 +80,9 @@ private _list = [];
 {
 	_uid = getPlayerUID _x;
 	_list pushBack _uid;
-	_score_combo lbAdd format["%1 (S: %2 A: %3)", name _x, score _x, _x getVariable ["GREUH_ammo_count", 0]];
+	_score_combo lbAdd format["%1", name _x];
 	_score_combo lbSetData [_i, _uid];
-	//_score_combo lbSetColor [_i, _color];
+	_score_combo lbSetColor [_i, _color];
 	_i = _i + 1;
 } foreach (AllPlayers - (entities "HeadlessClient_F"));
 
@@ -91,7 +91,7 @@ private _list = [];
 	if !(_uid in _list) then {
 		_score_combo lbAdd format["%1", _x select 4];
 		_score_combo lbSetData [_i, _uid];
-		//_score_combo lbSetColor [_i, _color];
+		_score_combo lbSetColor [_i, _color];
 		_i = _i + 1;
 	};
 } foreach GRLIB_player_scores;
@@ -113,14 +113,14 @@ _ban_combo lbSetCurSel 0;
 _score_combo lbSetCurSel 0;
 _build_combo lbSetCurSel last_build;
 
-
-// MSU: disable unwanted features
-{
-	ctrlEnable  [_x, false];
-	ctrlShow [_x, false];
-} forEach _disabled_controls;
-_button_controls = _disabled_controls;
-
+// Limit Moderators Menu
+if (getPlayerUID player in GRLIB_whitelisted_moderators) then {
+	{
+		ctrlEnable  [_x, false];
+		ctrlShow [_x, false];
+	} forEach _disabled_controls;
+	_button_controls = _disabled_controls;
+};
 
 while { alive player && dialog } do {
 	if (do_unban == 1) then {
@@ -188,7 +188,6 @@ while { alive player && dialog } do {
 		};
 	};
 
-	/*
 	if (do_export == 1) then {
 		do_export = 0;
 		if (isServer) then {
@@ -236,8 +235,6 @@ while { alive player && dialog } do {
 		{ ctrlShow [_x, false] } foreach _input_controls;
 		{ ctrlEnable  [_x, true] } foreach _button_controls;
 	};
-*/
-
 	if (do_kick == 1) then {
 		do_kick = 0;
 		_name = _score_combo lbText (lbCurSel _score_combo);

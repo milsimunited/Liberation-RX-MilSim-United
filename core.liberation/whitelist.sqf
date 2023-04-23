@@ -12,13 +12,15 @@ GRLIB_whitelisted_tags = [
 GRLIB_whitelisted_steamids = [
     "76561198057808323", // Johannes
     "76561198019854511", // Voltaren
-    "76561198132964589", // Sound_wave
-    "76561197991090099", // Jenkins
     "76561198203314980", // Bobi
     "76561198094301584", // Devin
     "76561198161654836", // Napu
     "76561197997804176", // Slotzi
     "76561197993044168"  // Huber Sepp
+];
+
+// Allow player to use the Light Admin Menu (aka Moderators)
+GRLIB_whitelisted_moderators = [
 ];
 
 // Allowed individual player names. Note that this method is not very secure contrary to SteamIDs.
