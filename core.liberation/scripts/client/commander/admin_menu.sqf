@@ -57,7 +57,7 @@ private _output_controls = [531,532,533,534,535,536];
 
 // Action buttons
 private _button_controls = [1600,1601,1602,1603,1604,1609,1610,1611,1612,1613,1614,1615,1616,1617,1618,1619];
-private _disabled_controls = [1600,1601,1609,1610,1613,1614,1617,1618];
+private _disabled_controls = [1600,1601,1602,1604,1609,1610,1611,1613,1614,1617,1618,1622];
 
 (_display displayCtrl 1603) ctrlSetText getMissionPath "res\ui_confirm.paa";
 (_display displayCtrl 1603) ctrlSetToolTip "Add XP Score";
@@ -86,7 +86,7 @@ private _list = [];
 	_i = _i + 1;
 } foreach (AllPlayers - (entities "HeadlessClient_F"));
 
-{
+/*{
 	_uid = _x  select 0;
 	if !(_uid in _list) then {
 		_score_combo lbAdd format["%1", _x select 4];
@@ -94,7 +94,7 @@ private _list = [];
 		//_score_combo lbSetColor [_i, _color];
 		_i = _i + 1;
 	};
-} foreach GRLIB_player_scores;
+} foreach GRLIB_player_scores;*/
 
 // Build Vehicles list
 _i = 0;
@@ -145,6 +145,8 @@ while { alive player && dialog } do {
 		_msg = format ["Add %1 XP to player: %2.", _amount, _name];
 		hint _msg;
 		systemchat _msg;
+		_msg = format ["[AdminMenu] %1 gave %2 score to %3", name player, _amount, _name];
+		[_msg] remoteExec ["log_on_server", 2];
 		sleep 1;
 	};
 
@@ -171,6 +173,8 @@ while { alive player && dialog } do {
 		_msg = format ["Add %1 Ammo to player: %2.", _amount, _name];
 		hint _msg;
 		systemchat _msg;
+		_msg = format ["[AdminMenu] %1 gave %2 ammo to %3", name player, _amount, _name];
+		[_msg] remoteExec ["log_on_server", 2];
 		sleep 1;
 	};
 
@@ -248,6 +252,8 @@ while { alive player && dialog } do {
 				["LOSER"] remoteExec ["endMission", owner _player];
 				_msg = format ["Admin kick player %1.", name _player];
 				[_msg] remoteExec ["systemchat", -2];
+				_msg = format ["[AdminMenu] %1 kicked %2", name player, name _player];
+				[_msg] remoteExec ["log_on_server", 2];
 			};
 		}] remoteExec ["bis_fnc_call", 2];
 		sleep 1;
