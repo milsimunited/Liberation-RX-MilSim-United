@@ -76,7 +76,7 @@ tk_active = false; //NEW Tkillscript with dialog
 prisoner_intel = 4;
 prisoner_score = 6;
 prisoner_ammo = 15;
-prisoner_combat_readiness = 7;
+prisoner_combat_readiness = 9;
 prisoner_i = 0;
 
 box_recycle_value = 40; // Only use by 2 dividable numbers
@@ -150,7 +150,7 @@ fob_hunting_readiness = 40;
 
 // Battlegroup readiness
 bg_readiness_cooldown = false;
-bg_readiness_min = 33;
+bg_readiness_min = 38;
 
 // msu loops
 msu_heartbeat = 180;
