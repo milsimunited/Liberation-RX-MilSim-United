@@ -911,6 +911,16 @@ log_on_server = compileFinal "
 	] call BIS_fnc_initVehicle;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
+["rhs_t72ba_tv", "InitPost", {
+    params ["_vehicle"];
+	_vehicle addEventHandler ["HandleDamage", {  
+		private _unit = _this select 0;
+		private _hitSelection = _this select 1;
+		private _damage = _this select 2;
+		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 4)} else {(_unit getHit _hitSelection) + (_damage * 4)};
+	}];
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
 
 
 
