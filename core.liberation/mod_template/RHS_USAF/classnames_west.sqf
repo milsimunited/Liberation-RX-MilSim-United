@@ -507,6 +507,7 @@ air_vehicles = [
 	//Vanilla
 		["B_Heli_Transport_01_F",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],						//Ghosthawk
 		["O_Heli_Light_02_unarmed_F",0,air_vehicle_price_tier_3,0,GRLIB_perm_inf],					//Ocra/Ka-60
+		["O_Heli_Transport_04_F",0,air_vehicle_price_tier_7,0,GRLIB_perm_inf],						//Taru
 		["I_Heli_Transport_02_F",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],                     // Merlin
 		 ["I_Heli_light_03_unarmed_F",0,air_vehicle_price_tier_3,0,GRLIB_perm_inf],               // hellcat
 
