@@ -72,27 +72,16 @@ divers_squad = [
 ];
 
 militia_vehicles = [
-	"rhs_btr60_msv",
-	"rhs_btr70_msv",
-	"rhs_btr80_msv",
-	"rhs_btr80a_msv",
-	"rhs_bmp1_msv",
-	"rhs_bmp1d_msv",
-	"rhs_bmp1k_msv",
-	"rhs_bmp1p_msv",
-	"rhs_bmp2e_msv",
-	"rhs_bmp2_msv",
-	"rhs_bmp2d_msv",
-	"rhs_bmp2k_msv",
+	"rhs_brm1k_vv",
+	"rhs_prp3_vv",
+	"rhs_btr60_vv",
+	"rhs_btr70_vv",
+	"rhs_btr80_vv",
 	"rhs_bmp3_msv",
-	"rhs_brm1k_msv",
-	"rhs_Ob_681_2",
-	"rhs_prp3_msv",
+	"rhs_bmd1k",
+	"rhs_bmd1r ",
 	"rhs_t72ba_tv",
-	"rhs_t90_tv",
-	"rhs_2s1_at_tv",
 	"rhs_zsu234_aa",
-	"rhs_2s3_at_tv",
 	"RHS_Ural_Zu23_MSV_01"
 ];
 
@@ -101,59 +90,44 @@ boats_east = [
 ];
 
 opfor_vehicles = [
-	"rhs_btr60_msv",
-	"rhs_btr70_msv",
-	"rhs_btr80_msv",
-	"rhs_btr80a_msv",
-	"rhs_bmp1_msv",
-	"rhs_bmp1d_msv",
-	"rhs_bmp1k_msv",
-	"rhs_bmp1p_msv",
-	"rhs_bmp2e_msv",
-	"rhs_bmp2_msv",
-	"rhs_bmp2d_msv",
-	"rhs_bmp2k_msv",
+	"rhs_brm1k_vv",
+	"rhs_prp3_vv",
+	"rhs_btr60_vv",
+	"rhs_btr70_vv",
+	"rhs_btr80_vv",
 	"rhs_bmp3_msv",
-	"rhs_brm1k_msv",
-	"rhs_Ob_681_2",
-	"rhs_prp3_msv",
+	"rhs_bmd1k",
+	"rhs_bmd1r ",
 	"rhs_t72ba_tv",
-	"rhs_t90_tv",
-	"rhs_2s1_at_tv",
 	"rhs_zsu234_aa",
-	"rhs_2s3_at_tv",
 	"RHS_Ural_Zu23_MSV_01"
 ];
 
 opfor_vehicles_low_intensity = [
-	"rhs_btr60_msv",
-	"rhs_btr70_msv",
-	"rhs_btr80_msv",
-	"rhs_bmp1_msv",
-	"rhs_bmp2_msv",
-	"RHS_Ural_Zu23_MSV_01",
-	"rhs_2s1_at_tv",
+	"rhs_brm1k_vv",
+	"rhs_prp3_vv",
+	"rhs_btr60_vv",
+	"rhs_btr70_vv",
+	"rhs_btr80_vv",
+	"rhs_bmp3_msv",
+	"rhs_bmd1k",
+	"rhs_bmd1r ",
 	"rhs_zsu234_aa",
-	"rhs_2s3_at_tv"
+	"RHS_Ural_Zu23_MSV_01"
 ];
 
 opfor_battlegroup_vehicles = [
- 	"rhs_btr60_msv",
-	"rhs_btr70_msv",
-	"rhs_btr80_msv",
-	"rhs_btr80a_msv",
-	"rhs_bmp1_msv",
-	"rhs_bmp1d_msv",
-	"rhs_bmp1k_msv",
-	"rhs_bmp1p_msv",
-	"rhs_bmp2e_msv",
-	"rhs_bmp2_msv",
-	"rhs_bmp2d_msv",
-	"rhs_bmp2k_msv",
+	"rhs_brm1k_vv",
+	"rhs_prp3_vv",
+	"rhs_btr60_vv",
+	"rhs_btr70_vv",
+	"rhs_btr80_vv",
 	"rhs_bmp3_msv",
-	"rhs_brm1k_msv",
-	"rhs_Ob_681_2",
-	"rhs_prp3_msv",
+	"rhs_bmd1k",
+	"rhs_bmd1r ",
+	"rhs_t72ba_tv",
+	"rhs_zsu234_aa",
+	"RHS_Ural_Zu23_MSV_01",
 	"rhs_t72ba_tv",
 	"RHS_Ural_Zu23_MSV_01",
 	"rhs_2s1_at_tv",
@@ -293,6 +267,3 @@ box_transport_config_east = [
 	 // [ "CUP_B_MTVR_BAF_DES", -6.5, [0, -0.4, 0.3], [0, -2.1, 0.3] ],  
 	[ "CUP_O_V3S_Covered_TKA", -5.5, [0, 0.3, 0], [0, -1.25, 0] ]
 ];
-
-
-
