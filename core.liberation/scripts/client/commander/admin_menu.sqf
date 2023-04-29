@@ -57,7 +57,7 @@ private _output_controls = [531,532,533,534,535,536];
 
 // Action buttons
 private _button_controls = [1600,1601,1602,1603,1604,1609,1610,1611,1612,1613,1614,1615,1616,1617,1618,1619];
-private _disabled_controls = [1600,1601,1602,1604,1609,1610,1611,1613,1614,1617,1618,1622];
+private _disabled_controls = [1600,1601,1602,1604,1609,1611,1613,1614,1617,1618,1622];
 
 (_display displayCtrl 1603) ctrlSetText getMissionPath "res\ui_confirm.paa";
 (_display displayCtrl 1603) ctrlSetToolTip "Add XP Score";
