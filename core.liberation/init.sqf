@@ -911,13 +911,57 @@ log_on_server = compileFinal "
 	] call BIS_fnc_initVehicle;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
+
+
+// Tanks
+
 ["rhs_t72ba_tv", "InitPost", {
     params ["_vehicle"];
 	_vehicle addEventHandler ["HandleDamage", {  
 		private _unit = _this select 0;
 		private _hitSelection = _this select 1;
 		private _damage = _this select 2;
-		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 4)} else {(_unit getHit _hitSelection) + (_damage * 4)};
+		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 2)} else {(_unit getHit _hitSelection) + (_damage * 2)};
+	}];
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["rhs_t90sm_tv", "InitPost", {
+    params ["_vehicle"];
+	_vehicle addEventHandler ["HandleDamage", {  
+		private _unit = _this select 0;
+		private _hitSelection = _this select 1;
+		private _damage = _this select 2;
+		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 10)} else {(_unit getHit _hitSelection) + (_damage * 10)};
+	}];
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["O_MBT_04_command_F", "InitPost", {
+    params ["_vehicle"];
+	_vehicle addEventHandler ["HandleDamage", {  
+		private _unit = _this select 0;
+		private _hitSelection = _this select 1;
+		private _damage = _this select 2;
+		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 2.0)} else {(_unit getHit _hitSelection) + (_damage * 2.0)};
+	}];
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["B_MBT_01_cannon_F", "InitPost", {
+    params ["_vehicle"];
+	_vehicle addEventHandler ["HandleDamage", {  
+		private _unit = _this select 0;
+		private _hitSelection = _this select 1;
+		private _damage = _this select 2;
+		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 1.0)} else {(_unit getHit _hitSelection) + (_damage * 1.0)};
+	}];
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["BWA3_Leopard2_Fleck", "InitPost", {
+    params ["_vehicle"];
+	_vehicle addEventHandler ["HandleDamage", {  
+		private _unit = _this select 0;
+		private _hitSelection = _this select 1;
+		private _damage = _this select 2;
+		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 0.5)} else {(_unit getHit _hitSelection) + (_damage * 0.5)};
 	}];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
