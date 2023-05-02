@@ -811,14 +811,18 @@ log_on_server = compileFinal "
 	[_vehicle,12] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
-["O_T_MBT_04_command_F", "InitPost", {
+["I_Plane_Fighter_04_F", "InitPost", {
     params ["_vehicle"];
 	[
-	_vehicle,
-		["Jungle",1], 
-		["showCamonetHull",0,"showCamonetTurret",0]
+		_vehicle,
+		["CamoGrey",1], 
+		true
 	] call BIS_fnc_initVehicle;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+
+
+// Tanks
 
 ["rhs_btr80a_msv", "InitPost", {
     params ["_vehicle"];
@@ -826,7 +830,7 @@ log_on_server = compileFinal "
 		private _unit = _this select 0;
 		private _hitSelection = _this select 1;
 		private _damage = _this select 2;
-		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 0.04)} else {(_unit getHit _hitSelection) + (_damage * 0.04)};
+		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 1)} else {(_unit getHit _hitSelection) + (_damage * 1)};
 	}];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
@@ -856,7 +860,7 @@ log_on_server = compileFinal "
 		private _unit = _this select 0;
 		private _hitSelection = _this select 1;
 		private _damage = _this select 2;
-		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 0.1)} else {(_unit getHit _hitSelection) + (_damage * 0.1)};
+		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 1)} else {(_unit getHit _hitSelection) + (_damage * 1)};
 	}];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
@@ -902,19 +906,6 @@ log_on_server = compileFinal "
 	] call BIS_fnc_initVehicle;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
-["I_Plane_Fighter_04_F", "InitPost", {
-    params ["_vehicle"];
-	[
-		_vehicle,
-		["CamoGrey",1], 
-		true
-	] call BIS_fnc_initVehicle;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-
-
-// Tanks
-
 ["rhs_t72ba_tv", "InitPost", {
     params ["_vehicle"];
 	_vehicle addEventHandler ["HandleDamage", {  
@@ -941,7 +932,17 @@ log_on_server = compileFinal "
 		private _unit = _this select 0;
 		private _hitSelection = _this select 1;
 		private _damage = _this select 2;
-		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 2.0)} else {(_unit getHit _hitSelection) + (_damage * 2.0)};
+		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 1.0)} else {(_unit getHit _hitSelection) + (_damage * 0.7)};
+	}];
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["O_MBT_04_cannon_F", "InitPost", {
+    params ["_vehicle"];
+	_vehicle addEventHandler ["HandleDamage", {  
+		private _unit = _this select 0;
+		private _hitSelection = _this select 1;
+		private _damage = _this select 2;
+		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 1.0)} else {(_unit getHit _hitSelection) + (_damage * 2.0)};
 	}];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
@@ -952,16 +953,6 @@ log_on_server = compileFinal "
 		private _hitSelection = _this select 1;
 		private _damage = _this select 2;
 		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 1.0)} else {(_unit getHit _hitSelection) + (_damage * 1.0)};
-	}];
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["BWA3_Leopard2_Fleck", "InitPost", {
-    params ["_vehicle"];
-	_vehicle addEventHandler ["HandleDamage", {  
-		private _unit = _this select 0;
-		private _hitSelection = _this select 1;
-		private _damage = _this select 2;
-		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 0.5)} else {(_unit getHit _hitSelection) + (_damage * 0.5)};
 	}];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
