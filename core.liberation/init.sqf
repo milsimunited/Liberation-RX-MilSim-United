@@ -937,7 +937,7 @@ log_on_server = compileFinal "
 		private _unit = _this select 0;
 		private _hitSelection = _this select 1;
 		private _damage = _this select 2;
-		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 0.4)} else {(_unit getHit _hitSelection) + (_damage * 0.4)};
+		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 0.2)} else {(_unit getHit _hitSelection) + (_damage * 0.4)};
 	}];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
@@ -947,7 +947,7 @@ log_on_server = compileFinal "
 		private _unit = _this select 0;
 		private _hitSelection = _this select 1;
 		private _damage = _this select 2;
-		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 0.3)} else {(_unit getHit _hitSelection) + (_damage * 0.3)};
+		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 0.2)} else {(_unit getHit _hitSelection) + (_damage * 0.3)};
 	}];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
