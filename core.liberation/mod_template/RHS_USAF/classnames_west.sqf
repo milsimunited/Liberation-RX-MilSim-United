@@ -490,6 +490,7 @@ air_vehicles = [
 		["RHS_MELB_H6M",0,air_vehicle_price_tier_1,0,GRLIB_perm_inf],
 		["RHS_MELB_MH6M",0,air_vehicle_price_tier_2,0,GRLIB_perm_inf],
 		["RHS_UH60M_MEV_d",0,air_vehicle_price_tier_7,0,GRLIB_perm_inf],
+		["RHS_UH60M_MEV2_d",0,air_vehicle_price_tier_4,0,GRLIB_perm_inf],
 		["RHS_CH_47F_10",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
 		["RHS_CH_47F_10_cargo",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
 		["RHS_UH1Y_UNARMED_d",0,air_vehicle_price_tier_3,0,GRLIB_perm_inf],
@@ -559,7 +560,7 @@ fast_air_vehicle = [
 	//CUP
 		["CUP_B_MH6J_USA",0,air_vehicle_price_tier_1,0,GRLIB_perm_inf],
 		["CUP_B_MH6M_USA",0,air_vehicle_price_tier_2,0,GRLIB_perm_inf],
-		["CUP_B_AH6M_USA",0,air_vehicle_price_tier_8,msu_fuel_heli,GRLIB_perm_inf],
+		["CUP_B_AH6M_USA",0,air_vehicle_price_tier_7,msu_fuel_heli,GRLIB_perm_inf],
 		["CUP_B_UH1D_gunship_GER_KSK",0,air_vehicle_price_tier_10,msu_fuel_heli,GRLIB_perm_inf], //verursacht script fehler
 		["CUP_B_MH60L_DAP_2x_USN",0,air_vehicle_price_tier_8,msu_fuel_heli,GRLIB_perm_inf],
 		["CUP_B_MH60L_DAP_4x_USN",0,air_vehicle_price_tier_10,msu_fuel_heli,GRLIB_perm_inf],								//Knighthawk
@@ -573,7 +574,6 @@ fast_air_vehicle = [
 // Attack helicopters
 	//CUP
 		//["CUP_B_AH1Z_Dynamic_USMC",0,air_vehicle_price_tier_11,msu_fuel_heli,GRLIB_perm_inf],
-		["CUP_B_AH64_DL_USA",0,air_vehicle_price_tier_12,msu_fuel_heli,GRLIB_perm_inf],
 		["CUP_B_AH1_DL_BAF",0,air_vehicle_price_tier_12,msu_fuel_heli,GRLIB_perm_inf],
 		["CUP_I_Mi24_Mk3_UN",0,air_vehicle_price_tier_14,msu_fuel_heli,GRLIB_perm_inf],
 		["CUP_B_Mi171Sh_ACR",0,air_vehicle_price_tier_14,msu_fuel_heli,GRLIB_perm_inf],
@@ -600,6 +600,7 @@ fast_air_vehicle = [
 // Attack helicopters
 	//RHS
 		["RHS_AH1Z",0,air_vehicle_price_tier_12,msu_fuel_heli,GRLIB_perm_inf],
+		["RHS_AH64D_noradar_AA",0,air_vehicle_price_tier_13,msu_fuel_heli,GRLIB_perm_inf],
 		["RHS_AH64DGrey",0,air_vehicle_price_tier_14,msu_fuel_heli,GRLIB_perm_inf],
 		["RHS_Ka52_vvsc",0,air_vehicle_price_tier_14,msu_fuel_heli,GRLIB_perm_inf],
 		["rhs_mi28n_vvs",0,air_vehicle_price_tier_14,msu_fuel_heli,GRLIB_perm_inf],
