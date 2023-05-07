@@ -311,6 +311,16 @@ if (isNil "frdl_fire_dmg_threshold") then { frdl_fire_dmg_threshold = 0.1; };
 	[_vehicle] spawn loadout_militia;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
+["O_T_Crew_F", "InitPost", {
+	params ["_vehicle"];
+	[_vehicle] spawn loadout_militia;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["O_T_Soldier_F", "InitPost", {
+	params ["_vehicle"];
+	[_vehicle] spawn loadout_militia;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
 
 
 
@@ -1051,6 +1061,17 @@ log_on_server = compileFinal "
 		private _damage = _this select 2;
 		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 1.0)} else {(_unit getHit _hitSelection) + (_damage * 1.0)};
 	}];
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["O_T_APC_Tracked_02_AA_ghex_F", "InitPost", { // Tigris
+    params ["_vehicle"];
+	[
+		_vehicle,
+	["GreenHex",1], 
+	["showTracks",0,"showCamonetHull",1,"showCamonetTurret",1,"showSLATHull",0]
+	] call BIS_fnc_initVehicle;
+	_vehicle setObjectTextureGlobal [0, '#(rgb,8,8,3)color(0.15,0.15,0.09,3)'];
+	_vehicle setObjectTextureGlobal [2, '#(rgb,8,8,3)color(0.15,0.15,0.09,3)'];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 

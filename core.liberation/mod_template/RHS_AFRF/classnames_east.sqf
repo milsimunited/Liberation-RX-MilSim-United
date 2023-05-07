@@ -81,8 +81,8 @@ militia_vehicles = [
 	"rhs_bmd1k",
 	"rhs_bmd1r ",
 	"rhs_t72ba_tv",
-	"O_LSV_02_AT_F",
-	"O_LSV_02_armed_F"
+	"O_T_LSV_02_AT_F",
+	"O_T_LSV_02_armed_F"
 ];
 
 boats_east = [
@@ -99,8 +99,8 @@ opfor_vehicles = [
 	"rhs_bmd1k",
 	"rhs_bmd1r ",
 	"rhs_t72ba_tv",
-	"O_LSV_02_AT_F",
-	"O_APC_Tracked_02_AA_F"
+	"O_T_LSV_02_AT_F",
+	"O_T_APC_Tracked_02_AA_ghex_F"
 ];
 
 opfor_vehicles_low_intensity = [
@@ -109,11 +109,11 @@ opfor_vehicles_low_intensity = [
 	"rhs_btr60_vv",
 	"rhs_btr70_vv",
 	"rhs_btr80_vv",
-	"O_APC_Tracked_02_AA_F",
+	"O_T_APC_Tracked_02_AA_ghex_F",
 	"rhs_bmd1k",
 	"rhs_bmd1r ",
-	"O_LSV_02_armed_F",
-	"O_LSV_02_armed_F"
+	"O_T_LSV_02_armed_F",
+	"O_T_LSV_02_armed_F"
 ];
 
 opfor_battlegroup_vehicles = [
@@ -129,10 +129,10 @@ opfor_battlegroup_vehicles = [
 	"rhs_zsu234_aa",
 	"rhs_t72ba_tv",
 	"rhs_2s1_at_tv",
-	"O_LSV_02_armed_F",
-	"O_LSV_02_AT_F",
-	"O_APC_Tracked_02_AA_F",
-	"O_LSV_02_armed_F"
+	"O_T_LSV_02_armed_F",
+	"O_T_LSV_02_AT_F",
+	"O_T_APC_Tracked_02_AA_ghex_F",
+	"O_T_LSV_02_armed_F"
 ];
 
 opfor_battlegroup_vehicles_low_intensity = [
@@ -163,8 +163,8 @@ opfor_reinforcement_vehicles = [
 	"rhs_2s1_at_tv",
 	"rhs_kamaz5350_open_msv",
 	"rhs_tigr_sts_3camo_msv",
-	"O_APC_Tracked_02_AA_F",
-	"O_APC_Tracked_02_AA_F",
+	"O_T_APC_Tracked_02_AA_ghex_F",
+	"O_T_APC_Tracked_02_AA_ghex_F",
 	"O_APC_Wheeled_02_rcws_v2_F"
 	];
 

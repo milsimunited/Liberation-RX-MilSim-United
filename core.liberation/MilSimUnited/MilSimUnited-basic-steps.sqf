@@ -40,6 +40,18 @@ mod_template\RHS_AFRF\loadout\crewman.sqf
 
 
 
+
+color override
+------------------------------------------------------------------------------------------
+_this setObjectTextureGlobal [0, '#(rgb,8,8,3)color(0.15,0.15,0.09,3)']; // olive
+
+_this setObjectTextureGlobal [0, '#(rgb,8,8,3)color(0.26,0.23,0.17,3)']; // desert
+
+
+
+
+
+
 ressources
 ------------------------------------------------------------------------------------------
 scripts\server\resources\recalculate_caps.sqf
