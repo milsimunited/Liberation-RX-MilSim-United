@@ -1063,6 +1063,16 @@ log_on_server = compileFinal "
 	}];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
+["O_APC_Tracked_02_AA_F", "InitPost", {
+    params ["_vehicle"];
+	_vehicle addEventHandler ["HandleDamage", {  
+		private _unit = _this select 0;
+		private _hitSelection = _this select 1;
+		private _damage = _this select 2;
+		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 3.0)} else {(_unit getHit _hitSelection) + (_damage * 3.0)};
+	}];
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
 ["O_T_APC_Tracked_02_AA_ghex_F", "InitPost", { // Tigris
     params ["_vehicle"];
 	[
@@ -1073,8 +1083,6 @@ log_on_server = compileFinal "
 	_vehicle setObjectTextureGlobal [0, '#(rgb,8,8,3)color(0.15,0.15,0.09,3)'];
 	_vehicle setObjectTextureGlobal [2, '#(rgb,8,8,3)color(0.15,0.15,0.09,3)'];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-
 
 
 if (isNil "pylon_restrictions") then { pylon_restrictions = false; };
