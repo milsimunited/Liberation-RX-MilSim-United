@@ -1075,6 +1075,13 @@ log_on_server = compileFinal "
 
 ["O_T_APC_Tracked_02_AA_ghex_F", "InitPost", { // Tigris
     params ["_vehicle"];
+	_vehicle addEventHandler ["HandleDamage", {  
+		private _unit = _this select 0;
+		private _hitSelection = _this select 1;
+		private _damage = _this select 2;
+		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 3.0)} else {(_unit getHit _hitSelection) + (_damage * 3.0)};
+	}];
+	
 	[
 		_vehicle,
 	["GreenHex",1], 
