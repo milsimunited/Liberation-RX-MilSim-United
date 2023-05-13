@@ -440,8 +440,8 @@ strong_heavy_vehicles = [
 	//Vanilla
 		["O_MBT_02_cannon_F",0,strong_heavy_vehicle_price_tier_2,msu_fuel_mbt,GRLIB_perm_inf],
 		["B_APC_Tracked_01_AA_F",0,heavy_vehicle_price_tier_7,msu_fuel_mbt,GRLIB_perm_inf],
-		["O_MBT_04_command_F",0,strong_heavy_vehicle_price_tier_3,0,msu_fuel_mbt,GRLIB_perm_inf],
-		["O_MBT_04_cannon_F",0,strong_heavy_vehicle_price_tier_3,msu_fuel_mbt,GRLIB_perm_inf],
+		["rhs_t80ue1",0,strong_heavy_vehicle_price_tier_3,0,msu_fuel_mbt,GRLIB_perm_inf],
+		["rhs_t90sm_tv",0,strong_heavy_vehicle_price_tier_3,msu_fuel_mbt,GRLIB_perm_inf],
 		["B_MBT_01_cannon_F",0,strong_heavy_vehicle_price_tier_2,msu_fuel_mbt,GRLIB_perm_inf],
 		["B_MBT_01_TUSK_F",0,strong_heavy_vehicle_price_tier_2,0,msu_fuel_mbt,GRLIB_perm_inf],
 		["I_MBT_03_cannon_F",0,strong_heavy_vehicle_price_tier_2,0,msu_fuel_mbt,GRLIB_perm_inf],
@@ -703,6 +703,7 @@ fast_air_vehicle = [
 	// FIR F-15
 		["FIR_F15C",0,fast_air_vehicle_price_tier_2,msu_fuel_plane,GRLIB_perm_inf],
 		["FIR_F15E",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
+		["FIR_F15EX",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
 		["FIR_F15E_Demo",0,fast_air_vehicle_price_tier_10,msu_fuel_plane,GRLIB_perm_inf],
 		//["FIR_F15SE_LA",0,fast_air_vehicle_price_tier_10,msu_fuel_plane,GRLIB_perm_inf],
 	// FIR F-16
