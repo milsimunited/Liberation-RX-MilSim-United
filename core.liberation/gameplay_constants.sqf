@@ -1072,6 +1072,7 @@ MSU_blacklisted_from_arsenal = [
 "USP_PATROL_PACK_CB_CS_RP",
 "USP_PATROL_PACK_CB_CS_ZT",
 "USP_PATROL_PACK_CB_CS_RP",
+"I_UAV_01_backpack_F",
 "USP_PATROL_PACK_CB_CS_ZT"
 ];
 
