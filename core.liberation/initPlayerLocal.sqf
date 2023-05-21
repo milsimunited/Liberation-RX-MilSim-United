@@ -227,14 +227,14 @@ all_arsenals = [];
 hint format['
 	Karte öffnen, Regeln lesen! \n
 	Open map, read rules! \n
-	TeamSpeak Server: 193.111.198.84 \n
+	TeamSpeak Server: milsim-united.teamspeak.me \n
 '];
 
 sleep 180;
 hint format['
 	Karte öffnen, Regeln lesen! \n
 	Open map, read rules! \n
-	TeamSpeak Server: 193.111.198.84 \n
+	TeamSpeak Server: milsim-united.teamspeak.me \n
 '];
 
 

@@ -51,7 +51,7 @@ if(tfar_checker) then {
 
 	if(!_tfarEnabled) then {
 		while {!_tfarEnabled && !_debug} do {
-			private _msg = format ["To play, you need to have Task Force Radio (Beta) enabled. Please check your Plugin Version. Ask for help on teamspeak at 193.111.198.84"];
+			private _msg = format ["To play, you need to have Task Force Radio (Beta) enabled. Please check your Plugin Version. Ask for help on teamspeak at milsim-united.teamspeak.me"];
 			titleText [_msg, "BLACK FADED", 100];
 			20 cutFadeOut 20;
 			_tfarEnabled = call TFAR_fnc_isTeamSpeakPluginEnabled;
@@ -62,7 +62,7 @@ if(tfar_checker) then {
 	if(_tfarenabled) then {
 		_correctServer = call TFAR_fnc_getTeamSpeakServerName;
 		while { !(_correctServer == ts_server_name) && !(_correctServer == "MilSim United") && !_debug} do {
-			private _msg = format ["Please connect to our teamspeak at 193.111.198.84"];
+			private _msg = format ["Please connect to our teamspeak at milsim-united.teamspeak.me"];
 			titleText [_msg, "BLACK FADED", 100];
 			20 cutFadeOut 0.1;
 			// _msg = format ["_correctServer: %1", _correctServer]; hint format[_msg];
