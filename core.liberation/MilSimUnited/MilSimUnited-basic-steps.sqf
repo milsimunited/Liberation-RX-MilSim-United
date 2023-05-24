@@ -10,6 +10,9 @@ Maps
 .pja310 -> G.O.S Al Rayak - Workshop
 .pja314 -> Leskovets
 
+Bornholm -> somehow bad performance
+Zagorsk -> very bad performance
+Kapaulio -> very bad performance
 
 
 
