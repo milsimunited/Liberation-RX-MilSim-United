@@ -511,6 +511,15 @@ air_vehicles = [
 		["O_Heli_Transport_04_F",0,air_vehicle_price_tier_7,0,GRLIB_perm_inf],						//Taru
 		["I_Heli_Transport_02_F",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],                     // Merlin
 		 ["I_Heli_light_03_unarmed_F",0,air_vehicle_price_tier_3,0,GRLIB_perm_inf],               // hellcat
+		 
+	//BAF
+		["UK3CB_BAF_Wildcat_Transport_RN_ZZ396",0,air_vehicle_price_tier_3,0,GRLIB_perm_inf],
+		["UK3CB_BAF_Merlin_HC3_24",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
+		["UK3CB_BAF_Merlin_HC3_Cargo",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
+		["UK3CB_BAF_Merlin_HC3_18_GPMG",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
+		["UK3CB_BAF_Merlin_HC4_32",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
+		["UK3CB_BAF_Merlin_HC4_Cargo",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
+		["UK3CB_BAF_Merlin_HC4_18_GPMG",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],	 
 
 //VTOL
 	//Vanilla
@@ -652,7 +661,7 @@ fast_air_vehicle = [
 		
 // Attack helicopters
 	//BAF
-		["UK3CB_BAF_Apache_AH1_Generic",0,air_vehicle_price_tier_14,msu_fuel_heli,GRLIB_perm_inf],
+		["UK3CB_BAF_Apache_AH1_Arctic",0,air_vehicle_price_tier_14,msu_fuel_heli,GRLIB_perm_inf],
 	//BW
 		//["BWA3_Tiger_Gunpod_FZ",0,air_vehicle_price_tier_10,msu_fuel_heli,GRLIB_perm_inf],
 		//["BWA3_Tiger_Gunpod_PARS",0,air_vehicle_price_tier_10,msu_fuel_heli,GRLIB_perm_inf],
