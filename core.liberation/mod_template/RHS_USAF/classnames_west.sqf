@@ -609,8 +609,8 @@ fast_air_vehicle = [
 // Attack helicopters
 	//RHS
 		["RHS_AH1Z",0,air_vehicle_price_tier_12,msu_fuel_heli,GRLIB_perm_inf],
-		["RHS_AH64D_noradar_AA",0,air_vehicle_price_tier_13,msu_fuel_heli,GRLIB_perm_inf],
-		["RHS_AH64DGrey",0,air_vehicle_price_tier_14,msu_fuel_heli,GRLIB_perm_inf],
+		["RHS_AH64D_noradar_AA",0,air_vehicle_price_tier_12,msu_fuel_heli,GRLIB_perm_inf],
+		["RHS_AH64DGrey",0,heavy_vehicle_price_tier_17,msu_fuel_heli,GRLIB_perm_inf],
 		["RHS_Ka52_vvsc",0,air_vehicle_price_tier_14,msu_fuel_heli,GRLIB_perm_inf],
 		["rhs_mi28n_vvs",0,air_vehicle_price_tier_14,msu_fuel_heli,GRLIB_perm_inf],
 		["Sign_1L_Border",0,0,9000,GRLIB_perm_inf],
@@ -661,7 +661,8 @@ fast_air_vehicle = [
 		
 // Attack helicopters
 	//BAF
-		["UK3CB_BAF_Apache_AH1_Arctic",0,air_vehicle_price_tier_14,msu_fuel_heli,GRLIB_perm_inf],
+		["UK3CB_BAF_Apache_AH1_Arctic",0,heavy_vehicle_price_tier_17,msu_fuel_heli,GRLIB_perm_inf],
+		["UK3CB_BAF_Apache_AH1_Generic",0,air_vehicle_price_tier_14,msu_fuel_heli,GRLIB_perm_inf],
 	//BW
 		//["BWA3_Tiger_Gunpod_FZ",0,air_vehicle_price_tier_10,msu_fuel_heli,GRLIB_perm_inf],
 		//["BWA3_Tiger_Gunpod_PARS",0,air_vehicle_price_tier_10,msu_fuel_heli,GRLIB_perm_inf],
