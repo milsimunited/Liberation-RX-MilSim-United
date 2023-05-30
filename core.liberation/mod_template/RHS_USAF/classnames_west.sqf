@@ -499,6 +499,8 @@ air_vehicles = [
 		["rhsusf_CH53E_USMC_D",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
 		["rhsusf_CH53e_USMC_D_cargo",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
 		["rhsusf_CH53E_USMC_GAU21_D",0,air_vehicle_price_tier_7,0,GRLIB_perm_inf],
+		["RHS_Mi8mt_Cargo_vvs",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
+		["RHS_Mi8AMT_vvs",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
 // Transport planes			
 	//RHS
 		["RHS_C130J_Cargo",0,fast_air_vehicle_price_tier_1,0,GRLIB_perm_inf],
@@ -517,6 +519,7 @@ air_vehicles = [
 		["UK3CB_BAF_Merlin_HC3_24",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
 		["UK3CB_BAF_Merlin_HC3_Cargo",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
 		["UK3CB_BAF_Merlin_HC3_18_GPMG",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
+		["UK3CB_BAF_Merlin_HC3_CSAR",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
 		["UK3CB_BAF_Merlin_HC4_32",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
 		["UK3CB_BAF_Merlin_HC4_Cargo",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
 		["UK3CB_BAF_Merlin_HC4_18_GPMG",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],	 
@@ -613,6 +616,11 @@ fast_air_vehicle = [
 		["RHS_AH64DGrey",0,heavy_vehicle_price_tier_17,msu_fuel_heli,GRLIB_perm_inf],
 		["RHS_Ka52_vvsc",0,air_vehicle_price_tier_14,msu_fuel_heli,GRLIB_perm_inf],
 		["rhs_mi28n_vvs",0,air_vehicle_price_tier_14,msu_fuel_heli,GRLIB_perm_inf],
+		["RHS_Mi24P_vvs",0,air_vehicle_price_tier_12,msu_fuel_heli,GRLIB_perm_inf],
+		["RHS_Mi24V_vvs",0,air_vehicle_price_tier_12,msu_fuel_heli,GRLIB_perm_inf],
+		["RHS_Mi8MTV3_heavy_vvs",0,air_vehicle_price_tier_14,msu_fuel_heli,GRLIB_perm_inf],
+		["RHS_Mi8mt_Cargo_vvs",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
+		["RHS_Mi8AMT_vvs",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
 		["Sign_1L_Border",0,0,9000,GRLIB_perm_inf],
 	//Hatchet H-60
 		["vtx_UH60M_SLICK",0,air_vehicle_price_tier_4,0,GRLIB_perm_inf],
@@ -661,8 +669,8 @@ fast_air_vehicle = [
 		
 // Attack helicopters
 	//BAF
-		["UK3CB_BAF_Apache_AH1_Arctic",0,heavy_vehicle_price_tier_17,msu_fuel_heli,GRLIB_perm_inf],
-		["UK3CB_BAF_Apache_AH1_Generic",0,air_vehicle_price_tier_14,msu_fuel_heli,GRLIB_perm_inf],
+		["UK3CB_BAF_Apache_AH1_JS_Tropical",0,heavy_vehicle_price_tier_17,msu_fuel_heli,GRLIB_perm_inf],
+		["UK3CB_BAF_Merlin_HC3_CSAR",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
 	//BW
 		//["BWA3_Tiger_Gunpod_FZ",0,air_vehicle_price_tier_10,msu_fuel_heli,GRLIB_perm_inf],
 		//["BWA3_Tiger_Gunpod_PARS",0,air_vehicle_price_tier_10,msu_fuel_heli,GRLIB_perm_inf],
