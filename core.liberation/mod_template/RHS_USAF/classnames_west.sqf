@@ -669,7 +669,7 @@ fast_air_vehicle = [
 		
 // Attack helicopters
 	//BAF
-		["UK3CB_BAF_Apache_AH1_JS_Tropical",0,heavy_vehicle_price_tier_17,msu_fuel_heli,GRLIB_perm_inf],
+		["UK3CB_BAF_Apache_AH1_JS",0,heavy_vehicle_price_tier_17,msu_fuel_heli,GRLIB_perm_inf],
 		["UK3CB_BAF_Merlin_HC3_CSAR",0,air_vehicle_price_tier_6,0,GRLIB_perm_inf],
 	//BW
 		//["BWA3_Tiger_Gunpod_FZ",0,air_vehicle_price_tier_10,msu_fuel_heli,GRLIB_perm_inf],
