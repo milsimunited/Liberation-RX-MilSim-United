@@ -16,7 +16,7 @@ opfor_heavygunner = "rhs_msv_arifleman";
 opfor_medic = "rhs_msv_medic";
 opfor_rpg = "rhs_msv_grenadier_rpg";
 opfor_at = "rhs_msv_grenadier_rpg";
-opfor_aa = "rhs_msv_aa";
+opfor_aa = "rhs_vmf_emr_aa";
 opfor_officer = "rhs_msv_junior_sergeant";
 opfor_sharpshooter = "rhs_msv_marksman";
 opfor_sniper = "rhs_msv_marksman";
@@ -24,7 +24,7 @@ opfor_spotter = "rhs_msv_efreitor";
 opfor_engineer = "rhs_msv_engineer";
 opfor_pilot = "rhs_pilot_tan";
 opfor_crew = "rhs_pilot_transport_heli";
-opfor_paratrooper = "rhs_mvd_izlom_arifleman_rpk";
+opfor_paratrooper = "rhs_vmf_recon_rifleman_akms";
 opfor_mrap = "rhs_bmp1_msv";
 opfor_mrap_hmg = "rhs_tigr_sts_3camo_vv";
 opfor_mrap_gmg = "rhs_tigr_sts_3camo_vv";
@@ -44,7 +44,7 @@ militia_squad = [
 	"rhs_vmf_flora_grenadier_rpg",
 	"rhs_vmf_flora_strelok_rpg_assist",
 	"rhs_vmf_flora_machinegunner",
-	"rhs_vmf_flora_LAT",
+	"rhs_vmf_emr_aa",
 	"rhs_vmf_flora_strelok_rpg_assist",
 	"rhs_vmf_flora_rifleman",
 	"rhs_vmf_flora_rifleman",
@@ -183,7 +183,7 @@ opfor_choppers = [
 	"RHS_Mi8AMT_vdv",
 	"RHS_Mi8MTV3_heavy_vdv",
 	"RHS_Mi8mtv3_Cargo_vdv",
-	"RHS_Ka52_vvs",
+	"rhs_mi28n_vvs",
 	"rhs_ka60_grey"
 ];
 
