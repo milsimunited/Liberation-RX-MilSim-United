@@ -1227,7 +1227,9 @@ uavs = [
 "rnt_mantis_base",
 "rnt_mantis_radar",
 "B_SAM_System_01_F",
-"itc_land_COBRA01"
+"itc_land_COBRA01",
+"UK3CB_BAF_MQ9_Reaper",
+"UK3CB_BAF_MQ9_Reaper_Generic"
 ];
 
 // Everything the AI troups should be able to resupply from
