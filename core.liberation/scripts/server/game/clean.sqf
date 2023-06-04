@@ -91,7 +91,7 @@ private _deadVehiclesLimit = 10;						// Wrecks. Set -1 to disable.
 private _deadVehicleDistCheck = TRUE;					// TRUE to delete any destroyed vehicles that are far from players.
 private _deadVehicleDist = GRLIB_sector_size;		// Distance (meters) from players that destroyed vehicles are not deleted if below max.
 
-private _craterLimit = 10;								// Craters. Set -1 to disable.
+private _craterLimit = 8;								// Craters. Set -1 to disable.
 private _craterDistCheck = TRUE;						// TRUE to delete any craters that are far from players.
 private _craterDist = GRLIB_sector_size;			// Distance (meters) from players that craters are not deleted if below max.
 
@@ -103,11 +103,11 @@ private _minesLimit = 20;								// Land mines. Set -1 to disable.
 private _minesDistCheck = TRUE;							// TRUE to delete any mines that are far from ANY UNIT (not just players).
 private _minesDist = GRLIB_sector_size;			// Distance (meters) from players that land mines are not deleted if below max.
 
-private _staticsLimit = 10;								// Static weapons. Set -1 to disable.
+private _staticsLimit = -1;								// Static weapons. Set -1 to disable.
 private _staticsDistCheck = TRUE;						// TRUE to delete any static weapon that is far from ANY UNIT (not just players).
 private _staticsDist = (GRLIB_sector_size * 2);			// Distance (meters) from players that static weapons are not deleted if below max.
 
-private _ruinsLimit = 10;								// Ruins. Set -1 to disable.
+private _ruinsLimit = 8;								// Ruins. Set -1 to disable.
 private _ruinsDistCheck = TRUE;							// TRUE to delete any ruins that are far from players.
 private _ruinsDist = GRLIB_sector_size;			// Distance (meters) from players that ruins are not deleted if below max.
 

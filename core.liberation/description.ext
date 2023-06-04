@@ -39,13 +39,13 @@ disableChannels[] = {0};
 corpseManagerMode = 1;
 
 // Corpse limit before which (<=) corpseRemovalMaxTime applies and after which (>) corpseRemovalMinTime applies.
-corpseLimit = 24;
+corpseLimit = 16;
 
 // Remove all bodies that have been dead longer than corpseRemovalMinTime when corpseLimit is reached.
-corpseRemovalMinTime = 900;
+corpseRemovalMinTime = 600;
 
 // Maximum time a corpse can remain on the ground if total number of corpses is equal or under corpseLimit.
-corpseRemovalMaxTime = 1800;
+corpseRemovalMaxTime = 1200;
 
 // Sets the mode for wreck removal manager.
 // 0 = None                 - None of the vehicles are managed by the manager
@@ -55,16 +55,16 @@ corpseRemovalMaxTime = 1800;
 wreckManagerMode = 1;
 
 // Vehicle wreck limit before which (<=) wreckRemovalMaxTime applies and after which (>) wreckRemovalMinTime applies.
-wreckLimit = 12;
+wreckLimit = 8;
 
 // Remove all wrecks that have existed longer than wreckRemovalMinTime when wreckLimit is breached.
-wreckRemovalMinTime = 900;
+wreckRemovalMinTime = 600;
 
 // Maximum time a wreck can remain on the ground if total number of wrecks is equal or under wreckLimit.
-wreckRemovalMaxTime = 1800;
+wreckRemovalMaxTime = 900;
 
 // The minimum distance between corpse or wreck and nearest player before the corpse or wreck is allowed to be removed by the garbage collector.
-minPlayerDistance = 600;
+minPlayerDistance = 500;
 
 
 // By default a new player is not auto assigned a free playable slot in the mission lobby in Multiplayer.
