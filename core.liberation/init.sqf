@@ -374,6 +374,16 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	[_vehicle] spawn loadout_militia;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
+["rhs_vdv_recon_marksman_vss", "InitPost", {
+	params ["_vehicle"];
+	[_vehicle] spawn loadout_militia;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["rhs_mvd_izlom_rifleman_asval", "InitPost", {
+	params ["_vehicle"];
+	[_vehicle] spawn loadout_militia;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
 ["O_T_Crew_F", "InitPost", {
 	params ["_vehicle"];
 	[_vehicle] spawn loadout_militia;
