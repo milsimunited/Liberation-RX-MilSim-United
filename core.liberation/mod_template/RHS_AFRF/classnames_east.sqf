@@ -10,7 +10,7 @@ opfor_rifleman = "rhs_msv_rifleman";
 opfor_grenadier = "rhs_msv_grenadier";
 opfor_squad_leader = "rhs_msv_sergeant";
 opfor_team_leader = "rhs_msv_sergeant";
-opfor_marksman = "rhs_msv_marksman";
+opfor_marksman = "rhs_vdv_recon_marksman_vss";
 opfor_machinegunner = "rhs_msv_arifleman";
 opfor_heavygunner = "rhs_msv_arifleman";
 opfor_medic = "rhs_msv_medic";
@@ -24,7 +24,7 @@ opfor_spotter = "rhs_msv_efreitor";
 opfor_engineer = "rhs_msv_engineer";
 opfor_pilot = "rhs_pilot_tan";
 opfor_crew = "rhs_pilot_transport_heli";
-opfor_paratrooper = "rhs_vmf_recon_rifleman_akms";
+opfor_paratrooper = "rhs_mvd_izlom_rifleman_asval";
 opfor_mrap = "rhs_bmp1_msv";
 opfor_mrap_hmg = "rhs_tigr_sts_3camo_vv";
 opfor_mrap_gmg = "rhs_tigr_sts_3camo_vv";
@@ -195,6 +195,7 @@ opfor_air = [
 	"RHS_T50_vvs_blueonblue",
 	"RHS_Ka52_vvs",
 	"rhs_mig29sm_vvs",
+	"RHS_Su25SM_vvsc",
 	"RHS_T50_vvs_blueonblue"
 ];
 
