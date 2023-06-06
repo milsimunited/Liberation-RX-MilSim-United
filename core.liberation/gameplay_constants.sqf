@@ -38,7 +38,7 @@ GRLIB_date_month = 7;
 GRLIB_date_day = 30;
 GRLIB_nights_start = 21;
 GRLIB_nights_stop = 4;
-GRLIB_blufor_cap = 15;
+GRLIB_blufor_cap = 64;
 GREUH_start_ammo = 100;
 
 // don't forget that the human commander manages those, not the server

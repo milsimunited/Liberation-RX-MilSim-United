@@ -134,9 +134,9 @@ class Params
 	};
 	class DayDuration {
 		title = $STR_PARAMS_DAYDURATION;
-        values[] = {7, 6, 4, 3, 2, 1};
-        texts[] = {"3.43","4","6","8","12","24"};
-		default = 7;
+        values[] = {12, 7, 6, 4, 3, 2, 1};
+        texts[] = {"2","3.43","4","6","8","12","24"};
+		default = 12;
 	};
 	class ShorterNights {
 		title = $STR_SHORTER_NIGHTS_PARAM;
@@ -148,7 +148,7 @@ class Params
 		title = $STR_WEATHER_PARAM;
 		values[] = { 1,2,3,4 };
 		texts[] = { $STR_WEATHER_PARAM1, $STR_WEATHER_PARAM2, $STR_WEATHER_PARAM3, $STR_WEATHER_PARAM4 };
-		default = 1;
+		default = 2;
 	};
 	class ResourcesMultiplier {
 		title = $STR_PARAMS_RESOURCESMULTIPLIER;
@@ -256,7 +256,7 @@ class Params
 		title = $STR_PARAM_SQUAD_SIZE_START;
 		values[] = {0,1,2,3,4,5,6,7,8,9,10};
 		texts[] = {0,1,2,3,4,5,6,7,8,9,10};
-		default = 3;
+		default = 1;
 	};
 	class MaxSquadSize{
 		title = $STR_PARAM_SQUAD_SIZE;
