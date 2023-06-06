@@ -1073,7 +1073,18 @@ MSU_blacklisted_from_arsenal = [
 "USP_PATROL_PACK_CB_CS_ZT",
 "USP_PATROL_PACK_CB_CS_RP",
 "I_UAV_01_backpack_F",
-"USP_PATROL_PACK_CB_CS_ZT"
+"USP_PATROL_PACK_CB_CS_ZT",
+"LMG_mas_aus_02_F",
+"LMG_mas_aus_02_camo_F",
+"LMG_mas_aus_03_F",
+"LMG_mas_aus_03C_F",
+"LMG_mas_aus_gpmg_F",
+"150Rnd_mas_aus_762x51_Mag",
+"200Rnd_mas_aus_556x45_Drum_Mag_F",
+"200Rnd_mas_aus_556x45SD_Drum_Mag_F",
+"30Rnd_mas_aus_556x45sd_Stanag",
+"30Rnd_mas_aus_556x45_Stanag",
+"USP_PATROL_PACK_CB_CS_RP"
 ];
 
 // MSU_whitelisted_from_arsenal = [];
