@@ -647,6 +647,25 @@ log_on_server = compileFinal "
 	[_vehicle, -1] call ace_cargo_fnc_setSize;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
+["rnt_mantis_base", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle, -1] call ace_cargo_fnc_setSize;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["BWA3_WLP14_Ammo_Fleck", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle, -1] call ace_cargo_fnc_setSize;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["BWA3_WLP14_Ammo_Tropen", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle, -1] call ace_cargo_fnc_setSize;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["BWA3_WLP14_Ammo_Winter", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle, -1] call ace_cargo_fnc_setSize;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["CUP_B_CH47F_VIV_USA", "InitPost", {
     params ["_vehicle"];
@@ -808,7 +827,26 @@ log_on_server = compileFinal "
 	[_vehicle, 8] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
+["BWA3_WLP14_Ammo_Tropen", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,40] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
+["UK3CB_BAF_Merlin_HC3_Cargo", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,30] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+
+["UK3CB_BAF_Merlin_HC4_Cargo", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,30] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["B_Truck_01_box_F", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,30] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 // ACE Medical Vehicles
 
