@@ -184,6 +184,7 @@ while { true } do {
 	};
 
 	[] spawn hs_spawn;
+	[] spawn hs_spawn;
 };
 
 

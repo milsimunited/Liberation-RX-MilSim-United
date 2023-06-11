@@ -19,9 +19,20 @@ Kapaulio -> very bad performance
 
 
 
+
+
+ai skill
+------------------------------------------------------------------------------------------
+\scripts\shared\set_skill.sqf
+
+
+
+
+
+
 admin menu
 ------------------------------------------------------------------------------------------
-ui\liberation_admin.hpp
+\ui\liberation_admin.hpp
 \scripts\client\commander\admin_menu.sqf
 // ca. 44: comment map click teleport -> not any more
 
