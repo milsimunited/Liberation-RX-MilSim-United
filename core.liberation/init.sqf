@@ -595,6 +595,12 @@ log_on_server = compileFinal "
 	_vehicle setVariable ["ACE_isRepairVehicle",1];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
+["B_CargoNet_01_ammo_F", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle, 1500] call ace_rearm_fnc_makeSource;
+	_vehicle setVariable ["ACE_isRepairVehicle",1];
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
 ["rhs_kamaz5350_ammo_vmf", "InitPost", {
     params ["_vehicle"];
 	[_vehicle,12] call ace_cargo_fnc_setSpace;
@@ -631,7 +637,7 @@ log_on_server = compileFinal "
 
 ["BWA3_WLP14_Ammo_Fleck", "InitPost", {
     params ["_vehicle"];
-	[_vehicle,12] call ace_cargo_fnc_setSpace;
+	[_vehicle,8] call ace_cargo_fnc_setSpace;
 	_vehicle setVariable ["ACE_isRepairVehicle",1];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
@@ -654,7 +660,7 @@ log_on_server = compileFinal "
 
 ["BWA3_WLP14_Ammo_Fleck", "InitPost", {
     params ["_vehicle"];
-	[_vehicle, -1] call ace_cargo_fnc_setSize;
+	[_vehicle, 8] call ace_cargo_fnc_setSize;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["BWA3_WLP14_Ammo_Tropen", "InitPost", {
@@ -750,6 +756,14 @@ log_on_server = compileFinal "
 ["rhsusf_M1084A1R_SOV_M2_D_fmtv_socom", "InitPost", {
     params ["_vehicle"];
 	[_vehicle, 20] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,8] call ace_cargo_fnc_setSpace;
+	[_vehicle, 1000] call ace_rearm_fnc_makeSource;
+    [_vehicle, 1250] call ace_refuel_fnc_makeSource;
+	_vehicle setVariable ["ACE_isRepairVehicle",1];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["rhsusf_M1078A1P2_B_WD_fmtv_usarmy", "InitPost", {
@@ -944,6 +958,55 @@ log_on_server = compileFinal "
     params ["_vehicle"];
 	[_vehicle,12] call ace_cargo_fnc_setSpace;
 	_vehicle setVariable ["ACE_isRepairVehicle",1];
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["BWA3_WLP14_Ammo_Fleck", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,8] call ace_cargo_fnc_setSpace;
+	[_vehicle, 3000] call ace_rearm_fnc_makeSource;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["BWA3_TCK9_Fuel_Fleck", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,8] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["BWA3_WLP14_Repair_Fleck", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,8] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["BWA3_WLP14_Repair_Tropen", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,8] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["BWA3_WLP14_Ammo_Tropen", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,8] call ace_cargo_fnc_setSpace;
+	[_vehicle, 3000] call ace_rearm_fnc_makeSource;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["BWA3_WLP14_Ammo_Winter", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,8] call ace_cargo_fnc_setSpace;
+	[_vehicle, 3000] call ace_rearm_fnc_makeSource;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["BWA3_WLP14_Repair_Winter", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,8] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["BWA3_WLP14_Repair_Winter", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,30] call ace_cargo_fnc_setSpace;
+	_vehicle setVariable ["ACE_isRepairVehicle",0];
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["BWA3_WLP14_Repair_Winter", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,30] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["B_Heli_Transport_03_unarmed_F", "InitPost", {
