@@ -191,12 +191,12 @@ opfor_air = [
 	"RHS_Mi24P_vdv",
 	"RHS_Mi24V_vdv",
 	"RHS_Mi8AMT_vdv",
-	"RHS_T50_vvs_blueonblue",
-	"RHS_T50_vvs_blueonblue",
 	"RHS_Ka52_vvs",
-	"rhs_mig29sm_vvs",
-	"RHS_Su25SM_vvsc",
-	"RHS_T50_vvs_blueonblue"
+	"O_Plane_Fighter_02_Stealth_F",
+	"O_Plane_Fighter_02_Stealth_F",
+	"O_Plane_Fighter_02_Stealth_F",
+	"O_Plane_Fighter_02_Stealth_F",
+	"O_Plane_Fighter_02_F"
 ];
 
 opfor_statics = [
