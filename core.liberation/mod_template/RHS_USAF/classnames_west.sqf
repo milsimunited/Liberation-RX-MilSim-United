@@ -38,7 +38,7 @@ light_vehicles = [
 		["CUP_B_M1030_USMC",0,20,0,GRLIB_perm_inf],
 		["gm_ge_army_k125",0,20,0,GRLIB_perm_inf],
 	//Vanilla
-		["B_Quadbike_01_F",0,30,0,GRLIB_perm_inf],
+		["B_Quadbike_01_F",0,10,0,GRLIB_perm_inf],
 		["C_Offroad_02_unarmed_F",0,light_vehicle_price_tier_1,0,GRLIB_perm_inf],
 		["C_Van_01_transport_F",0,light_vehicle_price_tier_2,0,GRLIB_perm_inf],
 		["B_LSV_01_unarmed_F",0,light_vehicle_price_tier_6,0,GRLIB_perm_inf],
