@@ -551,7 +551,6 @@ air_vehicles = [
 	// USAF
 		["USAF_C130J_Cargo",0,fast_air_vehicle_price_tier_1,0,GRLIB_perm_inf],
 		["USAF_C130J",0,fast_air_vehicle_price_tier_1,0,GRLIB_perm_inf],
-		["USAF_AC130U",0,air_vehicle_price_tier_15,0,GRLIB_perm_inf],
 		["USAF_C17",0,fast_air_vehicle_price_tier_1,0,GRLIB_perm_inf]
 ];
 
@@ -730,6 +729,9 @@ fast_air_vehicle = [
 		// ["Tornado_AWS_blu",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
 	// Eurofighter
 		// ["EAWS_EF2000_GER_CAP",0,fast_air_vehicle_price_tier_7,msu_fuel_plane,GRLIB_perm_inf],
+        // USAF
+                ["USAF_AC130U",0,air_vehicle_price_tier_15,0,GRLIB_perm_inf],
+                ["Sign_1L_Border",0,0,9000,GRLIB_perm_inf],
 	// Vanilla
 		["I_Plane_Fighter_04_F",0,fast_air_vehicle_price_tier_5,msu_fuel_plane,GRLIB_perm_inf],
 		["B_Plane_Fighter_01_F",0,fast_air_vehicle_price_tier_7,msu_fuel_plane,GRLIB_perm_inf],
