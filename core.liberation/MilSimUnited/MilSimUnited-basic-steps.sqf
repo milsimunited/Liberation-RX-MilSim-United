@@ -7,9 +7,10 @@
 
 Maps
 ------------------------------------------------------------------------------------------
-.pja310 -> G.O.S Al Rayak - Workshop
+.pja310 -> G.O.S Al Rayak
 .pja314 -> Leskovets
 
+Fapovo -> somehow bad performance
 Bornholm -> somehow bad performance
 Zagorsk -> very bad performance
 Kapaulio -> very bad performance
