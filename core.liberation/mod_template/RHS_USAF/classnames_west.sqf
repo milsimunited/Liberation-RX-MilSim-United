@@ -551,6 +551,7 @@ air_vehicles = [
 	// USAF
 		["USAF_C130J_Cargo",0,fast_air_vehicle_price_tier_1,0,GRLIB_perm_inf],
 		["USAF_C130J",0,fast_air_vehicle_price_tier_1,0,GRLIB_perm_inf],
+                ["usaf_kc135",0,fast_air_vehicle_price_tier_1,0,GRLIB_perm_inf],
 		["USAF_C17",0,fast_air_vehicle_price_tier_1,0,GRLIB_perm_inf]
 ];
 
@@ -742,11 +743,11 @@ fast_air_vehicle = [
 	// CUP
 		["CUP_B_USMC_DYN_MQ9",0,1250,msu_fuel_plane,GRLIB_perm_inf],
 	// USAF
-		["USAF_RQ4A",0,fast_air_vehicle_price_tier_1,msu_fuel_plane,GRLIB_perm_inf],     //Global hawk
+		["USAF_RQ4A",0,air_vehicle_price_tier_1,msu_fuel_plane,GRLIB_perm_inf],     //Global hawk
 		["USAF_MQ9",0,fast_air_vehicle_price_tier_2,msu_fuel_plane,GRLIB_perm_inf],  //Reaper
 	// BAF
-		["UK3CB_BAF_MQ9_Reaper",0,fast_air_vehicle_price_tier_2,msu_fuel_plane,GRLIB_perm_inf],    //Reaper
-		["UK3CB_BAF_MQ9_Reaper_Generic",0,fast_air_vehicle_price_tier_3,msu_fuel_plane,GRLIB_perm_inf],    //Reaper
+	     // ["UK3CB_BAF_MQ9_Reaper",0,fast_air_vehicle_price_tier_2,msu_fuel_plane,GRLIB_perm_inf],    //Reaper
+	     // ["UK3CB_BAF_MQ9_Reaper_Generic",0,fast_air_vehicle_price_tier_3,msu_fuel_plane,GRLIB_perm_inf],    //Reaper
 	// FFAA
 		["ffaa_ea_reaper",0,fast_air_vehicle_price_tier_3,msu_fuel_plane,GRLIB_perm_inf],    //Reaper
 	// Vanilla
