@@ -22,6 +22,8 @@ player addEventHandler [
 
 		
 		if (_vehicle isKindof "Helicopter") then { 
+			_vehicle enableCopilot false;
+			if (_role != "driver") exitwith {}; 
 			if (typeOf _vehicle in transport_air_vehicles) then{ 
 				if ( (SNC_VehRestriction && !(_GrpRol in HeliUnits)) || !([player,2] call fetch_permission) || (msu_slot_system && !(typeOf player == "B_helicrew_F")) ) then{ 
 					_unit action ["getOut", _vehicle]; 
@@ -36,6 +38,8 @@ player addEventHandler [
 		}; 
 
 		if (_vehicle isKindof "Plane") then { 
+			_vehicle enableCopilot false;
+			if (_role != "driver") exitwith {}; 
 			if (typeOf _vehicle in transport_air_vehicles) then{ 
 				if ( (SNC_VehRestriction && !(_GrpRol in PlaneUnits)) || !([player,2] call fetch_permission) || (msu_slot_system && !(typeOf player == "B_helicrew_F")) ) then{ 
 					_unit action ["getOut", _vehicle]; 
