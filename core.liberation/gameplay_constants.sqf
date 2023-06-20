@@ -1084,6 +1084,7 @@ MSU_blacklisted_from_arsenal = [
 "200Rnd_mas_aus_556x45SD_Drum_Mag_F",
 "30Rnd_mas_aus_556x45sd_Stanag",
 "30Rnd_mas_aus_556x45_Stanag",
+"UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A",
 "USP_PATROL_PACK_CB_CS_RP"
 ];
 
