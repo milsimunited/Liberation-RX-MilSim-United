@@ -125,26 +125,23 @@ hs_spawn = compileFinal "
 			if (_too_close == false) then {
 				_group_spawn = createGroup opfor;
 				
-				opfor_at createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.2, 'private']; sleep 1;
-				opfor_sharpshooter createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.2, 'private']; sleep 1;
-				opfor_machinegunner createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.2, 'private']; sleep 1;
-				opfor_aa createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.2, 'private']; sleep 1;
+				opfor_machinegunner createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
+				opfor_machinegunner createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
+				opfor_sharpshooter createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
+				opfor_aa createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
+				opfor_at createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.4, 'private']; sleep 1;
 
-				_wp1_spawn = _group_spawn addWaypoint [getPosWorld _player, GRLIB_capture_size];
+				_wp1_spawn = _group_spawn addWaypoint [getPosWorld _player, GRLIB_capture_size*3];
 				_wp1_spawn setwaypointtype 'MOVE';
 				_wp1_spawn setWaypointBehaviour 'AWARE';
 				_wp1_spawn setWaypointSpeed 'FULL';
 
-				_wp2_spawn = _group_spawn addWaypoint [getPos _player, GRLIB_capture_size*2];
+				_wp2_spawn = _group_spawn addWaypoint [getPos _player, GRLIB_capture_size*3];
 
 				_wp3_spawn = _group_spawn addWaypoint [getPos _player, GRLIB_capture_size*2];
 
-				_wp4_spawn = _group_spawn addWaypoint [getPos _player, GRLIB_capture_size*2];
-
-				_wp5_spawn = _group_spawn addWaypoint [getPos _player, GRLIB_capture_size*2];
-
-				_wp6_spawn = _group_spawn addWaypoint [getpos _player, GRLIB_capture_size*2];
-				_wp6_spawn setWaypointStatements ['true', '{deleteVehicle _x} forEach thisList;'];
+				_wp4_spawn = _group_spawn addWaypoint [getpos _player, GRLIB_capture_size*4];
+				_wp4_spawn setWaypointStatements ['true', '{deleteVehicle _x} forEach thisList;'];
 			};
 		};
 		
