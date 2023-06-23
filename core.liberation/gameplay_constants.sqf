@@ -150,10 +150,10 @@ fob_hunting_readiness = 40;
 
 // Battlegroup readiness
 bg_readiness_cooldown = false;
-bg_readiness_min = 38;
+bg_readiness_min = 45;
 
 // msu loops
-msu_heartbeat = 180;
+msu_heartbeat = 240;
 huber_commandos = true;
 
 // Battlegroup sleeping (divided with csat aggressivity)

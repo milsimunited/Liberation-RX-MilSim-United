@@ -99,18 +99,18 @@ addMissionEventHandler ['EntityKilled', {
 hs_spawn_init = '[this] spawn loadout_militia;';
 
 hs_spawn = compileFinal "
-	if( huber_commandos && (diag_fps > 25.0) ) then {
+	if( huber_commandos && (diag_fps > 30.0) ) then {
 		_headlessClients = entities 'HeadlessClient_F';
 		_humanPlayers = allPlayers - _headlessClients;
 		_count_players = count _humanPlayers;
 		
-		if(_count_players > 0) then {
+		if(_count_players > 9) then {
 			_player = selectRandom _humanPlayers;
 			_too_close = false;
 			
 			_spawn_position = [ [ [getPos _player, GRLIB_sector_size+GRLIB_capture_size] ], ['water'] ] call BIS_fnc_randomPos;
 
-			if ( ((combat_readiness < bg_readiness_min*2) && (_spawn_position distance2D ([] call F_getNearestFob) < GRLIB_sector_size*2)) || (_spawn_position distance2D lhd < GRLIB_sector_size*2) || (_spawn_position distance2D myLARsBox < GRLIB_sector_size*2) || (_spawn_position isEqualTo [0,0]) ) then {
+			if ( (combat_readiness < bg_readiness_min) || ((_spawn_position distance2D ([] call F_getNearestFob) < GRLIB_sector_size*2)) || (_spawn_position distance2D lhd < GRLIB_sector_size*2) || (_spawn_position distance2D myLARsBox < GRLIB_sector_size*2) || (_spawn_position isEqualTo [0,0]) ) then {
 				_too_close = true;
 			};
 			
@@ -126,8 +126,9 @@ hs_spawn = compileFinal "
 				_group_spawn = createGroup opfor;
 				
 				opfor_machinegunner createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
-				opfor_machinegunner createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
 				opfor_sharpshooter createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
+				opfor_grenadier createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
+				opfor_rifleman createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
 				opfor_aa createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
 				opfor_at createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.4, 'private']; sleep 1;
 
@@ -180,7 +181,6 @@ while { true } do {
 		[gamelogic, _msg] remoteExec ["globalChat", 0];
 	};
 
-	[] spawn hs_spawn;
 	[] spawn hs_spawn;
 };
 
