@@ -697,7 +697,15 @@ fast_air_vehicle = [
 		["ffaa_ar_harrier",0,fast_air_vehicle_price_tier_5,msu_fuel_plane,GRLIB_perm_inf],
 		["ffaa_ea_ef18m",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
 	// USAF
-		["USAF_A10",0,fast_air_vehicle_price_tier_4,msu_fuel_plane,GRLIB_perm_inf],
+		["USAF_A10",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
+                ["USAF_F35A_STEALTH",0,fast_air_vehicle_price_tier_5,msu_fuel_plane,GRLIB_perm_inf],
+                ["USAF_F35A_LIGHT",0,fast_air_vehicle_price_tier_5,msu_fuel_plane,GRLIB_perm_inf],
+		["USAF_F35A",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
+                ["USAF_F22",0,fast_air_vehicle_price_tier_5,msu_fuel_plane,GRLIB_perm_inf],
+                ["USAF_F22_EWP_AA",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
+                ["USAF_F22_EWP_AG",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
+                ["USAF_F22_Heavy",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
+                ["Sign_1L_Border",0,0,9000,GRLIB_perm_inf],
 	// FIR F-14
 		// ["FIR_F14A_HBK1",0,fast_air_vehicle_price_tier_4,msu_fuel_plane,GRLIB_perm_inf],
 	//FIR AV-8B Harrier
@@ -714,7 +722,7 @@ fast_air_vehicle = [
 	// F-35
 		 ["FIR_F35B_Standard",0,fast_air_vehicle_price_tier_7,msu_fuel_plane,GRLIB_perm_inf],
 	// F-22
-		 ["FIR_F22",0,fast_air_vehicle_price_tier_7,msu_fuel_plane,GRLIB_perm_inf],
+		// ["FIR_F22",0,fast_air_vehicle_price_tier_7,msu_fuel_plane,GRLIB_perm_inf],
 	// F-18 super hornet
 		// ["FIR_F18C",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf], // F18 Legacy
 		// ["FIR_F18D",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf], // F18 Legacy
