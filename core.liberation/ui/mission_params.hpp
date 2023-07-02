@@ -136,7 +136,7 @@ class Params
 		title = $STR_PARAMS_DAYDURATION;
         values[] = {16, 12, 7, 6, 4, 3, 2, 1};
         texts[] = {"1.5","2","3.43","4","6","8","12","24"};
-		default = 16;
+		default = 12;
 	};
 	class ShorterNights {
 		title = $STR_SHORTER_NIGHTS_PARAM;

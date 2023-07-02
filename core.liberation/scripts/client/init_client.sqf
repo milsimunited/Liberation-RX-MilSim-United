@@ -61,7 +61,7 @@ if(tfar_checker) then {
 
 	if(_tfarenabled) then {
 		_correctServer = call TFAR_fnc_getTeamSpeakServerName;
-		while { !(_correctServer == ts_server_name) && !(_correctServer == "MilSim United") && !_debug} do {
+		while { !(_correctServer == ts_server_name) && !_debug} do {
 			private _msg = format ["Please connect to our teamspeak at milsim-united.teamspeak.me"];
 			titleText [_msg, "BLACK FADED", 100];
 			20 cutFadeOut 0.1;
