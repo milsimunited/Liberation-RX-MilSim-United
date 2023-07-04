@@ -49,7 +49,7 @@ MGR_Key = 19;
 
 // TFAR checker
 tfar_checker = false;
-ts_server_name = "77th Airborne Division";
+ts_server_name = "MilSim United";
 tfar_channel = "╠-● Ingame [TFAR]";
 
 // gain and punishment
@@ -188,7 +188,8 @@ moderators = [
     "76561197997804176", // Slotzi
     "76561198283765221", // Steakman
     "76561198396300771", // LTVince
-    "76561197993044168"  // Huber Sepp
+    "76561197993044168", // Huber Sepp
+    "76561198043617179"  // Mantanismus
 ];
 
 
