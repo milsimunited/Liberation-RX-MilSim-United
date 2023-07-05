@@ -97,6 +97,7 @@ opfor_vehicles = [
 	"rhs_btr80_vv",
 	"rhs_bmp3_msv",
 	"rhs_bmd1k",
+        "rhs_gaz66_zu23_vmf",
 	"rhs_bmd1r ",
 	"rhs_t72ba_tv",
 	"O_T_LSV_02_AT_F",
@@ -108,6 +109,7 @@ opfor_vehicles_low_intensity = [
 	"rhs_prp3_vv",
 	"rhs_btr60_vv",
 	"rhs_btr70_vv",
+        "rhs_gaz66_zu23_vmf",
 	"rhs_btr80_vv",
 	"O_T_APC_Tracked_02_AA_ghex_F",
 	"rhs_bmd1k",
@@ -126,7 +128,8 @@ opfor_battlegroup_vehicles = [
 	"rhs_bmd1k",
 	"rhs_bmd1r ",
 	"rhs_t72ba_tv",
-	"rhs_zsu234_aa",
+        "rhs_gaz66_zu23_vmf",
+	"rhs_gaz66_zu23_vmf",
 	"rhs_t72ba_tv",
 	"rhs_2s1_at_tv",
 	"O_T_LSV_02_armed_F",
@@ -165,6 +168,7 @@ opfor_reinforcement_vehicles = [
 	"rhs_tigr_sts_3camo_msv",
 	"O_T_APC_Tracked_02_AA_ghex_F",
 	"O_T_APC_Tracked_02_AA_ghex_F",
+        "O_T_APC_Tracked_02_AA_ghex_F",
 	"O_APC_Wheeled_02_rcws_v2_F"
 	];
 
@@ -190,12 +194,15 @@ opfor_choppers = [
 opfor_air = [
 	"RHS_Mi24P_vdv",
 	"RHS_Mi24V_vdv",
-	"RHS_Mi8AMT_vdv",
-	"RHS_Ka52_vvs",
+	"rhs_mi28n_vvs",
+	"rhs_mi28n_vvs",
 	"O_Plane_Fighter_02_Stealth_F",
 	"O_Plane_Fighter_02_Stealth_F",
 	"O_Plane_Fighter_02_Stealth_F",
-	"O_Plane_Fighter_02_Stealth_F",
+        "O_Plane_CAS_02_dynamicLoadout_F",
+	"O_Plane_Fighter_02_F",
+        "RHS_T50_vvs_blueonblue",
+        "RHS_T50_vvs_blueonblue",
 	"O_Plane_Fighter_02_F"
 ];
 
