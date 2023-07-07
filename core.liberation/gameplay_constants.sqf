@@ -138,6 +138,12 @@ ai_limiter_on = true;
 ai_skill = 1;
 ai_value = 100; // price
 
+// Ai equipment replacement
+ai_equipment_replacement = true;
+ai_replacement_classname = "rhs_vmf_flora_rifleman";
+ai_replacement_weapon = "hlc_rifle_g3a3";
+ai_replacement_magazine = "ACE_20Rnd_762x51_M118LR_Mag";
+
 // HC
 hc_battlegroup_on = true;
 limit_hc_gr = false;
