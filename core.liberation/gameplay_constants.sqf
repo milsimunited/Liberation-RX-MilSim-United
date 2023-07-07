@@ -138,12 +138,6 @@ ai_limiter_on = true;
 ai_skill = 1;
 ai_value = 100; // price
 
-// Ai equipment replacement
-ai_equipment_replacement = true;
-ai_replacement_classname = "rhs_vmf_flora_rifleman";
-ai_replacement_weapon = "hlc_rifle_g3a3";
-ai_replacement_magazine = "ACE_20Rnd_762x51_M118LR_Mag";
-
 // HC
 hc_battlegroup_on = true;
 limit_hc_gr = false;
@@ -304,13 +298,17 @@ MSU_Eng_Div = 1;
 
 
 
-// default loadouts
+// ai equipment replacements
 msu_opfor_helmet = 'rhs_6b27m_green';
-msu_opfor_uniform = 'VSM_M81_BDU_Camo'; // Alpine_white_Crye_camo
+msu_opfor_uniform = 'Alpine_white_Crye_camo'; // VSM_M81_BDU_Camo
 msu_opfor_vest = 'rhs_6b5_rifleman_khaki';
 
 msu_civ_uniform = 'U_BG_Guerilla3_1';
 
+ai_equipment_replacement = true;
+ai_replacement_classname = "rhs_vmf_flora_rifleman";
+ai_replacement_weapon = "hlc_rifle_g3a3";
+ai_replacement_magazine = "ACE_20Rnd_762x51_M118LR_Mag";
 
 
 
