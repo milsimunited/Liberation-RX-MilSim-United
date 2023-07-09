@@ -529,7 +529,7 @@ air_vehicles = [
 		["O_Heli_Light_02_unarmed_F",0,air_vehicle_price_tier_1,0,GRLIB_perm_inf],					//Ocra/Ka-60
 		["O_Heli_Transport_04_F",0,air_vehicle_price_tier_1,0,GRLIB_perm_inf],						//Taru
 		["I_Heli_Transport_02_F",0,air_vehicle_price_tier_1,0,GRLIB_perm_inf],                     // Merlin
-		 ["I_Heli_light_03_unarmed_F",0,air_vehicle_price_tier_1,0,GRLIB_perm_inf],               // hellcat
+		["I_Heli_light_03_unarmed_F",0,air_vehicle_price_tier_1,0,GRLIB_perm_inf],               // hellcat
 		 
 	//BAF
 		["UK3CB_BAF_Wildcat_Transport_RN_ZZ396",0,air_vehicle_price_tier_1,0,GRLIB_perm_inf],
@@ -541,12 +541,6 @@ air_vehicles = [
 		["UK3CB_BAF_Merlin_HC4_Cargo",0,air_vehicle_price_tier_1,0,GRLIB_perm_inf],
 		["UK3CB_BAF_Merlin_HC4_18_GPMG",0,air_vehicle_price_tier_1,0,GRLIB_perm_inf],	 
 		["Sign_1L_Border",0,0,9000,GRLIB_perm_inf],
-
-//VTOL
-	//Vanilla
-		["B_T_VTOL_01_infantry_F",0,air_vehicle_price_tier_1,msu_fuel_heli,GRLIB_perm_inf],  //Blackfish
-		["B_T_VTOL_01_vehicle_F",0,air_vehicle_price_tier_1,msu_fuel_heli,GRLIB_perm_inf],   //Blackfish
-		
 
 	// USAF
 		["USAF_C130J_Cargo",0,fast_air_vehicle_price_tier_1,0,GRLIB_perm_inf],
@@ -654,7 +648,7 @@ fast_air_vehicle = [
 	//Vanilla
 		["B_T_VTOL_01_infantry_F",0,air_vehicle_price_tier_5,msu_fuel_heli,GRLIB_perm_inf],  //Blackfish
 		["B_T_VTOL_01_vehicle_F",0,air_vehicle_price_tier_5,msu_fuel_heli,GRLIB_perm_inf],   //Blackfish
-		["B_W_VTOL_01_armed_F",0,air_vehicle_price_tier_15,msu_fuel_heli,GRLIB_perm_inf],     //Blackfish Gunship
+		["B_T_VTOL_01_armed_F",0,air_vehicle_price_tier_15,msu_fuel_heli,GRLIB_perm_inf],     //Blackfish Gunship
 		
 
 		
@@ -739,8 +733,8 @@ fast_air_vehicle = [
 	// Eurofighter
 		// ["EAWS_EF2000_GER_CAP",0,fast_air_vehicle_price_tier_7,msu_fuel_plane,GRLIB_perm_inf],
         // USAF
-                ["USAF_AC130U",0,fast_air_vehicle_price_tier_5,0,GRLIB_perm_inf],
-                ["Sign_1L_Border",0,0,9000,GRLIB_perm_inf],
+        //	["USAF_AC130U",0,fast_air_vehicle_price_tier_5,0,GRLIB_perm_inf],
+            ["Sign_1L_Border",0,0,9000,GRLIB_perm_inf],
 	// Vanilla
 		["I_Plane_Fighter_04_F",0,fast_air_vehicle_price_tier_5,msu_fuel_plane,GRLIB_perm_inf],
 		["B_Plane_Fighter_01_F",0,fast_air_vehicle_price_tier_7,msu_fuel_plane,GRLIB_perm_inf],
