@@ -545,7 +545,7 @@ air_vehicles = [
 //VTOL
 	//Vanilla
 		["B_T_VTOL_01_infantry_F",0,air_vehicle_price_tier_1,msu_fuel_heli,GRLIB_perm_inf],  //Blackfish
-		["B_T_VTOL_01_vehicle_F",0,air_vehicle_price_tier_1,msu_fuel_heli,GRLIB_perm_inf],   //Blackfish
+		["B_T_VTOL_01_vehicle_F",0,air_vehicle_price_tier_1,msu_fuel_heli,GRLIB_perm_inf],
 		
 
 	// USAF
@@ -739,8 +739,9 @@ fast_air_vehicle = [
 	// Eurofighter
 		// ["EAWS_EF2000_GER_CAP",0,fast_air_vehicle_price_tier_7,msu_fuel_plane,GRLIB_perm_inf],
         // USAF
-                ["USAF_AC130U",0,fast_air_vehicle_price_tier_5,0,GRLIB_perm_inf],
-                ["Sign_1L_Border",0,0,9000,GRLIB_perm_inf],
+               // ["USAF_AC130U",0,fast_air_vehicle_price_tier_5,0,GRLIB_perm_inf],
+		["B_T_VTOL_01_armed_F",0,fast_air_vehicle_price_tier_5,msu_fuel_heli,GRLIB_perm_inf],   //Blackfish armed
+        ["Sign_1L_Border",0,0,9000,GRLIB_perm_inf],
 	// Vanilla
 		["I_Plane_Fighter_04_F",0,fast_air_vehicle_price_tier_5,msu_fuel_plane,GRLIB_perm_inf],
 		["B_Plane_Fighter_01_F",0,fast_air_vehicle_price_tier_7,msu_fuel_plane,GRLIB_perm_inf],
