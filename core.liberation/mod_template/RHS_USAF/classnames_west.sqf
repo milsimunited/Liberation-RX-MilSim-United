@@ -369,6 +369,7 @@ heavy_vehicles = [
 		["RHS_M2A2_BUSKI_WD",0,heavy_vehicle_price_tier_15,msu_fuel_ifv,GRLIB_perm_inf],
 		["RHS_M2A3_BUSKI_wd",0,heavy_vehicle_price_tier_15,msu_fuel_ifv,GRLIB_perm_inf],
 		["RHS_M2A3_BUSKIII_wd",0,heavy_vehicle_price_tier_15,msu_fuel_ifv,GRLIB_perm_inf],
+                ["rhs_btr80a_vmf",0,heavy_vehicle_price_tier_12,msu_fuel_ifv,GRLIB_perm_inf],
 		["rhs_sprut_vdv",0,heavy_vehicle_price_tier_12,msu_fuel_ifv,GRLIB_perm_inf],
 		["Sign_1L_Border",0,0,9000,GRLIB_perm_inf],
 	//BW/Redd_tanks
