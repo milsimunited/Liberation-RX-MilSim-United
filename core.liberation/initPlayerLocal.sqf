@@ -206,7 +206,7 @@ if (tk_active) then {
 };
 
 if (isNil "KPFC_active") then {
-	KPFC_active = false
+	KPFC_active = true
 };
 
 if (KPFC_active) then {
