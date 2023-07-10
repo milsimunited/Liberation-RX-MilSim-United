@@ -299,9 +299,9 @@ MSU_Eng_Div = 1;
 
 
 // ai equipment replacements
-msu_opfor_helmet = 'VSM_ProjectHonor_OPS_2';
-msu_opfor_uniform = 'VSM_ProjectHonor_Crye_SS_Camo'; // Alpine_white_Crye_camo
-msu_opfor_vest = 'VSM_LBT6094_operator_ProjectHonor';
+msu_opfor_helmet = 'rhs_6b27m_green'; // VSM_ProjectHonor_OPS_2
+msu_opfor_uniform = 'VSM_M81_BDU_Camo'; // Alpine_white_Crye_camo VSM_ProjectHonor_Crye_SS_Camo
+msu_opfor_vest = 'rhs_6b5_rifleman_khaki'; // VSM_LBT6094_operator_ProjectHonor
 
 msu_civ_uniform = 'U_BG_Guerilla3_1';
 
