@@ -19,11 +19,11 @@ private ["_kp_neutral_consumption","_kp_normal_consumption","_kp_max_consumption
 // CONFIG START
 
 // Time in Minutes till a full tank depletes when the vehicle is standing with running engine
-kp_neutral_consumption = 75;
+kp_neutral_consumption = 80;
 // Time in Minutes till a full tank depletes when the vehicle is driving
-kp_normal_consumption = 45;
+kp_normal_consumption = 60;
 // Time in Minutes till a full tank depletes when the vehicle is driving at max speed
-kp_max_consumption = 30;
+kp_max_consumption = 40;
 
 // CONFIG END
 
