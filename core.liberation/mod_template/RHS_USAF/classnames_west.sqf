@@ -721,12 +721,14 @@ fast_air_vehicle = [
 	// F-18 super hornet
 		// ["FIR_F18C",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf], // F18 Legacy
 		// ["FIR_F18D",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf], // F18 Legacy
-		["FIR_FA18E_VFA106",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
-		["FIR_FA18F_VFA163",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
+		// ["FIR_FA18E_VFA106",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
+		// ["FIR_FA18F_VFA163",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
 	// FIR A-10C
 		// ["FIR_A10C",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
 		["Sign_1L_Border",0,0,9000,GRLIB_perm_inf],
-		
+      // F-18 super hornet 2020
+		["JS_JC_FA18E",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
+                ["JS_JC_FA18F",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
 	// FIR SU-25SM3
 		// ["FIR_Su25SM3",0,fast_air_vehicle_price_tier_6,msu_fuel_plane,GRLIB_perm_inf],
 	// Tornado
