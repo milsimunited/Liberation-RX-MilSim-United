@@ -755,7 +755,7 @@ log_on_server = compileFinal "
 
 ["rhsusf_M1084A1R_SOV_M2_D_fmtv_socom", "InitPost", {
     params ["_vehicle"];
-	[_vehicle, 20] call ace_cargo_fnc_setSpace;
+	[_vehicle, 30] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom", "InitPost", {
@@ -798,12 +798,12 @@ log_on_server = compileFinal "
 
 ["rhsusf_M977A4_BKIT_usarmy_wd", "InitPost", {
     params ["_vehicle"];
-	[_vehicle, 20] call ace_cargo_fnc_setSpace;
+	[_vehicle, 30] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["rhsusf_M977A4_BKIT_M2_usarmy_wd", "InitPost", {
     params ["_vehicle"];
-	[_vehicle, 20] call ace_cargo_fnc_setSpace;
+	[_vehicle, 30] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["RHS_C130J_Cargo", "InitPost", {
@@ -839,6 +839,16 @@ log_on_server = compileFinal "
 ["RHS_UH60M_MEV_d", "InitPost", {
     params ["_vehicle"];
 	[_vehicle, 8] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["RHS_Mi8AMT_vvs", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle, 8] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["RHS_Mi8mt_Cargo_vvs", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle, 30] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["BWA3_WLP14_Ammo_Tropen", "InitPost", {
