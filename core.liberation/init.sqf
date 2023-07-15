@@ -14,10 +14,6 @@ GRLIB_ACE_enabled = false;
 [] call compileFinal preprocessFileLineNUmbers "scripts\shared\liberation_functions.sqf";
 [] call compileFinal preprocessFileLineNUmbers "scripts\shared\fetch_params.sqf";
 
-
-// [] spawn VCM_fnc_VcomInit;
-
-
 if (!abort_loading) then {
 	[] call compileFinal preprocessFileLineNUmbers "scripts\shared\classnames.sqf";
 	[] call compileFinal preprocessfilelinenumbers "scripts\shared\init_shared.sqf";
