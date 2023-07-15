@@ -27,7 +27,7 @@ switch (true) do {
 		closeDialog 0;
 		closeDialog 0;
 		GRLIB_introduction = false;
-		cinematic_camera_started = false;
+		//cinematic_camera_started = false;
 		sleep 1;
 		waitUntil {!(isNull (findDisplay 46))};
 		player enableSimulationGlobal false;

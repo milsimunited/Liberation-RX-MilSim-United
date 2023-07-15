@@ -925,8 +925,9 @@ GRLIB_endgame = 1;
 
 
 
-
-
+Player "fliegen lassen"
+_veh = _this;
+_veh setPosATL [(getPos _veh) select 0, (getPos _veh) select 1, 70];
 
 
 

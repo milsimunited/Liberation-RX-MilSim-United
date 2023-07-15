@@ -11,17 +11,27 @@ if (!GRLIB_player_spawned) then {
 	waitUntil {sleep 0.2; !isNil "blufor_sectors" };
 	waitUntil {sleep 0.2; !isNil "save_is_loaded" };
 	waitUntil {sleep 0.2; !isNil "introDone" };
-	waitUntil {sleep 0.2; introDone };
-	waitUntil {sleep 0.2; !isNil "cinematic_camera_stop" };
-	waitUntil {sleep 0.2; cinematic_camera_stop };
+	//waitUntil {sleep 0.2; introDone };
+	//waitUntil {sleep 0.2; !isNil "cinematic_camera_stop" };
+	//waitUntil {sleep 0.2; cinematic_camera_stop };
 };
 
 fullmap = 0;
 _old_fullmap = 0;
 
+
+
+
 createDialog "liberation_deploy";
-waitUntil { dialog };
+
+
+
+//waitUntil { dialog };
+
 titleText ["","BLACK IN", 5];
+
+
+
 ((findDisplay 5201) displayCtrl 201) ctrlAddEventHandler [ "mouseButtonDblClick" , { deploy = 1; } ];
 _noesckey = (findDisplay 5201) displayAddEventHandler ["KeyDown", "if ((_this select 1) == 1) then { true }"];
 disableUserInput false;
@@ -167,7 +177,7 @@ if (dialog && deploy == 1) then {
 		};
 		*/
 		GRLIB_player_spawned = ([] call F_getValid);
-		cinematic_camera_started = false;
+		//cinematic_camera_started = false;
 	};
 
 	GRLIB_loadout_overide = nil;
