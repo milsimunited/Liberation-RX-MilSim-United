@@ -6,9 +6,9 @@ while {	(player getVariable ["GRLIB_score_set", 0] == 0) } do {
 	uIsleep 2;
 };
 
-if ( isNil "cinematic_camera_started" ) then { cinematic_camera_started = false };
+//if ( isNil "cinematic_camera_started" ) then { cinematic_camera_started = false };
 
-[] spawn cinematic_camera;
+//[] spawn cinematic_camera;
 
 if (serverName == "DevSrv") then {
 	GRLIB_introduction = false;
@@ -52,6 +52,6 @@ if ( howtoplay == 1 ) then {
 	[] call compileFinal preprocessFileLineNUmbers "scripts\client\ui\tutorial_manager.sqf";
 };
 
-cinematic_camera_started = false;
+//cinematic_camera_started = false;
 introDone = true;
 dostartgame = 1;
