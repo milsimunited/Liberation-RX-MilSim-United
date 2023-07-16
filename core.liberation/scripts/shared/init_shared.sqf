@@ -40,4 +40,4 @@ remote_call_a3w_info = compileFinal preprocessFileLineNumbers "scripts\client\re
 [] execVM "addons\RPT\RPT_init.sqf";
 RPT_fnc_TextureVehicle = compileFinal preprocessFileLineNumbers "addons\RPT\fn_textureVehicle.sqf";
 
-[] execVM "scripts\shared\scan_skill.sqf";
+//[] execVM "scripts\shared\scan_skill.sqf";

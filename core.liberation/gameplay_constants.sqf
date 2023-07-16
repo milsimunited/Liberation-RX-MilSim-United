@@ -124,7 +124,7 @@ msu_slot_system = true;
 AI_leader_radio = false;
 
 // AI skill
-skill_scan = true;
+skill_scan = false;
 skill_parachuters = 0.9;
 skill_air_vehicles_planes = 0.9;
 skill_air_vehicles_helicopters = 0.9;

@@ -21,8 +21,8 @@ private _sendPara = {
 		_unit assignAsCargo _newvehicle;
 		_unit moveInCargo _newvehicle;
 		_unit addBackpack "B_Parachute";
-		_unit setSkill 0.65;
-		_unit setSkill ["courage", 1];
+		//_unit setSkill 0.65;
+		//_unit setSkill ["courage", 1];
 		_unit allowFleeing 0;
 		_unit setVariable ["GRLIB_counter_TTL", round(time + 3600)];
 		sleep 0.1;

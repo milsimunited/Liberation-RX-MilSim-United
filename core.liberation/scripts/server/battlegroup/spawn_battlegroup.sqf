@@ -64,7 +64,7 @@ if (_spawn_marker != "") then {
 		_nextgrp = createGroup [GRLIB_side_enemy, true];
 		_vehicle = [markerPos _spawn_marker, _x] call F_libSpawnVehicle;
 		_vehicle setVariable ["GRLIB_counter_TTL", round(time + 2700)];  // 45 minutes TTL
-		_vehicle setSkill skill_ground_vehicles;
+		//_vehicle setSkill skill_ground_vehicles;
 		(crew _vehicle) joinSilent _nextgrp;
 		if (isNil "_attackedSector") then {
 			[_nextgrp, false] spawn battlegroup_ai;

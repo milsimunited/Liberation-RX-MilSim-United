@@ -18,8 +18,8 @@ private	_is_side_sector = (count (allMapMarkers select {_x select [0,12] == "sid
 if ( GRLIB_blufor_defenders && !_is_side_sector) then {
 	{ _x createUnit [markerpos _sector, _grp, 'this addMPEventHandler ["MPKilled", {_this spawn kill_manager}]'] } foreach _squad_type;
 	{
-		_x setSkill 0.65;
-		_x setSkill ["courage", 1];
+		//_x setSkill 0.65;
+		//_x setSkill ["courage", 1];
 		_x allowFleeing 0;
 		_x doFollow leader _grp
 	} foreach units _grp;
