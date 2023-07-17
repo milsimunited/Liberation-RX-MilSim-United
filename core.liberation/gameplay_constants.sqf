@@ -136,7 +136,7 @@ ai_limiter_on = true;
 
 // AI buildable
 ai_skill = 1;
-ai_value = 100; // price
+ai_value = 150; // price
 
 // HC
 hc_battlegroup_on = true;
