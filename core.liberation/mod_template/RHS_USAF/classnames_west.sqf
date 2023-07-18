@@ -103,7 +103,6 @@ light_vehicles = [
 		["rhsusf_m966_w",0,light_vehicle_price_tier_5,0,GRLIB_perm_inf],
 		["rhs_tigr_msv",0,light_vehicle_price_tier_5,0,GRLIB_perm_inf],
 		["rhs_tigr_m_msv",0,light_vehicle_price_tier_5,0,GRLIB_perm_inf],
-		["rhs_tigr_sts_msv",0,light_vehicle_price_tier_6,0,GRLIB_perm_inf],
 		["Sign_1L_Border",0,0,9000,GRLIB_perm_inf],
 		
 	//BAF
