@@ -4,7 +4,7 @@ GRLIB_side_resistance = resistance;
 GRLIB_side_civilian = civilian;
 GRLIB_respawn_marker = "respawn_west";
 GRLIB_sector_size = 500;
-GRLIB_capture_size = 150;
+GRLIB_capture_size = 100;
 GRLIB_radiotower_size = 3000;
 GRLIB_spawn_min = 1000;
 GRLIB_spawn_max = 2500;
@@ -22,7 +22,7 @@ GRLIB_blufor_cap = 10 * GRLIB_unitcap;
 GRLIB_battlegroup_size = 6;
 GRLIB_civilians_amount = 1.1 * GRLIB_civilian_activity;
 GRLIB_fob_range = 450;
-GRLIB_surrender_chance = 85;
+GRLIB_surrender_chance = 75;
 GRLIB_secondary_missions_costs = [ 50,20 ];
 GRLIB_halo_altitude = 2000;
 GRLIB_civ_killing_penalty = 0;
@@ -53,18 +53,18 @@ ts_server_name = "MilSim United";
 tfar_channel = "╠-● Ingame [TFAR]";
 
 // gain and punishment
-respawn_ammo = 120; // +/- is conditional
-opfor_kill_score = 1;
-opfor_kill_ammo = 1;
-opfor_kill_score_infantry = 3;
-opfor_kill_ammo_infantry = 6;
-kamikaze_kill_score = 6;
-kamikaze_kill_ammo = 12;
+respawn_ammo = 135; // +/- is conditional
+opfor_kill_score = 0;
+opfor_kill_ammo = 0;
+opfor_kill_score_infantry = 4;
+opfor_kill_ammo_infantry = 7;
+kamikaze_kill_score = 8;
+kamikaze_kill_ammo = 14;
 civkill_score = -45;
-civkill_ammo = -250;
-civkill_combat_readiness = 6;
+civkill_ammo = -275;
+civkill_combat_readiness = 7;
 tkill_score = -6;
-tkill_ammo = -9;
+tkill_ammo = -12;
 tk_active = false; //NEW Tkillscript with dialog
 
 // tkill_script in init.sqf
@@ -74,24 +74,24 @@ tk_active = false; //NEW Tkillscript with dialog
 
 // logistics
 prisoner_intel = 4;
-prisoner_score = 6;
-prisoner_ammo = 15;
+prisoner_score = 8;
+prisoner_ammo = 10;
 prisoner_combat_readiness = 9;
 prisoner_i = 0;
 
-box_recycle_value = 40; // Only use by 2 dividable numbers
+box_recycle_value = 36; // Only use by 2 dividable numbers
 logistics_ammo_for_all = false;
 logistics_ammo_increase = true;
 
 
 // Sector config
 sector_rank_gain = 10;
-fallback_income = 85;
-income_sectors_bigtown = 85;
-income_sectors_capture = 85;
-income_sectors_military = 85;
-income_sectors_factory = 85;
-income_sectors_tower = 85;
+fallback_income = 65;
+income_sectors_bigtown = 65;
+income_sectors_capture = 65;
+income_sectors_military = 65;
+income_sectors_factory = 65;
+income_sectors_tower = 65;
 readiness_increase_bigtown = 4;
 readiness_increase_capture = 4;
 readiness_increase_military = 4;
@@ -136,7 +136,7 @@ ai_limiter_on = true;
 
 // AI buildable
 ai_skill = 1;
-ai_value = 150; // price
+ai_value = 200; // price
 
 // HC
 hc_battlegroup_on = true;
