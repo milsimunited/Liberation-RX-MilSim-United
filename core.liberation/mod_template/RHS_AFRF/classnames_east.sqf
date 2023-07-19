@@ -14,8 +14,8 @@ opfor_marksman = "rhs_vdv_recon_marksman_vss";
 opfor_machinegunner = "rhs_msv_arifleman";
 opfor_heavygunner = "rhs_msv_arifleman";
 opfor_medic = "rhs_msv_medic";
-opfor_rpg = "O_Soldier_AT_F";
-opfor_at = "O_Soldier_AT_F";
+opfor_rpg = "O_R_Soldier_LAT_F";
+opfor_at = "O_T_Soldier_HAT_F";
 opfor_aa = "rhs_vmf_emr_aa";
 opfor_officer = "rhs_msv_junior_sergeant";
 opfor_sharpshooter = "rhs_msv_marksman";
@@ -41,11 +41,11 @@ opfor_hq = "Land_Cargo_HQ_V3_F";
 militia_squad = [
 	"rhs_vmf_flora_sergeant",
 	"rhs_vmf_flora_efreitor",
-	"rhs_vmf_flora_grenadier_rpg",
-	"rhs_vmf_flora_strelok_rpg_assist",
+	"O_R_Soldier_LAT_F",
+	"O_T_Soldier_HAT_F",
 	"rhs_vmf_flora_machinegunner",
 	"rhs_vmf_emr_aa",
-	"rhs_vmf_flora_strelok_rpg_assist",
+	"O_T_Soldier_HAT_F",
 	"rhs_vmf_flora_rifleman",
 	"rhs_vmf_flora_rifleman",
 	"rhs_vmf_flora_medic"
