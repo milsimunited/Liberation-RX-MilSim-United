@@ -1584,103 +1584,230 @@
 					<Japanese>歩兵ユニット</Japanese>
 			</Key>
 			<Key ID="STR_BUILD2">
-					<Original>Light vehicles</Original>
-					<French>Véhicules légers</French>
-					<German>Leichte Fahrzeuge</German>
-					<Spanish>Vehículos ligeros</Spanish>
-					<Russian>Легкая техника</Russian>
-					<Chinesesimp>轻型车辆</Chinesesimp>
-					<Japanese>軽車両</Japanese>
+			    	<Original>Small infantry transport unarmed</Original>
+			    	<French>Petit transport d'infanterie non armé</French>
+			    	<German>Kleiner, unbewaffneter Infanterietransport</German>
+			    	<Spanish>Pequeño transporte de infantería desarmado</Spanish>
+			    	<Russian>Малый транспорт пехоты без вооружения</Russian>
+			    	<Chinesesimp>小型步兵运输车无武器</Chinesesimp>
+			    	<Japanese>武器なしの小型歩兵輸送</Japanese>
 			</Key>
 			<Key ID="STR_BUILD3">
-					<Original>Armored Light vehicles</Original>
-					<French>Véhicules légers</French>
-					<German>Gepanzerte leichte Fahrzeuge</German>
-					<Spanish>Vehículos ligeros</Spanish>
-					<Russian>Легкая техника</Russian>
-					<Chinesesimp>轻型车辆</Chinesesimp>
-					<Japanese>軽車両</Japanese>
+			    	<Original>Small infantry transport armed HMG</Original>
+			    	<French>Petit transport d'infanterie armé HMG</French>
+			    	<German>Kleiner Infanterietransport bewaffnet HMG</German>
+			    	<Spanish>Pequeño transporte de infantería armado HMG</Spanish>
+			    	<Russian>Малый транспорт пехоты с HMG</Russian>
+			    	<Chinesesimp>小型步兵运输车装备HMG</Chinesesimp>
+			    	<Japanese>HMG装備の小型歩兵輸送</Japanese>
 			</Key>
 			<Key ID="STR_BUILD4">
-					<Original>Armored vehicles</Original>
-					<French>Vehicules blindés</French>
-					<German>Gepanzerte Fahrzeuge</German>
-					<Spanish>Vehículos blindados</Spanish>
-					<Russian>Бронетехника</Russian>
-					<Chinesesimp>装甲车辆</Chinesesimp>
-					<Japanese>装甲車両</Japanese>
+			   		<Original>Small infantry transport armed GMG</Original>
+			   		<French>Petit transport d'infanterie armé GMG</French>
+			   		<German>Kleiner Infanterietransport bewaffnet GMG</German>
+			   		<Spanish>Pequeño transporte de infantería armado GMG</Spanish>
+			   		<Russian>Малый транспорт пехоты с GMG</Russian>
+			   		<Chinesesimp>小型步兵运输车装备GMG</Chinesesimp>
+			   		<Japanese>GMG装備の小型歩兵輸送</Japanese>
 			</Key>
 			<Key ID="STR_BUILD5">
-					<Original>Heavy Armored vehicles</Original>
-					<French>Vehicules blindés</French>
-					<German>Schwer gepanzerte Fahrzeuge</German>
-					<Spanish>Vehículos blindados</Spanish>
-					<Russian>Бронетехника</Russian>
-					<Chinesesimp>装甲车辆</Chinesesimp>
-					<Japanese>装甲車両</Japanese>
+			    	<Original>Small infantry transport armed AT</Original>
+			    	<French>Petit transport d'infanterie armé AT</French>
+			    	<German>Kleiner Infanterietransport bewaffnet AT</German>
+			    	<Spanish>Pequeño transporte de infantería armado AT</Spanish>
+			    	<Russian>Малый транспорт пехоты с AT</Russian>
+			    	<Chinesesimp>小型步兵运输车装备AT</Chinesesimp>
+			    	<Japanese>AT装備の小型歩兵輸送</Japanese>
 			</Key>
 			<Key ID="STR_BUILD6">
-					<Original>Transport air vehicles</Original>
-					<French>Véhicules aériens</French>
-					<German>Transport Luftfahrzeuge</German>
-					<Spanish>Vehículos aéreos</Spanish>
-					<Russian>Авиационная техника</Russian>
-					<Chinesesimp>飞行器</Chinesesimp>
-					<Japanese>航空機</Japanese>
+			    	<Original>Big infantry transport unarmed</Original>
+			    	<French>Grand transport d'infanterie non armé</French>
+			    	<German>Großer, unbewaffneter Infanterietransport</German>
+			    	<Spanish>Gran transporte de infantería desarmado</Spanish>
+			    	<Russian>Большой транспорт пехоты без вооружения</Russian>
+			    	<Chinesesimp>大型步兵运输车无武器</Chinesesimp>
+			    	<Japanese>武器なしの大型歩兵輸送</Japanese>
 			</Key>
 			<Key ID="STR_BUILD7">
-					<Original>Armed air vehicles</Original>
-					<French>Véhicules aériens</French>
-					<German>Bewaffnete Luftfahrzeuge</German>
-					<Spanish>Vehículos aéreos</Spanish>
-					<Russian>Авиационная техника</Russian>
-					<Chinesesimp>飞行器</Chinesesimp>
-					<Japanese>航空機</Japanese>
+			    	<Original>Big infantry transport armed HMG</Original>
+			    	<French>Grand transport d'infanterie armé HMG</French>
+			    	<German>Großer Infanterietransport bewaffnet HMG</German>
+			    	<Spanish>Gran transporte de infantería armado HMG</Spanish>
+			    	<Russian>Большой транспорт пехоты с HMG</Russian>
+			    	<Chinesesimp>大型步兵运输车装备HMG</Chinesesimp>
+			    	<Japanese>HMG装備の大型歩兵輸送</Japanese>
 			</Key>
 			<Key ID="STR_BUILD8">
-					<Original>Static defenses</Original>
-					<French>Defenses statiques</French>
-					<German>Statische Verteidigung</German>
-					<Spanish>Defensas estáticas</Spanish>
-					<Russian>Стационары</Russian>
-					<Chinesesimp>静态防御武器</Chinesesimp>
-					<Japanese>固定兵器</Japanese>
+			    	<Original>Big infantry transport armed GMG</Original>
+			    	<French>Grand transport d'infanterie armé GMG</French>
+			    	<German>Großer Infanterietransport bewaffnet GMG</German>
+			    	<Spanish>Gran transporte de infantería armado GMG</Spanish>
+			    	<Russian>Большой транспорт пехоты с GMG</Russian>
+			    	<Chinesesimp>大型步兵运输车装备GMG</Chinesesimp>
+			    	<Japanese>GMG装備の大型歩兵輸送</Japanese>
 			</Key>
 			<Key ID="STR_BUILD9">
-					<Original>Buildings</Original>
-					<French>Batiments</French>
-					<German>Gebäude</German>
-					<Spanish>Edificios</Spanish>
-					<Russian>Постройки</Russian>
-					<Chinesesimp>建筑</Chinesesimp>
-					<Japanese>建物</Japanese>
+			    	<Original>Armored infantry transport</Original>
+			    	<French>Transport d'infanterie blindé</French>
+			    	<German>Gepanzerter Infanterietransport</German>
+			    	<Spanish>Transporte de infantería blindado</Spanish>
+			    	<Russian>Бронированный транспорт пехоты</Russian>
+			    	<Chinesesimp>装甲步兵运输车</Chinesesimp>
+			    	<Japanese>装甲歩兵輸送</Japanese>
 			</Key>
 			<Key ID="STR_BUILD10">
-					<Original>Logistics</Original>
-					<French>Logistique</French>
-					<German>Logistik</German>
-					<Spanish>Logística</Spanish>
-					<Russian>Снабжение</Russian>
-					<Chinesesimp>后勤</Chinesesimp>
-					<Japanese>ロジスティック</Japanese>
+			    	<Original>Artillery vehicles</Original>
+			    	<French>Véhicules d'artillerie</French>
+			    	<German>Artilleriefahrzeuge</German>
+			    	<Spanish>Vehículos de artillería</Spanish>
+			    	<Russian>Артиллерийские машины</Russian>
+			    	<Chinesesimp>炮兵车辆</Chinesesimp>
+			    	<Japanese>砲兵車両</Japanese>
 			</Key>
 			<Key ID="STR_BUILD11">
-					<Original>Logistic Crates </Original>
-					<French>Logistique</French>
-					<German>Logistik Kisten</German>
-					<Spanish>Logística</Spanish>
-					<Russian>Снабжение</Russian>
-					<Chinesesimp>后勤</Chinesesimp>
-					<Japanese>ロジスティック</Japanese>
+			    	<Original>APC</Original>
+			    	<French>Véhicule blindé de transport de troupes</French>
+			    	<German>Schützenpanzer</German>
+			    	<Spanish>Vehículo blindado de transporte de personal</Spanish>
+			    	<Russian>БТР</Russian>
+			    	<Chinesesimp>装甲人员运输车</Chinesesimp>
+			    	<Japanese>APC</Japanese>
 			</Key>
 			<Key ID="STR_BUILD12">
-					<Original>Infantry squads</Original>
-					<French>Escouades d'infanterie</French>
-					<German>Infanteriegruppen</German>
-					<Spanish>Escuadras de infantería</Spanish>
-					<Russian>Пехотные отделения</Russian>
-					<Chinesesimp>步兵班组</Chinesesimp>
-					<Japanese>歩兵分隊</Japanese>
+			    	<Original>MBT</Original>
+			    	<French>Char de combat principal</French>
+			    	<German>MBT</German>
+			    	<Spanish>Tanque de batalla principal</Spanish>
+			    	<Russian>Основной боевой танк</Russian>
+			    	<Chinesesimp>主战坦克</Chinesesimp>
+			    	<Japanese>主力戦車</Japanese>
+			</Key>
+			<Key ID="STR_BUILD13">
+			    	<Original>Anti air</Original>
+			    	<French>Anti aérien</French>
+			    	<German>Flugabwehr</German>
+			    	<Spanish>Antiaéreo</Spanish>
+			    	<Russian>Зенитная оборона</Russian>
+			    	<Chinesesimp>反空</Chinesesimp>
+			    	<Japanese>対空</Japanese>
+			</Key>
+			<Key ID="STR_BUILD14">
+			    	<Original>Helicopter personal transport</Original>
+			    	<French>Hélicoptère de transport de personnel</French>
+			    	<German>Personaltransport-Hubschrauber</German>
+			    	<Spanish>Helicóptero de transporte de personal</Spanish>
+			    	<Russian>Транспортный вертолет</Russian>
+			    	<Chinesesimp>直升机人员运输</Chinesesimp>
+			    	<Japanese>ヘリコプターによる人員輸送</Japanese>
+			</Key>
+			<Key ID="STR_BUILD15">
+			    	<Original>Helicopter cargo transport</Original>
+			    	<French>Transport de cargo par hélicoptère</French>
+			    	<German>Hubschrauber für Frachttransport</German>
+			    	<Spanish>Transporte de carga en helicóptero</Spanish>
+			    	<Russian>Транспортировка груза вертолетом</Russian>
+			    	<Chinesesimp>直升机货物运输</Chinesesimp>
+			    	<Japanese>ヘリコプターによる貨物輸送</Japanese>
+			</Key>
+
+			<Key ID="STR_BUILD16">
+			    	<Original>Helicopter armed</Original>
+			    	<French>Hélicoptère armé</French>
+			    	<German>Bewaffneter Hubschrauber</German>
+			    	<Spanish>Helicóptero armado</Spanish>
+			    	<Russian>Вооруженный вертолет</Russian>
+			    	<Chinesesimp>武装直升机</Chinesesimp>
+			    	<Japanese>武装ヘリコプター</Japanese>
+			</Key>
+			<Key ID="STR_BUILD17">
+			    	<Original>Planes</Original>
+			    	<French>Avions</French>
+			    	<German>Flugzeuge</German>
+			    	<Spanish>Aviones</Spanish>
+			    	<Russian>Самолеты</Russian>
+			    	<Chinesesimp>飞机</Chinesesimp>
+			    	<Japanese>飛行機</Japanese>
+			</Key>
+			<Key ID="STR_BUILD18">
+			    	<Original>Jets</Original>
+			    	<French>Jets</French>
+			    	<German>Jets</German>
+			    	<Spanish>Aviones a reacción</Spanish>
+			    	<Russian>Реактивные самолеты</Russian>
+			    	<Chinesesimp>喷气机</Chinesesimp>
+			    	<Japanese>ジェット機</Japanese>
+			</Key>
+			<Key ID="STR_BUILD19">
+			    	<Original>Drones</Original>
+			    	<French>Drones</French>
+			    	<German>Drohnen</German>
+			    	<Spanish>Drones</Spanish>
+			    	<Russian>Дроны</Russian>
+			    	<Chinesesimp>无人机</Chinesesimp>
+			    	<Japanese>ドローン</Japanese>
+			</Key>
+			<Key ID="STR_BUILD20">
+			    	<Original>Medical vehicle ground</Original>
+			    	<French>Véhicule médical terrestre</French>
+			    	<German>Boden-Medizinfahrzeug</German>
+			    	<Spanish>Vehículo médico terrestre</Spanish>
+			    	<Russian>Медицинский автомобиль</Russian>
+			    	<Chinesesimp>地面医疗车</Chinesesimp>
+			    	<Japanese>地上の医療車両</Japanese>
+			</Key>
+			<Key ID="STR_BUILD21">
+			    	<Original>Medical vehicle air</Original>
+			    	<French>Véhicule médical aérien</French>
+			    	<German>Luft-Medizinfahrzeug</German>
+			    	<Spanish>Vehículo médico aéreo</Spanish>
+			    	<Russian>Медицинский автомобиль (воздушный)</Russian>
+			    	<Chinesesimp>空中医疗车</Chinesesimp>
+			    	<Japanese>空中医療車両</Japanese>
+			</Key>
+			<Key ID="STR_BUILD22">
+			    	<Original>Logistics vehicle ground</Original>
+			    	<French>Véhicule logistique terrestre</French>
+			    	<German>Boden-Logistikfahrzeug</German>
+			    	<Spanish>Vehículo logístico terrestre</Spanish>
+			    	<Russian>Логистический автомобиль (наземный)</Russian>
+			    	<Chinesesimp>地面后勤车</Chinesesimp>
+			    	<Japanese>地上の物流車両</Japanese>
+			</Key>
+			<Key ID="STR_BUILD23">
+			    	<Original>Boats</Original>
+			    	<French>Bateaux</French>
+			    	<German>Boote</German>
+			    	<Spanish>Barcos</Spanish>
+			    	<Russian>Лодки</Russian>
+			    	<Chinesesimp>船只</Chinesesimp>
+			    	<Japanese>ボート</Japanese>
+			</Key>
+			<Key ID="STR_BUILD24">
+			    	<Original>Static vehicles</Original>
+			    	<French>Véhicules statiques</French>
+			    	<German>Statische Fahrzeuge</German>
+			    	<Spanish>Vehículos estáticos</Spanish>
+			    	<Russian>Статические машины</Russian>
+			    	<Chinesesimp>静态车辆</Chinesesimp>
+			    	<Japanese>静止車両</Japanese>
+			</Key>
+			<Key ID="STR_BUILD25">
+			    	<Original>Support crates</Original>
+			    	<French>Caisse de support</French>
+			    	<German>Support-Kisten</German>
+			    	<Spanish>Cajas de soporte</Spanish>
+			    	<Russian>Ящики поддержки</Russian>
+			    	<Chinesesimp>支援箱</Chinesesimp>
+			    	<Japanese>サポートクレート</Japanese>
+			</Key>
+			<Key ID="STR_BUILD26">
+			    	<Original>Buildings</Original>
+			    	<French>Bâtiments de l'Ouest</French>
+			    	<German>Gebäude</German>
+			    	<Spanish>Edificios del Oeste</Spanish>
+			    	<Russian>Здания Запада</Russian>
+			    	<Chinesesimp>西部建筑</Chinesesimp>
+			    	<Japanese>西側の建物</Japanese>
 			</Key>
 			<Key ID="STR_ACTIVE_SECTORS">
 					<Original>Active Sectors:</Original>

@@ -1,27 +1,9 @@
-// Joh Factions
-
-if (FAC_MSU_ACTIVE) then {
-	_fac = group player getVariable ["BIS_dg_fac", true];// gibt "NoFaction" wenn keine Gruppe oder Fraktion festgelegt.
-	if (_fac == "NoFaction") exitWith {
-		hint "Bitte erstelle eine Gruppe im Groupmanager, und wähle deine Fraktion in den Gruppendetails!";
-	};
-
-	
-
-	[] call F_calcUnitsCost;
-
-	_comp_build_lists = compile format ["[[], infantry_units, %1_light_vehicles, %1_heavy_vehicles, %1_air_vehicles, static_vehicles, buildings, support_vehicles, squads];", _fac];
-	build_lists = call _comp_build_lists;
-
-};
-// END Joh Factions
-
 private [ "_oldbuildtype", "_cfg", "_initindex", "_iscommandant", "_squadname", "_buildpages", "_build_list", "_classnamevar", "_entrytext", "_icon", "_affordable", "_affordable_crew", "_selected_item", "_linked", "_linked_unlocked", "_base_link", "_link_color", "_link_str" ];
 
 if ( ( [ getpos player , 500 , GRLIB_side_enemy ] call F_getUnitsCount ) > 4 ) exitWith { hint localize "STR_BUILD_ENEMIES_NEARBY"; };
 
 if ( isNil "buildtype" ) then { buildtype = 1 };
-if ( buildtype > 12 ) then { buildtype = 1 };
+if ( buildtype > 26 ) then { buildtype = 1 };
 if ( isNil "buildindex" ) then { buildindex = -1 };
 dobuild = 0;
 _oldbuildtype = -1;
@@ -46,46 +28,82 @@ if ( player == [] call F_getCommander ) then {
 	_iscommandant = true;
 };
 private _near_outpost = (count (player nearObjects [FOB_outpost, 100]) > 0);
-ctrlSetText [1011, format ["%1 - %2", _title, _rank]];
+ctrlSetText [1011, format ["%1 - %2", _title]];
 ctrlShow [ 108, _iscommandant ];
 ctrlShow [ 1085, _iscommandant ];
 
 _squadname = "";
 _buildpages = [
-localize "STR_BUILD1",
-localize "STR_BUILD2",
-localize "STR_BUILD3",
-localize "STR_BUILD4",
-localize "STR_BUILD5",
-localize "STR_BUILD6",
-localize "STR_BUILD7",
-localize "STR_BUILD8",
-localize "STR_BUILD9",
-localize "STR_BUILD10",
-localize "STR_BUILD11",
-localize "STR_BUILD12"
-
+    localize "STR_BUILD1",
+    localize "STR_BUILD2",
+    localize "STR_BUILD3",
+    localize "STR_BUILD4",
+    localize "STR_BUILD5",
+    localize "STR_BUILD6",
+    localize "STR_BUILD7",
+    localize "STR_BUILD8",
+    localize "STR_BUILD9",
+    localize "STR_BUILD10",
+    localize "STR_BUILD11",
+    localize "STR_BUILD12",
+    localize "STR_BUILD13",
+    localize "STR_BUILD14",
+    localize "STR_BUILD15",
+    localize "STR_BUILD16",
+    localize "STR_BUILD17",
+    localize "STR_BUILD18",
+    localize "STR_BUILD19",
+    localize "STR_BUILD20",
+    localize "STR_BUILD21",
+    localize "STR_BUILD22",
+    localize "STR_BUILD23",
+    localize "STR_BUILD24",
+    localize "STR_BUILD25",
+    localize "STR_BUILD26"
 ];
 
+private _oldtype = buildtype -1;
+_display = findDisplay 5501;
+_build_drop_list = _display displayCtrl 1500;
+{
+    _build_drop_list lbAdd _x;
+
+} foreach _buildpages;
+if (buildtype == 1 || isNil "buildtype") then {
+	_build_drop_list lbSetCurSel 0;
+} else {
+	_build_drop_list lbSetCurSel _oldtype;
+};
+
+
+private _buildlist_event_handler = _build_drop_list ctrlAddEventHandler ["LBSelChanged", {
+    params ["_control", "_selectedIndex"];
+    buildtype = _selectedIndex + 1;
+}];
+
+
+
 while { dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
+	if(isNil "buildtype") then {
+		buildtype = 1;
+	};
  	_build_list = [];
 	{
-		if (_near_outpost && buildtype in [4,5,6,7,12]) exitWith {};
-		if (buildtype == 12 ) then {
+		if (_near_outpost && buildtype in [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ,66]) exitWith {};
+		if (buildtype == 66 ) then {
 			_build_list pushback _x;
 		} else {
 			if ( _score >= (_x select 4) ) then {_build_list pushback _x};
 		};
 	} forEach (build_lists select buildtype);
-
 	if (_oldbuildtype != buildtype || synchro_done ) then {
 		synchro_done = false;
 		_oldbuildtype = buildtype;
 
 		lbClear 110;
 		{
-			ctrlSetText [ 151, _buildpages select ( buildtype - 1) ];
-			if ( buildtype != 12 ) then {
+			ctrlSetText [ 110, _buildpages select ( buildtype - 1) ];
+			if ( buildtype != 66 ) then {
 				_entrytext = [(_x select 0)] call get_lrx_name;
 				((findDisplay 5501) displayCtrl (110)) lnbAddRow [ _entrytext, format [ "%1" ,_x select 1], format [ "%1" ,_x select 2], format [ "%1" ,_x select 3]];
 
@@ -169,7 +187,7 @@ while { dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
 			};
 		};
 
-		if ( buildtype != 12 ) then {
+		if ( buildtype != 66 ) then {
 			{ if ( ( _build_item select 0 ) == ( _x select 0 ) ) exitWith { _base_link = _x select 1; _linked = true; } } foreach GRLIB_vehicle_to_military_base_links;
 
 			if ( _linked ) then {
@@ -182,17 +200,16 @@ while { dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
 			_affordable = false;
 		};		
 	};
-
 	_affordable_crew = _affordable;
 	if ( unitcap >= ([] call F_localCap)) then {
 		_affordable_crew = false;
-		if (buildtype == 1 || buildtype == 12) then {
+		if (buildtype == 1 || buildtype == 66) then {
 			_affordable = false;
 		};
 	};
 
 	ctrlEnable [ 120, _affordable && _linked_unlocked && !(_squad_full) ];
-	ctrlShow [ 121, _iscommander && buildtype in [2,3,4,5,6,7,8]];
+	ctrlShow [ 121, _iscommander && buildtype in [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]];
 	ctrlEnable [ 121, _affordable_crew && _linked_unlocked];
 
 	ctrlSetText [131, format [ "%1 : %2/%3" , localize "STR_MANPOWER" , (floor resources_infantry), infantry_cap]] ;
@@ -221,4 +238,7 @@ while { dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
 	sleep 0.1;
 };
 hintSilent "";
-if (!alive player || dobuild != 0) then {closeDialog 0 };
+if (!alive player || dobuild != 0) then {
+	_build_drop_list ctrlRemoveEventHandler ["LBSelChanged", _buildlist_event_handler]; 
+	closeDialog 0;
+};

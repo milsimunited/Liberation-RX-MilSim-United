@@ -21,98 +21,12 @@ GRLIB_side_enemy = EAST;
 //opfor_vehicles = [];
 //opfor_vehicles_low_intensity = [];
 
-// *** SUPPORT ***
-support_vehicles = support_vehicles_west;
-/* + [ 
-	[FOB_box_typename,0,500,0,GRLIB_perm_inf],
-	[FOB_truck_typename,0,500,0,GRLIB_perm_inf],
-	[canisterFuel,0,0,0,GRLIB_perm_inf],
-	[fuel_sling_typename,0,0,0,GRLIB_perm_inf],
-	[ammo_sling_typename,0,0,0,GRLIB_perm_inf],
-	[repair_sling_typename,0,0,0,GRLIB_perm_inf],
-	[medic_sling_typename,0,0,0,GRLIB_perm_inf],
-	[A3W_BoxWps,0,round(5 / GRLIB_recycling_percentage),0,99999]
-	
-	// [Arsenal_typename,0,10,0,GRLIB_perm_inf],
-	// [medicalbox_typename,5,5,0,GRLIB_perm_inf],
-	// [mobile_respawn,10,5,0,GRLIB_perm_inf],
-	// [Respawn_truck_typename,15,150,5,GRLIB_perm_inf],
-	// ["Land_RepairDepot_01_civ_F",10,150,0,GRLIB_perm_inf],
-	// ["Land_MedicalTent_01_MTP_closed_F",5,100,0,GRLIB_perm_inf],
-	// [ammo_truck_typename,5,200,10,GRLIB_perm_inf],
-	// [repair_truck_typename,10,130,10,GRLIB_perm_inf],
-	// [fuel_truck_typename,5,120,40,GRLIB_perm_inf],
-	// [FOB_box_outpost,25,500,20,GRLIB_perm_inf],
-	// ["Land_CargoBox_V1_F",0,500,0,GRLIB_perm_inf]
-	
-];
-*/
+
+support_vehicles = logistics_vehicle_ground;
+
+
 // *** BUILDINGS ***
 buildings = buildings_west + [
-	/*
-	["Land_PierLadder_F",0,0,0,GRLIB_perm_inf],
-	["Land_CncBarrierMedium4_F",0,0,0,GRLIB_perm_inf],
-	["Land_CncWall4_F",0,0,0,GRLIB_perm_inf],
-	["Land_BagFence_Round_F",0,0,0,GRLIB_perm_inf],
-	["Land_BagFence_Long_F",0,0,0,GRLIB_perm_inf],
-	["Land_BagFence_Short_F",0,0,0,GRLIB_perm_inf],
-	["Land_BagFence_Corner_F",0,0,0,GRLIB_perm_inf],
-	["Land_RampConcrete_F",0,0,0,GRLIB_perm_inf],
-	["Land_RampConcreteHigh_F",0,0,0,GRLIB_perm_inf],
-	["Land_HBarrier_5_F",0,0,0,GRLIB_perm_inf],
-	["Land_HBarrierWall_corridor_F",0,0,0,GRLIB_perm_inf],
-	["Land_HBarrierWall4_F",0,0,0,GRLIB_perm_inf],
-	["Land_HBarrierWall6_F",0,0,0,GRLIB_perm_inf],
-	["Land_HBarrierWall_corner_F",0,0,0,GRLIB_perm_inf],
-	["Land_HBarrierTower_F",0,0,0,GRLIB_perm_inf],
-	["Land_HBarrierBig_F",0,0,0,GRLIB_perm_inf],
-	["Land_CncShelter_F",0,0,0,GRLIB_perm_inf],
-	["Land_BagBunker_Small_F",0,0,0,GRLIB_perm_inf],
-	["Land_BagBunker_Large_F",0,0,0,GRLIB_perm_inf],
-	["Land_MedicalTent_01_NATO_generic_open_F",0,0,0,GRLIB_perm_inf],
-	//["Land_BagBunker_Tower_F",0,0,0,GRLIB_perm_inf],
-	["Land_SandbagBarricade_01_F",0,0,0,GRLIB_perm_inf],
-	["Land_SandbagBarricade_01_hole_F",0,0,0,GRLIB_perm_inf],
-	["Land_SandbagBarricade_01_half_F",0,0,0,GRLIB_perm_inf],
-	["Land_SM_01_shed_F",0,0,0,GRLIB_perm_inf],
-	["Land_Hangar_F",0,0,0,GRLIB_perm_inf],
-	["Land_Medevac_house_V1_F",0,0,0,GRLIB_perm_inf],
-	["Land_Medevac_HQ_V1_F",0,0,0,GRLIB_perm_inf],
-	["Land_PortableLight_double_F",0,0,0,GRLIB_perm_inf],
-	["Land_TentLamp_01_suspended_F",0,0,0,GRLIB_perm_inf],
-    ["Land_TentLamp_01_suspended_red_F",0,0,0,GRLIB_perm_inf],
-	["Land_LampHalogen_F",0,0,0,GRLIB_perm_inf],
-	["Land_HelipadSquare_F",0,0,0,GRLIB_perm_inf],
-	["Land_Razorwire_F",0,0,0,GRLIB_perm_inf],
-	["Land_ToolTrolley_02_F",0,0,0,GRLIB_perm_inf],
-	["Land_WeldingTrolley_01_F",0,0,0,GRLIB_perm_inf],
-	["Land_GasTank_02_F",0,0,0,GRLIB_perm_inf],
-	["Land_Workbench_01_F",0,0,0,GRLIB_perm_inf],
-	["Land_WaterTank_F",0,0,0,GRLIB_perm_inf],
-	["Land_WaterBarrel_F",0,0,0,GRLIB_perm_inf],
-	["Land_BarGate_F",0,0,0,GRLIB_perm_inf],
-	["Land_MetalCase_01_large_F",0,0,0,GRLIB_perm_tank],
-	["CargoNet_01_box_F",0,0,0,GRLIB_perm_inf],
-	["CamoNet_BLUFOR_open_F",0,0,GRLIB_perm_inf],
-	["CamoNet_BLUFOR_big_F",0,0,0,GRLIB_perm_inf],
-	["Land_CampingChair_V1_F",0,0,0,GRLIB_perm_inf],
-	["Land_CampingChair_V2_F",0,0,0,GRLIB_perm_inf],
-	["Land_CampingTable_F",0,0,0,GRLIB_perm_inf],
-	["MapBoard_altis_F",0,0,0,GRLIB_perm_inf],
-	["Land_Metal_rack_Tall_F",0,0,0,GRLIB_perm_inf],
-	["PortableHelipadLight_01_blue_F",0,0,0,GRLIB_perm_inf],
-	["PortableHelipadLight_01_red_F",0,0,0,GRLIB_perm_inf],
-	["PortableHelipadLight_01_white_F",0,0,0,GRLIB_perm_inf],
-	["PortableHelipadLight_01_green_F",0,0,0,GRLIB_perm_inf],
-	["PortableHelipadLight_01_yellow_F",0,0,0,GRLIB_perm_inf],
-	["Land_DieselGroundPowerUnit_01_F",0,0,0,GRLIB_perm_inf],
-	["Land_Pallet_MilBoxes_F",0,0,0,GRLIB_perm_inf],
-	["Land_PaperBox_open_full_F",0,0,0,GRLIB_perm_inf],
-	["Land_CzechHedgehog_01_new_F",0,0,0,GRLIB_perm_inf],
-	["Land_ConcreteHedgehog_01_F",0,0,0,GRLIB_perm_inf],
-	["Land_DragonsTeeth_01_4x2_old_redwhite_F",0,0,0,GRLIB_perm_inf],
-	["Land_ClutterCutter_large_F",0,0,0,GRLIB_perm_inf],
-	*/
 	[FOB_sign,0,0,0,99999]
 ];
 
@@ -124,7 +38,11 @@ simple_objects = [
 
 // *** ELITES ***
 elite_vehicles = [];
-{ if (_x select 4 == GRLIB_perm_max) then { elite_vehicles pushback (_x select 0)} } foreach light_vehicles + strong_light_vehicles + heavy_vehicles + strong_heavy_vehicles + air_vehicles + fast_air_vehicle + static_vehicles;
+{
+    if (_x select 4 == GRLIB_perm_max) then {
+        elite_vehicles pushBack (_x select 0)
+    }
+} forEach small_infantry_transport_unarmed + small_infantry_transport_armed_HMG + small_infantry_transport_armed_GMG + small_infantry_transport_armed_AT + big_infantry_transport_unarmed + big_infantry_transport_armed_HMG + big_infantry_transport_armed_GMG + armored_infantry_transport + artillery_vehicles + apc + mbt + anti_air + helicopter_personal_transport + helicopter_cargo_transport + helicopter_armed + planes + jets + drones + medical_vehicle_ground + medical_vehicle_air + logistics_vehicle_ground + boats + static_vehicles;
 
 // Static Weapons
 list_static_weapons = ["I_static_AA_F"] + opfor_statics;
@@ -299,18 +217,33 @@ GRLIB_recycleable_classnames = ["LandVehicle","Air","Ship","StaticWeapon","Sling
 } foreach (support_vehicles + support_crates + buildings + opfor_recyclable + loot_crates);
 
 // Filter Mods
-infantry_units = [ infantry_units ] call F_filterMods;
-light_vehicles = [ light_vehicles ] call F_filterMods;
-strong_light_vehicles = [ strong_light_vehicles ] call F_filterMods;
-heavy_vehicles = [ heavy_vehicles ] call F_filterMods;
-strong_heavy_vehicles = [ strong_heavy_vehicles ] call F_filterMods;
-air_vehicles = [ air_vehicles ] call F_filterMods;
-fast_air_vehicle = [ fast_air_vehicle ] call F_filterMods;
-support_vehicles = [ support_vehicles ] call F_filterMods;
-support_crates = [ support_crates ] call F_filterMods;
-static_vehicles = [ static_vehicles ] call F_filterMods;
-buildings = [ buildings ] call F_filterMods;
-build_lists = [[],infantry_units,light_vehicles,strong_light_vehicles,heavy_vehicles,strong_heavy_vehicles,air_vehicles,fast_air_vehicle,static_vehicles,buildings,support_vehicles,support_crates,squads];
+infantry_units = [ infantry_units ] call F_filtermods;
+small_infantry_transport_unarmed = [ small_infantry_transport_unarmed ] call F_filtermods;
+small_infantry_transport_armed_HMG = [ small_infantry_transport_armed_HMG ] call F_filtermods;
+small_infantry_transport_armed_GMG = [ small_infantry_transport_armed_GMG ] call F_filtermods;
+small_infantry_transport_armed_AT = [ small_infantry_transport_armed_AT ] call F_filtermods;
+big_infantry_transport_unarmed = [ big_infantry_transport_unarmed ] call F_filtermods;
+big_infantry_transport_armed_HMG = [ big_infantry_transport_armed_HMG ] call F_filtermods;
+big_infantry_transport_armed_GMG = [ big_infantry_transport_armed_GMG ] call F_filtermods;
+armored_infantry_transport = [ armored_infantry_transport ] call F_filtermods;
+artillery_vehicles = [ artillery_vehicles ] call F_filtermods;
+apc = [ apc ] call F_filtermods;
+mbt = [ mbt ] call F_filtermods;
+anti_air = [ anti_air ] call F_filtermods;
+helicopter_personal_transport = [ helicopter_personal_transport ] call F_filtermods;
+helicopter_cargo_transport = [ helicopter_cargo_transport ] call F_filtermods;
+helicopter_armed = [ helicopter_armed ] call F_filtermods;
+planes = [ planes ] call F_filtermods;
+jets = [ jets ] call F_filtermods;
+drones = [ drones ] call F_filtermods;
+medical_vehicle_ground = [ medical_vehicle_ground ] call F_filtermods;
+medical_vehicle_air = [ medical_vehicle_air ] call F_filtermods;
+logistics_vehicle_ground = [ logistics_vehicle_ground ] call F_filtermods;
+boats = [ boats ] call F_filtermods;
+support_crates = [ support_crates ] call F_filtermods;
+static_vehicles = [ static_vehicles ] call F_filtermods;
+buildings = [ buildings ] call F_filtermods;
+build_lists = [[], infantry_units, small_infantry_transport_unarmed, small_infantry_transport_armed_HMG, small_infantry_transport_armed_GMG, small_infantry_transport_armed_AT, big_infantry_transport_unarmed, big_infantry_transport_armed_HMG, big_infantry_transport_armed_GMG, armored_infantry_transport, artillery_vehicles, apc, mbt, anti_air, helicopter_personal_transport, helicopter_cargo_transport, helicopter_armed, planes, jets, drones, medical_vehicle_ground, medical_vehicle_air, logistics_vehicle_ground, boats, static_vehicles, support_crates, buildings];
 militia_squad = [ militia_squad , { [ _x ] call F_checkClass } ]  call BIS_fnc_conditionalSelect;
 militia_vehicles = [ militia_vehicles , { [ _x ] call F_checkClass } ]  call BIS_fnc_conditionalSelect;
 opfor_vehicles = [ opfor_vehicles , { [ _x ] call F_checkClass } ]  call BIS_fnc_conditionalSelect;
@@ -397,9 +330,9 @@ opfor_squad_8_airkillers = [
 ];
 all_resistance_troops = [] + militia_squad;
 all_hostile_classnames = (land_vehicles_classnames + opfor_air + opfor_choppers + opfor_troup_transports + opfor_vehicles_low_intensity + opfor_statics + boats_east);
-{ land_vehicles_classnames pushback (_x select 0); } foreach (heavy_vehicles + light_vehicles);
+{ land_vehicles_classnames pushback (_x select 0); } foreach (small_infantry_transport_unarmed + small_infantry_transport_armed_HMG + small_infantry_transport_armed_GMG + small_infantry_transport_armed_AT + big_infantry_transport_unarmed + big_infantry_transport_armed_HMG + big_infantry_transport_armed_GMG + armored_infantry_transport + artillery_vehicles + apc + mbt + anti_air);
 air_vehicles_classnames = [] + opfor_choppers;
-{ air_vehicles_classnames pushback (_x select 0); } foreach air_vehicles;
+{ air_vehicles_classnames pushback (_x select 0); } foreach helicopter_personal_transport + helicopter_cargo_transport + helicopter_armed + planes + jets + drones;
 markers_reset = [99999,99999,0];
 zeropos = [0,0,0];
 squads_names = [ localize "STR_LIGHT_RIFLE_SQUAD", localize "STR_RIFLE_SQUAD", localize "STR_AT_SQUAD", localize "STR_AA_SQUAD", localize "STR_MIXED_SQUAD", localize "STR_RECON_SQUAD" ];

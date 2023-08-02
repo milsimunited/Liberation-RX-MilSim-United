@@ -61,7 +61,7 @@ _classnames_to_save = [];
 _classnames_to_save_blu = [FOB_typename, FOB_outpost, FOB_sign, huron_typename];
 {
 	_classnames_to_save_blu pushback (_x select 0);
-} foreach (light_vehicles + strong_light_vehicles  + heavy_vehicles + strong_heavy_vehicles + air_vehicles + fast_air_vehicle + support_vehicles + support_crates + static_vehicles + ind_recyclable);
+} foreach (small_infantry_transport_unarmed + small_infantry_transport_armed_HMG + small_infantry_transport_armed_GMG + small_infantry_transport_armed_AT + big_infantry_transport_unarmed + big_infantry_transport_armed_HMG + big_infantry_transport_armed_GMG + armored_infantry_transport + artillery_vehicles + apc + mbt + anti_air + helicopter_personal_transport + helicopter_cargo_transport + helicopter_armed + planes + jets + drones + medical_vehicle_ground + medical_vehicle_air + logistics_vehicle_ground + boats + static_vehicles + support_crates + ind_recyclable);
 
 _vehicles_blacklist = list_static_weapons + uavs + [mobile_respawn];
 
