@@ -1,5 +1,4 @@
 diag_log "--- Client Init start ---";
-titleText ["" ,"BLACK FADED", 100];
 
 waitUntil {!isNil "abort_loading" };
 waitUntil {!isNil "GRLIB_init_server" };
@@ -9,7 +8,7 @@ if (!GRLIB_init_server || abort_loading) exitWith {
 	uisleep 10;
 	endMission "LOSER";
 };
-
+sleep 5;
 PAR_Grp_ID = getPlayerUID player;
 if (PAR_Grp_ID == "" || !(isPlayer player)) exitWith {
 	private _msg = format ["ARMA3 Multiplayer Initialization Error!\nPlease reconnect to the server..."];
