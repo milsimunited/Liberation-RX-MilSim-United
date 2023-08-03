@@ -36,18 +36,15 @@ small_infantry_transport_unarmed = [
     ["C_Offroad_02_unarmed_F", 0, light_vehicle_price_tier_1, 0, GRLIB_perm_inf],
     ["rhsusf_mrzr4_d", 0, light_vehicle_price_tier_1, 0, GRLIB_perm_inf],
     ["B_LSV_01_unarmed_F", 0, light_vehicle_price_tier_3, 0, GRLIB_perm_inf],
-    
     ["rhsusf_m1043_w", 0, light_vehicle_price_tier_3, 0, GRLIB_perm_inf],
     ["rhsusf_m1151_usarmy_wd", 0, light_vehicle_price_tier_3, 0, GRLIB_perm_inf],
     ["rhsusf_m1165_usarmy_wd", 0, light_vehicle_price_tier_3, 0, GRLIB_perm_inf],
     ["rhsusf_m1152_usarmy_wd", 0, light_vehicle_price_tier_3, 0, GRLIB_perm_inf],
     ["rhsusf_m1152_sicps_usarmy_wd", 0, light_vehicle_price_tier_3, 0, GRLIB_perm_inf],
     ["rhsusf_m1152_rsv_usarmy_wd", 0, light_vehicle_price_tier_3, 0, GRLIB_perm_inf],
-    
     ["UK3CB_BAF_landRover_Soft_FFR_Green_A", 0, light_vehicle_price_tier_3, 0, GRLIB_perm_inf],
     ["UK3CB_BAF_landRover_Hard_FFR_Green_A", 0, light_vehicle_price_tier_3, 0, GRLIB_perm_inf],
     ["UK3CB_BAF_landRover_Snatch_FFR_Green_A", 0, light_vehicle_price_tier_3, 0, GRLIB_perm_inf],
-    
     ["BWA3_Eagle_Fleck", 0, light_vehicle_price_tier_3, 0, GRLIB_perm_inf]
     
 ];
@@ -189,9 +186,7 @@ mbt = [
     ["B_MBT_01_cannon_F", 0, strong_heavy_vehicle_price_tier_2, msu_fuel_mbt, GRLIB_perm_inf],
     ["B_MBT_01_TUSK_F", 0, strong_heavy_vehicle_price_tier_2, 0, msu_fuel_mbt, GRLIB_perm_inf],
     ["I_MBT_03_cannon_F", 0, strong_heavy_vehicle_price_tier_2, 0, msu_fuel_mbt, GRLIB_perm_inf],
-    
     ["B_AFV_Wheeled_01_cannon_F", 0, heavy_vehicle_price_tier_11, msu_fuel_ifv, GRLIB_perm_inf],
-    
     ["B_AFV_Wheeled_01_up_cannon_F", 0, heavy_vehicle_price_tier_12, msu_fuel_ifv, GRLIB_perm_inf]
     
 ];
@@ -294,16 +289,15 @@ drones = [
     ["USAF_RQ4A", 0, air_vehicle_price_tier_1, msu_fuel_plane, GRLIB_perm_inf], 
     ["USAF_MQ9", 0, fast_air_vehicle_price_tier_2, msu_fuel_plane, GRLIB_perm_inf], 
     ["B_UAV_05_F", 0, fast_air_vehicle_price_tier_5, msu_fuel_plane, GRLIB_perm_inf] 
-    
 ];
 
 medical_vehicle_ground = [
     ["UK3CB_BAF_landRover_Amb_FFR_Green_A", 0, light_vehicle_price_tier_3, 0, GRLIB_perm_inf],
     ["Redd_tank_LKW_leicht_gl_Wolf_Flecktarn_San", 0, light_vehicle_price_tier_2, 0, GRLIB_perm_inf],
+    ["Redd_Tank_Fuchs_1A4_San_Flecktarn", 0, light_vehicle_price_tier_4, 0, GRLIB_perm_inf],
     ["B_Truck_01_medical_F", 0, light_vehicle_price_tier_4, 0, GRLIB_perm_inf],
     ["rhsusf_M1230a1_usarmy_wd", 0, light_vehicle_price_tier_4, 0, GRLIB_perm_inf],
     ["rhsusf_m113_usarmy_medical", 0, heavy_vehicle_price_tier_1, msu_fuel_ifv, GRLIB_perm_inf]
-    
 ];
 
 medical_vehicle_air = [
@@ -458,7 +452,7 @@ support_crates = [
     // Ersatzteile
     ["ACE_Track", 0, 0, 0, GRLIB_perm_inf],
     ["ACE_Wheel", 0, 0, 0, GRLIB_perm_inf],
-    ["land_Canisterfuel_F", 0, 0, 0, GRLIB_perm_inf],
+    ["Land_Canisterfuel_F", 0, 0, 0, GRLIB_perm_inf],
     // Kisten
     ["Box_IED_exp_F", 0, 0, 0, GRLIB_perm_inf],
     ["B_CargoNet_01_ammo_F", 0, 0, 0, GRLIB_perm_inf],
@@ -467,7 +461,7 @@ support_crates = [
     // Waffen
     ["SNC_Javelin", 0, 450, 0, GRLIB_perm_inf],
     // cratefiller & Container
-    ["land_RepairDepot_01_green_F", 0, 0, 0, GRLIB_perm_inf],
+    ["Land_RepairDepot_01_green_F", 0, 0, 0, GRLIB_perm_inf],
     ["ffaa_UAVStation", 0, 0, 0, GRLIB_perm_inf],
     // Bundeswehr	Fleck
     ["BWA3_WLP14_ammo_Fleck", 0, 0, 0, GRLIB_perm_inf],
@@ -494,13 +488,13 @@ support_crates = [
     [fuel_sling_typename, 0, 0, 0, GRLIB_perm_inf],
     [medic_sling_typename, 0, 0, 0, GRLIB_perm_inf],
     // Taru Container
-    ["land_Pod_Heli_Transport_04_medevac_F", 0, 0, 0, GRLIB_perm_inf],
-    ["land_Pod_Heli_Transport_04_covered_F", 0, 0, 0, GRLIB_perm_inf],
-    ["land_Pod_Heli_Transport_04_repair_F", 0, 0, 0, GRLIB_perm_inf],
-    ["land_Pod_Heli_Transport_04_fuel_F", 0, 0, 0, GRLIB_perm_inf],
-    ["land_Pod_Heli_Transport_04_ammo_F", 0, 0, 0, GRLIB_perm_inf],
-    ["land_Pod_Heli_Transport_04_box_F", 0, 0, 0, GRLIB_perm_inf],
-    ["land_Pod_Heli_Transport_04_bench_F", 0, 0, 0, GRLIB_perm_inf],
+    ["Land_Pod_Heli_Transport_04_medevac_F", 0, 0, 0, GRLIB_perm_inf],
+    ["Land_Pod_Heli_Transport_04_covered_F", 0, 0, 0, GRLIB_perm_inf],
+    ["Land_Pod_Heli_Transport_04_repair_F", 0, 0, 0, GRLIB_perm_inf],
+    ["Land_Pod_Heli_Transport_04_fuel_F", 0, 0, 0, GRLIB_perm_inf],
+    ["Land_Pod_Heli_Transport_04_ammo_F", 0, 0, 0, GRLIB_perm_inf],
+    ["Land_Pod_Heli_Transport_04_box_F", 0, 0, 0, GRLIB_perm_inf],
+    ["Land_Pod_Heli_Transport_04_bench_F", 0, 0, 0, GRLIB_perm_inf],
     // BAF Container
     ["UK3CB_BAF_MAN_HX60_Container_Blue", 0, 0, 0, GRLIB_perm_inf], // Cargo
     ["UK3CB_BAF_MAN_HX60_Container_Green", 0, 0, 0, GRLIB_perm_inf], // Cargo
@@ -604,7 +598,7 @@ buildings_west = [
     ["Land_fortified_nest_small",0,0,0,GRLIB_perm_inf],
     ["Land_fortified_nest_big",0,0,0,GRLIB_perm_inf],
     ["Land_BagBunker_Small_F",0,0,0,GRLIB_perm_inf],
-    ["land_bunker_garage",0,0,0,GRLIB_perm_inf],
+    ["Land_bunker_garage",0,0,0,GRLIB_perm_inf],
     ["Land_Trench_01_grass_F",0,0,0,GRLIB_perm_inf],
     ["Land_fort_rampart",0,0,0,GRLIB_perm_inf],
     ["Land_fort_artillery_nest",0,0,0,GRLIB_perm_inf],
