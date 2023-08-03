@@ -107,7 +107,7 @@ _i = 0;
 		_build_combo lbSetData [_i, ( _x select 0 )];
 		_i = _i + 1;
 	};
-} forEach light_vehicles + heavy_vehicles + air_vehicles + static_vehicles + support_vehicles + opfor_recyclable;
+} forEach small_infantry_transport_unarmed + small_infantry_transport_armed_HMG + small_infantry_transport_armed_GMG + small_infantry_transport_armed_AT + big_infantry_transport_unarmed + big_infantry_transport_armed_HMG + big_infantry_transport_armed_GMG + armored_infantry_transport + artillery_vehicles + apc + mbt + anti_air + helicopter_personal_transport + helicopter_cargo_transport + helicopter_armed + planes + jets + drones + medical_vehicle_ground + medical_vehicle_air + logistics_vehicle_ground + boats + static_vehicles + opfor_recyclable;
 
 _ban_combo lbSetCurSel 0;
 _score_combo lbSetCurSel 0;
@@ -157,7 +157,7 @@ while { alive player && dialog } do {
 		_msg = format ["Build Vehicle: %1", _veh_text];
 		hint _msg;
 		systemchat _msg;
-		buildtype = 9;
+		buildtype = 26;
 		build_unit = [_veh_class,[],1,[],[]];
 		dobuild = 1;
 		last_build = (lbCurSel _build_combo);

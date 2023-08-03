@@ -38,7 +38,7 @@ while { true } do {
 						_new_manpower_used = _new_manpower_used + (_x select 1);
 						_new_fuel_used = _new_fuel_used + (_x select 3);
 					};
-				} foreach ( light_vehicles + strong_light_vehicles  + heavy_vehicles + strong_heavy_vehicles + air_vehicles + fast_air_vehicle + static_vehicles + support_vehicles + support_crates + opfor_recyclable + loot_crates );
+				} foreach ( small_infantry_transport_unarmed + small_infantry_transport_armed_HMG + small_infantry_transport_armed_GMG + small_infantry_transport_armed_AT + big_infantry_transport_unarmed + big_infantry_transport_armed_HMG + big_infantry_transport_armed_GMG + armored_infantry_transport + artillery_vehicles + apc + mbt + anti_air + helicopter_personal_transport + helicopter_cargo_transport + helicopter_armed + planes + jets + drones + medical_vehicle_ground + medical_vehicle_air + logistics_vehicle_ground + boats + static_vehicles + opfor_recyclable + loot_crates );
 			};
 		} foreach vehicles + GRLIB_mobile_respawn;
 

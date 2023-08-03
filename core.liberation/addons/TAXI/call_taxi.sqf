@@ -5,7 +5,7 @@ if (!isNil "_taxi") exitWith {hintSilent localize "STR_TAXI_ONLY_ONE"};
 _taxi_back = false;
 
 //check dest place
-buildtype = 13;
+buildtype = 66;
 build_unit = [taxi_helipad_type,[],1,[],[]];
 dobuild = 1;
 

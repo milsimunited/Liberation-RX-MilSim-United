@@ -52,7 +52,7 @@ while { true } do {
 		buildtype = 99;
 	};
 
-	if ( buildtype in [13,14] ) then {
+	if ( buildtype in [67,68] ) then {
 		_price = 0;
 		_classname = build_unit select 0;
 		_color = build_unit select 1;
@@ -62,7 +62,7 @@ while { true } do {
 	};
 	
 
-	if ( buildtype in [1,2,3,4,5,6,7,8,9,10,11,12] ) then {
+	if ( buildtype in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26] ) then {
 		_score = score player;
 		_build_list = [];
 		{
@@ -119,7 +119,7 @@ while { true } do {
 		};
 		build_confirmed = 0;
 	} else {
-		if ( buildtype == 12 ) then {
+		if ( false ) then { //buildtype == 12
 			if (isNil {player getVariable ["my_squad", nil]} ) then {
 				if (!([_price] call F_pay)) exitWith {};
 				_pos = [(getpos player select 0) + 1,(getpos player select 1) + 1, 0];
@@ -179,7 +179,7 @@ while { true } do {
 			
 			_idactplace = player addAction ["<t color='#B0FF00'>" + localize "STR_PLACEMENT" + "</t> <img size='1' image='res\ui_confirm.paa'/>","scripts\client\build\build_place.sqf","",-750,false,true,"","build_invalid == 0 && build_confirmed == 1"];
 			_idactrotate = player addAction ["<t color='#B0FF00'>" + localize "STR_ROTATION" + "</t> <img size='1' image='res\ui_rotation.paa'/>","scripts\client\build\build_rotate.sqf","",-756,false,false,"","build_confirmed == 1"];
-			_idactcancel = player addAction ["<t color='#B0FF00'>" + localize "STR_CANCEL" + "</t> <img size='1' image='res\ui_cancel.paa'/>","scripts\client\build\build_cancel.sqf","",-760,false,true,"","build_confirmed == 1 && buildtype != 13"];
+			_idactcancel = player addAction ["<t color='#B0FF00'>" + localize "STR_CANCEL" + "</t> <img size='1' image='res\ui_cancel.paa'/>","scripts\client\build\build_cancel.sqf","",-760,false,true,"","build_confirmed == 1 && buildtype != 67"];
 			_ghost_spot = (markerPos "ghost_spot") findEmptyPosition [1,150,"B_Heli_Transport_03_unarmed_F"];
 			_ghost_spot = _ghost_spot vectorAdd [0, 0, build_altitude];
 
@@ -212,7 +212,7 @@ while { true } do {
 
 				while { _actualdir > 360 } do { _actualdir = _actualdir - 360 };
 				while { _actualdir < 0 } do { _actualdir = _actualdir + 360 };
-				if ( ((buildtype == 9) || (buildtype == 99)) && ((gridmode % 2) == 1) ) then {
+				if ( ((buildtype == 26) || (buildtype == 99)) && ((gridmode % 2) == 1) ) then {
 					if ( _actualdir >= 22.5 && _actualdir <= 67.5 ) then { _actualdir = 45 };
 					if ( _actualdir >= 67.5 && _actualdir <= 112.5 ) then { _actualdir = 90 };
 					if ( _actualdir >= 112.5 && _actualdir <= 157.5 ) then { _actualdir = 135 };
@@ -239,7 +239,7 @@ while { true } do {
 				_near_objects_25 = _near_objects_25 + (_truepos nearobjects [FOB_box_typename, 50]);
 				_near_objects_25 = _near_objects_25 + (_truepos nearobjects [Arsenal_typename, 50]);
 
-				if(	buildtype != 9 ) then {
+				if(	buildtype != 26 ) then {
 					_near_objects = _near_objects + (_truepos nearobjects ["Static", _dist]);
 					_near_objects_25 = _near_objects_25 + (_truepos nearobjects ["Static", 50]);
 				};
@@ -278,7 +278,7 @@ while { true } do {
 				};
 				
 				// count _near_objects == 0 && (((!surfaceIsWater _truepos) && (!surfaceIsWater getpos player)) || (_classname in boats_names))
-				if ( ( ((_truepos distance _posfob) < _maxdist) || ((player distance2D lhd) < _maxdist) || (buildtype == 13) )  ) then {
+				if ( ( ((_truepos distance _posfob) < _maxdist) || ((player distance2D lhd) < _maxdist) || (buildtype == 67) )  ) then {
 					if ( /*_classname isKindOf "Ship" && */ surfaceIsWater _truepos ) then {
 						_vehicle setposASL _truepos;
 					} else {
@@ -312,7 +312,7 @@ while { true } do {
 						GRLIB_ui_notif = localize "STR_BUILD_ERROR_WATER";
 					};*/
 					
-					if( ((_truepos distance _posfob) > _maxdist || ((player distance2D lhd) < _maxdist)) && buildtype != 13) then {
+					if( ((_truepos distance _posfob) > _maxdist || ((player distance2D lhd) < _maxdist)) && buildtype != 67) then {
 						GRLIB_ui_notif = format [localize "STR_BUILD_ERROR_DISTANCE",_maxdist];
 					};
 
@@ -358,7 +358,7 @@ while { true } do {
 					};
 
 					// Vehicle owner
-					if ( buildtype in [2,3,4,5,6,7,8,10] ) then {
+					if ( buildtype in [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24] ) then {
 						if (!([typeOf _vehicle, GRLIB_vehicle_blacklist] call F_itemIsInClass)) then {
 							_vehicle setVariable ["GRLIB_vehicle_owner", getPlayerUID player, true];
 							_vehicle allowCrewInImmobile true;
@@ -451,7 +451,7 @@ while { true } do {
 					};
 				};
 
-				if(buildtype != 9) then {
+				if(buildtype != 26) then {
 					_vehicle addMPEventHandler ["MPKilled", { _this spawn kill_manager }];
 				};
 
