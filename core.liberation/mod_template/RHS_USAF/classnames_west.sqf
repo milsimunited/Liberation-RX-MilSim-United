@@ -174,6 +174,7 @@ helicopter_personal_transport = [
     ["UK3CB_BAF_Merlin_HC4_18_GPMG", 0, 400, 0, GRLIB_perm_inf],
     ["RHS_Mi8AMT_vvs", 0, 400, 0, GRLIB_perm_inf],
     ["RHS_CH_47F_10", 0, 400, 0, GRLIB_perm_inf],
+    ["rhsusf_CH53E_USMC_D", 0, 400, 0, GRLIB_perm_inf],
     ["rhsusf_CH53E_USMC_GAU21_D", 0, 400, 0, GRLIB_perm_inf]   
 ];
 
