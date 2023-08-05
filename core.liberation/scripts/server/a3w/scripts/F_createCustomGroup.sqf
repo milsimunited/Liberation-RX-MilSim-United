@@ -29,8 +29,7 @@ for "_i" from 1 to _nbUnits do {
 	_unit = _grp createUnit [(selectRandom _unitTypes), _uPos, [], 5, "NONE"];
 	_unit allowDamage false;
 	_unit addMPEventHandler ["MPKilled", { _this spawn kill_manager }];
-	_unit setSkill 0.6;
-	_unit setSkill ["courage", 1];
+	_unit setSkill 0.9;
 	_unit allowFleeing 0;
 	_unit setVariable ["mission_AI", true];
 	_unit switchMove "amovpknlmstpsraswrfldnon";

@@ -29,7 +29,7 @@ if (isNil "_attackedSector") then {
 	};
 };
 _vehicle_pool = opfor_battlegroup_vehicles;
-if (combat_readiness < bg_readiness_min*2) then {
+if (combat_readiness < bg_readiness_high) then {
 	_vehicle_pool = opfor_battlegroup_vehicles_low_intensity
 };
 
@@ -45,7 +45,7 @@ if (_spawn_marker != "") then {
 	if (_target_size >= GRLIB_battlegroup_size * 2) then {
 		_target_size = GRLIB_battlegroup_size * 2;
 	};
-	if (combat_readiness < bg_readiness_min*2) then {
+	if (combat_readiness < bg_readiness_high) then {
 		_target_size = round (_target_size * 0.75)
 	};
 	if (count allPlayers <= 9) then {

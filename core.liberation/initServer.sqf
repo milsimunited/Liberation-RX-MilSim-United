@@ -150,15 +150,7 @@ hs_spawn = compileFinal "
 
 ";
 
-
-
-
-
-
 ["Initialize", [true]] call BIS_fnc_dynamicGroups;
-
-
-
 
 while { true } do {
 	sleep msu_heartbeat;
@@ -183,12 +175,3 @@ while { true } do {
 
 	[] spawn hs_spawn;
 };
-
-
-
-
-
-
-
-
-
