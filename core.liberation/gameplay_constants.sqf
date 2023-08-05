@@ -151,7 +151,7 @@ fob_hunting_readiness = 40;
 // Battlegroup readiness
 bg_readiness_cooldown = false;
 bg_readiness_min = 45;
-
+bg_readiness_high = 75;
 // msu loops
 msu_heartbeat = 240;
 huber_commandos = true;
