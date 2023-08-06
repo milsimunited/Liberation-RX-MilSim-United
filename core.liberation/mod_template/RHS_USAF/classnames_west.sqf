@@ -85,6 +85,7 @@ big_infantry_transport_armed_HMG = [
     ["rhsusf_m1240a1_m2_uik_usarmy_wd", 0, 300, msu_fuel_apc, GRLIB_perm_inf],
     ["rhsusf_M1230_M2_usarmy_wd", 0, 300, msu_fuel_apc, GRLIB_perm_inf],
     ["rhsusf_M1220_M153_M2_usarmy_wd", 0, 350, msu_fuel_apc, GRLIB_perm_inf],
+    ["Redd_Tank_Fuchs_1A4_Jg_Flecktarn", 0, 300, msu_fuel_apc, GRLIB_perm_inf],
     ["BWA3_Dingo2_FLW100_MG3_CG13_Fleck", 0, 350, msu_fuel_apc, GRLIB_perm_inf],
     ["BWA3_Dingo2_FLW200_M2_CG13_Fleck", 0, 350, msu_fuel_apc, GRLIB_perm_inf],
     ["B_MRAP_01_HMG_F", 0, 350, msu_fuel_apc, GRLIB_perm_inf],
