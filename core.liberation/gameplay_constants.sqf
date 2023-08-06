@@ -164,9 +164,9 @@ reinforce_spawn_min = GRLIB_spawn_min;
 unload_distance = 100;
 
 // Deactivate HC spawning
-hc_spawn_off = true;
-hc_spawn_towns = false;
-hc_spawn_patrol = false;
+hc_spawn_off = false;
+hc_spawn_towns = true;
+hc_spawn_patrol = true;
 
 //Datalink Options
 force_datalink = true;
