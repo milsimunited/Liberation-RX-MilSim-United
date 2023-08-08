@@ -1024,7 +1024,7 @@ log_on_server = compileFinal "
 	[_vehicle,4] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
-["rhsusf_CH53e_USMC_D_cargo", "InitPost", {
+["rhsusf_CH53e_USMC_cargo", "InitPost", {
     params ["_vehicle"];
 	[_vehicle,30] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
