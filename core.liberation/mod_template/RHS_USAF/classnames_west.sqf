@@ -181,7 +181,7 @@ helicopter_personal_transport = [
 
 helicopter_cargo_transport = [
     ["RHS_CH_47F_10_cargo", 0, 400, 0, GRLIB_perm_inf],
-    ["rhsusf_CH53e_USMC_D_cargo", 0, 400, 0, GRLIB_perm_inf],
+    ["rhsusf_CH53e_USMC_cargo", 0, 400, 0, GRLIB_perm_inf],
     ["O_Heli_Transport_04_F", 0, 400, 0, GRLIB_perm_inf],
     ["UK3CB_BAF_Merlin_HC4_Cargo", 0, 400, 0, GRLIB_perm_inf],
     ["UK3CB_BAF_Merlin_HC3_Cargo", 0, 400, 0, GRLIB_perm_inf]
