@@ -41,12 +41,8 @@ if ( (!(_sector in blufor_sectors)) &&  ( ( [ getmarkerpos _sector , [ _opforcou
 		_infsquad = "militia";
 		_squad1 = ([] call F_getAdaptiveSquadComp);
 		_squad2 = ([] call F_getAdaptiveSquadComp);
-		if ( GRLIB_unitcap >= 1) then {
-			_squad3 = ([] call F_getAdaptiveSquadComp);
-		};
-		if ( GRLIB_unitcap >= 1.5) then {
-			_squad4 = ([] call F_getAdaptiveSquadComp);
-		};
+		_squad3 = ([] call F_getAdaptiveSquadComp);
+		_squad4 = ([] call F_getAdaptiveSquadComp);
 		if(floor(random 100) > (66 / GRLIB_difficulty_modifier)) then { _vehtospawn pushback (selectRandom militia_vehicles); };
 		if(floor(random 100) > (50 / GRLIB_difficulty_modifier)) then { _vehtospawn pushback (selectRandom militia_vehicles); };
 		if(floor(random 100) > (33 / GRLIB_difficulty_modifier)) then { _vehtospawn pushback ( [] call F_getAdaptiveVehicle ); };
