@@ -72,12 +72,12 @@ if (isNil "frdl_fire_dmg_threshold") then { frdl_fire_dmg_threshold = 0.1; };
 
 msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp_F", "B_officer_F", "B_Pilot_F", "B_Helipilot_F", "B_helicrew_F", "B_crew_F"];
 
-// && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids // exclude moderators
+
 ["B_Soldier_F", "InitPost", {
 	params ["_vehicle"];
 	_vehicle addEventHandler ["HandleDamage", {
 		params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_shooter", "_hitPoint"];
-		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -86,7 +86,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	}];
 	_vehicle addEventHandler ["Dammaged", {
 		params ["_unit", "_selection", "_damage", "_hitIndex", "_hitPoint", "_shooter", "_projectile"];
-		if ( (tkill_script) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -107,7 +107,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	params ["_vehicle"];
 	_vehicle addEventHandler ["HandleDamage", {
 		params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_shooter", "_hitPoint"];
-		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -116,7 +116,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	}];
 	_vehicle addEventHandler ["Dammaged", {
 		params ["_unit", "_selection", "_damage", "_hitIndex", "_hitPoint", "_shooter", "_projectile"];
-		if ( (tkill_script) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -137,7 +137,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	params ["_vehicle"];
 	_vehicle addEventHandler ["HandleDamage", {
 		params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_shooter", "_hitPoint"];
-		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -146,7 +146,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	}];
 	_vehicle addEventHandler ["Dammaged", {
 		params ["_unit", "_selection", "_damage", "_hitIndex", "_hitPoint", "_shooter", "_projectile"];
-		if ( (tkill_script) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -167,7 +167,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	params ["_vehicle"];
 	_vehicle addEventHandler ["HandleDamage", {
 		params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_shooter", "_hitPoint"];
-		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -176,7 +176,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	}];
 	_vehicle addEventHandler ["Dammaged", {
 		params ["_unit", "_selection", "_damage", "_hitIndex", "_hitPoint", "_shooter", "_projectile"];
-		if ( (tkill_script) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -197,7 +197,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	params ["_vehicle"];
 	_vehicle addEventHandler ["HandleDamage", {
 		params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_shooter", "_hitPoint"];
-		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -206,7 +206,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	}];
 	_vehicle addEventHandler ["Dammaged", {
 		params ["_unit", "_selection", "_damage", "_hitIndex", "_hitPoint", "_shooter", "_projectile"];
-		if ( (tkill_script) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -227,7 +227,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	params ["_vehicle"];
 	_vehicle addEventHandler ["HandleDamage", {
 		params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_shooter", "_hitPoint"];
-		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -236,7 +236,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	}];
 	_vehicle addEventHandler ["Dammaged", {
 		params ["_unit", "_selection", "_damage", "_hitIndex", "_hitPoint", "_shooter", "_projectile"];
-		if ( (tkill_script) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -257,7 +257,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	params ["_vehicle"];
 	_vehicle addEventHandler ["HandleDamage", {
 		params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_shooter", "_hitPoint"];
-		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -266,7 +266,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	}];
 	_vehicle addEventHandler ["Dammaged", {
 		params ["_unit", "_selection", "_damage", "_hitIndex", "_hitPoint", "_shooter", "_projectile"];
-		if ( (tkill_script) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -287,7 +287,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	params ["_vehicle"];
 	_vehicle addEventHandler ["HandleDamage", {
 		params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_shooter", "_hitPoint"];
-		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -296,7 +296,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	}];
 	_vehicle addEventHandler ["Dammaged", {
 		params ["_unit", "_selection", "_damage", "_hitIndex", "_hitPoint", "_shooter", "_projectile"];
-		if ( (tkill_script) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -317,7 +317,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	params ["_vehicle"];
 	_vehicle addEventHandler ["HandleDamage", {
 		params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_shooter", "_hitPoint"];
-		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -326,7 +326,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	}];
 	_vehicle addEventHandler ["Dammaged", {
 		params ["_unit", "_selection", "_damage", "_hitIndex", "_hitPoint", "_shooter", "_projectile"];
-		if ( (tkill_script) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -347,7 +347,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	params ["_vehicle"];
 	_vehicle addEventHandler ["HandleDamage", {
 		params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_shooter", "_hitPoint"];
-		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (_damage > frdl_fire_dmg_threshold) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -356,7 +356,7 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	}];
 	_vehicle addEventHandler ["Dammaged", {
 		params ["_unit", "_selection", "_damage", "_hitIndex", "_hitPoint", "_shooter", "_projectile"];
-		if ( (tkill_script) && (isPlayer _shooter) && (_shooter != _unit) && (alive _unit) ) then {
+		if ( (tkill_script) && (isPlayer _shooter) && !(( getPlayerUID _shooter) in GRLIB_whitelisted_steamids) && (_shooter != _unit) && (alive _unit) ) then {
 			_msg = format ["Friendly fire from %1 to %2. Penalty: %3 rank and %4 ammo (damage %5)", name _shooter, name _unit, tkill_score, tkill_ammo, _damage];
 			[gamelogic, _msg] remoteExec ["globalChat", 0];
 			[getPlayerUID _shooter, tkill_score] remoteExec ["F_addPlayerScore", 2];
@@ -433,7 +433,6 @@ log_on_server = compileFinal "
 		
 		_msg = format ["[CuratorAction] %1 placed %2", name _unit, typeOf _entity];
 		[_msg] remoteExec ["log_on_server", 2];
-		[gamelogic, _msg] remoteExec ["globalChat", 0];
 	}];
 
 	_x addEventHandler ["CuratorObjectEdited", {
@@ -442,7 +441,6 @@ log_on_server = compileFinal "
 		
 		_msg = format ["[CuratorAction] %1 moved %2", name _unit, typeOf _entity];
 		[_msg] remoteExec ["log_on_server", 2];
-		[gamelogic, _msg] remoteExec ["globalChat", 0];
 	}];
 
 	_x addEventHandler ["CuratorObjectDoubleClicked", {
@@ -451,7 +449,6 @@ log_on_server = compileFinal "
 		
 		_msg = format ["[CuratorAction] %1 edited %2", name _unit, typeOf _entity];
 		[_msg] remoteExec ["log_on_server", 2];
-		[gamelogic, _msg] remoteExec ["globalChat", 0];
 	}];
 } foreach allcurators;
 
