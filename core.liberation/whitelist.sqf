@@ -14,13 +14,11 @@ GRLIB_whitelisted_steamids = [
     "76561198019854511", // Voltaren
     "76561198203314980", // Bobi
     "76561198094301584", // Devin
-    "76561198161654836", // Napu
     "76561197997804176", // Slotzi
     "76561198283765221", // Steakman
     "76561198396300771", // LTVince
     "76561197993044168", // Huber Sepp
     "76561198043617179"  // Mantanismus
-
 ];
 
 // Allow player to use the Light Admin Menu (aka Moderators)
