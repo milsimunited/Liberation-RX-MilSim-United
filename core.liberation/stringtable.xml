@@ -3584,7 +3584,7 @@
 					&lt;br/&gt;&lt;br/&gt;
 					&lt;t size='1.15' color='#00a0ff'&gt;Cost: 50&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
 					&lt;br/&gt;
-					&lt;t size='1.15' color='#ffa000'&gt;Reward: OPFOR alert level reduced by 60%&lt;/t&gt;
+					&lt;t size='1.15' color='#ffa000'&gt;Reward: OPFOR alert level reduced by 40%&lt;/t&gt;
 					&lt;br/&gt;&lt;br/&gt;
 					&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
 					</Original>
@@ -3599,7 +3599,7 @@
 					&lt;br/&gt;&lt;br/&gt;
 					&lt;t size='1.15' color='#00a0ff'&gt;Coût: 50&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
 					&lt;br/&gt;
-					&lt;t size='1.15' color='#ffa000'&gt;Récompense: niveau d'alerte de l'OPFOR réduit de 60%&lt;/t&gt;
+					&lt;t size='1.15' color='#ffa000'&gt;Récompense: niveau d'alerte de l'OPFOR réduit de 40%&lt;/t&gt;
 					&lt;br/&gt;&lt;br/&gt;
 					&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
 					</French>
@@ -3614,7 +3614,7 @@
 					&lt;br/&gt;&lt;br/&gt;
 					&lt;t size='1.15' color='#00a0ff'&gt;Kosten: 50&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
 					&lt;br/&gt;
-					&lt;t size='1.15' color='#ffa000'&gt;Belohnung: OPFOR Alarmstatus wird um 60% reduziert&lt;/t&gt;
+					&lt;t size='1.15' color='#ffa000'&gt;Belohnung: OPFOR Alarmstatus wird um 40% reduziert&lt;/t&gt;
 					&lt;br/&gt;&lt;br/&gt;
 					&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
 					</German>
@@ -3629,7 +3629,7 @@
 					&lt;br/&gt;&lt;br/&gt;
 					&lt;t size='1.15' color='#00a0ff'&gt;Cost: 50&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
 					&lt;br/&gt;
-					&lt;t size='1.15' color='#ffa000'&gt;Recompensa: nivel de alerta del OPFOR reducido en un 60%&lt;/t&gt;
+					&lt;t size='1.15' color='#ffa000'&gt;Recompensa: nivel de alerta del OPFOR reducido en un 40%&lt;/t&gt;
 					&lt;br/&gt;&lt;br/&gt;
 					&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
 					</Spanish>
@@ -3640,7 +3640,7 @@
 					&lt;br/&gt;&lt;br/&gt;
 					&lt;t size='1.15' color='#00a0ff'&gt;Требуется: 50&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
 					&lt;br/&gt;
-					&lt;t size='1.15' color='#ffa000'&gt;Награда: уровень тревоги OPFOR уменьшится на 60%&lt;/t&gt;
+					&lt;t size='1.15' color='#ffa000'&gt;Награда: уровень тревоги OPFOR уменьшится на 40%&lt;/t&gt;
 					&lt;br/&gt;&lt;br/&gt;
 					&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Russian>
 					<Chinesesimp>
