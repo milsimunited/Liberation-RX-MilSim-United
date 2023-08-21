@@ -113,7 +113,6 @@ artillery_vehicles = [
     ["BWA3_Panzerhaubitze2000_Fleck", 0, 1500, msu_fuel_mbt, GRLIB_perm_inf],
     ["B_MBT_01_arty_F", 0, 1500, msu_fuel_mbt, GRLIB_perm_inf],
     ["rhsusf_M142_usarmy_WD", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
-    ["RHS_BM21_VMF_01", 0, 2000, 0, msu_fuel_mbt, GRLIB_perm_inf],
     ["B_MBT_01_mlrs_F", 0, 3000, 0, msu_fuel_mbt, GRLIB_perm_inf] 
 ];
 
@@ -126,7 +125,6 @@ apc = [
     ["Redd_tank_Wiesel_1A2_toW_Tropentarn", 0, 1000, msu_fuel_ifv, GRLIB_perm_inf],
     ["Redd_tank_Wiesel_1A4_MK20_Tropentarn", 0, 1000, msu_fuel_ifv, GRLIB_perm_inf],    
     ["RHS_M6_wd", 0, 800, msu_fuel_ifv, GRLIB_perm_inf],
-    ["rhs_btr80a_vmf", 0, 800, msu_fuel_ifv, GRLIB_perm_inf],
     ["rnt_sppz_2a2_luchs_tropentarn", 0, 900, msu_fuel_ifv, GRLIB_perm_inf],
     ["RHS_M2A3_wd", 0, 1000, msu_fuel_ifv, GRLIB_perm_inf],
     ["RHS_M2A3_BUSKIII_wd", 0, 1300, msu_fuel_ifv, GRLIB_perm_inf],
@@ -139,9 +137,6 @@ apc = [
 ];
 
 mbt = [
-   
-    ["rhs_t80ue1", 0, 2000, 0, msu_fuel_mbt, GRLIB_perm_inf],
-    ["rhs_t90sm_tv", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
     ["rhsusf_m1a1aim_tuski_wd", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
     ["rhsusf_m1a2sep1tuskiwd_usarmy", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
     ["rhsusf_m1a2sep2wd_usarmy", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
@@ -154,7 +149,6 @@ mbt = [
 ];
 
 anti_air = [
-    ["rhs_zsu234_aa", 0, 600, msu_fuel_mbt, GRLIB_perm_inf],
     ["Redd_tank_Gepard_1A2_Flecktarn", 0, 600, msu_fuel_mbt, GRLIB_perm_inf],
     ["B_APC_Tracked_01_AA_F", 0, 700, msu_fuel_mbt, GRLIB_perm_inf]
     
@@ -173,7 +167,6 @@ helicopter_personal_transport = [
     ["UK3CB_BAF_Wildcat_AH1_TRN_8A", 0, 400, 0, GRLIB_perm_inf],
     ["UK3CB_BAF_Merlin_HC4_32", 0, 400, 0, GRLIB_perm_inf],
     ["UK3CB_BAF_Merlin_HC4_18_GPMG", 0, 400, 0, GRLIB_perm_inf],
-    ["RHS_Mi8AMT_vvs", 0, 400, 0, GRLIB_perm_inf],
     ["RHS_CH_47F_10", 0, 400, 0, GRLIB_perm_inf],
     ["rhsusf_CH53E_USMC_D", 0, 400, 0, GRLIB_perm_inf],
     ["rhsusf_CH53E_USMC_GAU21_D", 0, 400, 0, GRLIB_perm_inf]   
@@ -193,11 +186,6 @@ helicopter_armed = [
     ["RHS_UH1Y_d", 0, 1000, msu_fuel_heli, GRLIB_perm_inf],
     ["RHS_AH1Z", 0, 1700, msu_fuel_heli, GRLIB_perm_inf],
     ["RHS_AH64DGrey", 0, 2000, msu_fuel_heli, GRLIB_perm_inf],
-    ["RHS_Ka52_vvsc", 0, 1700, msu_fuel_heli, GRLIB_perm_inf],
-    ["rhs_mi28n_vvsc", 0, 1800, msu_fuel_heli, GRLIB_perm_inf],
-    ["RHS_Mi24P_vvs", 0, 1700, msu_fuel_heli, GRLIB_perm_inf],
-    ["RHS_Mi24V_vvs", 0, 1700, msu_fuel_heli, GRLIB_perm_inf],
-    ["RHS_Mi8MTV3_heavy_vvs", 0, 1700, msu_fuel_heli, GRLIB_perm_inf],
     ["UK3CB_BAF_Wildcat_AH1_CAS_6A", 0, 1000, 0, GRLIB_perm_inf],
     ["BWA3_Tiger_RMK", 0, 1700, msu_fuel_heli, GRLIB_perm_inf],
     ["B_Heli_Attack_01_dynamicloadout_F", 0, 1700, 0, GRLIB_perm_inf]  
@@ -350,8 +338,6 @@ static_vehicles = [
     ["rnt_mantis_base", 40, 0, 0, GRLIB_perm_inf],
     ["rnt_mantis_radar", 0, 0, 0, GRLIB_perm_inf],
     ["ffaa_lanzador_nasams", 25, 0, 0, GRLIB_perm_inf],
-    ["RHS_ZU23_VMF", 0, 300, 0, GRLIB_perm_inf],
-    ["rhs_D30_vmf", 0, 300, 0, GRLIB_perm_inf],
     ["RHS_M119_WD", 0, 300, 0, GRLIB_perm_inf],
     ["B_Ship_MRLS_01_F", 0, 5000, 0, GRLIB_perm_inf]
 ];
