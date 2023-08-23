@@ -51,7 +51,6 @@ small_infantry_transport_unarmed = [
 small_infantry_transport_armed_HMG = [
     ["rhsusf_m1165_asv_m240_usaf_d", 0, 200, 0, GRLIB_perm_inf],
     ["rhsusf_m1043_w_m2", 0, 200, 0, GRLIB_perm_inf],
-    ["rhsusf_M1230_M2_usarmy_wd", 0, 200, 0, GRLIB_perm_inf],
     ["rhsusf_m1165a1_gmv_m2_m240_socom_d", 0, 200, msu_fuel_apc, GRLIB_perm_inf],
     ["UK3CB_BAF_Coyote_Passenger_L111A1_W", 0, 200, 0, GRLIB_perm_inf],
     ["UK3CB_BAF_Panther_GPMG_Green_A", 0, 200, 0, GRLIB_perm_inf],
@@ -338,6 +337,7 @@ static_vehicles = [
     ["rnt_mantis_base", 40, 0, 0, GRLIB_perm_inf],
     ["rnt_mantis_radar", 0, 0, 0, GRLIB_perm_inf],
     ["ffaa_lanzador_nasams", 25, 0, 0, GRLIB_perm_inf],
+    ["rhs_D30_vmf", 0, 300, 0, GRLIB_perm_inf],
     ["RHS_M119_WD", 0, 300, 0, GRLIB_perm_inf],
     ["B_Ship_MRLS_01_F", 0, 5000, 0, GRLIB_perm_inf]
 ];
