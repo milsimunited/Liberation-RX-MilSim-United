@@ -1090,6 +1090,9 @@ MSU_blacklisted_from_arsenal = [
 "30Rnd_mas_aus_556x45_Stanag",
 "UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A",
 "USP_PATROL_PACK_CB_CS_RP",
+
+//Ab hier BL LTVince
+//RHS Uniformen RUS
 "rhs_uniform_df15",
 "rhs_uniform_df15_tan",
 "rhs_uniform_emr_des_patchless",
@@ -1151,6 +1154,7 @@ MSU_blacklisted_from_arsenal = [
 "rhs_uniform_vkpo_gloves_alt",
 "rhs_uniform_vkpo_gloves",
 "rhs_uniform_6sh122_v2",
+//Kopfbedenkungen RHS RUS
 "rhs_6b13_Flora",
 "rhs_6b13_Flora_6sh92",
 "rhs_6b13_Flora_6sh92_headset_mapcase",
@@ -1213,6 +1217,7 @@ MSU_blacklisted_from_arsenal = [
 "rhs_6sh92_vsr_radio",
 "rhs_6sh92_vsr_vog",
 "rhs_6sh92_vsr_vog_headset",
+//Westen RHS RUS
 "rhs_6b13",
 "rhs_6b13_6sh92",
 "rhs_6b13_6sh92_headset_mapcase",
@@ -1268,6 +1273,7 @@ MSU_blacklisted_from_arsenal = [
 "rhs_6sh92",
 "rhs_6sh92_headset",
 "rhs_6sh92_radio",
+//Rucksäcke RHS RUS
 "rhs_rd54_emr1",
 "rhs_rd54_flora2",
 "rhs_rd54_flora1",
@@ -1277,6 +1283,7 @@ MSU_blacklisted_from_arsenal = [
 "rhs_rk_sht_30_emr",
 "rhs_rk_sht_30_emr_engineer_empty",
 "rhs_tortila_emr",
+// Helme RHS RUS
 "rhs_6b26_digi",
 "rhs_6b26_digi_bala",
 "rhs_6b26_digi_ess",
@@ -1369,7 +1376,39 @@ MSU_blacklisted_from_arsenal = [
 "rhs_fieldcap_vsr",
 "rhs_stsh81_butan",
 "rhs_vkpo_cap",
-"rhs_vkpo_cap_alt"
+"rhs_vkpo_cap_alt",
+// VSM Project Honor (Wegen Gegnern)
+// VSM Project Honor Uniformen
+"VSM_ProjectHonor_Crye_grey_shirt_Camo",
+"VSM_ProjectHonor_Crye_od_pants_Camo",
+"VSM_ProjectHonor_Crye_od_shirt_Camo",
+"VSM_ProjectHonor_Crye_tan_pants_Camo",
+"VSM_ProjectHonor_Crye_tan_shirt_Camo",
+"VSM_ProjectHonor_Crye_Camo",
+// VSM Project Honor Westen
+"VSM_FAPC_Breacher_ProjectHonor",
+"VSM_FAPC_MG_ProjectHonor",
+"VSM_FAPC_Operator_ProjectHonor",
+"VSM_CarrierRig_Breacher_ProjectHonor",
+"VSM_CarrierRig_Gunner_ProjectHonor",
+"VSM_CarrierRig_Operator_ProjectHonor",
+"VSM_LBT6094_breacher_ProjectHonor",
+"VSM_LBT6094_MG_ProjectHonor",
+"VSM_LBT6094_operator_ProjectHonor",
+"VSM_RAV_Breacher_ProjectHonor",
+"VSM_RAV_MG_ProjectHonor",
+"VSM_RAV_operator_ProjectHonor",
+// Project Honor Rucksäcke
+"VSM_ProjectHonor_carryall",
+"VSM_ProjectHonor_Backpack_Compact",
+"VSM_ProjectHonor_Backpack_Kitbag",
+// Project Honor Kopfbedekungen
+"VSM_ProjectHonor_Boonie",
+"VSM_ProjectHonor_OPS",
+"VSM_ProjectHonor_OPS_2",
+"VSM_Mich2000_ProjectHonor",
+"VSM_ProjectHonor_Cap"
+
 ];
 
 // MSU_whitelisted_from_arsenal = [];
