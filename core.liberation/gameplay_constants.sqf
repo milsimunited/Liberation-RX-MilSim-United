@@ -19,11 +19,11 @@ GRLIB_sector_cap = 90 * GRLIB_unitcap;
 GRLIB_battlegroup_cap = 95 * GRLIB_unitcap;
 GRLIB_patrol_cap = 10 * GRLIB_unitcap;
 GRLIB_blufor_cap = 10 * GRLIB_unitcap;
-GRLIB_battlegroup_size = 6;
+GRLIB_battlegroup_size = 5;
 GRLIB_civilians_amount = 1.1 * GRLIB_civilian_activity;
 GRLIB_fob_range = 450;
-GRLIB_surrender_chance = 75;
-GRLIB_secondary_missions_costs = [ 50,5 ];
+GRLIB_surrender_chance = 90;
+GRLIB_secondary_missions_costs = [ 30,3 ];
 GRLIB_halo_altitude = 2000;
 GRLIB_civ_killing_penalty = 0;
 GRLIB_squad_size_bonus = 0;
@@ -62,7 +62,7 @@ kamikaze_kill_score = 8;
 kamikaze_kill_ammo = 14;
 civkill_score = -45;
 civkill_ammo = -275;
-civkill_combat_readiness = 7;
+civkill_combat_readiness = 6;
 tkill_score = -6;
 tkill_ammo = -12;
 tk_active = false; //NEW Tkillscript with dialog
@@ -73,10 +73,10 @@ tk_active = false; //NEW Tkillscript with dialog
 
 
 // logistics
-prisoner_intel = 4;
+prisoner_intel = 8;
 prisoner_score = 8;
-prisoner_ammo = 10;
-prisoner_combat_readiness = 9;
+prisoner_ammo = 60;
+prisoner_combat_readiness = 15;
 prisoner_i = 0;
 
 box_recycle_value = 36; // Only use by 2 dividable numbers
@@ -150,14 +150,14 @@ fob_hunting_readiness = 40;
 
 // Battlegroup readiness
 bg_readiness_cooldown = false;
-bg_readiness_min = 45;
-bg_readiness_high = 75;
+bg_readiness_min = 60;
+bg_readiness_high = 90;
 // msu loops
 msu_heartbeat = 240;
 huber_commandos = true;
 
 // Battlegroup sleeping (divided with csat aggressivity)
-bg_sleeptimer = 1800; 
+bg_sleeptimer = 2400; 
 sector_reinforcement = true;
 limit_bg_dist = GRLIB_spawn_max; 
 reinforce_spawn_min = GRLIB_spawn_min;
