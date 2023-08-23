@@ -1154,6 +1154,7 @@ MSU_blacklisted_from_arsenal = [
 "rhs_uniform_vkpo_gloves_alt",
 "rhs_uniform_vkpo_gloves",
 "rhs_uniform_6sh122_v2",
+"rhs_uniform_6sh122_gloves_v1",
 //Kopfbedenkungen RHS RUS
 "rhs_6b13_Flora",
 "rhs_6b13_Flora_6sh92",
