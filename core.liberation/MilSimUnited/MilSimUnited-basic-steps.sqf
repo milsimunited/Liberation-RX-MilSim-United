@@ -804,6 +804,12 @@ global ausführen
 
 
 
+export import score and ammo
+GRLIB_player_scores
+
+
+
+
 Map Marker in einem Ordner verschieben und sichtbarkeit entfernen
 
 
