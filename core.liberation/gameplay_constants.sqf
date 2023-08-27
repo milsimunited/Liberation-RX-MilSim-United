@@ -28,7 +28,7 @@ GRLIB_halo_altitude = 2000;
 GRLIB_civ_killing_penalty = 0;
 GRLIB_squad_size_bonus = 0;
 GRLIB_perm_ban = -1000000;
-GRLIB_perm_inf = -100;
+GRLIB_perm_inf = 0;
 GRLIB_perm_log = 300;
 GRLIB_perm_tank = 1200;
 GRLIB_perm_air = 2400;
@@ -60,12 +60,16 @@ opfor_kill_score_infantry = 4;
 opfor_kill_ammo_infantry = 7;
 kamikaze_kill_score = 8;
 kamikaze_kill_ammo = 14;
-civkill_score = -45;
+civkill_score = -32;
 civkill_ammo = -275;
 civkill_combat_readiness = 6;
-tkill_score = -6;
+tkill_score = -5;
 tkill_ammo = -12;
 tk_active = false; //NEW Tkillscript with dialog
+msu_score_min = -40;
+msu_score_max = 2000;
+msu_ammo_min = 0;
+msu_ammo_max = 7000;
 
 // tkill_script in init.sqf
 // pylon_restrictions in init.sqf
@@ -1408,7 +1412,30 @@ MSU_blacklisted_from_arsenal = [
 "VSM_ProjectHonor_OPS",
 "VSM_ProjectHonor_OPS_2",
 "VSM_Mich2000_ProjectHonor",
-"VSM_ProjectHonor_Cap"
+"VSM_ProjectHonor_Cap",
+
+"rhs_uniform_gorka_r_g_gloves",
+"rhs_uniform_gorka_r_y_gloves",
+"rhs_uniform_afghanka",
+"rhs_uniform_afghanka_grey",
+"rhs_uniform_afghanka_wdl",
+"rhs_uniform_afghanka_boots",
+"rhs_uniform_afghanka_para",
+"rhs_uniform_afghanka_winter",
+"rhs_uniform_afghanka_winter_boots",
+"U_O_R_Gorka_01_F",
+"U_O_R_Gorka_01_brown_F",
+"U_O_R_Gorka_01_camo_F",
+"U_O_R_Gorka_01_black_F",
+"rhs_altyn_novisor",
+"rhs_altyn_novisor_bala",
+"rhs_altyn_novisor_ess",
+"rhs_altyn_novisor_ess_bala",
+"rhs_altyn_visordown",
+"rhs_altyn",
+"rhs_altyn_bala",
+"rhs_6b23_6sh116_od",
+"rhs_6b23_6sh116_vog_od"
 
 ];
 

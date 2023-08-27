@@ -45,32 +45,32 @@ while { true } do {
 					switch (_rank) do {
 						case "None" : {
 							_msg2 = localize "STR_RANK_LVL0";
-							[_uid, [false,false,false,false,false,false]] call CHG_Perm;
+							[_uid, [true,false,false,true,true,true]] call CHG_Perm;
 							_msg = format ["Warning <t color='#00ff00'>%1</t> !!<br />You Play Wrong !! <t color='#ff0000'>Read the Manual</t>.<br /><br />",name _x];
 						};
 						case "Private" : {
 							_msg2 = localize "STR_RANK_LVL1";
-						//	[_uid, [true,true,true,true,true,true]] call CHG_Perm;
+							[_uid, [true,true,true,true,true,true]] call CHG_Perm;
 						};
 						case "Corporal" : {
 							_msg2 = localize "STR_RANK_LVL2";
-						//	[_uid, [true,true,true,true,true,true]] call CHG_Perm;
+							[_uid, [true,true,true,true,true,true]] call CHG_Perm;
 						};
 						case "Sergeant" : {
 							_msg2 = localize "STR_RANK_LVL3";
-						//	[_uid, [true,true,true,true,true,true]] call CHG_Perm;
+							[_uid, [true,true,true,true,true,true]] call CHG_Perm;
 						};
 						case "Captain" : {
 							_msg2 = localize "STR_RANK_LVL4";
-						//	[_uid, [true,true,true,true,true,true]] call CHG_Perm;
+							[_uid, [true,true,true,true,true,true]] call CHG_Perm;
 						};
 						case "Major" : {
 							_msg2 = localize "STR_RANK_LVL5";
-						//	[_uid, [true,true,true,true,true,true]] call CHG_Perm;
+							[_uid, [true,true,true,true,true,true]] call CHG_Perm;
 						};
 						case "Colonel" : {
 							_msg2 = localize "STR_RANK_LVL6";
-						//  [_uid, [true,true,true,true,true,true]] call CHG_Perm;
+							[_uid, [true,true,true,true,true,true]] call CHG_Perm;
 						};
 					};
 
