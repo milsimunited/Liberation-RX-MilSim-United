@@ -33,6 +33,8 @@ infantry_units = [
 
 small_infantry_transport_unarmed = [
     ["B_Quadbike_01_F", 0, 10, 0, GRLIB_perm_inf],
+    ["tmt_landrover_w", 0, 50, 0, GRLIB_perm_inf], // turk landrover
+    ["TMT_Unimog_Transport_W", 0, 50, 0, GRLIB_perm_inf], // turk unimogs
     ["C_Offroad_02_unarmed_F", 0, 100, 0, GRLIB_perm_inf],
     ["rhsusf_mrzr4_d", 0, 100, 0, GRLIB_perm_inf],
     ["B_LSV_01_unarmed_F", 0, 100, 0, GRLIB_perm_inf],
@@ -49,6 +51,7 @@ small_infantry_transport_unarmed = [
 ];
 
 small_infantry_transport_armed_HMG = [
+    ["TMT_Cobra_RCWS_W", 0, 150, msu_fuel_apc, GRLIB_perm_inf], // turk small mrap
     ["rhsusf_m1165_asv_m240_usaf_d", 0, 200, 0, GRLIB_perm_inf],
     ["rhsusf_m1043_w_m2", 0, 200, 0, GRLIB_perm_inf],
     ["rhsusf_m1165a1_gmv_m2_m240_socom_d", 0, 200, msu_fuel_apc, GRLIB_perm_inf],
@@ -80,6 +83,7 @@ big_infantry_transport_unarmed = [
 ];
 
 big_infantry_transport_armed_HMG = [
+    ["TMT_KirpiII_MRAP_W", 0, 250, msu_fuel_apc, GRLIB_perm_inf], // turk group mrap
     ["rhsusf_m1240a1_m240_uik_usarmy_wd", 0, 300, msu_fuel_apc, GRLIB_perm_inf],
     ["rhsusf_m1240a1_m2_uik_usarmy_wd", 0, 300, msu_fuel_apc, GRLIB_perm_inf],
     ["rhsusf_M1230_M2_usarmy_wd", 0, 300, msu_fuel_apc, GRLIB_perm_inf],
@@ -99,6 +103,8 @@ big_infantry_transport_armed_GMG = [
 ];
 
 armored_infantry_transport = [
+    ["TMT_M113_W_M2", 0, 300, msu_fuel_ifv, GRLIB_perm_inf], // turk m113 m2
+    ["TMT_ACV300_W_M242", 0, 350, msu_fuel_ifv, GRLIB_perm_inf], // turk ifv
     ["UK3CB_BAF_FV432_Mk3_GPMG_Green", 0, 400, msu_fuel_ifv, GRLIB_perm_inf],
     ["rhsusf_stryker_m1126_m2_wd", 0, 450, msu_fuel_ifv, GRLIB_perm_inf],
     ["rhsusf_stryker_m1127_m2_wd", 0, 450, msu_fuel_ifv, GRLIB_perm_inf],
@@ -136,6 +142,9 @@ apc = [
 ];
 
 mbt = [
+    ["TMT_M60A3_W", 0, 1000, msu_fuel_mbt, GRLIB_perm_inf], // turk m60
+    ["TMT_LEO2A4_w", 0, 1200, msu_fuel_mbt, GRLIB_perm_inf], // turk leopard 2a4
+    ["TMT_Leopard2_NG_W", 0, 1500, msu_fuel_mbt, GRLIB_perm_inf], // turk leopard 2a7
     ["rhsusf_m1a1aim_tuski_wd", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
     ["rhsusf_m1a2sep1tuskiwd_usarmy", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
     ["rhsusf_m1a2sep2wd_usarmy", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
@@ -219,6 +228,8 @@ jets = [
 ];
 
 drones = [
+    ["TMT_BayraktarTB2", 0, 150, 0, GRLIB_perm_inf], // turk bayraktar
+
     ["B_T_UGV_01_olive_F", 0, 150, 0, GRLIB_perm_inf],
     ["USAF_RQ4A", 0, 400, msu_fuel_plane, GRLIB_perm_inf], 
     ["B_T_UGV_01_rcws_olive_F", 0, 600, 0, GRLIB_perm_inf],
@@ -665,6 +676,7 @@ squads = [
 
 // All the UAVs must be declared here
 uavs = [
+    "TMT_BayraktarTB2",
     "CUP_B_USMC_DYN_MQ9",
     "B_UAV_01_F",
     "B_UAV_02_dynamicloadout_F",
