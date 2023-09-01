@@ -118,6 +118,7 @@ artillery_vehicles = [
     ["BWA3_Panzerhaubitze2000_Fleck", 0, 1500, msu_fuel_mbt, GRLIB_perm_inf],
     ["B_MBT_01_arty_F", 0, 1500, msu_fuel_mbt, GRLIB_perm_inf],
     ["rhsusf_M142_usarmy_WD", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
+    ["I_E_Truck_02_MRL_F", 0, 2500, msu_fuel_mbt, GRLIB_perm_inf],
     ["B_MBT_01_mlrs_F", 0, 3000, 0, msu_fuel_mbt, GRLIB_perm_inf] 
 ];
 
@@ -326,6 +327,7 @@ boats = [
 ];
 
 static_vehicles = [
+    ["RHS_ZU23_VMF", 0, 0, 0, GRLIB_perm_inf],
     ["rnt_gmw_static_ai", 0, 0, 0, GRLIB_perm_inf],
     ["Redd_Milan_Static", 0, 0, 0, GRLIB_perm_inf],
     ["RHS_Stinger_AA_pod_USMC_WD", 0, 0, 0, GRLIB_perm_inf],
