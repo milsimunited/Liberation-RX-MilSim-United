@@ -229,11 +229,10 @@ jets = [
 ];
 
 drones = [
-    ["TMT_BayraktarTB2", 0, 150, 0, GRLIB_perm_inf], // turk bayraktar
-
     ["B_T_UGV_01_olive_F", 0, 150, 0, GRLIB_perm_inf],
     ["USAF_RQ4A", 0, 400, msu_fuel_plane, GRLIB_perm_inf], 
     ["B_T_UGV_01_rcws_olive_F", 0, 600, 0, GRLIB_perm_inf],
+    ["TMT_BayraktarTB2", 0, 1300, 0, GRLIB_perm_inf], // turk bayraktar
     ["USAF_MQ9", 0, 1400, msu_fuel_plane, GRLIB_perm_inf], 
     ["B_UAV_05_F", 0, 1400, msu_fuel_plane, GRLIB_perm_inf]
 ];
