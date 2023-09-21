@@ -4,7 +4,7 @@ GRLIB_side_resistance = resistance;
 GRLIB_side_civilian = civilian;
 GRLIB_respawn_marker = "respawn_west";
 GRLIB_sector_size = 800;
-GRLIB_capture_size = 100;
+GRLIB_capture_size = 200;
 GRLIB_radiotower_size = 3000;
 GRLIB_spawn_min = 1000;
 GRLIB_spawn_max = 2500;
@@ -48,25 +48,25 @@ GRLIB_offload_diag = false;
 MGR_Key = 19;
 
 // TFAR checker
-tfar_checker = true;
+tfar_checker = false;
 ts_server_name = "MilSim United";
 tfar_channel = "╠-● Ingame [TFAR]";
 
 // gain and punishment
-respawn_ammo = 135; // +/- is conditional
+respawn_ammo = 50; // +/- is conditional
 opfor_kill_score = 0;
 opfor_kill_ammo = 0;
-opfor_kill_score_infantry = 4;
-opfor_kill_ammo_infantry = 7;
-kamikaze_kill_score = 8;
-kamikaze_kill_ammo = 14;
-civkill_score = -32;
-civkill_ammo = -275;
-civkill_combat_readiness = 6;
-tkill_score = -5;
-tkill_ammo = -12;
+opfor_kill_score_infantry = 8;
+opfor_kill_ammo_infantry = 14;
+kamikaze_kill_score = 16;
+kamikaze_kill_ammo = 28;
+civkill_score = -16;
+civkill_ammo = -28;
+civkill_combat_readiness = 5;
+tkill_score = -4;
+tkill_ammo = -10;
 tk_active = false; //NEW Tkillscript with dialog
-msu_score_min = -40;
+msu_score_min = -20;
 msu_score_max = 2000;
 msu_ammo_min = 0;
 msu_ammo_max = 7000;
@@ -77,25 +77,25 @@ msu_ammo_max = 7000;
 
 
 // logistics
-prisoner_intel = 8;
-prisoner_score = 8;
-prisoner_ammo = 60;
-prisoner_combat_readiness = 15;
+prisoner_intel = 16;
+prisoner_score = 16;
+prisoner_ammo = 120;
+prisoner_combat_readiness = 20;
 prisoner_i = 0;
 
-box_recycle_value = 36; // Only use by 2 dividable numbers
-logistics_ammo_for_all = false;
+box_recycle_value = 72; // Only use by 2 dividable numbers
+logistics_ammo_for_all = true;
 logistics_ammo_increase = true;
 
 
 // Sector config
-sector_rank_gain = 10;
-fallback_income = 65;
-income_sectors_bigtown = 65;
-income_sectors_capture = 65;
-income_sectors_military = 65;
-income_sectors_factory = 65;
-income_sectors_tower = 65;
+sector_rank_gain = 20;
+fallback_income = 120;
+income_sectors_bigtown = 120;
+income_sectors_capture = 120;
+income_sectors_military = 120;
+income_sectors_factory = 120;
+income_sectors_tower = 120;
 readiness_increase_bigtown = 4;
 readiness_increase_capture = 4;
 readiness_increase_military = 4;
@@ -108,7 +108,7 @@ Sector_ammo_for_all = false;
 building_penalty_isActive = false;
 
 // Do not allow air vehicles to trigger zones. 
-air_cannot_trigger_on = true;
+air_cannot_trigger_on = false;
 
 
 // resources
@@ -911,10 +911,10 @@ MSU_blacklisted_from_arsenal = [
 "rhs_uniform_omon",
 "launch_O_Titan_short_F",
 "launch_I_Titan_short_F",
-"launch_B_Titan_short_F",
+//"launch_B_Titan_short_F",
 "launch_O_Titan_short_ghex_F",
 "hlc_muzzle_apology",
-"launch_B_Titan_short_tna_F",
+//"launch_B_Titan_short_tna_F",
 
 "USP_OVERWHITE_G3C_GRN_UCP",
 "USP_OVERWHITE_G3C_TAN_UCP",
