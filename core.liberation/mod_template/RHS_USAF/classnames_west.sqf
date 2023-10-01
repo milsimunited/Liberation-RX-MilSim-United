@@ -105,11 +105,11 @@ big_infantry_transport_armed_GMG = [
 armored_infantry_transport = [
     ["TMT_M113_W_M2", 0, 300, msu_fuel_ifv, GRLIB_perm_inf], // turk m113 m2
     ["TMT_ACV300_W_M242", 0, 350, msu_fuel_ifv, GRLIB_perm_inf], // turk ifv
-    ["UK3CB_BAF_FV432_Mk3_GPMG_Green", 0, 400, msu_fuel_ifv, GRLIB_perm_inf],
+    ["PRACS_BMR_A3_M3_SFOD", 0, 450, msu_fuel_ifv, GRLIB_perm_inf],
     ["rhsusf_stryker_m1126_m2_wd", 0, 450, msu_fuel_ifv, GRLIB_perm_inf],
     ["rhsusf_stryker_m1127_m2_wd", 0, 450, msu_fuel_ifv, GRLIB_perm_inf],
     ["rhsusf_stryker_m1132_m2_wd", 0, 450, msu_fuel_ifv, GRLIB_perm_inf],
-    ["UK3CB_BAF_FV432_Mk3_RWS_Green", 0, 450, msu_fuel_ifv, GRLIB_perm_inf]
+    ["PRACS_BMR_M2", 0, 450, msu_fuel_ifv, GRLIB_perm_inf]
 
 ];
 
@@ -124,6 +124,8 @@ artillery_vehicles = [
 
 apc = [
     ["BWA3_Puma_Fleck", 0, 1400, msu_fuel_ifv, GRLIB_perm_inf],
+    ["PRACS_FV101", 0, 1000, msu_fuel_ifv, GRLIB_perm_inf],
+    ["PRACS_FV107", 0, 1200, msu_fuel_ifv, GRLIB_perm_inf],
     ["I_LT_01_scout_F", 0, 200, msu_fuel_ifv, GRLIB_perm_inf],
     ["I_LT_01_AA_F", 0, 600, msu_fuel_ifv, GRLIB_perm_inf],
     ["I_LT_01_AT_F", 0, 1000, msu_fuel_ifv, GRLIB_perm_inf],
@@ -135,8 +137,9 @@ apc = [
     ["RHS_M2A3_wd", 0, 1000, msu_fuel_ifv, GRLIB_perm_inf],
     ["RHS_M2A3_BUSKIII_wd", 0, 1300, msu_fuel_ifv, GRLIB_perm_inf],
     ["Redd_Marder_1A5_Tropentarn", 0, 1000, msu_fuel_ifv, GRLIB_perm_inf],
-    ["UK3CB_BAF_Warrior_A3_W_Camo", 0, 1000, msu_fuel_ifv, GRLIB_perm_inf],
-    ["UK3CB_BAF_Warrior_A3_W_Cage", 0, 1100, msu_fuel_ifv, GRLIB_perm_inf],   
+    ["RACS_Pizarro", 0, 1300, msu_fuel_ifv, GRLIB_perm_inf],
+    ["PRACS_VEC_MGS", 0, 800, msu_fuel_ifv, GRLIB_perm_inf],
+    ["PRACS_VEC_M242", 0, 800, msu_fuel_ifv, GRLIB_perm_inf],   
     ["B_T_APC_Wheeled_01_cannon_F", 0, 1200, msu_fuel_ifv, GRLIB_perm_inf],
     ["I_APC_tracked_03_cannon_F", 0, 1200, msu_fuel_ifv, GRLIB_perm_inf],
     ["I_APC_Wheeled_03_cannon_F", 0, 1300, msu_fuel_ifv, GRLIB_perm_inf]
@@ -147,6 +150,9 @@ mbt = [
     ["TMT_LEO2A4_w", 0, 1200, msu_fuel_mbt, GRLIB_perm_inf], // turk leopard 2a4
     ["TMT_Leopard2_NG_W", 0, 1500, msu_fuel_mbt, GRLIB_perm_inf], // turk leopard 2a7
     ["rhsusf_m1a1aim_tuski_wd", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
+    ["PRACS_M1A1_AIM", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
+    ["PRACS_M60A3", 0, 1500, msu_fuel_mbt, GRLIB_perm_inf],
+    ["PRACS_M60S", 0, 1700, msu_fuel_mbt, GRLIB_perm_inf],
     ["rhsusf_m1a2sep1tuskiwd_usarmy", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
     ["rhsusf_m1a2sep2wd_usarmy", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
     ["rhsusf_m1a2sep1tuskiiwd_usarmy", 0,2000, msu_fuel_mbt, GRLIB_perm_inf],
@@ -159,6 +165,11 @@ mbt = [
 
 anti_air = [
     ["Redd_tank_Gepard_1A2_Flecktarn", 0, 600, msu_fuel_mbt, GRLIB_perm_inf],
+    ["PRACS_m48_chapparal", 0, 600, msu_fuel_mbt, GRLIB_perm_inf],
+    ["PRACS_M163_MACHBET", 0, 700, msu_fuel_mbt, GRLIB_perm_inf],
+    ["PRACS_M548_MPQ64", 0, 200, msu_fuel_mbt, GRLIB_perm_inf],
+    ["PRACS_M727_SEM_IHAWK", 0, 600, msu_fuel_mbt, GRLIB_perm_inf],
+    ["PRACS_M727_IHAWK", 0, 600, msu_fuel_mbt, GRLIB_perm_inf],
     ["B_APC_Tracked_01_AA_F", 0, 700, msu_fuel_mbt, GRLIB_perm_inf]
     
 ];
@@ -166,6 +177,7 @@ anti_air = [
 helicopter_personal_transport = [
     ["RHS_MELB_MH6M", 0, 400, 0, GRLIB_perm_inf],
     ["RHS_UH1Y_UNARMED_d", 0, 400, 0, GRLIB_perm_inf],
+    ["PRACS_UH1H", 0, 400, 0, GRLIB_perm_inf],
     ["RHS_UH60M2_d", 0, 400, 0, GRLIB_perm_inf],
     ["RHS_UH60M_d", 0, 400, 0, GRLIB_perm_inf],
     ["BWA3_NH90_TTH_Fleck", 0, 400, 0, GRLIB_perm_inf],
@@ -186,6 +198,8 @@ helicopter_cargo_transport = [
     ["rhsusf_CH53e_USMC_cargo", 0, 400, 0, GRLIB_perm_inf],
     ["O_Heli_Transport_04_F", 0, 400, 0, GRLIB_perm_inf],
     ["UK3CB_BAF_Merlin_HC4_Cargo", 0, 400, 0, GRLIB_perm_inf],
+    ["PRACS_CH53", 0, 400, 0, GRLIB_perm_inf],
+    ["PRACS_Sa330_Puma", 0, 400, 0, GRLIB_perm_inf],
     ["UK3CB_BAF_Merlin_HC3_Cargo", 0, 400, 0, GRLIB_perm_inf]
 ];
 
@@ -195,7 +209,10 @@ helicopter_armed = [
     ["RHS_UH1Y_d", 0, 1000, msu_fuel_heli, GRLIB_perm_inf],
     ["RHS_AH1Z", 0, 1700, msu_fuel_heli, GRLIB_perm_inf],
     ["RHS_AH64DGrey", 0, 2000, msu_fuel_heli, GRLIB_perm_inf],
-    ["UK3CB_BAF_Wildcat_AH1_CAS_6A", 0, 1000, 0, GRLIB_perm_inf],
+    ["PRACS_AH1S", 0, 1700, 0, GRLIB_perm_inf],
+    ["PRACS_RAH6", 0, 1400, 0, GRLIB_perm_inf],
+    ["PRACS_Sa330_Puma_SOCAT", 0, 1700, 0, GRLIB_perm_inf],
+    ["PRACS_UH1H_CAS", 0, 700, 0, GRLIB_perm_inf],
     ["BWA3_Tiger_RMK", 0, 1700, msu_fuel_heli, GRLIB_perm_inf],
     ["B_Heli_Attack_01_dynamicloadout_F", 0, 1700, 0, GRLIB_perm_inf]  
 ];
@@ -204,6 +221,11 @@ planes = [
     ["RHS_C130J", 0, 400, 0, GRLIB_perm_inf],
     ["RHS_C130J_Cargo", 0, 400, 0, GRLIB_perm_inf],
     ["USAF_C130J", 0, 400, 0, GRLIB_perm_inf],
+    ["PRACS_C130", 0, 400, 0, GRLIB_perm_inf],
+    ["PRACS_E2C", 0, 400, 0, GRLIB_perm_inf],
+    ["RHSGREF_A29B_HIDF", 0, 1400, 0, GRLIB_perm_inf],
+    ["PRACS_Mohawk", 0, 1400, 0, GRLIB_perm_inf],
+    ["PRACS_P3C", 0, 1400, 0, GRLIB_perm_inf],
     ["USAF_C130J_Cargo", 0, 400, 0, GRLIB_perm_inf],
     ["usaf_kc135", 0, 400, 0, GRLIB_perm_inf],
     ["USAF_C17", 0, 400, 0, GRLIB_perm_inf],
@@ -222,6 +244,12 @@ jets = [
     ["B_Plane_Fighter_01_Stealth_F", 0, 1700, msu_fuel_plane, GRLIB_perm_inf],
     ["B_Plane_Fighter_01_F", 0, 2000, msu_fuel_plane, GRLIB_perm_inf],
     ["USAF_A10", 0, 2000, msu_fuel_plane, GRLIB_perm_inf],
+    ["PRACS_A4M", 0, 1600, msu_fuel_plane, GRLIB_perm_inf],
+    ["PRACS_F16CJ", 0, 2000, msu_fuel_plane, GRLIB_perm_inf],
+    ["PRACS_F16CJR", 0, 2000, msu_fuel_plane, GRLIB_perm_inf],
+    ["PRACS_F16", 0, 2000, msu_fuel_plane, GRLIB_perm_inf],
+    ["PRACS_MIRAGEIII", 0, 1600, msu_fuel_plane, GRLIB_perm_inf],
+    ["PRACS_MIRAGEV", 0, 1800, msu_fuel_plane, GRLIB_perm_inf],
     ["FIR_F35B_Standard", 0, 2200, msu_fuel_plane, GRLIB_perm_inf],
     ["USAF_F35A", 0, 2200, msu_fuel_plane, GRLIB_perm_inf],
     ["JS_JC_FA18E", 0, 2200, msu_fuel_plane, GRLIB_perm_inf],
@@ -238,22 +266,39 @@ drones = [
 ];
 
 medical_vehicle_ground = [
-    ["UK3CB_BAF_landRover_Amb_FFR_Green_A", 0, 400, 0, GRLIB_perm_inf],
+    ["PRACS_BMR_AMB", 0, 400, 0, GRLIB_perm_inf],
+    ["PRACS_M250_AMB", 0, 400, 0, GRLIB_perm_inf],
     ["Redd_tank_LKW_leicht_gl_Wolf_Flecktarn_San", 0, 400, 0, GRLIB_perm_inf],
     ["Redd_Tank_Fuchs_1A4_San_Flecktarn", 0, 400, 0, GRLIB_perm_inf],
     ["B_Truck_01_medical_F", 0, 400, 0, GRLIB_perm_inf],
     ["rhsusf_M1230a1_usarmy_wd", 0, 400, 0, GRLIB_perm_inf],
     ["rhsusf_m113_usarmy_medical", 0, 400, msu_fuel_ifv, GRLIB_perm_inf],
-    ["rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy", 0, 400, 0, GRLIB_perm_inf]
+    ["rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy", 0, 400, 0, GRLIB_perm_inf],
+    ["PRACS_M113_MED", 0, 400, 0, GRLIB_perm_inf]
+
 ];
 
 medical_vehicle_air = [
     ["RHS_UH60M_MEV_d", 0, 400, 0, GRLIB_perm_inf],
+    ["PRACS_Sa330_Puma_MED", 0, 400, 0, GRLIB_perm_inf],
     ["RHS_UH60M_MEV2_d", 0, 400, 0, GRLIB_perm_inf]
 ];
 
 logistics_vehicle_ground = [
-    ["UK3CB_BAF_MAN_HX60_Transport_Green", 0, 150, 0, GRLIB_perm_inf],
+    ["PRACS_M250", 0, 150, 0, GRLIB_perm_inf],
+    ["PRACS_M250_Ammo", 0, 150, 0, GRLIB_perm_inf],
+    ["PRACS_M250_flat_bed", 0, 150, 0, GRLIB_perm_inf],
+    ["PRACS_M250_fuel", 0, 150, 0, GRLIB_perm_inf],
+    ["PRACS_M250_open", 0, 150, 0, GRLIB_perm_inf],
+    ["PRACS_M250_Repair", 0, 150, 0, GRLIB_perm_inf],
+    ["PRACS_M250_Salvage", 0, 150, 0, GRLIB_perm_inf],
+    ["PRACS_M250_Supply", 0, 150, 0, GRLIB_perm_inf],
+    ["PRACS_M450", 0, 150, 0, GRLIB_perm_inf],
+    ["PRACS_m548_ammo", 0, 150, 0, GRLIB_perm_inf],
+    ["PRACS_m548_arty_tender", 0, 150, 0, GRLIB_perm_inf],
+    ["PRACS_m548", 0, 150, 0, GRLIB_perm_inf],
+    ["PRACS_m548_fuel", 0, 150, 0, GRLIB_perm_inf],
+    ["PRACS_HEMMTT_Fueler", 0, 150, 0, GRLIB_perm_inf],
     ["UK3CB_BAF_MAN_HX58_Transport_Green", 0, 150, 0, GRLIB_perm_inf],
     ["rnt_lkw_5t_mil_gl_kat_i_transport_fleck", 0, 150, 0, GRLIB_perm_inf],
     ["B_Truck_01_transport_F", 0, 150, 0, GRLIB_perm_inf],
@@ -303,6 +348,7 @@ logistics_vehicle_ground = [
     ["rhsusf_M977A4_REPAIR_BKIT_usarmy_wd", 0, 150, 0, GRLIB_perm_inf],
     ["rhsusf_M978A4_usarmy_wd", 0, 150, 0, GRLIB_perm_inf],
     ["rhsusf_M978A4_BKIT_usarmy_wd", 0, 150, 0, GRLIB_perm_inf],
+    ["PRACS_M88", 0, 700, 0, GRLIB_perm_inf],
     ["B_APC_Tracked_01_CRV_F", 0, 800, msu_fuel_ifv, GRLIB_perm_inf]
 ];
 
@@ -350,6 +396,9 @@ static_vehicles = [
     ["rnt_mantis_radar", 0, 0, 0, GRLIB_perm_inf],
     ["ffaa_lanzador_nasams", 25, 0, 0, GRLIB_perm_inf],
     ["rhs_D30_vmf", 0, 300, 0, GRLIB_perm_inf],
+    ["PRACS_M115", 0, 300, 0, GRLIB_perm_inf],
+    ["PRACS_M1", 0, 300, 0, GRLIB_perm_inf],
+    ["PRACS_M101", 0, 300, 0, GRLIB_perm_inf],
     ["RHS_M119_WD", 0, 300, 0, GRLIB_perm_inf],
     ["B_Ship_MRLS_01_F", 0, 5000, 0, GRLIB_perm_inf]
 ];
