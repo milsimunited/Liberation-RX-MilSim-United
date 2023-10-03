@@ -15,8 +15,8 @@ GRLIB_defended_buildingPos_part = 0.0;
 GRLIB_sector_military_value = 2;
 GRLIB_secondary_objective_impact = 0.4;
 GRLIB_sector_spawn_factor = 2.8;
-GRLIB_sector_cap = 90 * GRLIB_unitcap;
-GRLIB_battlegroup_cap = 95 * GRLIB_unitcap;
+GRLIB_sector_cap = 70 * GRLIB_unitcap;
+GRLIB_battlegroup_cap = 75 * GRLIB_unitcap;
 GRLIB_patrol_cap = 10 * GRLIB_unitcap;
 GRLIB_blufor_cap = 10 * GRLIB_unitcap;
 GRLIB_battlegroup_size = 5;
@@ -39,7 +39,7 @@ GRLIB_date_day = 30;
 GRLIB_nights_start = 21;
 GRLIB_nights_stop = 4;
 GRLIB_blufor_cap = 64;
-GREUH_start_ammo = 1000;
+GREUH_start_ammo = 100;
 
 // don't forget that the human commander manages those, not the server
 GRLIB_offload_diag = false;
@@ -90,12 +90,12 @@ logistics_ammo_increase = true;
 
 // Sector config
 sector_rank_gain = 20;
-fallback_income = 120;
-income_sectors_bigtown = 120;
-income_sectors_capture = 120;
-income_sectors_military = 120;
-income_sectors_factory = 120;
-income_sectors_tower = 120;
+fallback_income = 100;
+income_sectors_bigtown = 100;
+income_sectors_capture = 100;
+income_sectors_military = 100;
+income_sectors_factory = 100;
+income_sectors_tower = 100;
 readiness_increase_bigtown = 4;
 readiness_increase_capture = 4;
 readiness_increase_military = 4;
@@ -302,9 +302,9 @@ MSU_Eng_Div = 1;
 
 
 // ai equipment replacements
-msu_opfor_helmet = 'VSM_ProjectHonor_OPS_2'; // rhs_6b27m_green
-msu_opfor_uniform = 'VSM_ProjectHonor_Crye_SS_Camo'; // Alpine_white_Crye_camo VSM_M81_BDU_Camo 
-msu_opfor_vest = 'VSM_LBT6094_operator_ProjectHonor'; // rhs_6b5_rifleman_khaki
+msu_opfor_helmet = 'H_ShemagOpen_tan'; // rhs_6b27m_green VSM_ProjectHonor_OPS_2
+msu_opfor_uniform = 'VSM_M81_BDU_tan_pants_Camo'; // Alpine_white_Crye_camo VSM_ProjectHonor_Crye_SS_CamoVSM_M81_BDU_Camo 
+msu_opfor_vest = 'VSM_OGA_IOTV_1'; // rhs_6b5_rifleman_khaki VSM_LBT6094_operator_ProjectHonor
 
 msu_civ_uniform = 'U_BG_Guerilla3_1';
 
