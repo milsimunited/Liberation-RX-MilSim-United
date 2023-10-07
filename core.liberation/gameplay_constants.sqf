@@ -79,11 +79,11 @@ msu_ammo_max = 7000;
 // logistics
 prisoner_intel = 16;
 prisoner_score = 16;
-prisoner_ammo = 120;
+prisoner_ammo = 60;
 prisoner_combat_readiness = 20;
 prisoner_i = 0;
 
-box_recycle_value = 72; // Only use by 2 dividable numbers
+box_recycle_value = 36; // Only use by 2 dividable numbers
 logistics_ammo_for_all = true;
 logistics_ammo_increase = true;
 
