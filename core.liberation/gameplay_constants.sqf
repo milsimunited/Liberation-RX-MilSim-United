@@ -108,7 +108,7 @@ Sector_ammo_for_all = false;
 building_penalty_isActive = false;
 
 // Do not allow air vehicles to trigger zones. 
-air_cannot_trigger_on = false;
+air_cannot_trigger_on = true;
 
 
 // resources
