@@ -122,7 +122,7 @@ msu_fuel_apc = 0;
 msu_fuel_armed = 0;
 
 // slot system
-msu_slot_system = false;
+msu_slot_system = true;
 
 // AI Leaders have automaticly radios
 AI_leader_radio = false;
@@ -188,7 +188,6 @@ moderators = [
     "76561198019854511", // Voltaren
     "76561198203314980", // Bobi
     "76561198094301584", // Devin
-    "76561197997804176", // Slotzi
     "76561198283765221", // Steakman
     "76561198396300771", // LTVince
     "76561197993044168", // Huber Sepp

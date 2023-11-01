@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=511;
+		nextID=567;
 	};
 	class Camera
 	{
-		pos[]={557.97321,25,463.7041};
-		dir[]={-0.41942272,-0.71932131,0.55380064};
-		up[]={-0.4342899,0.69466847,0.57343173};
-		aside[]={0.79718786,-8.6278305e-008,0.60375291};
+		pos[]={89.795036,19.694893,574.27411};
+		dir[]={-0.87597346,-0.4200412,0.23714143};
+		up[]={-0.40544674,0.90750504,0.10976157};
+		aside[]={0.26131141,0,0.96525466};
 	};
 };
 binarizationWanted=0;
@@ -414,7 +414,7 @@ class CustomAttributes
 				class data
 				{
 					singleType="BOOL";
-					value=0;
+					value=1;
 				};
 			};
 		};
@@ -25717,7 +25717,7 @@ class Mission
 			name="lib_basics_15";
 			class Entities
 			{
-				items=10;
+				items=8;
 				class Item0
 				{
 					dataType="Logic";
@@ -26129,168 +26129,6 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={555.51929,4.7473841,469.06512};
-						angles[]={5.9955654,4.8737531,6.1975832};
-					};
-					name="zm6";
-					id=7174;
-					type="ModuleCurator_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ModuleCurator_F_Owner";
-							expression="_this setVariable ['Owner',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="76561198161654836";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ModuleCurator_F_Forced";
-							expression="_this setVariable ['Forced',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ModuleCurator_F_Name";
-							expression="_this setVariable ['Name',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Napu";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ModuleInfo";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="ModuleCurator_F_Addons";
-							expression="_this setVariable ['Addons',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=3;
-								};
-							};
-						};
-						nAttributes=5;
-					};
-				};
-				class Item6
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={554.79028,5.5156231,472.36063};
-						angles[]={6.1033649,4.8729811,6.1975842};
-					};
-					name="zm7";
-					id=7175;
-					type="ModuleCurator_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ModuleCurator_F_Owner";
-							expression="_this setVariable ['Owner',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="76561197997804176";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ModuleCurator_F_Forced";
-							expression="_this setVariable ['Forced',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ModuleCurator_F_Name";
-							expression="_this setVariable ['Name',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Slotzi";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ModuleInfo";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="ModuleCurator_F_Addons";
-							expression="_this setVariable ['Addons',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=3;
-								};
-							};
-						};
-						nAttributes=5;
-					};
-				};
-				class Item7
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
 						position[]={554.08405,6.1156011,475.32776};
 						angles[]={6.1033649,4.8673086,6.1975842};
 					};
@@ -26367,7 +26205,7 @@ class Mission
 						nAttributes=5;
 					};
 				};
-				class Item8
+				class Item6
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -26448,7 +26286,7 @@ class Mission
 						nAttributes=5;
 					};
 				};
-				class Item9
+				class Item7
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -26531,7 +26369,7 @@ class Mission
 				};
 			};
 			id=7168;
-			atlOffset=-0.099682808;
+			atlOffset=-0.15920353;
 		};
 		class Item566
 		{
