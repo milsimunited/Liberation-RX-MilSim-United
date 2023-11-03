@@ -122,7 +122,7 @@ msu_fuel_apc = 0;
 msu_fuel_armed = 0;
 
 // slot system
-msu_slot_system = false;
+msu_slot_system = true;
 
 // AI Leaders have automaticly radios
 AI_leader_radio = false;

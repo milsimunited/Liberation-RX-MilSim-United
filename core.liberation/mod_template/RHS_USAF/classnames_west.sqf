@@ -405,10 +405,35 @@ static_vehicles = [
 
 // list for vehicle restrictions
 
+car_vehicles = [];
+{
+    car_vehicles pushBack (_x select 0);
+} forEach (small_infantry_transport_unarmed + small_infantry_transport_armed_HMG + small_infantry_transport_armed_GMG + small_infantry_transport_armed_AT + big_infantry_transport_unarmed + big_infantry_transport_armed_HMG + big_infantry_transport_armed_GMG + armored_infantry_transport + medical_vehicle_ground + logistics_vehicle_ground + boats);
+
+tank_vehicles = [];
+{
+    tank_vehicles pushBack (_x select 0);
+} forEach (mbt + artillery_vehicles + anti_air + apc);
+
+plane_vehicles = [];
+{
+    plane_vehicles pushBack (_x select 0);
+} forEach (planes);
+
+helicopter_armed_vehicles = [];
+{
+    helicopter_armed_vehicles pushBack (_x select 0);
+} forEach (helicopter_armed);
+
+jet_vehicles = [];
+{
+    jet_vehicles pushBack (_x select 0);
+} forEach (jets);
+
 transport_air_vehicles = [];
 {
     transport_air_vehicles pushBack (_x select 0);
-} forEach (helicopter_cargo_transport + helicopter_personal_transport);
+} forEach (helicopter_cargo_transport + helicopter_personal_transport + medical_vehicle_air);
 
 blufor_air = [
     "RHS_AH1Z_wd",
