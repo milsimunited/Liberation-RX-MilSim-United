@@ -584,12 +584,12 @@ buildings_west = [
     ["Land_CncWall1_F",0,0,0,GRLIB_perm_inf],
     ["Land_CncWall4_F",0,0,0,GRLIB_perm_inf],
     ["Land_CncBarrier_stripes_F",0,0,0,GRLIB_perm_inf],
-    ["Flag_UNO_F",0,0,0,GRLIB_perm_inf],
+    /*["Flag_UNO_F",0,0,0,GRLIB_perm_inf],
     ["Flag_NATO_F",0,0,0,GRLIB_perm_inf],
     ["FlagCarrierGermany_EP1",0,0,0,GRLIB_perm_inf],
     ["FlagCarrierRU",0,0,0,GRLIB_perm_inf],
     ["Flag_UK_F",0,0,0,GRLIB_perm_inf],
-    ["Flag_US_F",0,0,0,GRLIB_perm_inf],
+    ["Flag_US_F",0,0,0,GRLIB_perm_inf],*/
     ["Land_PortableLight_single_F",0,0,0,GRLIB_perm_inf],
     
     ["Land_Campfire_F",0,0,0,GRLIB_perm_inf],
