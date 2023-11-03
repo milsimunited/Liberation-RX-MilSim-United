@@ -409,6 +409,11 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 	[_vehicle] spawn loadout_militia;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
+["PRACS_SLA_AA_Vehicle_Crew", "InitPost", {
+	params ["_vehicle"];
+	[_vehicle] spawn loadout_militia;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
 
 
 

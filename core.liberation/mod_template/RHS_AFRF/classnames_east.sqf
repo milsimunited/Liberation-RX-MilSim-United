@@ -72,6 +72,12 @@ divers_squad = [
 ];
 
 militia_vehicles = [
+	"PRACS_SLA_UAZ_SPG9",
+	"PRACS_SLA_UAZ_DSHKM",
+	"rhsgref_BRDM2_msv",
+	"RHS_Ural_Zu23_MSV_01",
+	"PRACS_SLA_2S6M_Tunguska",
+
 	"rhs_brm1k_vv",
 	"rhs_prp3_vv",
 	"rhs_btr60_vv",
@@ -90,6 +96,12 @@ boats_east = [
 ];
 
 opfor_vehicles = [
+	"PRACS_SLA_UAZ_SPG9",
+	"PRACS_SLA_UAZ_DSHKM",
+	"rhsgref_BRDM2_msv",
+	"RHS_Ural_Zu23_MSV_01",
+	"PRACS_SLA_2S6M_Tunguska",
+	
 	"rhs_btr60_vv",
 	"rhs_btr60_vv",
 	"rhs_btr60_vv",
@@ -99,6 +111,12 @@ opfor_vehicles = [
 ];
 
 opfor_vehicles_low_intensity = [
+	"PRACS_SLA_UAZ_SPG9",
+	"PRACS_SLA_UAZ_DSHKM",
+	"rhsgref_BRDM2_msv",
+	"RHS_Ural_Zu23_MSV_01",
+	"PRACS_SLA_2S6M_Tunguska",
+
 	"rhs_btr60_vv",
 	"rhs_btr60_vv",
 	"rhs_btr60_vv",
@@ -111,6 +129,12 @@ opfor_vehicles_low_intensity = [
 ];
 
 opfor_battlegroup_vehicles = [
+	"PRACS_SLA_UAZ_SPG9",
+	"PRACS_SLA_UAZ_DSHKM",
+	"rhsgref_BRDM2_msv",
+	"RHS_Ural_Zu23_MSV_01",
+	"PRACS_SLA_2S6M_Tunguska",
+
 	"rhs_btr60_vv",
 	"rhs_btr60_vv",
 	"rhs_btr60_vv",
@@ -119,6 +143,12 @@ opfor_battlegroup_vehicles = [
 ];
 
 opfor_battlegroup_vehicles_low_intensity = [
+	"PRACS_SLA_UAZ_SPG9",
+	"PRACS_SLA_UAZ_DSHKM",
+	"rhsgref_BRDM2_msv",
+	"RHS_Ural_Zu23_MSV_01",
+	"PRACS_SLA_2S6M_Tunguska",
+
 	"rhs_tigr_m_vv",
 	"rhs_tigr_sts_3camo_vv",
 	"rhs_tigr_m_vv",
@@ -128,6 +158,12 @@ opfor_battlegroup_vehicles_low_intensity = [
 ];
 
 opfor_reinforcement_vehicles = [
+	"PRACS_SLA_UAZ_SPG9",
+	"PRACS_SLA_UAZ_DSHKM",
+	"rhsgref_BRDM2_msv",
+	"RHS_Ural_Zu23_MSV_01",
+	"PRACS_SLA_2S6M_Tunguska",
+	
  	"rhs_btr60_msv",
  	"rhs_btr60_msv",
  	"rhs_btr60_msv",
