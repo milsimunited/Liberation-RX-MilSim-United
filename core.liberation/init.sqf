@@ -1184,6 +1184,26 @@ log_on_server = compileFinal "
 	] call BIS_fnc_initVehicle;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
+["TF373_SOAR_MH47G", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,24] call ace_cargo_fnc_setSpace;
+	[
+		_vehicle,
+		["TF373_MH47G_Legacy_Clean_No_Callsign",1], 
+		["HideFrontLeftSki",1,"HideFrontRightSki",1,"HideBackLeftSki",1,"HideBackRightSki",1,"HideFlag",1,"HideM134Belt_2",0,"HideM134Belt_1",0,"HideSlingHatch",0,"HideM134_L",0,"HideM134_R",0,"HideProbe",0,"HideCargoSeats",0,"crew_door_right",0,"crew_door_bar_rotate",0]
+	] call BIS_fnc_initVehicle;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["TF373_SOAR_MH47G_EasyActions", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,24] call ace_cargo_fnc_setSpace;
+	[
+		_vehicle,
+		["TF373_MH47G_Legacy_Clean_No_Callsign",1], 
+		["HideFrontLeftSki",1,"HideFrontRightSki",1,"HideBackLeftSki",1,"HideBackRightSki",1,"HideFlag",1,"HideM134Belt_2",0,"HideM134Belt_1",0,"HideSlingHatch",0,"HideM134_L",0,"HideM134_R",0,"HideProbe",0,"HideCargoSeats",0,"crew_door_right",0,"crew_door_bar_rotate",0]
+	] call BIS_fnc_initVehicle;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
 ["RHS_Mi8mt_vdv", "InitPost", {
     params ["_vehicle"];
 	[_vehicle,12] call ace_cargo_fnc_setSpace;

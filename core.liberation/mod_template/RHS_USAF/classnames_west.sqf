@@ -189,6 +189,8 @@ helicopter_personal_transport = [
     ["UK3CB_BAF_Merlin_HC4_32", 0, 400, 0, GRLIB_perm_inf],
     ["UK3CB_BAF_Merlin_HC4_18_GPMG", 0, 400, 0, GRLIB_perm_inf],
     ["RHS_CH_47F_10", 0, 400, 0, GRLIB_perm_inf],
+    ["TF373_SOAR_MH47G", 0, 400, 0, GRLIB_perm_inf],
+    ["TF373_SOAR_MH47G_EasyActions", 0, 400, 0, GRLIB_perm_inf],
     ["rhsusf_CH53E_USMC_D", 0, 400, 0, GRLIB_perm_inf],
     ["rhsusf_CH53E_USMC_GAU21_D", 0, 400, 0, GRLIB_perm_inf]   
 ];
@@ -250,7 +252,7 @@ jets = [
     ["PRACS_F16", 0, 2000, msu_fuel_plane, GRLIB_perm_inf],
     ["PRACS_MIRAGEIII", 0, 1600, msu_fuel_plane, GRLIB_perm_inf],
     ["PRACS_MIRAGEV", 0, 1800, msu_fuel_plane, GRLIB_perm_inf],
-    ["FIR_F35B_Standard", 0, 2200, msu_fuel_plane, GRLIB_perm_inf],
+    //["FIR_F35B_Standard", 0, 2200, msu_fuel_plane, GRLIB_perm_inf],
     ["USAF_F35A", 0, 2200, msu_fuel_plane, GRLIB_perm_inf],
     ["JS_JC_FA18E", 0, 2200, msu_fuel_plane, GRLIB_perm_inf],
     ["JS_JC_FA18F", 0, 2200, msu_fuel_plane, GRLIB_perm_inf]
