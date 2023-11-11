@@ -27,8 +27,8 @@ _squad_camera camcommit 0;
 "rtt" setPiPEffect [0];
 
 while { dialog && alive player } do {
-	// _bros = allUnits select {(_x getVariable ["PAR_Grp_ID","0"]) == format["Bros_%1",PAR_Grp_ID]};
-	_bros = units player;
+	_bros = allUnits select {(_x getVariable ["PAR_Grp_ID","0"]) == format["Bros_%1",PAR_Grp_ID]};
+	//_bros = units player;
 	if (  { alive _x } count (_bros) != _membercount || _renamed ) then {
 
 		_membercount = { alive _x } count (_bros);

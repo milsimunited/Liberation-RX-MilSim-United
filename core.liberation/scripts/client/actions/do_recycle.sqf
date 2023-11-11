@@ -151,7 +151,7 @@ if (dorecycle == 1 && !(isNull _vehicle) && alive _vehicle) exitwith {
     stats_vehicles_recycled = stats_vehicles_recycled + 1;
     publicVariable "stats_vehicles_recycled";
 	
-	_msg = format ["%1 recycled %2", name player, typeOf _vehicle];
+	_msg = format ["%1(%3) recycled %2, %4fps", name player, typeOf _vehicle, getPlayerUID player, diag_fps];
 	[_msg] remoteExec ["log_on_server", 2];
 };
 _vehicle setVariable ["recycle_in_use", false, true];
