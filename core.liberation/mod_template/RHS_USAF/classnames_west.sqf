@@ -220,6 +220,7 @@ helicopter_armed = [
 ];
 
 planes = [
+    ["RHS_AN2_B", 0, 400, 0, GRLIB_perm_inf],
     ["RHS_C130J", 0, 400, 0, GRLIB_perm_inf],
     ["RHS_C130J_Cargo", 0, 400, 0, GRLIB_perm_inf],
     ["USAF_C130J", 0, 400, 0, GRLIB_perm_inf],
