@@ -29,17 +29,17 @@ GRLIB_civ_killing_penalty = 0;
 GRLIB_squad_size_bonus = 0;
 GRLIB_perm_ban = -1000000;
 GRLIB_perm_inf = 0;
-GRLIB_perm_log = 300;
-GRLIB_perm_tank = 1200;
-GRLIB_perm_air = 2400;
-GRLIB_perm_max = 3600;
+GRLIB_perm_log = 200;
+GRLIB_perm_tank = 600;
+GRLIB_perm_air = 800;
+GRLIB_perm_max = 2000;
 GRLIB_date_year = 2023;
 GRLIB_date_month = 7;
 GRLIB_date_day = 30;
 GRLIB_nights_start = 21;
 GRLIB_nights_stop = 4;
 GRLIB_blufor_cap = 64;
-GREUH_start_ammo = 2500;
+GREUH_start_ammo = 100;
 
 // don't forget that the human commander manages those, not the server
 GRLIB_offload_diag = false;
