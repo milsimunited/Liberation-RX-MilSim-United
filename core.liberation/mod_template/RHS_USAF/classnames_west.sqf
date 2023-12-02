@@ -263,6 +263,7 @@ drones = [
     ["B_T_UGV_01_olive_F", 0, 150, 0, GRLIB_perm_inf],
     ["USAF_RQ4A", 0, 400, msu_fuel_plane, GRLIB_perm_inf], 
     ["B_T_UGV_01_rcws_olive_F", 0, 600, 0, GRLIB_perm_inf],
+    ["B_T_UAV_03_dynamicLoadout_F", 0, 900, 0, GRLIB_perm_inf],
     ["TMT_BayraktarTB2", 0, 1300, 0, GRLIB_perm_inf], // turk bayraktar
     ["USAF_MQ9", 0, 1400, msu_fuel_plane, GRLIB_perm_inf], 
     ["B_UAV_05_F", 0, 1400, msu_fuel_plane, GRLIB_perm_inf]
@@ -356,6 +357,7 @@ logistics_vehicle_ground = [
 ];
 
 boats = [
+    ["rhsgref_civ_canoe", 0, 50, 0, GRLIB_perm_inf],
     ["CUP_B_LCU1600_USMC", 0, light_vehicle_price_tier_1, 0, GRLIB_perm_inf],
     ["CUP_B_RHIB_USMC", 0, light_vehicle_price_tier_2, 0, GRLIB_perm_inf],
     ["CUP_B_RHIB2Turret_USMC", 0, light_vehicle_price_tier_2, 0, GRLIB_perm_inf],
@@ -754,6 +756,7 @@ squads = [
 
 // All the UAVs must be declared here
 uavs = [
+    "B_T_UAV_03_dynamicLoadout_F",
     "TMT_BayraktarTB2",
     "CUP_B_USMC_DYN_MQ9",
     "B_UAV_01_F",
