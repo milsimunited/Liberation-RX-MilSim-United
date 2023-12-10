@@ -130,7 +130,7 @@ class Params
 		title = $STR_PARAM_SECTOR_RADIUS;
 		values[] = {0,300,400,500,600,700,800,900,1000,1200,1500};
 		texts[] = {$STR_PARAMS_DISABLED,300,400,500,600,700,800,900,1000,1200,1500};
-		default = 800;
+		default = 0;
 	};
 	class DayDuration {
 		title = $STR_PARAMS_DAYDURATION;
