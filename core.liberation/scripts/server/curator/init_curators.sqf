@@ -1,4 +1,6 @@
 /*
+	File: init_curators.sqf
+
 	Author: xImSebi
 	
 	Description:

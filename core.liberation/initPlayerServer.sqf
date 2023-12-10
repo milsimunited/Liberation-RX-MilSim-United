@@ -1,4 +1,6 @@
 /*
+	File: initPlayerServer.sqf
+
 	Author: xImSebi
 	
 	Description:
