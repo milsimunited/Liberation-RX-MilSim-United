@@ -105,6 +105,9 @@ if (abort_loading) exitWith {
 [] execVM "scripts\server\offloading\offload_manager.sqf";
 [] execVM "scripts\server\offloading\show_fps.sqf";
 
+// Curator Initialization
+[] execVM "scripts\server\curator\init_curators.sqf";
+
 {
 	if ( (_x != player) && (_x distance (getmarkerpos GRLIB_respawn_marker) < 200 ) ) then {deleteVehicle _x};
 } foreach allUnits;

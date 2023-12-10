@@ -195,6 +195,15 @@ moderators = [
     "76561198043617179"  // Mantanismus
 ];
 
+curatorLogicGroup = createGroup [sideLogic, false];
+allowed_zeus_curators = [
+    ["76561198057808323", "Johannes"],
+    ["76561198019854511", "Voltaren"],
+    ["76561198283765221", "Steakman"],
+    ["76561197993044168", "Huber Sepp"],
+    ["76561198095167425", "Sebi"],
+    ["76561198085753428", "Joker"]
+];
 
 
 
