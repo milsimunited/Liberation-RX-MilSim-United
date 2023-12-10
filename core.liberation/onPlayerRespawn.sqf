@@ -21,3 +21,11 @@ player allowDamage true;
 
 [] execVM "scripts\client\spawn\redeploy_manager.sqf";
 [] execVM "scripts\client\misc\welcome.sqf";
+
+// Checks if player is spawning for the first time after loading into the mission
+// If player is not spawning for the first time: Call Event to reassign Zeus Curator
+if (playerFirstSpawn) then {
+	playerFirstSpawn = false;
+} else {
+	["ReassignZeusCurator", [player]] call CBA_fnc_serverEvent;
+};

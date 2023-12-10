@@ -25,3 +25,9 @@ playerUid = (getPlayerUID _player);
 		diag_log "Assigned player to Zeus Curator Object";
 	};
 } forEach allCurators;
+
+// Add EventHandler to reassign the zeus curator in case the player respawns
+["ReassignZeusCurator", {
+	params ["_player"];
+	[_player] execVM "scripts\server\curator\reassignZeusCurator.sqf";
+}] call CBA_fnc_addEventHandler;
