@@ -178,6 +178,12 @@ if (KPFC_active) then {
 };
 
 all_arsenals = [];
+
+// Initializing the firstSpawn variable for the client
+// Is being checked in onPlayerRespawn.sqf
+// Prevents the Reassign of the zeus curator when the player spawns for the first time
+playerFirstSpawn = true;
+
 /*
 {
 	_prc1 = format ["FAC_MSU\%1\arsenal.sqf", _x];
