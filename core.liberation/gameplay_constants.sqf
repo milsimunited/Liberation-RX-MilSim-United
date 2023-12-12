@@ -3,9 +3,23 @@ GRLIB_save_key = "MilSim_United";
 GRLIB_side_resistance = resistance;
 GRLIB_side_civilian = civilian;
 GRLIB_respawn_marker = "respawn_west";
-GRLIB_sector_size = 500;
-GRLIB_capture_size = 200;
-GRLIB_radiotower_size = 3000;
+// It's possible to set this map dependent values via a gamelogic object
+/*
+Example init for gamelogic object (Big map in this example):
+
+GRLIB_sector_size = 1000;
+GRLIB_capture_size = 250;
+GRLIB_radiotower_size = 5000;
+*/
+if ((isNil GRLIB_sector_size) || (GRLIB_sector_size == 0)) then {
+    GRLIB_sector_size = 800;
+};
+if ((isNil GRLIB_capture_size) || (GRLIB_capture_size == 0)) then {
+    GRLIB_capture_size = 200;
+};
+if ((isNil GRLIB_radiotower_size) || (GRLIB_radiotower_size == 0)) then {
+    GRLIB_radiotower_size = 3000;
+};
 GRLIB_spawn_min = 1000;
 GRLIB_spawn_max = 2500;
 GRLIB_recycling_percentage = 1.00;
