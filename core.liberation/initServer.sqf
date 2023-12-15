@@ -156,8 +156,8 @@ while { true } do {
 	sleep msu_heartbeat;
 	_hs_time = systemTime;
 
-	if (((_hs_time select 3) == 3) && ((_hs_time select 4) >= 30)) then {
-		_msg = format['Server restart at the next full hour. Recycle your vehicles in time! Server-Neustart zur nächsten vollen Stunde. Fahrzeuge rechtzeitig recyceln!'];
+	if (((_hs_time select 3) == 5) && ((_hs_time select 4) < 30)) then {
+		_msg = format['Server restart and maintenance at 05:30. Recycle your vehicles in time! Server-Neustart und Wartung um 05:30. Fahrzeuge rechtzeitig recyceln!'];
 		[gamelogic, _msg] remoteExec ["globalChat", 0];
 	};
 	if (((_hs_time select 3) == 15) && ((_hs_time select 4) >= 30)) then {
