@@ -69,14 +69,14 @@ class Params
 	class ModPresetWest {
 		title = "MOD Preset - Friendly";
 		values[] = { 0,1,2,3,4,5,6,7,8,9,10 };
-		texts[] = { "MSU_BLU", "A3 CSAT", "A3 AAF", "CUP BAF Desert", "CUP USMC", "RHS USAF", "RHS AFRF", "GM WEST", "GM WEST Winter", "OPTRE West", "A3 NATO" };
-		default = 5;
+		texts[] = { "MSU_BLU", "A3 CSAT", "A3 AAF", "CUP BAF Desert", "CUP USMC", "RHS USAF", "RHS AFRF", "GM WEST", "GM WEST Winter", "OPTRE West", "A3 NATO", "CUP WITH RHS RACS", "CUP" };
+		default = 11;
 	};
 	class ModPresetEast {
 		title = "MOD Preset - Enemy";
 		values[] = { 0,1,2,3,4,5,6,7,8,9,10 };
-		texts[] = { "MSU_OPF", "A3 NATO", "A3 AAF", "A3 CSAT Urban", "CUP Takistan", "EJW Taliban", "RHS AFRF", "GM EAST", "GM EAST Winter", "OPTRE East", "A3 CSAT"};
-		default = 6;
+		texts[] = { "MSU_OPF", "A3 NATO", "A3 AAF", "A3 CSAT Urban", "CUP Takistan", "EJW Taliban", "RHS AFRF", "GM EAST", "GM EAST Winter", "OPTRE East", "A3 CSAT", "CUP WITH RHS RACS", "CUP" };
+		default = 11;
 	};
 	class ForcedLoadout {
 		title = $STR_FORCE_LOADOUT;
@@ -346,7 +346,7 @@ class Params
 		title = "Force save game loading.";
 		values[] = {0,1};
 		texts[] = { $STR_NO,$STR_YES };
-		default = 0;
+		default = 1;
 	};
 	class DisableRemoteSensors{
 		title = "Disable Remote Sensors (experimental!)";
