@@ -83,7 +83,7 @@ GRLIB_EJW_enabled = isClass(configFile >> "CfgPatches" >> "Ej_u100"); // Returns
 GRLIB_RHS_enabled = isClass(configFile >> "CfgPatches" >> "rhs_main"); // Returns true if RHS is enabled 
 
 // Check side Addon
-if ( !GRLIB_EJW_enabled && "EJW" in [GRLIB_mod_west, GRLIB_mod_east]) then { abort_loading = true };
+/*if ( !GRLIB_EJW_enabled && "EJW" in [GRLIB_mod_west, GRLIB_mod_east]) then { abort_loading = true };
 if ( !GRLIB_CUPU_enabled && !GRLIB_CUPV_enabled && "CP_BAF_DES" in [GRLIB_mod_west, GRLIB_mod_east]) then { abort_loading = true };
 if ( !GRLIB_CUPU_enabled && !GRLIB_CUPV_enabled && "CP_TA" in [GRLIB_mod_west, GRLIB_mod_east]) then { abort_loading = true };
 if ( !GRLIB_RHS_enabled && "RHS_AFRF" in [GRLIB_mod_west, GRLIB_mod_east]) then { abort_loading = true };
@@ -108,7 +108,7 @@ if ( GRLIB_mod_west in ["A3_BLU", "A3_IND"]) then {
 		case 2: {huron_typename = "I_Heli_Transport_02_F" };
 		case 3: {huron_typename = "B_Heli_Transport_01_F" };
 	};
-};
+};*/
 
 if ( GRLIB_fatigue == 1 ) then { GRLIB_fatigue = true } else { GRLIB_fatigue = false };
 if ( GRLIB_introduction == 1 ) then { GRLIB_introduction = true } else { GRLIB_introduction = false };
