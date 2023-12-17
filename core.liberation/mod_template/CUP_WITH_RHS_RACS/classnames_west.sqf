@@ -165,7 +165,8 @@ artillery_vehicles = [
 	["rhsusf_M142_usarmy_WD", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
 	["I_E_Truck_02_MRL_F", 0, 2500, msu_fuel_mbt, GRLIB_perm_inf],
 	["CUP_B_RM70_CZ", 0, 2500, msu_fuel_mbt, GRLIB_perm_inf],
-	["B_MBT_01_mlrs_F", 0, 3000, 0, msu_fuel_mbt, GRLIB_perm_inf]
+	["B_MBT_01_mlrs_F", 0, 3000, 0, msu_fuel_mbt, GRLIB_perm_inf],
+	["CUP_B_M270_HE_BAF_WOOD", 0, 1300, msu_fuel_ifv, GRLIB_perm_inf]
 ];
 
 apc = [
@@ -192,7 +193,6 @@ apc = [
 	["CUP_B_FV510_GB_W", 0, 1300, msu_fuel_ifv, GRLIB_perm_inf],
 	["CUP_B_MCV80_GB_W_SLAT", 0, 1300, msu_fuel_ifv, GRLIB_perm_inf],
 	["CUP_B_MCV80_GB_W", 0, 1300, msu_fuel_ifv, GRLIB_perm_inf],
-	["CUP_B_M270_HE_BAF_WOOD", 0, 1300, msu_fuel_ifv, GRLIB_perm_inf],
 	["CUP_B_M2Bradley_USA_W", 0, 1500, msu_fuel_ifv, GRLIB_perm_inf],
 	["CUP_B_M2A3Bradley_USA_W", 0, 1600, msu_fuel_ifv, GRLIB_perm_inf],
 	["CUP_B_M7Bradley_USA_W", 0, 1800, msu_fuel_ifv, GRLIB_perm_inf],

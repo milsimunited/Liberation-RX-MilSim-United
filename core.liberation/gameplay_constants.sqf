@@ -311,9 +311,9 @@ MSU_Eng_Div = 1;
 
 
 // ai equipment replacements
-msu_opfor_helmet = 'H_ShemagOpen_tan'; // rhs_6b27m_green VSM_ProjectHonor_OPS_2
-msu_opfor_uniform = 'VSM_M81_BDU_tan_pants_Camo'; // Alpine_white_Crye_camo VSM_ProjectHonor_Crye_SS_CamoVSM_M81_BDU_Camo 
-msu_opfor_vest = 'VSM_OGA_IOTV_1'; // rhs_6b5_rifleman_khaki VSM_LBT6094_operator_ProjectHonor
+msu_opfor_helmet = 'CUP_H_RUS_6B47_v2_GogglesClosed_Summer'; // rhs_6b27m_green VSM_ProjectHonor_OPS_2
+msu_opfor_uniform = 'CUP_U_O_RUS_Ratnik_Autumn'; // Alpine_white_Crye_camo VSM_ProjectHonor_Crye_SS_CamoVSM_M81_BDU_Camo 
+msu_opfor_vest = 'CUP_V_CZ_vest16'; // rhs_6b5_rifleman_khaki VSM_LBT6094_operator_ProjectHonor
 
 msu_civ_uniform = 'U_BG_Guerilla3_1';
 

@@ -4,9 +4,9 @@ GRLIB_color_enemy = "ColorOPFOR";
 GRLIB_color_enemy_bright = "ColorRED";
 
 // Used in default_loadout.sqf for units that are defined at the bottom of this file (Units with loadout change)
-opfor_helmet = "CUP_H_RUS_Bandana_HS";
-opfor_uniform = "CUP_U_O_RUS_Gorka_Partizan";
-opfor_vest = "CUP_V_RUS_Smersh_2";
+opfor_helmet = "CUP_H_RUS_6B47_v2_GogglesClosed_Summer";
+opfor_uniform = "CUP_U_O_RUS_Ratnik_Autumn";
+opfor_vest = "CUP_V_CZ_vest16";
 
 
 // All class MUST be defined !
