@@ -271,7 +271,12 @@ helicopter_personal_transport = [
 	["CUP_B_UH60M_Unarmed_US", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_UH1Y_UNA_USMC", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_MH47E_GB", 0, 400, 0, GRLIB_perm_inf],
-	["rhsusf_CH53E_USMC_GAU21_D", 0, 400, 0, GRLIB_perm_inf]
+	["rhsusf_CH53E_USMC_GAU21_D", 0, 400, 0, GRLIB_perm_inf],
+	["TF373_SOAR_MH47G", 0, 400, 0, GRLIB_perm_inf],
+	["TF373_SOAR_MH47G_EasyActions", 0, 400, 0, GRLIB_perm_inf],
+	["CUP_B_MH60S_USMC", 0, 400, 0, GRLIB_perm_inf],
+	["CUP_B_UH60S_USN", 0, 400, 0, GRLIB_perm_inf],
+	["CUP_MH60S_Unarmed_FFV_USN", 0, 400, 0, GRLIB_perm_inf]
 ];
 
 helicopter_cargo_transport = [
