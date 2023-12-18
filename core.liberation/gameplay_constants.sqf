@@ -3,6 +3,8 @@ GRLIB_save_key = "MilSim_United";
 GRLIB_side_resistance = resistance;
 GRLIB_side_civilian = civilian;
 GRLIB_respawn_marker = "respawn_west";
+// It's possible to set this map dependent values via a gamelogic object - See end of file for more info
+// Works for: GRLIB_sector_size, GRLIB_capture_size and GRLIB_radiotower_size
 GRLIB_sector_size = 500;
 GRLIB_capture_size = 200;
 GRLIB_radiotower_size = 3000;
@@ -311,9 +313,9 @@ MSU_Eng_Div = 1;
 
 
 // ai equipment replacements
-msu_opfor_helmet = 'CUP_H_RUS_6B47_v2_GogglesClosed_Summer'; // rhs_6b27m_green VSM_ProjectHonor_OPS_2
-msu_opfor_uniform = 'CUP_U_O_RUS_Ratnik_Autumn'; // Alpine_white_Crye_camo VSM_ProjectHonor_Crye_SS_CamoVSM_M81_BDU_Camo 
-msu_opfor_vest = 'CUP_V_CZ_vest16'; // rhs_6b5_rifleman_khaki VSM_LBT6094_operator_ProjectHonor
+msu_opfor_helmet = 'H_ShemagOpen_tan'; // rhs_6b27m_green VSM_ProjectHonor_OPS_2
+msu_opfor_uniform = 'VSM_M81_BDU_tan_pants_Camo'; // Alpine_white_Crye_camo VSM_ProjectHonor_Crye_SS_CamoVSM_M81_BDU_Camo 
+msu_opfor_vest = 'VSM_OGA_IOTV_1'; // rhs_6b5_rifleman_khaki VSM_LBT6094_operator_ProjectHonor
 
 msu_civ_uniform = 'U_BG_Guerilla3_1';
 
@@ -1450,6 +1452,20 @@ MSU_blacklisted_from_arsenal = [
 
 // MSU_whitelisted_from_arsenal = [];
 
+/*
+To change the variables "GRLIB_sector_size", "GRLIB_capture_size" or "GRLIB_radiotower_size" dynamically,
+create a Game-Logic object in the mission.sqm file and insert the following code in the "Init":
 
-
-
+MSU_currentMap_sectorSize = 1000;
+MSU_currentMap_captureSize = 250;
+MSU_currentMap_radiotowerSize = 4000;
+*/
+if ((!(isNil "MSU_currentMap_sectorSize")) && (MSU_currentMap_sectorSize != 0)) then {
+    GRLIB_sector_size = MSU_currentMap_sectorSize;
+};
+if ((!(isNil "MSU_currentMap_captureSize")) && (MSU_currentMap_captureSize != 0)) then {
+    GRLIB_capture_size = MSU_currentMap_captureSize;
+};
+if ((!(isNil "MSU_currentMap_radiotowerSize")) && (MSU_currentMap_radiotowerSize != 0)) then {
+    GRLIB_radiotower_size = MSU_currentMap_radiotowerSize;
+};
