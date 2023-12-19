@@ -104,26 +104,14 @@ while { dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
 		{
 			ctrlSetText [ 110, _buildpages select ( buildtype - 1) ];
 			if ( buildtype != 66 ) then {
-				_vehicleClassname = (_x select 0);
-				if (_vehicleClassname == MSU_PlaceholderClassname) then {
-					_entryDisplayName = (_x select 5);
-					if (isNil "_entryDisplayName") then {
-						_entryDisplayName = "ERROR: Value not found!";
-					};
-					((findDisplay 5501) displayCtrl (110)) lnbAddRow [ _entryDisplayName, format [ "%1" ,_x select 1], format [ "%1" ,_x select 2], format [ "%1" ,_x select 3]];
+				_entrytext = [(_x select 0)] call get_lrx_name;
+				((findDisplay 5501) displayCtrl (110)) lnbAddRow [ _entrytext, format [ "%1" ,_x select 1], format [ "%1" ,_x select 2], format [ "%1" ,_x select 3]];
 
-					_icon = "\A3\ui_f\data\map\groupicons\waypoint.paa";
-					lnbSetPicture  [110, [((lnbSize 110) select 0) - 1, 0],_icon];
-				} else {
-					_entrytext = [(_x select 0)] call get_lrx_name;
-					((findDisplay 5501) displayCtrl (110)) lnbAddRow [ _entrytext, format [ "%1" ,_x select 1], format [ "%1" ,_x select 2], format [ "%1" ,_x select 3]];
-
-					_icon = getText ( _cfg >> (_x select 0) >> "icon");
-					if(isText  (configFile >> "CfgVehicleIcons" >> _icon)) then {
-						_icon = (getText (configFile >> "CfgVehicleIcons" >> _icon));
-					};
-					lnbSetPicture  [110, [((lnbSize 110) select 0) - 1, 0],_icon];
+				_icon = getText ( _cfg >> (_x select 0) >> "icon");
+				if(isText  (configFile >> "CfgVehicleIcons" >> _icon)) then {
+					_icon = (getText (configFile >> "CfgVehicleIcons" >> _icon));
 				};
+				lnbSetPicture  [110, [((lnbSize 110) select 0) - 1, 0],_icon];
 			} else {
 				if ( ((lnbSize  110) select 0) <= count squads_names ) then {
 					_squadname = squads_names select ((lnbSize  110) select 0);
