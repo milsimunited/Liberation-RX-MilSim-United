@@ -105,7 +105,7 @@ big_infantry_transport_unarmed = [
 	["rhsusf_M1220_usarmy_wd", 0, 150, msu_fuel_apc, GRLIB_perm_inf],
 	["rhsusf_M1238A1_socom_d", 0, 150, msu_fuel_apc, GRLIB_perm_inf],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_CUP],
-	["CUP_B_FENNEK_GER_Wdl", 0, 150, msu_fuel_apc, GRLIB_perm_inf]
+	["CUP_B_FENNEK_GER_Wdl", 0, 200, msu_fuel_apc, GRLIB_perm_inf]
 ];
 
 big_infantry_transport_armed_HMG = [
