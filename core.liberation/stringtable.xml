@@ -5866,6 +5866,10 @@
                 <English>You can only become an EOD with 2 or more players!</English>
                 <German>Du kannst erst ab 2 Spielern ein EOD werden!</German>
             </Key>
+			<Key ID="STR_MSU_Placeholder_Mod_Other">
+                <English>--- Other ---</English>
+                <German>--- Andere ---</German>
+            </Key>
         </Container>
     </Package>
 </Project> 
