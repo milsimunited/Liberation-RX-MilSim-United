@@ -193,6 +193,26 @@ opfor_statics = [
 	"O_Mortar_01_F"
 ];
 
+opfor_reinforcement_vehicles = [
+	"PRACS_SLA_UAZ_SPG9",
+	"PRACS_SLA_UAZ_DSHKM",
+	"rhsgref_BRDM2_msv",
+	"RHS_Ural_Zu23_MSV_01",
+	"PRACS_SLA_2S6M_Tunguska",
+ 	"rhs_btr60_msv",
+ 	"rhs_btr60_msv",
+ 	"rhs_btr60_msv",
+	"rhs_btr70_msv",
+	"rhs_btr80_msv",
+	"rhs_bmp2e_msv",
+	"rhs_bmp2_msv",
+	"rhs_bmp3_msv",
+	"rhs_Ob_681_2",
+	"rhs_prp3_msv",
+	"rhs_2s1_at_tv",
+	"rhs_tigr_sts_3camo_msv"
+];
+
 opfor_recyclable = [
 	["O_Boat_Armed_01_hmg_F", 2, round (100 / GRLIB_recycling_percentage), 2],
 	["O_HMG_01_high_F", 0, round (20 / GRLIB_recycling_percentage), 0],
