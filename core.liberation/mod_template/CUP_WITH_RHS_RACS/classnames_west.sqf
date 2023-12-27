@@ -293,7 +293,11 @@ helicopter_personal_transport = [
 	["CUP_MH60S_Unarmed_FFV_USN", 0, 400, 0, GRLIB_perm_inf],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
 	["BWA3_NH90_TTH_Fleck", 0, 400, 0, GRLIB_perm_inf],
-	["BWA3_NH90_TTH_M3M_Fleck", 0, 400, 0, GRLIB_perm_inf]
+	["BWA3_NH90_TTH_M3M_Fleck", 0, 400, 0, GRLIB_perm_inf],
+        ["vtx_HH60", 0, 400, 0, GRLIB_perm_inf],
+        ["vtx_MH60M", 0, 400, 0, GRLIB_perm_inf],
+        ["vtx_UH60M", 0, 400, 0, GRLIB_perm_inf],
+        ["vtx_UH60M_SLICK", 0, 400, 0, GRLIB_perm_inf]
 ];
 
 helicopter_cargo_transport = [
@@ -409,6 +413,7 @@ drones = [
 	["B_T_UGV_01_olive_F", 0, 150, 0, GRLIB_perm_inf],
 	["B_T_UGV_01_rcws_olive_F", 0, 600, 0, GRLIB_perm_inf],
 	["B_UAV_05_F", 0, 1400, msu_fuel_plane, GRLIB_perm_inf],
+        ["B_T_UAV_03_dynamicLoadout_F", 0, 1400, msu_fuel_plane, GRLIB_perm_inf],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_CUP],
 	["CUP_B_AH6X_USA", 0, 1400, msu_fuel_plane, GRLIB_perm_inf],
 	["CUP_B_USMC_DYN_MQ9", 0, 1400, msu_fuel_plane, GRLIB_perm_inf],
