@@ -47,6 +47,8 @@ small_infantry_transport_unarmed = [
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_CUP],
 	["CUP_B_LR_Transport_GB_W", 0, 100, 0, GRLIB_perm_inf],
 	["CUP_B_nM1025_Unarmed_DF_USA_WDL", 0, 100, 0, GRLIB_perm_inf],
+	["CUP_B_nM1038_USA_DES", 0, 100, 0, GRLIB_perm_inf],
+	["CUP_B_nM1038_4s_USA_DES", 0, 100, 0, GRLIB_perm_inf],
 	["CUP_I_M151_SYND", 0, 100, 0, GRLIB_perm_inf],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
 	["BWA3_Eagle_Fleck", 0, 100, 0, GRLIB_perm_inf]
@@ -66,6 +68,12 @@ small_infantry_transport_armed_HMG = [
 	["CUP_B_M1151_Deploy_WDL_USA", 0, 200, msu_fuel_apc, GRLIB_perm_inf],
 	["CUP_B_M1165_GMV_WDL_USA", 0, 200, msu_fuel_apc, GRLIB_perm_inf],
 	["CUP_B_nM1025_M240_DF_USA_WDL", 0, 200, msu_fuel_apc, GRLIB_perm_inf],
+	["CUP_B_HMMWV_DSHKM_GPK_ACR", 0, 200, msu_fuel_apc, GRLIB_perm_inf],
+	["CUP_B_HMMWV_M2_GPK_ACR", 0, 200, msu_fuel_apc, GRLIB_perm_inf],
+	["CUP_B_LR_Special_M2_GB_W", 0, 200, msu_fuel_apc, GRLIB_perm_inf],
+	["CUP_B_HMMWV_Crows_M2_USA", 0, 200, msu_fuel_apc, GRLIB_perm_inf],
+	["CUP_B_HMMWV_M2_GPK_USA", 0, 200, msu_fuel_apc, GRLIB_perm_inf],
+	["CUP_B_nM1025_M240_USA_DES", 0, 200, msu_fuel_apc, GRLIB_perm_inf],
 	["CUP_B_RG31_M2_OD_USA", 0, 200, msu_fuel_apc, GRLIB_perm_inf],
 	["CUP_B_RG31E_M2_OD_USA", 0, 200, msu_fuel_apc, GRLIB_perm_inf],
 	["CUP_I_SUV_Armored_ION", 0, 200, msu_fuel_apc, GRLIB_perm_inf],
@@ -82,6 +90,10 @@ small_infantry_transport_armed_GMG = [
 	["CUP_B_LR_Special_GMG_GB_W", 0, 400, msu_fuel_apc, GRLIB_perm_inf],
 	["CUP_B_Ridgback_GMG_GB_W", 0, 400, msu_fuel_apc, GRLIB_perm_inf],
 	["CUP_B_M1151_Mk19_WDL_USA", 0, 400, msu_fuel_apc, GRLIB_perm_inf],
+	["CUP_B_HMMWV_AGS_GPK_ACR", 0, 400, msu_fuel_apc, GRLIB_perm_inf],
+	["CUP_B_Jackal2_GMG_GB_W", 0, 400, msu_fuel_apc, GRLIB_perm_inf],
+	["CUP_B_HMMWV_Crows_MK19_USA", 0, 400, msu_fuel_apc, GRLIB_perm_inf],
+	["CUP_B_nM1025_Mk19_USA_DES", 0, 400, msu_fuel_apc, GRLIB_perm_inf],
 	["CUP_B_nM1025_SOV_Mk19_USA_WDL", 0, 400, msu_fuel_apc, GRLIB_perm_inf],
 	["CUP_B_nM1025_Mk19_DF_USA_WDL", 0, 400, msu_fuel_apc, GRLIB_perm_inf],
 	["CUP_B_RG31_Mk19_OD_USA", 0, 400, msu_fuel_apc, GRLIB_perm_inf]
@@ -232,6 +244,8 @@ mbt = [
 	["CUP_B_Challenger2_Woodland_BAF", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
 	["CUP_B_Leopard2A6_GER", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
 	["CUP_B_M1128_MGS_Woodland", 0, 1000, msu_fuel_mbt, GRLIB_perm_inf],
+	["CUP_B_M1A1SA_Desert_TUSK_US_Army", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
+	["CUP_B_M1A1FEP_TUSK_Desert_USMC", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
 	["CUP_B_M1A1SA_OD_US_Army", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
 	["CUP_B_M1A2SEP_TUSK_OD_US_Army", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
 	["CUP_B_M1A2C_TUSK_II_OD_US_Army", 0, 2000, msu_fuel_mbt, GRLIB_perm_inf],
@@ -281,9 +295,11 @@ helicopter_personal_transport = [
 	["CUP_B_SA330_Puma_HC2_BAF", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_CH53E_GER", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_UH1D_GER_KSK", 0, 400, 0, GRLIB_perm_inf],
+	["CUP_B_UH1D_slick_GER_KSK", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_412_Military_Radar_HIL", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_MH47E_USA", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_MH6M_USA", 0, 400, 0, GRLIB_perm_inf],
+	["CUP_B_MH6J_USA", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_UH60M_US", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_UH60M_Unarmed_US", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_UH1Y_UNA_USMC", 0, 400, 0, GRLIB_perm_inf],
@@ -291,6 +307,7 @@ helicopter_personal_transport = [
 	["CUP_B_MH60S_USMC", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_UH60S_USN", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_MH60S_Unarmed_FFV_USN", 0, 400, 0, GRLIB_perm_inf],
+	["CUP_I_Mi17_UN", 0, 400, 0, GRLIB_perm_inf],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
 	["BWA3_NH90_TTH_Fleck", 0, 400, 0, GRLIB_perm_inf],
 	["BWA3_NH90_TTH_M3M_Fleck", 0, 400, 0, GRLIB_perm_inf],
@@ -311,6 +328,8 @@ helicopter_cargo_transport = [
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_CUP],
 	["CUP_B_CH47F_VIV_GB", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_Merlin_HC3_VIV_GB", 0, 400, 0, GRLIB_perm_inf],
+	["CUP_I_MI6T_UN", 0, 400, 0, GRLIB_perm_inf],
+	["CUP_I_Mi17_VIV_UN", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_CH53E_VIV_GER", 0, 400, 0, GRLIB_perm_inf]
 ];
 
@@ -341,7 +360,10 @@ helicopter_armed = [
 	["CUP_B_UH1Y_Gunship_Dynamic_USMC", 0, 700, 0, GRLIB_perm_inf],
 	["CUP_B_AH1Z_Dynamic_USMC", 0, 1700, 0, GRLIB_perm_inf],
 	["CUP_I_Ka60_GL_Blk_ION", 0, 700, 0, GRLIB_perm_inf],
+	["CUP_I_Mi24_D_Dynamic_UN", 0, 1700, 0, GRLIB_perm_inf],
+	["CUP_I_Mi24_Mk3_UN", 0, 1700, 0, GRLIB_perm_inf],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
+	["BWA3_Tiger", 0, 1200, 0, GRLIB_perm_inf],
 	["BWA3_Tiger_RMK", 0, 1700, msu_fuel_heli, GRLIB_perm_inf]
 ];
 
@@ -436,6 +458,7 @@ medical_vehicle_ground = [
 	["PRACS_M113_MED", 0, 400, 0, GRLIB_perm_inf],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_CUP],
 	["CUP_B_FV432_GB_Ambulance", 0, 400, 0, GRLIB_perm_inf],
+	["CUP_B_nM997_DF_ACR", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_LR_Ambulance_GB_W", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_M113A3_Med_GER", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_M1133_MEV_Woodland", 0, 400, 0, GRLIB_perm_inf],
@@ -574,8 +597,8 @@ static_vehicles = [
 	["CUP_B_MK19_TriPod_USMC", 0, 0, 0, GRLIB_perm_inf],
 	["CUP_B_Stinger_AA_pod_Base_USMC", 0, 0, 0, GRLIB_perm_inf],
 	["CUP_WV_B_CRAM", 40, 0, 0, GRLIB_perm_inf],
-	["CUP_WV_B_RAM_Launcher", 150, 0, 0, GRLIB_perm_inf],
-	["CUP_WV_B_SS_Launcher", 250, 0, 0, GRLIB_perm_inf],
+	["CUP_WV_B_RAM_Launcher", 40, 0, 0, GRLIB_perm_inf],
+	["CUP_WV_B_SS_Launcher", 40, 0, 0, GRLIB_perm_inf],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
 	["BWA3_MRS120_Fleck", 0, 0, 0, GRLIB_perm_inf]
 ];
