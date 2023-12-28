@@ -307,7 +307,6 @@ helicopter_personal_transport = [
 	["CUP_B_MH60S_USMC", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_UH60S_USN", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_MH60S_Unarmed_FFV_USN", 0, 400, 0, GRLIB_perm_inf],
-	["CUP_I_Mi17_UN", 0, 400, 0, GRLIB_perm_inf],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
 	["BWA3_NH90_TTH_Fleck", 0, 400, 0, GRLIB_perm_inf],
 	["BWA3_NH90_TTH_M3M_Fleck", 0, 400, 0, GRLIB_perm_inf],
@@ -329,7 +328,6 @@ helicopter_cargo_transport = [
 	["CUP_B_CH47F_VIV_GB", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_Merlin_HC3_VIV_GB", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_I_MI6T_UN", 0, 400, 0, GRLIB_perm_inf],
-	["CUP_I_Mi17_VIV_UN", 0, 400, 0, GRLIB_perm_inf],
 	["CUP_B_CH53E_VIV_GER", 0, 400, 0, GRLIB_perm_inf]
 ];
 
@@ -360,8 +358,6 @@ helicopter_armed = [
 	["CUP_B_UH1Y_Gunship_Dynamic_USMC", 0, 700, 0, GRLIB_perm_inf],
 	["CUP_B_AH1Z_Dynamic_USMC", 0, 1700, 0, GRLIB_perm_inf],
 	["CUP_I_Ka60_GL_Blk_ION", 0, 700, 0, GRLIB_perm_inf],
-	["CUP_I_Mi24_D_Dynamic_UN", 0, 1700, 0, GRLIB_perm_inf],
-	["CUP_I_Mi24_Mk3_UN", 0, 1700, 0, GRLIB_perm_inf],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
 	["BWA3_Tiger", 0, 1200, 0, GRLIB_perm_inf],
 	["BWA3_Tiger_RMK", 0, 1700, msu_fuel_heli, GRLIB_perm_inf]
