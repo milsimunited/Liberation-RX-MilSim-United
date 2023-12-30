@@ -9,7 +9,7 @@ huron_typename = "B_Heli_Transport_03_F";
 // comment to use value from lobby/server.cfg
 FOB_typename = "Land_MedicalTent_01_aaf_generic_open_F";
 FOB_box_typename = "B_Slingload_01_Cargo_F";
-FOB_truck_typename = "rhsusf_m113_usarmy_unarmed";
+FOB_truck_typename = "CUP_B_AAV_Unarmed_USMC";
 FOB_outpost = "";
 FOB_box_outpost = "";
 Respawn_truck_typename = "";
@@ -137,6 +137,7 @@ big_infantry_transport_armed_HMG = [
 	["CUP_B_Dingo_GER_Wdl", 0, 400, msu_fuel_apc, GRLIB_perm_inf],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
 	["BWA3_Dingo2_FLW100_MG3_CG13_Fleck", 0, 350, msu_fuel_apc, GRLIB_perm_inf],
+        ["BWA3_Dingo2_FLW100_MG3_Fleck", 0, 350, msu_fuel_apc, GRLIB_perm_inf],
 	["BWA3_Dingo2_FLW200_M2_CG13_Fleck", 0, 350, msu_fuel_apc, GRLIB_perm_inf]
 
 ];
