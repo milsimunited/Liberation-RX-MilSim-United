@@ -163,6 +163,9 @@ vehicle_big_units = [
 	"Land_Hangar_F"
 ] + vehicle_big_units_west;
 
+// Extreme Big units
+vehicle_extreme_big_units = [] + vehicle_extreme_big_units_west;
+
 // Whitelist Vehicle (recycle)
 GRLIB_vehicle_whitelist = [
 	Arsenal_typename,
