@@ -43,7 +43,10 @@ while { true } do {
 		_vehicle = _x;
 		_distvehclose = 5;
 		if (typeOf _vehicle in vehicle_big_units) then {
-			_distvehclose = _distvehclose * 3;
+			_distvehclose = _distvehclose * 3; // 5 * 3 = 15
+		};
+		if (typeOf _vehicle in vehicle_extreme_big_units) then {
+			_distvehclose = _distvehclose * 12; // 5 * 12 = 60
 		};
 		/*
 		_vehicle addAction ["<t color='#00DD00'>" + localize "STR_SELL_CARGO" + "</t> <img size='1' image='res\ui_veh.paa'/>","scripts\client\actions\do_sell.sqf","",-900,true,true,"","[_target] call is_menuok && [_target, 'SRV', _distveh, true] call F_check_near && [_this, _target] call is_owner && (locked _target == 0 || locked _target == 1)", _distvehclose];

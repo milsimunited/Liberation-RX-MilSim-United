@@ -563,6 +563,7 @@ boats = [
 	["CUP_B_Zodiac_USMC", 0, light_vehicle_price_tier_1, 0, GRLIB_perm_inf],
 	["CUP_B_LCU1600_USMC", 0, light_vehicle_price_tier_1, 0, GRLIB_perm_inf],
 	["CUP_B_Frigate_ANZAC", 0, 2000, 0, GRLIB_perm_inf],
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_Other],
 	["HAFM_CB90_BLU", 0, 500, 0, GRLIB_perm_inf],
 	["HAFM_GunBoat_BLU", 0, 1000, 0, GRLIB_perm_inf],
 	["HAFM_Russen", 0, 1500, 0, GRLIB_perm_inf],
@@ -1023,3 +1024,18 @@ GRLIB_Airdrop_5 = [
 	"CUP_B_RG31E_M2_OD_USMC"
 ];
 // GRLIB_Airdrop_6 = [];
+
+vehicle_big_units_west = [
+	
+];
+
+vehicle_extreme_big_units_west = [
+	"CUP_B_Frigate_ANZAC",
+	"HAFM_CB90_BLU",
+	"HAFM_GunBoat_BLU",
+	"HAFM_Russen",
+	"HAFM_MEKO_TN",
+	"HAFM_MEKO_HN",
+	"HAFM_FREMM",
+	"HAFM_ABurke"
+];

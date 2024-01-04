@@ -22,7 +22,10 @@ while { true } do {
 			private _vehicle = _x;
 			private _distvehclose = 5;
 			if (typeOf _vehicle in vehicle_big_units) then {
-				_distvehclose = _distvehclose * 3;
+				_distvehclose = _distvehclose * 3; // 5 * 3 = 15
+			};
+			if (typeOf _vehicle in vehicle_extreme_big_units) then {
+				_distvehclose = _distvehclose * 12; // 5 * 12 = 60
 			};
 			_vehicle addAction ["<t color='#FFFF00'>" + localize "STR_RECYCLE_MANAGER" + "</t> <img size='1' image='res\ui_recycle.paa'/>","scripts\client\actions\do_recycle.sqf","",-950,false,true,"","[_target] call is_menuok && [_target] call is_recyclable",_distvehclose];
 
