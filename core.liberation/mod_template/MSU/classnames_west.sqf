@@ -853,6 +853,15 @@ buildings_west = [
 	["Land_HBarrier_large", 0, 0, 0, GRLIB_perm_inf],
 	["Land_HBarrier_01_big_4_green_F", 0, 0, 0, GRLIB_perm_inf],
 	["Land_Camping_Light_F", 0, 0, 0, GRLIB_perm_inf],
+    ["Land_Nav_Boathouse_PierL", 0, 0, 0, GRLIB_perm_inf],
+	["land_nav_pier_c2", 0, 0, 0, GRLIB_perm_inf],
+	["Land_Pier_F", 0, 0, 0, GRLIB_perm_inf],
+	["Land_Pier_addon", 0, 0, 0, GRLIB_perm_inf],
+	["land_nav_pier_M_fuel", 0, 0, 0, GRLIB_perm_inf],
+	["land_nav_pier_m", 0, 0, 0, GRLIB_perm_inf],
+	["Land_PierWooden_01_ladder_F", 0, 0, 0, GRLIB_perm_inf],
+	["Land_PierWooden_01_10m_noRails_F", 0, 0, 0, GRLIB_perm_inf],
+	["land_nav_pier_m_end", 0, 0, 0, GRLIB_perm_inf],
 	["Target_PopUp4_Moving_90deg_F", 0, 0, 0, GRLIB_perm_inf]
 ];
 
