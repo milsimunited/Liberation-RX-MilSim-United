@@ -15,7 +15,7 @@ _vehicle setVariable ["recycle_in_use", true, true];
 
 private [ "_objectinfo", "_objectinfo_loot", "_loot", "_cfg", "_msg" ];
 // XP AmmoBox
-if (typeOf _vehicle == ammobox_i_typename && score player <= GRLIB_perm_log) then {
+if (typeOf _vehicle == ammobox_i_typename && score player <= MSU_Rank_Corporal) then {
 	_msg = format [localize "STR_DO_RECYCLE"];
 	_result = [_msg, localize "STR_SP_BOX", localize "STR_PTS", localize "STR_AMMORWD"] call BIS_fnc_guiMessage;
 	if (_result && !(isNull _vehicle) && alive _vehicle) then {

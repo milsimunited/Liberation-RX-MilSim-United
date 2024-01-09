@@ -43,11 +43,11 @@ player createDiaryRecord ["LRX Info", ["Original", format ["<font color='#ff8000
 
 player createDiarySubject ["Ranking","Ranking"];
 player createDiaryRecord ["Ranking", ["Ranking", format ["<font color='#ff4000'>%1</font>  :  UNNAMED<br/>%2", "below -45", localize "STR_RANK_LVL0"]]];
-player createDiaryRecord ["Ranking", ["Ranking", format ["<font color='#ff8000'>%1</font>  :  PRIVATE<br/>%2", GRLIB_perm_inf, localize "STR_RANK_LVL1"]]];
-player createDiaryRecord ["Ranking", ["Ranking", format ["<font color='#ffff00'>%1</font>  :  CORPORAL<br/>%2", GRLIB_perm_log, localize "STR_RANK_LVL2"]]];
-player createDiaryRecord ["Ranking", ["Ranking", format ["<font color='#8ff000'>%1</font>  :  SERGEANT<br/>%2", GRLIB_perm_tank, localize "STR_RANK_LVL3"]]];
-player createDiaryRecord ["Ranking", ["Ranking", format ["<font color='#00ffff'>%1</font>  :  CAPTAIN<br/>%2", GRLIB_perm_air, localize "STR_RANK_LVL4"]]];
-player createDiaryRecord ["Ranking", ["Ranking", format ["<font color='#0080ff'>%1</font>  :  MAJOR<br/>%2", GRLIB_perm_max, localize "STR_RANK_LVL5"]]];
+player createDiaryRecord ["Ranking", ["Ranking", format ["<font color='#ff8000'>%1</font>  :  PRIVATE<br/>%2", MSU_Rank_Private, localize "STR_RANK_LVL1"]]];
+player createDiaryRecord ["Ranking", ["Ranking", format ["<font color='#ffff00'>%1</font>  :  CORPORAL<br/>%2", MSU_Rank_Corporal, localize "STR_RANK_LVL2"]]];
+player createDiaryRecord ["Ranking", ["Ranking", format ["<font color='#8ff000'>%1</font>  :  SERGEANT<br/>%2", MSU_Rank_Sergeant, localize "STR_RANK_LVL3"]]];
+player createDiaryRecord ["Ranking", ["Ranking", format ["<font color='#00ffff'>%1</font>  :  CAPTAIN<br/>%2", MSU_Rank_Captain, localize "STR_RANK_LVL4"]]];
+player createDiaryRecord ["Ranking", ["Ranking", format ["<font color='#0080ff'>%1</font>  :  MAJOR<br/>%2", MSU_Rank_Major, localize "STR_RANK_LVL5"]]];
 player createDiaryRecord ["Ranking", ["Ranking", format ["-= How the ranking system works =-"]]];
 
 player createDiarySubject["Table","Table"];

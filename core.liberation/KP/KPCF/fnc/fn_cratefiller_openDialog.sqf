@@ -28,7 +28,7 @@ params [
 // Get the cratefiller object and store it
 CCSVAR("object", _data select 0, false);
 
-if(score player < GRLIB_perm_inf) exitwith{
+if(score player < MSU_Rank_Private) exitwith{
     hint "Dein Score ist zu niedrig!";
 };
 

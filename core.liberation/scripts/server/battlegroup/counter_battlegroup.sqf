@@ -21,7 +21,7 @@ while { GRLIB_endgame == 0 } do {
 	 	combat_readiness >= bg_readiness_min && (armor_weight >= 50 || air_weight >= 50);
 	 };
 
-	_target_lst = [allPlayers, {score _x >= GRLIB_perm_tank}] call BIS_fnc_conditionalSelect;
+	_target_lst = [allPlayers, {score _x >= MSU_Rank_Sergeant}] call BIS_fnc_conditionalSelect;
 
 	if ( ( count _target_lst > 1 ) && (combat_readiness >= bg_readiness_min) ) then {
 		_target_player = selectRandom _target_lst;

@@ -29,12 +29,12 @@ while { true } do {
 					[_x] remoteExec ["LRX_tk_actions", owner _x];
 					diag_log format ["-- LRX TK: BAN for player %1 - UID: %2", name _x,  _uid];
 				};
-				if ((_cur >= GRLIB_perm_ban) && (_cur < GRLIB_perm_inf) && (_cur < _last)) then {_rank = "None"; _newrank = true};
-				if (((_cur >=  GRLIB_perm_inf) && (_cur < GRLIB_perm_log) && (_rank != "Private")) || (_cur >=  0) && (_last < 0)) then {_rank = "Private"; _newrank = true};
-				if ((_cur >= GRLIB_perm_log) && (_cur < GRLIB_perm_tank) && (_rank != "Corporal")) then {_rank = "Corporal"; _newrank = true};
-				if ((_cur >= GRLIB_perm_tank) && (_cur < GRLIB_perm_air) && (_rank != "Sergeant")) then {_rank = "Sergeant"; _newrank = true};
-				if ((_cur >= GRLIB_perm_air) && (_cur < GRLIB_perm_max) && (_rank != "Captain")) then {_rank = "Captain"; _newrank = true};
-				if ((_cur >= GRLIB_perm_max) && (_rank != "Major")) then {_rank = "Major"; _newrank = true};
+				if ((_cur >= GRLIB_perm_ban) && (_cur < MSU_Rank_Private) && (_cur < _last)) then {_rank = "None"; _newrank = true};
+				if (((_cur >=  MSU_Rank_Private) && (_cur < MSU_Rank_Corporal) && (_rank != "Private")) || (_cur >=  0) && (_last < 0)) then {_rank = "Private"; _newrank = true};
+				if ((_cur >= MSU_Rank_Corporal) && (_cur < MSU_Rank_Sergeant) && (_rank != "Corporal")) then {_rank = "Corporal"; _newrank = true};
+				if ((_cur >= MSU_Rank_Sergeant) && (_cur < MSU_Rank_Captain) && (_rank != "Sergeant")) then {_rank = "Sergeant"; _newrank = true};
+				if ((_cur >= MSU_Rank_Captain) && (_cur < MSU_Rank_Major) && (_rank != "Captain")) then {_rank = "Captain"; _newrank = true};
+				if ((_cur >= MSU_Rank_Major) && (_rank != "Major")) then {_rank = "Major"; _newrank = true};
 				// if ((_cur >= (GRLIB_perm_max + 250)) && (_rank != "Colonel")) then {_rank = "Colonel"; _newrank = true};
 				
 				if (_newrank) then {
