@@ -3925,40 +3925,28 @@
 				<Japanese>あなたには何の権限も付与されていません！&lt;br/&gt;あなたは全てのサポートにアクセス出来ません！</Japanese>
 			</Key>
 			<Key ID="STR_RANK_LVL1">
-				<Original>You can build and use everything you can afford.</Original>
-				<French>You can build and use everything you can afford.</French>
-				<Chinesesimp>You can build and use everything you can afford.</Chinesesimp>
-				<Japanese>You can build and use everything you can afford.</Japanese>
+				<Original>You have access to the following:&lt;br/&gt;Unarmed Vehicles&lt;br/&gt;Logistics and Medic Vehicles (Air + Ground)&lt;br/&gt;Unarmed Drones&lt;br/&gt;All boats (Excluding Destroyers and Frigates)&lt;br/&gt;Static Vehicles (Excluding Mk41 VLS)&lt;br/&gt;All Buildings and Support Crates</Original>
+				<German>Du hast Zugriff zu folgendem:&lt;br/&gt;Unbewaffnete Fahrzeuge&lt;br/&gt;Logistik und Medizinische Fahrzeuge (Luft + Boden)&lt;br/&gt;Unbewaffnete Drohnen&lt;br/&gt;Alle Boote (Außer Zerstörer und Fregatten)&lt;br/&gt;Statische Fahrzeuge (Außer Mk41 VLS)&lt;br/&gt;Alle Gebäude und Support-Kisten</German>
 			</Key>
 			<Key ID="STR_RANK_LVL2">
-				<Original>You can build and use everything you can afford.</Original>
-				<French>You can build and use everything you can afford.</French>
-				<Chinesesimp>You can build and use everything you can afford.</Chinesesimp>
-				<Japanese>You can build and use everything you can afford.</Japanese>
+				<Original>You have access to the following:&lt;br/&gt;Armed Vehicles (GMG, HMG, AT)</Original>
+				<German>Du hast Zugriff zu folgendem:&lt;br/&gt;Bewaffnete Fahrzeuge (GMG, HMG, AT)</German>
 			</Key>
 			<Key ID="STR_RANK_LVL3">
-				<Original>You can build and use everything you can afford.</Original>
-				<French>You can build and use everything you can afford.</French>
-				<Chinesesimp>You can build and use everything you can afford.</Chinesesimp>
-				<Japanese>You can build and use everything you can afford.</Japanese>
+				<Original>You have access to the following:&lt;br/&gt;Main Battle Tanks (MBT)&lt;br/&gt;Armoured Personnel Carrier (APC)&lt;br/&gt;Air-Defense Vehicles&lt;br/&gt;Artillery Vehicles</Original>
+				<German>Du hast Zugriff zu folgendem:&lt;br/&gt;Kampfpanzer (KPZ)&lt;br/&gt;Truppentransporter (APC)&lt;br/&gt;Luftabwehr Fahrzeuge&lt;br/&gt;Artillerie Fahrzeuge</German>
 			</Key>
 			<Key ID="STR_RANK_LVL4">
-				<Original>You can build and use everything you can afford.</Original>
-				<French>You can build and use everything you can afford.</French>
-				<Chinesesimp>You can build and use everything you can afford.</Chinesesimp>
-				<Japanese>You can build and use everything you can afford.</Japanese>
+				<Original>You have access to the followgin:&lt;br/&gt;Armed Drones&lt;br/&gt;CAS-Airplanes&lt;br/&gt;Attack Helicopters (Fixed armament, operated by one person)</Original>
+				<German>Du hast Zugriff zu folgendem:&lt;br/&gt;Bewaffnete Drohnen&lt;br/&gt;CAS-Flugzeuge&lt;br/&gt;Kampfhelikopter (Starre Bewaffnung, von einer Person bedient)</German>
 			</Key>
 			<Key ID="STR_RANK_LVL5">
-				<Original>You can build and use everything you can afford.</Original>
-				<French>You can build and use everything you can afford.</French>
-				<Chinesesimp>You can build and use everything you can afford.</Chinesesimp>
-				<Japanese>You can build and use everything you can afford.</Japanese>
+				<Original>You have access to the following:&lt;br/&gt;Fighter Jets&lt;br/&gt;Attack Helicopters (Rotating Gun, operated by two persons)&lt;br/&gt;Mk41 VLS</Original>
+				<German>Du hast Zugriff zu folgendem:&lt;br/&gt;Kampfjets&lt;br/&gt;Kampfhelikopter (Drehbares Geschütz, von zwei Personen bedient)&lt;br/&gt;Mk41 VLS</German>
 			</Key>
 			<Key ID="STR_RANK_LVL6">
-				<Original>You can build and use everything you can afford.</Original>
-				<French>You can build and use everything you can afford.</French>
-				<Chinesesimp>You can build and use everything you can afford.</Chinesesimp>
-				<Japanese>You can build and use everything you can afford.</Japanese>
+				<Original>Idk how you got that rank, but it's currently unused...</Original>
+				<German>Ich weiß nicht wie du an diesen Rang gekommen ist, aber er ist derzeit nicht in Benutzung...</German>
 			</Key>
 
 			<!-- Added in v0.928 -->

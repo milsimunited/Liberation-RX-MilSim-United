@@ -39,7 +39,7 @@ simple_objects = [
 // *** ELITES ***
 elite_vehicles = [];
 {
-    if (_x select 4 == GRLIB_perm_max) then {
+    if (_x select 4 == msu_score_max) then {
         elite_vehicles pushBack (_x select 0)
     }
 } forEach small_infantry_transport_unarmed + small_infantry_transport_armed_HMG + small_infantry_transport_armed_GMG + small_infantry_transport_armed_AT + big_infantry_transport_unarmed + big_infantry_transport_armed_HMG + big_infantry_transport_armed_GMG + armored_infantry_transport + artillery_vehicles + apc + mbt + anti_air + helicopter_personal_transport + helicopter_cargo_transport + helicopter_armed + planes + jets + drones + medical_vehicle_ground + medical_vehicle_air + logistics_vehicle_ground + boats + static_vehicles;

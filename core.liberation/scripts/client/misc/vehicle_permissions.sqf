@@ -27,14 +27,14 @@ if (!(_role == "cargo" || _vehicle isKindOf "Steerable_Parachute_F")) then {
 	};
 
 	_score = score player;
-	if ((typeOf _vehicle) in elite_vehicles && _score < GRLIB_perm_max) then {
+	if ((typeOf _vehicle) in elite_vehicles && _score < msu_score_max) then {
 		_doeject = true;
 		_msg = localize "STR_PERMISSION_NO_VIP";
 	};
 
 	_support_vehicles = [];
 	{_support_vehicles pushBack ( _x select 0 )} foreach (support_vehicles);
-	if ((typeOf _vehicle) in _support_vehicles && _score < GRLIB_perm_inf) then {
+	if ((typeOf _vehicle) in _support_vehicles && _score < MSU_Rank_Private) then {
 		_doeject = true;
 		_msg = localize "STR_PERMISSION_NO_SUP";
 	};
