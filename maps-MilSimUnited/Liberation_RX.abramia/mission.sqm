@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=8942;
+		nextID=8943;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=564;
+		nextID=580;
 	};
 	class Camera
 	{
@@ -142,14 +142,13 @@ addons[]=
 	"FIR_PilotCrewPack_US",
 	"ace_gforces",
 	"ace_parachute",
-	"ace_explosives",
-	"A3_Modules_F_Curator_Curator"
+	"ace_explosives"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=40;
+		items=39;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -419,13 +418,6 @@ class AddonsMetaData
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
-		};
-		class Item39
-		{
-			className="A3_Modules_F_Curator";
-			name="Arma 3 Zeus Update - Scripted Modules";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
 		};
 	};
 };
@@ -21032,6 +21024,19 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="SCALAR";
+					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -21054,19 +21059,6 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					singleType="SCALAR";
-					value=0;
-				};
-			};
-		};
 		nAttributes=2;
 	};
 	class Category2
@@ -21081,7 +21073,7 @@ class CustomAttributes
 				class data
 				{
 					singleType="BOOL";
-					value=1;
+					value=0;
 				};
 			};
 		};
@@ -83325,7 +83317,7 @@ class Mission
 			name="lib_basics_1";
 			class Entities
 			{
-				items=92;
+				items=89;
 				class Item0
 				{
 					dataType="Object";
@@ -83513,7 +83505,7 @@ class Mission
 					position[]={9581.042,6.7395811,706.11371};
 					name="ghost_spot_10";
 					type="Empty";
-					angle=48.640572;
+					angle=48.640568;
 					id=8784;
 				};
 				class Item11
@@ -83522,7 +83514,7 @@ class Mission
 					position[]={9584.7314,6.6364717,709.40692};
 					name="respawn_west";
 					type="Empty";
-					angle=48.520439;
+					angle=48.520435;
 					id=8785;
 					atlOffset=9.5367432e-007;
 				};
@@ -85229,7 +85221,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={9579.3896,6.7428942,707.87329};
-								angles[]={-0,5.7009497,0.013999403};
+								angles[]={0,5.7009497,0.013999403};
 							};
 							side="West";
 							flags=6;
@@ -85368,7 +85360,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={9580.3994,6.7474413,706.12134};
-								angles[]={-0,5.6910796,6.2731905};
+								angles[]={0,5.6910796,6.2731905};
 							};
 							side="West";
 							flags=6;
@@ -85507,7 +85499,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={9578.3242,6.7279835,709.53583};
-								angles[]={-0,5.6977825,0.013999403};
+								angles[]={0,5.6977825,0.013999403};
 							};
 							side="West";
 							flags=6;
@@ -86629,7 +86621,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={9569.79,6.5901022,709.34174};
-								angles[]={-0,5.705584,0.05394781};
+								angles[]={0,5.705584,0.05394781};
 							};
 							side="West";
 							flags=6;
@@ -86770,7 +86762,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={9570.5957,6.6288424,707.78082};
-								angles[]={-0,5.6937065,0.045966074};
+								angles[]={0,5.6937065,0.045966074};
 							};
 							side="West";
 							flags=6;
@@ -86911,7 +86903,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={9571.6406,6.6769085,706.10858};
-								angles[]={-0,5.6951661,0.045966074};
+								angles[]={0,5.6951661,0.045966074};
 							};
 							side="West";
 							flags=6;
@@ -87610,7 +87602,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={9565.8408,6.3768568,709.49298};
-								angles[]={-0,5.7163777,0.05394781};
+								angles[]={0,5.7163777,0.05394781};
 							};
 							side="West";
 							flags=6;
@@ -94211,332 +94203,15 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={9592.3984,5.9255652,700.38843};
-						angles[]={6.2053437,3.0183513,6.2312331};
+						position[]={9575.8467,4.7489929,684.72601};
 					};
-					name="zm1";
-					id=8938;
-					type="ModuleCurator_F";
-					atlOffset=4.7683716e-007;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ModuleCurator_F_Owner";
-							expression="_this setVariable ['Owner',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="76561197993044168";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ModuleCurator_F_Forced";
-							expression="_this setVariable ['Forced',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ModuleCurator_F_Name";
-							expression="_this setVariable ['Name',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Huber Sepp";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ModuleInfo";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="ModuleCurator_F_Addons";
-							expression="_this setVariable ['Addons',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=3;
-								};
-							};
-						};
-						nAttributes=5;
-					};
-				};
-				class Item89
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={9589.8242,5.9238124,699.08527};
-						angles[]={6.1696749,3.0502267,6.2372169};
-					};
-					name="zm2";
-					id=8939;
-					type="ModuleCurator_F";
-					atlOffset=9.5367432e-007;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ModuleCurator_F_Owner";
-							expression="_this setVariable ['Owner',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="76561198057808323";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ModuleCurator_F_Forced";
-							expression="_this setVariable ['Forced',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ModuleCurator_F_Name";
-							expression="_this setVariable ['Name',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Johannes";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ModuleInfo";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="ModuleCurator_F_Addons";
-							expression="_this setVariable ['Addons',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=3;
-								};
-							};
-						};
-						nAttributes=5;
-					};
-				};
-				class Item90
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={9587.3154,5.8787136,697.67548};
-						angles[]={6.1954122,3.0711801,6.2113094};
-					};
-					name="zm3";
-					id=8940;
-					type="ModuleCurator_F";
-					atlOffset=4.7683716e-007;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ModuleCurator_F_Owner";
-							expression="_this setVariable ['Owner',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="76561198019854511";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ModuleCurator_F_Forced";
-							expression="_this setVariable ['Forced',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ModuleCurator_F_Name";
-							expression="_this setVariable ['Name',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Voltaren";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ModuleInfo";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="ModuleCurator_F_Addons";
-							expression="_this setVariable ['Addons',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=3;
-								};
-							};
-						};
-						nAttributes=5;
-					};
-				};
-				class Item91
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={9584.7656,5.915626,696.09375};
-						angles[]={6.1954122,2.9378068,6.2432065};
-					};
-					name="zm8";
-					id=8941;
-					type="ModuleCurator_F";
-					atlOffset=9.5367432e-007;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ModuleCurator_F_Owner";
-							expression="_this setVariable ['Owner',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="76561198283765221";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ModuleCurator_F_Forced";
-							expression="_this setVariable ['Forced',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ModuleCurator_F_Name";
-							expression="_this setVariable ['Name',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Steakman";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ModuleInfo";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="ModuleCurator_F_Addons";
-							expression="_this setVariable ['Addons',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=3;
-								};
-							};
-						};
-						nAttributes=5;
-					};
+					init="MSU_currentMap_sectorSize = 500; " \n "MSU_currentMap_captureSize = 200; " \n "MSU_currentMap_radiotowerSize = 3000;";
+					id=8942;
+					type="Logic";
 				};
 			};
 			id=8773;
-			atlOffset=-0.065587521;
+			atlOffset=-0.16454983;
 		};
 	};
 	class Connections
