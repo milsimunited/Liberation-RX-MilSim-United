@@ -1643,7 +1643,13 @@ MSU_blacklisted_from_arsenal = [
 "greenmag_ammo_650x39_IRtracer_30Rnd",
 "greenmag_ammo_650x39_tracer_30Rnd",
 "greenmag_ammo_650x39_tracer_60Rnd",
-"greenmag_ammo_650x39_IRtracer_60Rnd"
+"greenmag_ammo_650x39_IRtracer_60Rnd",
+// KAT/KAM
+"kat_vacuum",
+"kat_MFAK",
+"kat_IFAK",
+"KAT_Gas_TripWireMine_Mag",
+"kat_AFAK"
 ];
 
 // MSU_whitelisted_from_arsenal = [];
