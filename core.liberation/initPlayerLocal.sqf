@@ -8,45 +8,39 @@ _rules = "
 DE:<br />
 Regelwerk MiSim United<br />
 <br />
-1.    Allgemeines<br />
-1.1    Trolling, Beleidigung, Rassismus, sexuelle Belästigung so wie alles, was strafrechtlich verfolgt wird ist verboten und führt zum Ausschluss.<br />
-1.2    Wer unseren Server betritt, erklärt sich damit einverstanden, dass jede Form von Bild und Ton hier für die Öffentlichkeit bestimmt sind und jederzeit ohne weitere Ankündigung aufgezeichnet werden können.<br />
-1.3    Das Recycling, Stehlen oder Zerstören von Fahrzeugen anderer Spieler ist untersagt.<br />
-1.4    Schießen innerhalb der FOBs ist nur zu deren Verteidigung erlaubt. Waffen testen ist in der “Operationszentrale” erlaubt, sofern es die erste FOB gibt.<br />
-1.5    Den Anweisungen von Moderatoren ist Folge zu leisten.<br />
-1.6    Bei Verlust von Fahrzeugen durch Bugs etc. liegt es im Ermessen der Moderatoren, eine Erstattung zu gewähren. (Videobeweis hilft hierbei.)<br />
-1.7    Bei Streitigkeiten mit Moderatoren ruhig bleiben, einen weiteren hinzuholen und ggf. ein Video machen.<br />
-1.8    Ausnutzen von Programmfehlern, Bugs, Exploits etc. ist verboten.<br />
+1. Rechtliches<br />
+1.1 Trolling, Beleidigung, Rassismus, sexuelle Belästigung so wie alles was strafrechtlich verfolgt wird, ist verboten und führt zum Ausschluss. <br />
+1.2 Es ist auf Datenschutz zu achten: Jeder ist selbst dafür verantwortlich, nichts von sich selbst preiszugeben, was andere nicht wissen dürfen. Ebenso ist es verboten, Daten anderer gegen deren Willen preiszugeben. <br />
+1.3 Wer unseren Server betritt, erklärt sich damit einverstanden, dass jede Form von Bild und Ton hier für die Öffentlichkeit bestimmt sind und jederzeit ohne weitere Ankündigung aufgezeichnet werden können.<br />
 <br />
 <br />
-2.    Gruppen<br />
-2.1    Gruppen haben sich im Gruppenmanager ordentlich einzutragen. (Rufname, Kurzfunk Freq., Funktion)<br />
-2.2    Funkrufnamen sind im Bereich Milsim, kurz, international und gut aussprechbar zu halten.<br />
-2.3    Innerhalb der Gruppe hat der Gruppenführer das Sagen.<br />
-2.4    Gruppen müssen uniform auftreten.<br />
+2. Spielerisches<br />
+2.1 Das Verletzen anderer Spieler, sowie das Recycling, Stehlen oder Zerstören ihrer Fahrzeuge ist verboten. <br />
+2.2 Das Verletzen von befreundeter KI, Zivilisten und POWs ist verboten. <br />
+2.3 Schießen innerhalb der FOBs ist nur zu deren Verteidigung erlaubt, Waffen testen ist in der “Operationszentrale” erlaubt, sofern es die erste FOB gibt. <br />
+2.4 Bei Verlust von Fahrzeugen durch Bugs etc. liegt es im Ermessen der IT, eine Erstattung zu gewähren. (Videobeweis hilft hierbei.) <br />
+2.5 Ausnutzen von Programmfehlern, Bugs, Exploits etc. ist verboten. <br />
+2.6 Bei Konflikten und Regelverstößen ruhig bleiben und ein Video machen! <br />
+2.7 Jeder ist verpflichtet sich selbst um die Vermeidung und Lösung von Konflikten zu bemühen. <br />
+Stufe 1: Persönlich zwischen den Beteiligten. <br />
+Stufe 2: In einem gemeinsamen, klärenden Gespräch, vorzugsweise öffentlich im Chat. <br />
+Stufe 3: Mit Unterstützung der IT.<br />
 <br />
 <br />
-3.    Ausrüstung und Slots<br />
-3.1    Wer einen Slot belegt, muss ausreichend qualifiziert sein und die jeweilige Dienstleistung auch tatsächlich für andere zur Verfügung stellen. Kampfpiloten müssen CAS durchführen, Engineers müssen reparieren, Medics müssen heilen, etc. und HQ muss ein möglichst angenehmes Spielerlebnis für seine Truppen organisieren.<br />
-3.2    Die Ausrüstung der dargestellten Klasse muss in den Bereich Milsim passen. (beispielsweise keine Ghilli-Medic-Javelin-Sniper oder Panzerbesatzungen mit Javelin auf dem Rücken)<br />
+3. Gruppen und Kommunikation<br />
+3.1 Funkrufnamen sollen kurz, international und gut aussprechbar sein. <br />
+3.2 Frequenz 50 ist ausschließlich zur Bodenkommunikation. <br />
+3.3 Frequenz 51 ist ausschließlich zur Boden-Luft-Kommunikation. <br />
+3.4 Frequenz 52 ist ausschließlich zur Luftkommunikation. <br />
+3.5 Funkdisziplin ist einzuhalten, kurze Funksprüche.<br />
 <br />
 <br />
-4.     Fahrzeuge<br />
-4.1    Boden- und Luftfahrzeuge sind Unterstützungselemente. Sie dürfen den Feuerkampf ausschließlich zur Selbstverteidigung selbständig aufnehmen, wenn kein Auftrag von Infanterieeinheiten vorliegt.<br />
-4.2    Regel der Selbstverteidigung trifft nicht zu, wenn ein Fahrzeug sich fahrlässig und ohne Auftrag der Infanterie zu nah an eine Zone begibt!<br />
-4.3    Zum Besetzen der Land- und Lufteinheiten ist der entsprechende Slot zu nutzen, sollte dieser nicht frei sein, muss gewartet werden, bis er es wird.<br />
+4. Spezial-Slots<br />
+Wer einen Spezial-Slot belegt, muss ausreichend qualifiziert sein und die jeweilige Aufgabe auch tatsächlich für andere zur Verfügung stellen. Kampfpiloten müssen CAS durchführen, Engineers müssen reparieren, Medics müssen heilen, etc.  Einen Spezialslot zu blockieren und mehr als ca. 10 Minuten AFK zu sein ist verboten.<br />
 <br />
 <br />
-5.    Funk und Funkfrequenzen <br />
-5.1    Jede Bodeneinheit muss ein Long Range Radio auf Freq. 50 haben, um dort erreichbar zu sein<br />
- 5.2    Jede Lufteinheit muss ein Long Range Radio mit Freq. 51 und 52 haben, um dort erreichbar zu sein. Ausnahmen sind nur gültig, falls ein JTAC die Lufteinheit aktiv einsetzt.<br />
- 5.3    Frequenz 50 ist ausschließlich zur Boden-Kommunikation!<br />
- 5.4    Frequenz 51 ist ausschließlich zur Boden-Luft-Kommunikation!<br />
- 5.5    Frequenz 52 ist ausschließlich zur Luft-Luft-Kommunikation!<br />
- 5.6    Funkdisziplin ist einzuhalten, kurze Funksprüche, kein Kaffeeklatsch. (denken, drücken, sprechen)<br />
- <br />
-<br />
-6.    Teamplay ist Teil der Milsim-Erfahrung, handelt entsprechend!<br />
+5. Fahrzeuge<br />
+Boden- und Luftfahrzeuge sind vorrangig Unterstützungselemente. Wenn Infanterie im gleichen Sektor operiert, darf dort nur mit deren Zustimmung angegriffen werden.
 <br />
 <br />
 <br />
@@ -54,46 +48,39 @@ Regelwerk MiSim United<br />
 EN:<br />
 Rules MiSim United<br />
 <br />
-1. General<br />
-1.1 Trolling, insults, racism, sexual harassment as well as anything that will be prosecuted is prohibited and will result in a serverban.<br />
-1.2 Who enters our server, agrees that any form of image and sound here are intended for the public and can be recorded at any time without further notice.<br />
-1.3 Recycling, stealing or destroying other players' vehicles is prohibited.<br />
-1.4 Shooting within the FOBs is only permitted for defense of said FOB. Weapon testing is allowed in the operation base when the first FOB exists.<br />
-1.5 The instructions of moderators must be followed without discussion.<br />
-1.6 If vehicles are lost due to bugs etc..., it is at the discretion of the moderators to grant a refund. (Video proof helps with this.)<br />
-1.7 Stay calm in the event of disputes with moderators, bring in another player and, if necessary, make a video.<br />
-1.8 Using program errors, bugs, exploits, etc. is prohibited.<br />
+1. Legal matters<br />
+1.1 Trolling, insults, racism, sexual harassment as well as anything that can be prosecuted under criminal law is prohibited and will lead to exclusion. <br />
+1.2 Data protection must be observed: Everyone is responsible for not disclosing anything about themselves that others are not allowed to know. It is also forbidden to disclose the data of others against their will. <br />
+1.3 Anyone who enters our server agrees that any form of image and sound is intended for the public and may be recorded at any time without further notice.<br />
 <br />
 <br />
-2. Groups<br />
-2.1 Groups have to register properly in the group manager. (ACE-selfinteraction -> Teammanagement)<br />
-2.2 Naming of the groups is to be kept militarily, short, international and well pronouncable.<br />
-2.3 Within the group, the group leader has the say.<br />
-2.4 Groups must have uniform appearance.<br />
+2. Gaming<br />
+2.1 Injuring other players and recycling, stealing or destroying their vehicles is prohibited. <br />
+2.2 Harming friendly AI, civilians and POWs is prohibited. <br />
+2.3 Shooting within the FOBs is only allowed for their defense, testing weapons is allowed in the 'Operations Center' if the first FOB exists. <br />
+2.4 If vehicles are lost due to bugs etc., it is at the discretion of IT to grant a refund. (Video evidence helps here.) <br />
+2.5 Taking advantage of program errors, bugs, exploits, etc. is prohibited. <br />
+2.6 In the event of conflicts and rule violations, remain calm and make a video! <br />
+2.7 Everyone is obliged to make their own efforts to avoid and resolve conflicts. <br />
+Level 1: Personally between the parties involved. <br />
+Stage 2: In a joint, clarifying discussion, preferably publicly in the chat. <br />
+Stage 3: With the support of IT.<br />
 <br />
 <br />
-3. Gear and Slots<br />
-3.1 If you occupy a slot, you have to be qualified and actually provide the said service for others. Combat pilots have to do CAS, engineers have to repair, medics have to heal, etc. and HQ has to organize an enjoyable gameplay experience for his troops.<br />
-3.2    Pilot slots stand for the max amount of air assets. Co-pilots, gunners or crew can be manned as you please as long as it is no violation of 3.1.<br />
-3.3    Equipment of the class that was selected in the server lobby must fit within the Milsim area. (e.g.; no Ghilli Medic javelin snipers or tank crews with javelin on their backs)<br />
+3. Groups and communication<br />
+3.1 Radio call names should be short, international and easy to pronounce. <br />
+3.2 Frequency 50 is exclusively for ground communication. <br />
+3.3 Frequency 51 is exclusively for ground-air communication. <br />
+3.4 Frequency 52 is exclusively for air communication. <br />
+3.5 Radio discipline must be observed, short radio messages.<br />
 <br />
 <br />
-4. Vehicles<br />
-4.1 Ground and air vehicles are support elements, they may only engage in firefightings independently for self-defense if there is no order from infantry units.<br />
-4.2 Rule of self-defense does not apply if a vehicle negligently and without order of the infantry goes too close to a zone!<br />
-4.3 To use the vehicles, you must use the according slots. If the slots are occupied, you have to wait until they become available again.<br />
+4. Special slots<br />
+Anyone occupying a special slot must be sufficiently qualified and actually make the respective task available to others. Fighter pilots must perform CAS, engineers must repair, medics must heal, etc.  Blocking a special slot and being AFK for more than approx. 10 minutes is prohibited.<br />
 <br />
 <br />
-5. Radio and Radio Frequencies <br />
-5.1 Each ground unit must have a long range radio tuned to Freq. 50 to be reachable there.<br />
-  5.2 Each air unit must have a Long Range Radio with Freq. 51 and 52 to be reachable there. Exceptions are only valid if a JTAC is actively using the air unit.<br />
-  5.3 Frequency 50 is for ground communication only!<br />
-  5.4 Frequency 51 is for ground-to-air communications only!<br />
-  5.5 Frequency 52 is for air-to-air communications only!<br />
-  5.6 Radio discipline must be observed, short radio messages, no coffee gossip. (think, press, speak)<br />
- <br />
-<br />
-6. Team play is part of the Milsim experience, act accordingly!<br />
+5. Vehicles<br />
+Ground and air vehicles are primarily support elements. If infantry is operating in the same sector, you may only attack there with their permission.
 <br />
 <br />
 <br />
