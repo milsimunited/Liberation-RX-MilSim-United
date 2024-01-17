@@ -315,6 +315,7 @@ helicopter_personal_transport = [
 	["vtx_HH60", 0, 400, 0, MSU_Rank_Private],
 	["vtx_MH60M", 0, 400, 0, MSU_Rank_Private],
 	["vtx_UH60M", 0, 400, 0, MSU_Rank_Private],
+        ["vtx_UH60M_MEDEVAC", 0, 400, 0, MSU_Rank_Private],
 	["vtx_UH60M_SLICK", 0, 400, 0, MSU_Rank_Private]
 ];
 
@@ -724,7 +725,7 @@ support_crates = [
 ];
 
 buildings_west = [
-	["US_WarfareBArtilleryRadar_Base_EP1", 0, 0, 0, MSU_Rank_Private],
+	["Land_IntravenStand_01_empty_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_fort_artillery_nest_EP1", 0, 0, 0, MSU_Rank_Private],
 	["Land_Mil_Barracks_EP1", 0, 0, 0, MSU_Rank_Private],
 	["Land_Mil_Barracks_i_EP1", 0, 0, 0, MSU_Rank_Private],
