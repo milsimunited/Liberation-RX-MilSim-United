@@ -1646,10 +1646,7 @@ MSU_blacklisted_from_arsenal = [
 "greenmag_ammo_650x39_IRtracer_60Rnd",
 // KAT/KAM
 "kat_vacuum",
-"kat_MFAK",
-"kat_IFAK",
-"KAT_Gas_TripWireMine_Mag",
-"kat_AFAK"
+"KAT_Gas_TripWireMine_Mag"
 ];
 
 // MSU_whitelisted_from_arsenal = [];
