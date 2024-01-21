@@ -977,7 +977,7 @@ log_on_server = compileFinal "
 	_vehicle setVariable ["ace_medical_medicClass", 1];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
-["ffaa_et_lince_ambulancia", "InitPost", {
+["vtx_UH60M_MEDEVAC", "InitPost", {
     params ["_vehicle"];
 	_vehicle setVariable ["ace_medical_medicClass", 1];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
