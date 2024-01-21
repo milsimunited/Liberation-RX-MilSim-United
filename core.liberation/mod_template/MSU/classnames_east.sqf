@@ -25,11 +25,11 @@ opfor_at = "CUP_O_RU_Soldier_HAT_Ratnik_Autumn";
 opfor_aa = "CUP_O_RU_Soldier_AA_Ratnik_Autumn";
 opfor_officer = "CUP_O_RU_Sniper_KSVK_VDV_M_EMR";
 opfor_sharpshooter = "CUP_O_RU_Recon_Marksman_Ratnik_Autumn";
-opfor_sniper = "CUP_O_RU_Soldier_Medic_Ratnik_Autumn";
+opfor_sniper = "CUP_O_RU_Sniper_M_EMR";
 opfor_spotter = "CUP_O_RU_Soldier_GL_Ratnik_Autumn";
 opfor_engineer = "CUP_O_RU_Soldier_Repair_Ratnik_Autumn";
-opfor_paratrooper = "CUP_O_RU_Soldier_Lite_Ratnik_Autumn";
-opfor_mrap = "CUP_O_UAZ_Unarmed_RU";
+opfor_paratrooper = "CUP_O_MVD_Soldier_TL";
+opfor_mrap = "CUP_O_GAZ_Vodnik_PK_RU";
 opfor_mrap_hmg = "CUP_O_GAZ_Vodnik_PK_RU";
 opfor_mrap_gmg = "CUP_O_GAZ_Vodnik_AGS_RU";
 opfor_transport_helo = "CUP_O_Mi8AMT_RU";
@@ -51,6 +51,9 @@ militia_squad = [
 	"CUP_O_RUS_Soldier_TL",
 	"CUP_O_RUS_SpecOps_Scout",
 	"CUP_O_RUS_SpecOps_Scout",
+	"CUP_O_TK_SpecOps_TL",
+	"CUP_O_TK_Sniper",
+	"CUP_O_TK_SpecOps_MG",
 	"CUP_O_RUS_SpecOps"
 ];
 private _editFullMilitiaSquadLoadout = true;
@@ -77,6 +80,7 @@ divers_squad = [
 
 militia_vehicles = [
 	"CUP_O_UAZ_AGS30_RU",
+        "CUP_O_T34_TKA",
 	"CUP_O_RU_SoldierF",
 	"CUP_O_UAZ_METIS_RU",
 	"CUP_O_BRDM2_ATGM_RUS",
@@ -96,7 +100,7 @@ opfor_vehicles = [
 	"CUP_O_BMP2_RU",
 	"CUP_O_BTR60_RU",
 	"CUP_O_BMP3_RU",
-	"O_Mortar_01_F",
+	"CUP_O_Hilux_podnos_CHDKZ",
 	"CUP_O_UAZ_MG_RU"
 ];
 
@@ -112,39 +116,32 @@ opfor_vehicles_low_intensity = [
 opfor_battlegroup_vehicles = [
 	"CUP_O_2S6M_RU",
 	"CUP_O_2S6M_RU",
+        "CUP_O_T34_TKA",
 	"CUP_O_T90_RU",
 	"CUP_O_T72_RU",
 	"CUP_O_BTR90_RU",
-	"CUP_O_BM21_RU",
+	"CUP_O_Hilux_podnos_CHDKZ",
 	"CUP_O_BMP3_RU",
 	"CUP_O_BRDM2_ATGM_RUS",
 	"CUP_O_BRDM2_RUS",
 	"CUP_O_Ural_RU",
-	"CUP_O_Mi8_RU",
-	"CUP_O_Ka60_Grey_RU",
-	"CUP_O_Ka52_RU",
-	"CUP_O_Ka50_DL_RU",
-	"CUP_O_Mi24_V_Dynamic_RU",
-	"CUP_O_Mi24_P_Dynamic_RU",
-	"CUP_O_SU34_RU",
-	"O_Plane_Fighter_02_Stealth_F",
-	"O_Plane_Fighter_02_F",
-	"O_Plane_Fighter_02_Stealth_F"
+	"CUP_O_T55_TK",
+	"CUP_O_T72_RU",
+	"CUP_O_T34_TKA"
 ];
 
 opfor_battlegroup_vehicles_low_intensity = [
 	"CUP_O_GAZ_Vodnik_BPPU_RU",
 	"CUP_O_2S6M_RU",
+        "CUP_O_T34_TKA",
+        "CUP_O_Hilux_podnos_CHDKZ",
 	"CUP_O_UAZ_AA_RU",
 	"CUP_O_Ural_ZU23_RU",
 	"CUP_O_MTLB_pk_Green_RU",
 	"CUP_O_BRDM2_RUS",
 	"CUP_O_BRDM2_ATGM_RUS",
 	"CUP_O_Ural_RU",
-	"CUP_O_Ka60_Grey_RU",
-	"CUP_O_C47_SLA",
-	"O_Plane_Fighter_02_F",
-	"CUP_O_Su25_Dyn_RU"
+	"CUP_O_Hilux_SPG9_CHDKZ"
 ];
 
 opfor_troup_transports = [
@@ -199,21 +196,19 @@ opfor_reinforcement_vehicles = [
 	"CUP_O_T90_RU",
 	"CUP_O_T72_RU",
 	"CUP_O_BTR90_RU",
-	"CUP_O_BM21_RU",
+	"CUP_O_Hilux_podnos_CHDKZ",
 	"CUP_O_BMP3_RU",
 	"CUP_O_BRDM2_ATGM_RUS",
 	"CUP_O_BRDM2_RUS",
 	"CUP_O_Ural_RU",
 	"CUP_O_Mi8_RU",
-	"CUP_O_Ka60_Grey_RU",
-	"CUP_O_Ka52_RU",
-	"CUP_O_Ka50_DL_RU",
-	"CUP_O_Mi24_V_Dynamic_RU",
 	"CUP_O_Mi24_P_Dynamic_RU",
-	"CUP_O_SU34_RU",
+	"CUP_O_T34_TKA",
+	"CUP_O_T72_RU",
+	"CUP_O_T55_TK",
 	"O_Plane_Fighter_02_Stealth_F",
-	"O_Plane_Fighter_02_F",
-	"O_Plane_Fighter_02_Stealth_F"
+	"CUP_O_Hilux_SPG9_CHDKZ",
+	"CUP_O_Hilux_podnos_CHDKZ"
 ];
 
 opfor_recyclable = [
