@@ -974,6 +974,17 @@ uavs = [
 	"itc_land_COBRA01",
 	"CUP_B_AH6X_USA",
 	"CUP_B_USMC_DYN_MQ9",
+        "CUP_WV_B_CRAM",
+        "CUP_WV_B_RAM_Launcher",
+        "B_radar_System_01_F",
+        "B_SAM_System_03_F",
+        "B_Ship_MRLS_01_F",
+        "B_AAA_System_01_F",
+        "CUP_WV_B_SS_Launcher",
+        "rnt_mantis_base",
+        "rnt_mantis_radar",
+        "B_SAM_System_01_F",
+        "itc_land_COBRA01",
 	"CUP_O_Pchela1T_RU"
 ];
 
