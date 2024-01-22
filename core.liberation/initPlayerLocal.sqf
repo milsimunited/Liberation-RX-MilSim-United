@@ -171,6 +171,23 @@ all_arsenals = [];
 // Prevents the Reassign of the zeus curator when the player spawns for the first time
 playerFirstSpawn = true;
 
+player addEventHandler ["Fired", {
+	if (MSU_DisableFobFiring) then {
+		private _shooter = (_this select 0);
+		private _projectile = (_this select 6);
+		// Get Unit count of enemy forces in a radius of 1000 meter
+		private _unitsNearby = [getpos _shooter, 1000, GRLIB_side_enemy] call F_getUnitsCount;
+		// Get player distance to the nearest fob
+		private _distanceToFob = ([] call F_getNearestFob distance2D (getpos _shooter));
+
+		// If player is 150m or closer to the nearest fob and no enemies are nearby
+		if ((_distanceToFob < 150) && (_unitsNearby < 1)) then {
+			deleteVehicle _projectile;
+			hint (localize "STR_MSU_No_Shooting_Fob");
+		};
+	}
+}];
+
 /*
 {
 	_prc1 = format ["FAC_MSU\%1\arsenal.sqf", _x];
