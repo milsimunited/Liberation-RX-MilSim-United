@@ -192,7 +192,7 @@ opfor_statics = [
 
 opfor_reinforcement_vehicles = [
 	"CUP_O_2S6M_RU",
-	"CUP_O_2S6M_RU",
+	"CUP_O_ZSU23_TK",
 	"CUP_O_T90_RU",
 	"CUP_O_T72_RU",
 	"CUP_O_BTR90_RU",
@@ -206,7 +206,6 @@ opfor_reinforcement_vehicles = [
 	"CUP_O_T34_TKA",
 	"CUP_O_T72_RU",
 	"CUP_O_T55_TK",
-	"O_Plane_Fighter_02_Stealth_F",
 	"CUP_O_Hilux_SPG9_CHDKZ",
 	"CUP_O_Hilux_podnos_CHDKZ"
 ];
