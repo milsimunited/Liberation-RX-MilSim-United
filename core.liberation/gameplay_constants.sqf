@@ -72,6 +72,7 @@ msu_score_min = -20;
 msu_score_max = 2000;
 msu_ammo_min = 0;
 msu_ammo_max = 7000;
+MSU_DisableFobFiring = true;
 
 // tkill_script in init.sqf
 // pylon_restrictions in init.sqf

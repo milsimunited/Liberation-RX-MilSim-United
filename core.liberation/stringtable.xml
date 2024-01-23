@@ -3941,8 +3941,8 @@
 				<German>Du hast Zugriff zu folgendem:&lt;br/&gt;Bewaffnete Drohnen&lt;br/&gt;CAS-Flugzeuge&lt;br/&gt;Kampfhelikopter (Starre Bewaffnung, von einer Person bedient)</German>
 			</Key>
 			<Key ID="STR_RANK_LVL5">
-				<Original>You have access to the following:&lt;br/&gt;Fighter Jets&lt;br/&gt;Attack Helicopters (Rotating Gun, operated by two persons)&lt;br/&gt;Mk41 VLS</Original>
-				<German>Du hast Zugriff zu folgendem:&lt;br/&gt;Kampfjets&lt;br/&gt;Kampfhelikopter (Drehbares Geschütz, von zwei Personen bedient)&lt;br/&gt;Mk41 VLS</German>
+				<Original>You have access to the following:&lt;br/&gt;Fighter Jets&lt;br/&gt;Attack Helicopters (Rotating Gun, operated by two persons)&lt;br/&gt;Mk41 VLS&lt;br/&gt;Destroyers and Frigates</Original>
+				<German>Du hast Zugriff zu folgendem:&lt;br/&gt;Kampfjets&lt;br/&gt;Kampfhelikopter (Drehbares Geschütz, von zwei Personen bedient)&lt;br/&gt;Mk41 VLS&lt;br/&gt;Zerstörer und Fregatten</German>
 			</Key>
 			<Key ID="STR_RANK_LVL6">
 				<Original>Idk how you got that rank, but it's currently unused...</Original>
@@ -5857,6 +5857,10 @@
 			<Key ID="STR_MSU_Placeholder_Mod_Other">
                 <English>--- Other ---</English>
                 <German>--- Andere ---</German>
+            </Key>
+			<Key ID="STR_MSU_No_Shooting_Fob">
+                <English>Shooting in the FOB is prohibited!\nYour projectile has been deleted because there are no enemy forces nearby.</English>
+                <German>Das schießen in der FOB ist verboten!\nDein Projektil wurde gelöscht, da sich keine feindlichen Kräfte in der Nähe befinden.</German>
             </Key>
         </Container>
     </Package>
