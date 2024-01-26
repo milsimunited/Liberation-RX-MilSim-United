@@ -681,6 +681,31 @@ log_on_server = compileFinal "
 	[_vehicle, -1] call ace_cargo_fnc_setSize;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
+["rhsusf_M1220_MK19_usarmy_wd", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,5] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["rhsusf_M1220_usarmy_wd", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,5] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["rhsusf_M1220_M153_M2_usarmy_wd", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,5] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["rhsusf_M1230_M2_usarmy_wd", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,5] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["rhsusf_M1230_MK19_usarmy_wd", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,5] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
 ["BWA3_WLP14_Ammo_Fleck", "InitPost", {
     params ["_vehicle"];
 	[_vehicle, 8] call ace_cargo_fnc_setSize;
