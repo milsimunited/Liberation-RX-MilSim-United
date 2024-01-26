@@ -117,12 +117,12 @@ air_cannot_trigger_on = true;
 // resources
 msu_resource_min_players = 10;
 msu_fuel_min = 10;
-msu_fuel_plane = 0;
-msu_fuel_heli = 0;
-msu_fuel_mbt = 0;
-msu_fuel_ifv = 0;
-msu_fuel_apc = 0;
-msu_fuel_armed = 0;
+msu_fuel_plane = 8;
+msu_fuel_heli = 6;
+msu_fuel_mbt = 5;
+msu_fuel_ifv = 4;
+msu_fuel_apc = 4;
+msu_fuel_armed = 3;
 
 // slot system
 msu_slot_system = true;
