@@ -336,33 +336,33 @@ helicopter_cargo_transport = [
 
 helicopter_armed = [
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
-	["B_Heli_Attack_01_dynamicloadout_F", 0, 1700, 0, MSU_Rank_Major],  // Groß
+	["B_Heli_Attack_01_dynamicloadout_F", 0, 1700, msu_fuel_heli, MSU_Rank_Major],  // Groß
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
-	["RHS_MELB_AH6M", 0, 900, 0, MSU_Rank_Captain], // Klein
+	["RHS_MELB_AH6M", 0, 900, msu_fuel_heli, MSU_Rank_Captain], // Klein
 	["RHS_UH60M_ESSS_d", 0, 1200, msu_fuel_heli, MSU_Rank_Captain], // Klein
 	["RHS_UH1Y_d", 0, 1000, msu_fuel_heli, MSU_Rank_Captain], // Klein
 	["RHS_AH1Z", 0, 1700, msu_fuel_heli, MSU_Rank_Major], // Groß
 	["RHS_AH64DGrey", 0, 2000, msu_fuel_heli, MSU_Rank_Major], // Groß
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankInvisible, MSU_Placeholder_Mod_PRACS],
-	["PRACS_AH1S", 0, 1700, 0, MSU_Rank_Major], // Groß
-	["PRACS_RAH6", 0, 1400, 0, MSU_Rank_Major], // Groß
-	["PRACS_Sa330_Puma_SOCAT", 0, 1700, 0, MSU_Rank_Major], // Groß
-	["PRACS_UH1H_CAS", 0, 700, 0, MSU_Rank_Captain], // Klein
+	["PRACS_AH1S", 0, 1700, msu_fuel_heli, MSU_Rank_Major], // Groß
+	["PRACS_RAH6", 0, 1400, msu_fuel_heli, MSU_Rank_Major], // Groß
+	["PRACS_Sa330_Puma_SOCAT", 0, 1700, msu_fuel_heli, MSU_Rank_Major], // Groß
+	["PRACS_UH1H_CAS", 0, 700, msu_fuel_heli, MSU_Rank_Captain], // Klein
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_CUP],
 	["CUP_B_AH1_DL_BAF", 0, 1700, 0, MSU_Rank_Major], // Groß
-	["CUP_B_AW159_RN_Blackcat", 0, 700, 0, MSU_Rank_Captain], // Klein
-	["CUP_B_UH1D_armed_GER_KSK", 0, 700, 0, MSU_Rank_Captain], // Klein
-	["CUP_B_412_dynamicLoadout_HIL", 0, 700, 0, MSU_Rank_Captain], // Klein
-	["CUP_B_AH64_DL_USA", 0, 1700, 0, MSU_Rank_Major], // Groß
-	["CUP_B_AH64D_DL_USA", 0, 1800, 0, MSU_Rank_Major], // Groß
-	["CUP_B_AH6M_USA", 0, 700, 0, MSU_Rank_Captain], // Klein
-	["CUP_B_MH60L_DAP_4x_US", 0, 700, 0, MSU_Rank_Captain], // Klein
-	["CUP_B_MH60L_DAP_2x_US", 0, 700, 0, MSU_Rank_Captain], // Klein
-	["CUP_B_UH1Y_Gunship_Dynamic_USMC", 0, 700, 0, MSU_Rank_Captain], // Klein
-	["CUP_B_AH1Z_Dynamic_USMC", 0, 1700, 0, MSU_Rank_Major], // Groß
-	["CUP_I_Ka60_GL_Blk_ION", 0, 700, 0, MSU_Rank_Captain], // Klein
+	["CUP_B_AW159_RN_Blackcat", 0, 700, msu_fuel_heli, MSU_Rank_Captain], // Klein
+	["CUP_B_UH1D_armed_GER_KSK", 0, 700, msu_fuel_heli, MSU_Rank_Captain], // Klein
+	["CUP_B_412_dynamicLoadout_HIL", 0, 700, msu_fuel_heli, MSU_Rank_Captain], // Klein
+	["CUP_B_AH64_DL_USA", 0, 1700, msu_fuel_heli, MSU_Rank_Major], // Groß
+	["CUP_B_AH64D_DL_USA", 0, 1800, msu_fuel_heli, MSU_Rank_Major], // Groß
+	["CUP_B_AH6M_USA", 0, 700, msu_fuel_heli, MSU_Rank_Captain], // Klein
+	["CUP_B_MH60L_DAP_4x_US", 0, 700, msu_fuel_heli, MSU_Rank_Captain], // Klein
+	["CUP_B_MH60L_DAP_2x_US", 0, 700, msu_fuel_heli, MSU_Rank_Captain], // Klein
+	["CUP_B_UH1Y_Gunship_Dynamic_USMC", 0, 700, msu_fuel_heli, MSU_Rank_Captain], // Klein
+	["CUP_B_AH1Z_Dynamic_USMC", 0, 1700, msu_fuel_heli, MSU_Rank_Major], // Groß
+	["CUP_I_Ka60_GL_Blk_ION", 0, 700, msu_fuel_heli, MSU_Rank_Captain], // Klein
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
-	["BWA3_Tiger", 0, 1200, 0, MSU_Rank_Major], // Groß
+	["BWA3_Tiger", 0, 1200, msu_fuel_heli, MSU_Rank_Major], // Groß
 	["BWA3_Tiger_RMK", 0, 1700, msu_fuel_heli, MSU_Rank_Major] // Groß
 ];
 
@@ -372,31 +372,31 @@ planes = [
 	["B_T_VtoL_01_vehicle_F", 0, air_vehicle_price_tier_5, msu_fuel_heli, MSU_Rank_Private],
 	["B_T_VtoL_01_armed_F", 0, 4000, msu_fuel_heli, MSU_Rank_Captain], // CAS
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
-	["RHSGREF_A29B_HIDF", 0, 1400, 0, MSU_Rank_Captain], // CAS
-	["RHS_C130J", 0, 400, 0, MSU_Rank_Private],
-	["RHS_C130J_Cargo", 0, 400, 0, MSU_Rank_Private],
+	["RHSGREF_A29B_HIDF", 0, 1400, msu_fuel_plane, MSU_Rank_Captain], // CAS
+	["RHS_C130J", 0, 400, msu_fuel_plane, MSU_Rank_Private],
+	["RHS_C130J_Cargo", 0, 400, msu_fuel_plane, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankInvisible, MSU_Placeholder_Mod_PRACS],
-	["PRACS_C130", 0, 400, 0, MSU_Rank_Private],
-	["PRACS_E2C", 0, 400, 0, MSU_Rank_Private],
-	["PRACS_Mohawk", 0, 1400, 0, MSU_Rank_Captain], // CAS
-	["PRACS_P3C", 0, 1400, 0, MSU_Rank_Captain], // CAS
+	["PRACS_C130", 0, 400, msu_fuel_plane, MSU_Rank_Private],
+	["PRACS_E2C", 0, 400, msu_fuel_plane, MSU_Rank_Private],
+	["PRACS_Mohawk", 0, 1400, msu_fuel_plane, MSU_Rank_Captain], // CAS
+	["PRACS_P3C", 0, 1400, msu_fuel_plane, MSU_Rank_Captain], // CAS
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_CUP],
-	["CUP_I_CESSNA_T41_ARMED_HIL", 0, 900, 0, MSU_Rank_Captain], // CAS
-	["CUP_B_AC47_Spooky_USA", 0, 1000, 0, MSU_Rank_Captain], // CAS
-	["CUP_B_C130J_GB", 0, air_vehicle_price_tier_5, msu_fuel_heli, MSU_Rank_Private],
-	["CUP_B_C130J_Cargo_GB", 0, air_vehicle_price_tier_5, msu_fuel_heli, MSU_Rank_Private],
-	["CUP_I_CESSNA_T41_UNARMED_HIL", 0, air_vehicle_price_tier_5, msu_fuel_heli, MSU_Rank_Private],
-	["CUP_B_MV22_VIV_USMC", 0, air_vehicle_price_tier_5, msu_fuel_heli, MSU_Rank_Private],
-	["CUP_B_MV22_USMC_RAMPGUN", 0, air_vehicle_price_tier_5, msu_fuel_heli, MSU_Rank_Private],
+	["CUP_I_CESSNA_T41_ARMED_HIL", 0, 900, msu_fuel_plane, MSU_Rank_Captain], // CAS
+	["CUP_B_AC47_Spooky_USA", 0, 1000, msu_fuel_plane, MSU_Rank_Captain], // CAS
+	["CUP_B_C130J_GB", 0, air_vehicle_price_tier_5, msu_fuel_plane, MSU_Rank_Private],
+	["CUP_B_C130J_Cargo_GB", 0, air_vehicle_price_tier_5, msu_fuel_plane, MSU_Rank_Private],
+	["CUP_I_CESSNA_T41_UNARMED_HIL", 0, air_vehicle_price_tier_5, msu_fuel_plane, MSU_Rank_Private],
+	["CUP_B_MV22_VIV_USMC", 0, air_vehicle_price_tier_5, msu_fuel_heli , MSU_Rank_Private],
+	["CUP_B_MV22_USMC_RAMPGUN", 0, air_vehicle_price_tier_5, msu_fuel_heli , MSU_Rank_Private],
 	["CUP_B_MV22_USMC", 0, air_vehicle_price_tier_5, msu_fuel_heli, MSU_Rank_Private],
-	["CUP_I_Plane_ION", 0, air_vehicle_price_tier_5, msu_fuel_heli, MSU_Rank_Private],
-	["CUP_B_C47_USA", 0, air_vehicle_price_tier_5, msu_fuel_heli, MSU_Rank_Private],
-	["CUP_O_AN2_TK", 0, air_vehicle_price_tier_5, msu_fuel_heli, MSU_Rank_Private],
+	["CUP_I_Plane_ION", 0, air_vehicle_price_tier_5, msu_fuel_plane, MSU_Rank_Private],
+	["CUP_B_C47_USA", 0, air_vehicle_price_tier_5, msu_fuel_plane, MSU_Rank_Private],
+	["CUP_O_AN2_TK", 0, air_vehicle_price_tier_5, msu_fuel_plane, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_USAF],
-	["USAF_C130J", 0, 400, 0, MSU_Rank_Private],
-	["USAF_C130J_Cargo", 0, 400, 0, MSU_Rank_Private],
-	["usaf_kc135", 0, 400, 0, MSU_Rank_Private],
-	["USAF_C17", 0, 400, 0, MSU_Rank_Private]
+	["USAF_C130J", 0, 400, msu_fuel_plane, MSU_Rank_Private],
+	["USAF_C130J_Cargo", 0, 400, msu_fuel_plane, MSU_Rank_Private],
+	["usaf_kc135", 0, 400, msu_fuel_plane, MSU_Rank_Private],
+	["USAF_C17", 0, 400, msu_fuel_plane, MSU_Rank_Private]
 ];
 
 jets = [
@@ -726,48 +726,53 @@ support_crates = [
 
 buildings_west = [
 	["Land_IntravenStand_01_empty_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_fort_artillery_nest_EP1", 0, 0, 0, MSU_Rank_Private],
-	["Land_Mil_Barracks_EP1", 0, 0, 0, MSU_Rank_Private],
-	["Land_Mil_Barracks_i_EP1", 0, 0, 0, MSU_Rank_Private],
-	["Land_Mil_Barracks_no_interior_EP1_CUP", 0, 0, 0, MSU_Rank_Private],
-	["Land_Mil_Barracks_L_EP1", 0, 0, 0, MSU_Rank_Private],
-	["Land_fortified_nest_big_EP1", 0, 0, 0, MSU_Rank_Private],
-	["Land_fortified_nest_small_EP1", 0, 0, 0, MSU_Rank_Private],
-	["Land_Fort_Watchtower_EP1", 0, 0, 0, MSU_Rank_Private],
-	["WarfareBDepot", 0, 0, 0, MSU_Rank_Private],
-	["US_WarfareBUAVterminal_Base_EP1", 0, 0, 0, MSU_Rank_Private],
-	["Land_fort_rampart_EP1", 0, 0, 0, MSU_Rank_Private],
-	["US_WarfareBFieldhHospital_Base_EP1", 0, 0, 0, MSU_Rank_Private],
-	["US_WarfareBAircraftFactory_Base_EP1", 0, 0, 0, MSU_Rank_Private],
-	["US_WarfareBVehicleServicePoint_Base_EP1", 0, 0, 0, MSU_Rank_Private],
 	["US_WarfareBBarrier10xTall_EP1", 0, 0, 0, MSU_Rank_Private],
-	["US_WarfareBBarracks_Base_EP1", 0, 0, 0, MSU_Rank_Private],
-	["Land_Barrack2_EP1", 0, 0, 0, MSU_Rank_Private],
 	["US_WarfareBBarrier5x_EP1", 0, 0, 0, MSU_Rank_Private],
-	["WarfareBCamp", 0, 0, 0, MSU_Rank_Private],
-	["76n6ClamShell_EP1", 0, 0, 0, MSU_Rank_Private],
 	["US_WarfareBBarrier10x_EP1", 0, 0, 0, MSU_Rank_Private],
-	["US_WarfareBHeavyFactory_Base_EP1", 0, 0, 0, MSU_Rank_Private],
-	["Land_CamoNetB_NATO_EP1", 0, 0, 0, MSU_Rank_Private],
-	["Land_CamoNet_NATO_EP1", 0, 0, 0, MSU_Rank_Private],
-	["Land_HBarrier_01_wall_6_green_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_HBarrier_01_line_3_green_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_HBarrier_01_big_tower_green_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_HBarrier_01_tower_green_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_HBarrier_01_wall_corridor_green_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_HBarrier_01_wall_corner_green_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_HBarrier_01_wall_4_green_F", 0, 0, 0, MSU_Rank_Private],
-
-	["Land_HBarrier_1_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_HBarrierWall6_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_HBarrier_large", 0, 0, 0, MSU_Rank_Private],
+	["Land_HBarrier5", 0, 0, 0, MSU_Rank_Private],
+	["Land_HBarrier3", 0, 0, 0, MSU_Rank_Private],
+	["Land_HBarrier1", 0, 0, 0, MSU_Rank_Private],
 	["Land_HBarrier_3_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_HBarrier_5_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_HBarrier_Big_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_HBarrierTower_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_HBarrierWall_corridor_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_HBarrierWall6_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_HBarrierWall4_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_HBarrierWall_corner_F", 0, 0, 0, MSU_Rank_Private],
-
-	["Land_CncBarrierMedium_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_CncBarrierMedium4_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_HBarrierWall_corridor_F", 0, 0, 0, MSU_Rank_Private],
+	["Concrete_Wall_EP1", 0, 0, 0, MSU_Rank_Private],
+	["Land_Mil_WallBig_4m_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_fortified_nest_big", 0, 0, 0, MSU_Rank_Private],
+	["Land_fortified_nest_small", 0, 0, 0, MSU_Rank_Private],
+	["Land_fort_artillery_nest_EP1", 0, 0, 0, MSU_Rank_Private],
+	["Land_fort_rampart_EP1", 0, 0, 0, MSU_Rank_Private],
+	["Land_fort_rampart", 0, 0, 0, MSU_Rank_Private],
+	["Land_fort_artillery_nest", 0, 0, 0, MSU_Rank_Private],
+	["Land_CamoNetB_NATO", 0, 0, 0, MSU_Rank_Private],
+	["Land_CamoNet_NATO", 0, 0, 0, MSU_Rank_Private],
+	["Land_CamoNetVar_NATO_EP1", 0, 0, 0, MSU_Rank_Private],
+	["Land_CamoNet_NATO_EP1", 0, 0, 0, MSU_Rank_Private],
+	["USMC_WarfareBFieldhHospital", 0, 0, 0, MSU_Rank_Private],
+	["US_WarfareBFieldhHospital_Base_EP1", 0, 0, 0, MSU_Rank_Private],
+	["INS_WarfareBFieldhHospital", 0, 0, 0, MSU_Rank_Private],
+	["TK_GUE_WarfareBFieldhHospital_Base_EP1", 0, 0, 0, MSU_Rank_Private],
+	["Land_Medevac_house_V1_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_Medevac_HQ_V1_F", 0, 0, 0, MSU_Rank_Private],
+	["ShedBig", 0, 0, 0, MSU_Rank_Private],
+	["Shed", 0, 0, 0, MSU_Rank_Private],
+	["Land_Platform_Stairs_30", 0, 0, 0, MSU_Rank_Private],
+	["Land_Platform_Stairs_20", 0, 0, 0, MSU_Rank_Private],
+	["Land_ladderEP1", 0, 0, 0, MSU_Rank_Private],
+	["Land_ladder_half_EP1", 0, 0, 0, MSU_Rank_Private],
+	["Land_TentLamp_01_standing_red_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_LampDecor_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_LampAirport_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_LampStreet_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_LampStreet_small_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_PortableLight_double_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_LampStreet_02_double_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_PortableLight_02_quad_yellow_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_CncShelter_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_CncWall1_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_CncWall4_F", 0, 0, 0, MSU_Rank_Private],
@@ -779,26 +784,16 @@ buildings_west = [
 	["Flag_UK_F", 0, 0, 0, MSU_Rank_Private],
 	["Flag_US_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_PortableLight_single_F", 0, 0, 0, MSU_Rank_Private],
-
 	["Land_Campfire_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_CampingChair_V1_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_CampingTable_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_fort_bagfence_long", 0, 0, 0, MSU_Rank_Private],
-
 	["Land_HelipadSquare_F", 0, 0, 0, MSU_Rank_Private],
 	["PortableHelipadLight_01_blue_F", 0, 0, 0, MSU_Rank_Private],
 	["PortableHelipadLight_01_green_F", 0, 0, 0, MSU_Rank_Private],
-
 	["Land_ClutterCutter_large_F", 0, 0, 0, MSU_Rank_Private],
-
 	["Land_Hangar_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_Cargo_Tower_V1_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_Medevac_house_V1_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_Medevac_HQ_V1_F", 0, 0, 0, MSU_Rank_Private],
-
-	["Land_PortableLight_double_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_LampAirport_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_LampStreet_02_double_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_SandbagBarricade_01_hole_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_fortified_nest_small", 0, 0, 0, MSU_Rank_Private],
 	["Land_fortified_nest_big", 0, 0, 0, MSU_Rank_Private],
@@ -850,8 +845,6 @@ buildings_west = [
 	["HeliHCivil", 0, 0, 0, MSU_Rank_Private],
 	["Land_strelecky_post_new", 0, 0, 0, MSU_Rank_Private],
 	["Land_GuardTower_01_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_HBarrier5", 0, 0, 0, MSU_Rank_Private],
-	["Land_HBarrier_large", 0, 0, 0, MSU_Rank_Private],
 	["Land_HBarrier_01_big_4_green_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_Camping_Light_F", 0, 0, 0, MSU_Rank_Private],
     ["Land_Nav_Boathouse_PierL", 0, 0, 0, MSU_Rank_Private],
