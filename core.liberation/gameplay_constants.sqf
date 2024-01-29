@@ -128,7 +128,7 @@ msu_fuel_harmed = 0;              //12,7+ Autos
 msu_fuel_larmed = 0;              //7,62+ Autos
 msu_fuel_uarmed = 0;              //Unarmed Autos
 msu_fuel_blogi = 0;              //Boden Logi Autos
-msu_fuel_bat = 0;              //BAT Sani autos Autos
+msu_fuel_bat = 0;              //BAT Sani Autos
 
 // slot system
 msu_slot_system = true;
