@@ -117,12 +117,18 @@ air_cannot_trigger_on = true;
 // resources
 msu_resource_min_players = 10;
 msu_fuel_min = 10;
-msu_fuel_plane = 0;
-msu_fuel_heli = 0;
+msu_fuel_aplane = 0;                //Attack Planes
+msu_fuel_plane = 0;                //Logi Planes
+msu_fuel_aheli = 0;                //Attack Helis
+msu_fuel_heli = 0;                //Logi Helis
 msu_fuel_mbt = 0;
 msu_fuel_ifv = 0;
-msu_fuel_apc = 0;
-msu_fuel_armed = 0;
+msu_fuel_apc = 0;                 //ZB MRAP,GMG
+msu_fuel_harmed = 0;              //12,7+ Autos
+msu_fuel_larmed = 0;              //7,62+ Autos
+msu_fuel_uarmed = 0;              //Unarmed Autos
+msu_fuel_blogi = 0;              //Boden Logi Autos
+msu_fuel_bat = 0;              //BAT Sani autos Autos
 
 // slot system
 msu_slot_system = true;
