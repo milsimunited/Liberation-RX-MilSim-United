@@ -701,6 +701,11 @@ log_on_server = compileFinal "
 	[_vehicle,5] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
+["rhsusf_M1230a1_usarmy_wd", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,5] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
 ["rhsusf_M1230_MK19_usarmy_wd", "InitPost", {
     params ["_vehicle"];
 	[_vehicle,5] call ace_cargo_fnc_setSpace;
@@ -986,6 +991,26 @@ log_on_server = compileFinal "
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 // ACE Medical Vehicles
+
+["USMC_WarfareBFieldhHospital", "InitPost", {
+    params ["_vehicle"];
+	_vehicle setVariable ["ace_medical_medicClass", 1];
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["US_WarfareBFieldhHospital_Base_EP1", "InitPost", {
+    params ["_vehicle"];
+	_vehicle setVariable ["ace_medical_medicClass", 1];
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["INS_WarfareBFieldhHospital", "InitPost", {
+    params ["_vehicle"];
+	_vehicle setVariable ["ace_medical_medicClass", 1];
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["TK_GUE_WarfareBFieldhHospital_Base_EP1", "InitPost", {
+    params ["_vehicle"];
+	_vehicle setVariable ["ace_medical_medicClass", 1];
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy", "InitPost", {
     params ["_vehicle"];
