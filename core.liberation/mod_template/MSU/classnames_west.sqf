@@ -672,47 +672,25 @@ static_vehicles_AI = [
 ];
 
 support_crates = [
-	    // support_crates
-	["Land_IntravenStand_01_empty_F", 0, 0, 0, MSU_Rank_Private],
-	    // Ersatzteile
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Category_ReplacementParts],
 	["ACE_Track", 0, 0, 0, MSU_Rank_Private],
 	["ACE_Wheel", 0, 0, 0, MSU_Rank_Private],
-	["Land_Canisterfuel_F", 0, 0, 0, MSU_Rank_Private],
-	    // Kisten
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Category_Logistics],
+	["Land_IntravenStand_01_empty_F", 0, 0, 0, MSU_Rank_Private],
 	["Box_IED_exp_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_RepairDepot_01_green_F", 0, 0, 0, MSU_Rank_Private],
+	["US_WarfareBVehicleServicePoint_Base_EP1", 0, 0, 0, MSU_Rank_Private],
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Category_MaintenanceSmall],
 	["B_CargoNet_01_ammo_F", 0, 0, 0, MSU_Rank_Private],
 	["CargoNet_01_box_F", 0, 0, 0, MSU_Rank_Private],
 	["CargoNet_01_barrels_F", 0, 0, 0, MSU_Rank_Private],
-	    // Waffen
-	["SNC_Javelin", 0, 450, 0, MSU_Rank_Private],
-	    // cratefiller & Container
-	["Land_RepairDepot_01_green_F", 0, 0, 0, MSU_Rank_Private],
-	["ffaa_UAVStation", 0, 0, 0, MSU_Rank_Private],
-	    // BundeswehrFleck
-	["BWA3_WLP14_ammo_Fleck", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Flatbed_Oliv", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_TCK9_fuel_Fleck", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Repair_Fleck", 0, 0, 0, MSU_Rank_Private],
-	    // Bundeswehr Tropen
-	["BWA3_WLP14_ammo_Tropen", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Flatbed_Tropen", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_TCK9_fuel_Tropen", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Repair_Tropen", 0, 0, 0, MSU_Rank_Private],
-	    // BundeswehrWinter
-	["BWA3_WLP14_ammo_Winter", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Flatbed_Winter", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_TCK9_fuel_Winter", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Repair_Winter", 0, 0, 0, MSU_Rank_Private],
-	    // USAF Container
-	["USAF_Slingload_ammo", 0, 0, 0, MSU_Rank_Private],
-	["USAF_Slingload_Repair", 0, 0, 0, MSU_Rank_Private],
-	["USAF_Slingload_fuel", 0, 0, 0, MSU_Rank_Private],
-	    // Huron Container
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Category_MaintenanceBig],
+	// Huron Container
 	[ammo_sling_typename, 0, 0, 0, MSU_Rank_Private],
 	[repair_sling_typename, 0, 0, 0, MSU_Rank_Private],
 	[fuel_sling_typename, 0, 0, 0, MSU_Rank_Private],
 	[medic_sling_typename, 0, 0, 0, MSU_Rank_Private],
-	    // Taru Container
+	// Taru Container
 	["Land_Pod_Heli_Transport_04_medevac_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_Pod_Heli_Transport_04_covered_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_Pod_Heli_Transport_04_repair_F", 0, 0, 0, MSU_Rank_Private],
@@ -720,13 +698,32 @@ support_crates = [
 	["Land_Pod_Heli_Transport_04_ammo_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_Pod_Heli_Transport_04_box_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_Pod_Heli_Transport_04_bench_F", 0, 0, 0, MSU_Rank_Private],
-	    // FOB
+	// USAF Container
+	["USAF_Slingload_ammo", 0, 0, 0, MSU_Rank_Private],
+	["USAF_Slingload_Repair", 0, 0, 0, MSU_Rank_Private],
+	["USAF_Slingload_fuel", 0, 0, 0, MSU_Rank_Private],
+	// BundeswehrFleck
+	["BWA3_WLP14_ammo_Fleck", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_WLP14_Flatbed_Oliv", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_TCK9_fuel_Fleck", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_WLP14_Repair_Fleck", 0, 0, 0, MSU_Rank_Private],
+	// Bundeswehr Tropen
+	["BWA3_WLP14_ammo_Tropen", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_WLP14_Flatbed_Tropen", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_TCK9_fuel_Tropen", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_WLP14_Repair_Tropen", 0, 0, 0, MSU_Rank_Private],
+	// BundeswehrWinter
+	["BWA3_WLP14_ammo_Winter", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_WLP14_Flatbed_Winter", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_TCK9_fuel_Winter", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_WLP14_Repair_Winter", 0, 0, 0, MSU_Rank_Private],
+	// FOB
 	[FOB_box_typename, 0, 0, 0, 9999],
 	[FOB_truck_typename, 0, 0, 0, 9999]
 ];
 
 buildings_west = [
-	    // Mauern,Türme
+	// Mauern,Türme
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_Barricade],
 	["US_WarfareBBarrier10xTall_EP1", 0, 0, 0, MSU_Rank_Private],
 	["US_WarfareBBarrier5x_EP1", 0, 0, 0, MSU_Rank_Private],
@@ -746,16 +743,16 @@ buildings_west = [
 	["Land_Cargo_Tower_V1_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_Cargo_Patrol_V3_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_GuardTower_01_F", 0, 0, 0, MSU_Rank_Private],
-	     // Wände
-    [MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_Walls],
+	// Wände
+  [MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_Walls],
 	["Concrete_Wall_EP1", 0, 0, 0, MSU_Rank_Private],
 	["Land_Mil_WallBig_4m_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_CncShelter_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_CncWall1_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_CncWall4_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_CncBarrier_stripes_F", 0, 0, 0, MSU_Rank_Private],
-		 // Wall,stellungen
-    [MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_Positions],
+	// Wall,stellungen
+  [MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_Positions],
 	["Land_fortified_nest_big", 0, 0, 0, MSU_Rank_Private],
 	["Land_fortified_nest_small", 0, 0, 0, MSU_Rank_Private],
 	["Land_Bunker_01_blocks_3_F", 0, 0, 0, MSU_Rank_Private],
@@ -778,7 +775,7 @@ buildings_west = [
 	["Land_SandbagBarricade_01_hole_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_SandbagBarricade_01_half_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_CncBarrier_stripes_F", 0, 0, 0, MSU_Rank_Private],
-			 // Camo-Nätze
+	// Camo-Nätze
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_Camonet],
 	["Land_CamoNetB_NATO", 0, 0, 0, MSU_Rank_Private],
 	["Land_CamoNet_NATO", 0, 0, 0, MSU_Rank_Private],
@@ -786,7 +783,7 @@ buildings_west = [
 	["Land_CamoNet_NATO_EP1", 0, 0, 0, MSU_Rank_Private],
 	["ShedBig", 0, 0, 0, MSU_Rank_Private],
 	["Shed", 0, 0, 0, MSU_Rank_Private],
-	      // Feldlazarett
+	// Feldlazarett
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_Hospital],
 	["USMC_WarfareBFieldhHospital", 0, 0, 0, MSU_Rank_Private],
 	["US_WarfareBFieldhHospital_Base_EP1", 0, 0, 0, MSU_Rank_Private],
@@ -794,13 +791,13 @@ buildings_west = [
 	["TK_GUE_WarfareBFieldhHospital_Base_EP1", 0, 0, 0, MSU_Rank_Private],
 	["Land_Medevac_house_V1_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_Medevac_HQ_V1_F", 0, 0, 0, MSU_Rank_Private],
-          // Leitern,treppen
+  // Leitern,treppen
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_ladder],
 	["Land_Platform_Stairs_30", 0, 0, 0, MSU_Rank_Private],
 	["Land_Platform_Stairs_20", 0, 0, 0, MSU_Rank_Private],
 	["Land_ladderEP1", 0, 0, 0, MSU_Rank_Private],
 	["Land_ladder_half_EP1", 0, 0, 0, MSU_Rank_Private],
-	      // Lampen
+  // Lampen
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_lamps],
 	["Land_TentLamp_01_standing_red_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_LampDecor_F", 0, 0, 0, MSU_Rank_Private],
@@ -811,7 +808,7 @@ buildings_west = [
 	["Land_PortableLight_double_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_LampStreet_02_double_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_PortableLight_02_quad_yellow_F", 0, 0, 0, MSU_Rank_Private],
-	   // Flaggen
+  // Flaggen
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_flag],
 	["Flag_UNO_F", 0, 0, 0, MSU_Rank_Private],
 	["Flag_NATO_F", 0, 0, 0, MSU_Rank_Private],
@@ -819,7 +816,7 @@ buildings_west = [
 	["FlagCarrierRU", 0, 0, 0, MSU_Rank_Private],
 	["Flag_UK_F", 0, 0, 0, MSU_Rank_Private],
 	["Flag_US_F", 0, 0, 0, MSU_Rank_Private],
-	   // Camp zeug
+  // Camp zeug
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_camp],
 	["Land_Campfire_F", 0, 0, 0, MSU_Rank_Private],
 	["CampEast_EP1", 0, 0, 0, MSU_Rank_Private],
@@ -831,18 +828,18 @@ buildings_west = [
 	["Land_MapBoard_Enoch_F", 0, 0, 0, MSU_Rank_Private],
 	["MapBoard_Malden_F", 0, 0, 0, MSU_Rank_Private],
 	["MapBoard_Tanoa_F", 0, 0, 0, MSU_Rank_Private],
-	   // Heli-Pads,Air-Zeug
+  // Heli-Pads,Air-Zeug
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_pad],
 	["Heli_H_civil", 0, 0, 0, MSU_Rank_Private],
 	["HeliH", 0, 0, 0, MSU_Rank_Private],
 	["HeliHRescue", 0, 0, 0, MSU_Rank_Private],
 	["Land_TentHangar_V1_F", 0, 0, 0, MSU_Rank_Private],
-      // Cutter
-		[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_cutter],
+  // Cutter
+  [MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_cutter],
 	["ClutterCutter", 0, 0, 0, MSU_Rank_Private],
 	["Land_ClutterCutter_large_F", 0, 0, 0, MSU_Rank_Private],
-      //Other
-	 ["Land_Pier_F", 0, 0, 0, MSU_Rank_Private]
+  //Other
+  ["Land_Pier_F", 0, 0, 0, MSU_Rank_Private]
 ];
 
 if (isnil "blufor_squad_inf_light") then {

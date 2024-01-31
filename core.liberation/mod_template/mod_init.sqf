@@ -18,3 +18,9 @@ MSU_Placeholder_Mod_CUP = "--- CUP ---";
 MSU_Placeholder_Mod_BWMOD = "--- Bundeswehr Mod ---";
 MSU_Placeholder_Mod_USAF = "--- USAF ---";
 MSU_Placeholder_Mod_Other = localize "STR_MSU_Placeholder_Mod_Other";
+
+// Support Crates Categories
+MSU_Placeholder_Category_ReplacementParts = localize "STR_MSU_Placeholder_Category_ReplacementParts";
+MSU_Placeholder_Category_Logistics = localize "STR_MSU_Placeholder_Category_Logistics";
+MSU_Placeholder_Category_MaintenanceSmall = localize "STR_MSU_Placeholder_Category_MaintenanceSmall";
+MSU_Placeholder_Category_MaintenanceBig = localize "STR_MSU_Placeholder_Category_MaintenanceBig";
