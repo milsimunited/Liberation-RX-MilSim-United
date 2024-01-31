@@ -676,6 +676,7 @@ support_crates = [
 	["ACE_Track", 0, 0, 0, MSU_Rank_Private],
 	["ACE_Wheel", 0, 0, 0, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Category_Logistics],
+	["Land_IntravenStand_01_empty_F", 0, 0, 0, MSU_Rank_Private],
 	["Box_IED_exp_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_RepairDepot_01_green_F", 0, 0, 0, MSU_Rank_Private],
 	["US_WarfareBVehicleServicePoint_Base_EP1", 0, 0, 0, MSU_Rank_Private],
