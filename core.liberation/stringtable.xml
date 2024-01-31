@@ -5858,6 +5858,22 @@
                 <English>--- Other ---</English>
                 <German>--- Andere ---</German>
             </Key>
+			<Key ID="STR_MSU_Placeholder_Category_ReplacementParts">
+                <English>--- Spare Parts ---</English>
+                <German>--- Ersatzteile ---</German>
+            </Key>
+			<Key ID="STR_MSU_Placeholder_Category_Logistics">
+                <English>--- Logistics ---</English>
+                <German>--- Logistik ---</German>
+            </Key>
+			<Key ID="STR_MSU_Placeholder_Category_MaintenanceSmall">
+                <English>--- Maintenance (Small) ---</English>
+                <German>--- Wartung (Klein) ---</German>
+            </Key>
+			<Key ID="STR_MSU_Placeholder_Category_MaintenanceBig">
+                <English>--- Maintenance (Big) ---</English>
+                <German>--- Wartung (Groß) ---</German>
+            </Key>
 			<Key ID="STR_MSU_No_Shooting_Fob">
                 <English>Shooting in the FOB is prohibited!\nYour projectile has been deleted because there are no enemy forces nearby.</English>
                 <German>Das schießen in der FOB ist verboten!\nDein Projektil wurde gelöscht, da sich keine feindlichen Kräfte in der Nähe befinden.</German>

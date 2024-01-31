@@ -672,46 +672,24 @@ static_vehicles_AI = [
 ];
 
 support_crates = [
-	    // support_crates
-	    // Ersatzteile
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Category_ReplacementParts],
 	["ACE_Track", 0, 0, 0, MSU_Rank_Private],
 	["ACE_Wheel", 0, 0, 0, MSU_Rank_Private],
-	["Land_Canisterfuel_F", 0, 0, 0, MSU_Rank_Private],
-	    // Kisten
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Category_Logistics],
 	["Box_IED_exp_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_RepairDepot_01_green_F", 0, 0, 0, MSU_Rank_Private],
+	["US_WarfareBVehicleServicePoint_Base_EP1", 0, 0, 0, MSU_Rank_Private],
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Category_MaintenanceSmall],
 	["B_CargoNet_01_ammo_F", 0, 0, 0, MSU_Rank_Private],
 	["CargoNet_01_box_F", 0, 0, 0, MSU_Rank_Private],
 	["CargoNet_01_barrels_F", 0, 0, 0, MSU_Rank_Private],
-	    // Waffen
-	["SNC_Javelin", 0, 450, 0, MSU_Rank_Private],
-	    // cratefiller & Container
-	["Land_RepairDepot_01_green_F", 0, 0, 0, MSU_Rank_Private],
-	["ffaa_UAVStation", 0, 0, 0, MSU_Rank_Private],
-	    // BundeswehrFleck
-	["BWA3_WLP14_ammo_Fleck", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Flatbed_Oliv", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_TCK9_fuel_Fleck", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Repair_Fleck", 0, 0, 0, MSU_Rank_Private],
-	    // Bundeswehr Tropen
-	["BWA3_WLP14_ammo_Tropen", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Flatbed_Tropen", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_TCK9_fuel_Tropen", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Repair_Tropen", 0, 0, 0, MSU_Rank_Private],
-	    // BundeswehrWinter
-	["BWA3_WLP14_ammo_Winter", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Flatbed_Winter", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_TCK9_fuel_Winter", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Repair_Winter", 0, 0, 0, MSU_Rank_Private],
-	    // USAF Container
-	["USAF_Slingload_ammo", 0, 0, 0, MSU_Rank_Private],
-	["USAF_Slingload_Repair", 0, 0, 0, MSU_Rank_Private],
-	["USAF_Slingload_fuel", 0, 0, 0, MSU_Rank_Private],
-	    // Huron Container
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Category_MaintenanceBig],
+	// Huron Container
 	[ammo_sling_typename, 0, 0, 0, MSU_Rank_Private],
 	[repair_sling_typename, 0, 0, 0, MSU_Rank_Private],
 	[fuel_sling_typename, 0, 0, 0, MSU_Rank_Private],
 	[medic_sling_typename, 0, 0, 0, MSU_Rank_Private],
-	    // Taru Container
+	// Taru Container
 	["Land_Pod_Heli_Transport_04_medevac_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_Pod_Heli_Transport_04_covered_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_Pod_Heli_Transport_04_repair_F", 0, 0, 0, MSU_Rank_Private],
@@ -719,7 +697,26 @@ support_crates = [
 	["Land_Pod_Heli_Transport_04_ammo_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_Pod_Heli_Transport_04_box_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_Pod_Heli_Transport_04_bench_F", 0, 0, 0, MSU_Rank_Private],
-	    // FOB
+	// USAF Container
+	["USAF_Slingload_ammo", 0, 0, 0, MSU_Rank_Private],
+	["USAF_Slingload_Repair", 0, 0, 0, MSU_Rank_Private],
+	["USAF_Slingload_fuel", 0, 0, 0, MSU_Rank_Private],
+	// BundeswehrFleck
+	["BWA3_WLP14_ammo_Fleck", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_WLP14_Flatbed_Oliv", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_TCK9_fuel_Fleck", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_WLP14_Repair_Fleck", 0, 0, 0, MSU_Rank_Private],
+	// Bundeswehr Tropen
+	["BWA3_WLP14_ammo_Tropen", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_WLP14_Flatbed_Tropen", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_TCK9_fuel_Tropen", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_WLP14_Repair_Tropen", 0, 0, 0, MSU_Rank_Private],
+	// BundeswehrWinter
+	["BWA3_WLP14_ammo_Winter", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_WLP14_Flatbed_Winter", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_TCK9_fuel_Winter", 0, 0, 0, MSU_Rank_Private],
+	["BWA3_WLP14_Repair_Winter", 0, 0, 0, MSU_Rank_Private],
+	// FOB
 	[FOB_box_typename, 0, 0, 0, 9999],
 	[FOB_truck_typename, 0, 0, 0, 9999]
 ];
