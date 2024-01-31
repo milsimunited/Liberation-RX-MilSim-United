@@ -116,6 +116,8 @@ air_cannot_trigger_on = true;
 
 // resources
 msu_resource_min_players = 10;
+msu_fuel_min = 10; 
+
 msu_fuel_aplane = 0;                //Attack Planes
 msu_fuel_plane = 0;                //Logi Planes
 msu_fuel_aheli = 0;                //Attack Helis
