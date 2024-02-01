@@ -724,7 +724,7 @@ support_crates = [
 
 buildings_west = [
 	// Mauern,Türme
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_Barricade],
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Category_Barricade],
 	["US_WarfareBBarrier10xTall_EP1", 0, 0, 0, MSU_Rank_Private],
 	["US_WarfareBBarrier5x_EP1", 0, 0, 0, MSU_Rank_Private],
 	["US_WarfareBBarrier10x_EP1", 0, 0, 0, MSU_Rank_Private],
@@ -744,7 +744,7 @@ buildings_west = [
 	["Land_Cargo_Patrol_V3_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_GuardTower_01_F", 0, 0, 0, MSU_Rank_Private],
 	// Wände
-  [MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_Walls],
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Category_Walls],
 	["Concrete_Wall_EP1", 0, 0, 0, MSU_Rank_Private],
 	["Land_Mil_WallBig_4m_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_CncShelter_F", 0, 0, 0, MSU_Rank_Private],
@@ -752,7 +752,7 @@ buildings_west = [
 	["Land_CncWall4_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_CncBarrier_stripes_F", 0, 0, 0, MSU_Rank_Private],
 	// Wall,stellungen
-  [MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_Positions],
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Category_Sandbags],
 	["Land_fortified_nest_big", 0, 0, 0, MSU_Rank_Private],
 	["Land_fortified_nest_small", 0, 0, 0, MSU_Rank_Private],
 	["Land_Bunker_01_blocks_3_F", 0, 0, 0, MSU_Rank_Private],
@@ -776,7 +776,7 @@ buildings_west = [
 	["Land_SandbagBarricade_01_half_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_CncBarrier_stripes_F", 0, 0, 0, MSU_Rank_Private],
 	// Camo-Nätze
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_Camonet],
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Category_Camonet],
 	["Land_CamoNetB_NATO", 0, 0, 0, MSU_Rank_Private],
 	["Land_CamoNet_NATO", 0, 0, 0, MSU_Rank_Private],
 	["Land_CamoNetVar_NATO_EP1", 0, 0, 0, MSU_Rank_Private],
@@ -784,21 +784,21 @@ buildings_west = [
 	["ShedBig", 0, 0, 0, MSU_Rank_Private],
 	["Shed", 0, 0, 0, MSU_Rank_Private],
 	// Feldlazarett
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_Hospital],
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Category_Hospital],
 	["USMC_WarfareBFieldhHospital", 0, 0, 0, MSU_Rank_Private],
 	["US_WarfareBFieldhHospital_Base_EP1", 0, 0, 0, MSU_Rank_Private],
 	["INS_WarfareBFieldhHospital", 0, 0, 0, MSU_Rank_Private],
 	["TK_GUE_WarfareBFieldhHospital_Base_EP1", 0, 0, 0, MSU_Rank_Private],
 	["Land_Medevac_house_V1_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_Medevac_HQ_V1_F", 0, 0, 0, MSU_Rank_Private],
-  // Leitern,treppen
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_ladder],
+	// Leitern,treppen
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Category_Ladder],
 	["Land_Platform_Stairs_30", 0, 0, 0, MSU_Rank_Private],
 	["Land_Platform_Stairs_20", 0, 0, 0, MSU_Rank_Private],
 	["Land_ladderEP1", 0, 0, 0, MSU_Rank_Private],
 	["Land_ladder_half_EP1", 0, 0, 0, MSU_Rank_Private],
-  // Lampen
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_lamps],
+	// Lampen
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Category_Lamps],
 	["Land_TentLamp_01_standing_red_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_LampDecor_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_LampAirport_F", 0, 0, 0, MSU_Rank_Private],
@@ -808,16 +808,16 @@ buildings_west = [
 	["Land_PortableLight_double_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_LampStreet_02_double_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_PortableLight_02_quad_yellow_F", 0, 0, 0, MSU_Rank_Private],
-  // Flaggen
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_flag],
+	// Flaggen
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Category_Flag],
 	["Flag_UNO_F", 0, 0, 0, MSU_Rank_Private],
 	["Flag_NATO_F", 0, 0, 0, MSU_Rank_Private],
 	["FlagCarrierGermany_EP1", 0, 0, 0, MSU_Rank_Private],
 	["FlagCarrierRU", 0, 0, 0, MSU_Rank_Private],
 	["Flag_UK_F", 0, 0, 0, MSU_Rank_Private],
 	["Flag_US_F", 0, 0, 0, MSU_Rank_Private],
-  // Camp zeug
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_camp],
+	// Camp zeug
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Category_Camp],
 	["Land_Campfire_F", 0, 0, 0, MSU_Rank_Private],
 	["CampEast_EP1", 0, 0, 0, MSU_Rank_Private],
 	["Land_tent_east", 0, 0, 0, MSU_Rank_Private],
@@ -828,18 +828,19 @@ buildings_west = [
 	["Land_MapBoard_Enoch_F", 0, 0, 0, MSU_Rank_Private],
 	["MapBoard_Malden_F", 0, 0, 0, MSU_Rank_Private],
 	["MapBoard_Tanoa_F", 0, 0, 0, MSU_Rank_Private],
-  // Heli-Pads,Air-Zeug
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_pad],
+	// Heli-Pads,Air-Zeug
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Category_Pad],
 	["Heli_H_civil", 0, 0, 0, MSU_Rank_Private],
 	["HeliH", 0, 0, 0, MSU_Rank_Private],
 	["HeliHRescue", 0, 0, 0, MSU_Rank_Private],
 	["Land_TentHangar_V1_F", 0, 0, 0, MSU_Rank_Private],
-  // Cutter
-  [MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_cutter],
+	// Cutter
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Category_Cutter],
 	["ClutterCutter", 0, 0, 0, MSU_Rank_Private],
 	["Land_ClutterCutter_large_F", 0, 0, 0, MSU_Rank_Private],
-  //Other
-  ["Land_Pier_F", 0, 0, 0, MSU_Rank_Private]
+	//Other
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_Other],
+	["Land_Pier_F", 0, 0, 0, MSU_Rank_Private]
 ];
 
 if (isnil "blufor_squad_inf_light") then {
