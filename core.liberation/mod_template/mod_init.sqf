@@ -18,15 +18,22 @@ MSU_Placeholder_Mod_CUP = "--- CUP ---";
 MSU_Placeholder_Mod_BWMOD = "--- Bundeswehr Mod ---";
 MSU_Placeholder_Mod_USAF = "--- USAF ---";
 MSU_Placeholder_Mod_Other = localize "STR_MSU_Placeholder_Mod_Other";
-MSU_Placeholder_Mod_Barricade = "--- Barricades,Tower ---";
-MSU_Placeholder_Mod_Walls = "--- Walls ---";
-MSU_Placeholder_Mod_Positions = "--- Positions,sandbags ---";
-MSU_Placeholder_Mod_Camonet = "--- Camonet ---";
-MSU_Placeholder_Mod_Hospital = "--- Field Hospital ---";
-MSU_Placeholder_Mod_ladder = "--- Ladder,Stairs ---";
-MSU_Placeholder_Mod_lamps = "--- Lamps ---";
-MSU_Placeholder_Mod_flag = "--- Flags ---";
-MSU_Placeholder_Mod_camp = "--- Camping and other ---";
-MSU_Placeholder_Mod_pad = "--- Helipad ---";
-MSU_Placeholder_Mod_cutter = "--- Grass Cutter ---";
-MSU_Placeholder_Mod_more = "--- Other stuff ---";
+
+// Support Crates Categories
+MSU_Placeholder_Category_ReplacementParts = localize "STR_MSU_Placeholder_Category_ReplacementParts";
+MSU_Placeholder_Category_Logistics = localize "STR_MSU_Placeholder_Category_Logistics";
+MSU_Placeholder_Category_MaintenanceSmall = localize "STR_MSU_Placeholder_Category_MaintenanceSmall";
+MSU_Placeholder_Category_MaintenanceBig = localize "STR_MSU_Placeholder_Category_MaintenanceBig";
+
+// Buildings Categories
+MSU_Placeholder_Category_Barricade = localize "MSU_Placeholder_Category_Barricade";
+MSU_Placeholder_Category_Walls = localize "MSU_Placeholder_Category_Walls";
+MSU_Placeholder_Category_Sandbags = localize "MSU_Placeholder_Category_Sandbags";
+MSU_Placeholder_Category_Camonet = localize "MSU_Placeholder_Category_Camonet";
+MSU_Placeholder_Category_Hospital = localize "MSU_Placeholder_Category_Hospital";
+MSU_Placeholder_Category_Ladder = localize "MSU_Placeholder_Category_Ladder";
+MSU_Placeholder_Category_Lamps = localize "MSU_Placeholder_Category_Lamps";
+MSU_Placeholder_Category_Flag = localize "MSU_Placeholder_Category_Flag";
+MSU_Placeholder_Category_Camp = localize "MSU_Placeholder_Category_Camp";
+MSU_Placeholder_Category_Pad = localize "MSU_Placeholder_Category_Pad";
+MSU_Placeholder_Category_Cutter = localize "MSU_Placeholder_Category_Cutter";
