@@ -24,3 +24,16 @@ MSU_Placeholder_Category_ReplacementParts = localize "STR_MSU_Placeholder_Catego
 MSU_Placeholder_Category_Logistics = localize "STR_MSU_Placeholder_Category_Logistics";
 MSU_Placeholder_Category_MaintenanceSmall = localize "STR_MSU_Placeholder_Category_MaintenanceSmall";
 MSU_Placeholder_Category_MaintenanceBig = localize "STR_MSU_Placeholder_Category_MaintenanceBig";
+
+// Buildings Categories
+MSU_Placeholder_Category_Barricade = localize "MSU_Placeholder_Category_Barricade";
+MSU_Placeholder_Category_Walls = localize "MSU_Placeholder_Category_Walls";
+MSU_Placeholder_Category_Sandbags = localize "MSU_Placeholder_Category_Sandbags";
+MSU_Placeholder_Category_Camonet = localize "MSU_Placeholder_Category_Camonet";
+MSU_Placeholder_Category_Hospital = localize "MSU_Placeholder_Category_Hospital";
+MSU_Placeholder_Category_Ladder = localize "MSU_Placeholder_Category_Ladder";
+MSU_Placeholder_Category_Lamps = localize "MSU_Placeholder_Category_Lamps";
+MSU_Placeholder_Category_Flag = localize "MSU_Placeholder_Category_Flag";
+MSU_Placeholder_Category_Camp = localize "MSU_Placeholder_Category_Camp";
+MSU_Placeholder_Category_Pad = localize "MSU_Placeholder_Category_Pad";
+MSU_Placeholder_Category_Cutter = localize "MSU_Placeholder_Category_Cutter";
