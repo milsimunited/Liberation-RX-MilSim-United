@@ -5874,6 +5874,50 @@
                 <English>--- Maintenance (Big) ---</English>
                 <German>--- Wartung (Groß) ---</German>
             </Key>
+            <Key ID="MSU_Placeholder_Category_Barricade">
+                <English>--- Barriers and barricades ---</English>
+                <German>--- Barrieren und Absperrungen ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Walls">
+                <English>--- Walls ---</English>
+                <German>--- Mauern ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Sandbags">
+                <English>--- Trenches and sandbags ---</English>
+                <German>--- Stellungen und Sandsäcke ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Camonet">
+                <English>--- Camonets ---</English>
+                <German>--- Tarnnetze ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Hospital">
+                <English>--- Field hospital ---</English>
+                <German>--- Feldlazarett ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Ladder">
+                <English>--- Ladders and stairs ---</English>
+                <German>--- Leitern und Treppen ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Lamps">
+                <English>--- Lamps ---</English>
+                <German>--- Lampen ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Flag">
+                <English>--- Flags ---</English>
+                <German>--- Flaggen ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Camp">
+                <English>--- Tents and camping ---</English>
+                <German>--- Zelte ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Pad">
+                <English>--- Helipads ---</English>
+                <German>--- Helikopter Landeplätze ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Cutter">
+                <English>--- Lawn Mower ---</English>
+                <German>--- Rasenmäher ---</German>
+            </Key>
             <Key ID="STR_MSU_No_Shooting_Fob">
                 <English>Shooting in the FOB is prohibited!\nYour projectile has been deleted because there are no enemy forces nearby.</English>
                 <German>Das schießen in der FOB ist verboten!\nDein Projektil wurde gelöscht, da sich keine feindlichen Kräfte in der Nähe befinden.</German>
