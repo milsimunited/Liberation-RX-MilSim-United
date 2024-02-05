@@ -326,6 +326,18 @@ msu_opfor_helmet = 'CUP_H_RUS_6B47_v2_GogglesClosed_Summer'; // rhs_6b27m_green 
 msu_opfor_uniform = 'CUP_U_O_RUS_Ratnik_Autumn'; // Alpine_white_Crye_camo VSM_ProjectHonor_Crye_SS_CamoVSM_M81_BDU_Camo 
 msu_opfor_vest = 'CUP_V_CZ_vest16'; // rhs_6b5_rifleman_khaki VSM_LBT6094_operator_ProjectHonor
 
+// Russen Helm   CUP_H_RUS_6B47_v2_GogglesClosed_Summer                      /Desert CUP_H_RUS_6B47_v2_BeigeDigital
+// Russen Uniform  CUP_U_O_RUS_Ratnik_Autumn                         /Desert  CUP_U_O_RUS_Soldier_VKPO_MSV_BeigeDigital_gloves_pads
+// Russen Vest   CUP_V_CZ_vest16                           /Desert   CUP_V_B_BAF_DDPM_Osprey_Mk3_Pilot
+
+// Taliban Helm        CUP_H_TKI_Lungee_05    
+// Taliban Uniform CUP_O_TKI_Khet_Partug_03
+// Taliban Vest  V_TacVestIR_blk
+
+// Takistan Army Helm        CUP_H_SLA_Helmet_DES_worn    
+// Takistan Army Uniform CUP_U_O_TK_MixedCamo
+// Takistan Army Vest  CUP_V_CZ_vest16
+
 msu_civ_uniform = 'U_BG_Guerilla3_1';
 
 ai_equipment_replacement = true;
