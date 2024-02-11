@@ -319,13 +319,6 @@ MSU_Med_Div = 1;
 MSU_Eng_Div = 1;
 
 
-
-
-// ai equipment replacements
-msu_opfor_helmet = 'CUP_H_TKI_Lungee_05'; // rhs_6b27m_green VSM_ProjectHonor_OPS_2
-msu_opfor_uniform = 'CUP_O_TKI_Khet_Partug_03'; // Alpine_white_Crye_camo VSM_ProjectHonor_Crye_SS_CamoVSM_M81_BDU_Camo 
-msu_opfor_vest = 'V_TacVestIR_blk'; // rhs_6b5_rifleman_khaki VSM_LBT6094_operator_ProjectHonor
-
 // Russen Helm   CUP_H_RUS_6B47_v2_GogglesClosed_Summer                      /Desert CUP_H_RUS_6B47_v2_BeigeDigital
 // Russen Uniform  CUP_U_O_RUS_Ratnik_Autumn                         /Desert  CUP_U_O_RUS_Soldier_VKPO_MSV_BeigeDigital_gloves_pads
 // Russen Vest   CUP_V_CZ_vest16                           /Desert   CUP_V_B_BAF_DDPM_Osprey_Mk3_Pilot

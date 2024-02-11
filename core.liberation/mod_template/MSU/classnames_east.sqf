@@ -268,7 +268,7 @@ if (isServer) then {
 		{
 			[_x, "InitPost", {
 				params ["_vehicle"];
-				[_vehicle] spawn _msu_opf;
+				[_vehicle] spawn loadout_msu_opf;
 			}, nil, nil, true] call CBA_fnc_addClassEventHandler;
 		} forEach militia_squad;
 	};
