@@ -5922,6 +5922,14 @@
                 <English>Shooting in the FOB is prohibited!\nYour projectile has been deleted because there are no enemy forces nearby.</English>
                 <German>Das schießen in der FOB ist verboten!\nDein Projektil wurde gelöscht, da sich keine feindlichen Kräfte in der Nähe befinden.</German>
             </Key>
+            <Key ID="STR_MSU_Medic_Container_Fullheal">
+                <English>Full Heal (Self)</English>
+                <German>Endheilung (Selbst)</German>
+            </Key>
+            <Key ID="STR_MSU_Medic_Container_FullhealArea">
+                <English>Full Heal (Area)</English>
+                <German>Endheilung (Bereich)</German>
+            </Key>
         </Container>
     </Package>
 </Project> 
