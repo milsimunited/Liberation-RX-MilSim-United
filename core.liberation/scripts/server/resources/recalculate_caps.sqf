@@ -9,11 +9,18 @@ infantry_cap = base_infantry_cap;
 } foreach blufor_sectors;
 
 
-fuel_cap = msu_fuel_min;
+// Get Player Count for Fuel calculation
 _players = count allPlayers;
-if (_players >= msu_resource_min_players) then {
-	fuel_cap = _players;
-};
+// Exclude Headless Clients from player count
+{
+	if (!isNil (_x select 0)) then {
+		if (!isNull (_x select 1)) then {
+			_players = _players - 1;
+		};
+	};
+} forEach [["HC1", HC1], ["HC2", HC2], ["HC3", HC3]];
+
+fuel_cap = (MSU_Fuel_BaseFuel + (MSU_Fuel_FuelPerPlayer * _players));
 
 
 
