@@ -27,5 +27,5 @@ while { true } do {
 	[[_markerZonesCaptured, "format [""%1: %2 (%3%4)"", localize ""STR_MSU_Mapinfo_CapturedCount"", count blufor_sectors, round ((count blufor_sectors / count sectors_allSectors) * 100), ""%""]"], "scripts\client\msu\updateMapInfoMarker.sqf"] remoteExec ["execVM", -2];
 	[[_markerZonesToCapture, "format [""%1: %2 (%3%4)"", localize ""STR_MSU_Mapinfo_ToCaptureCount"", (count sectors_allSectors) - (count blufor_sectors), round (((count sectors_allSectors - count blufor_sectors) / count sectors_allSectors) * 100), ""%""]"], "scripts\client\msu\updateMapInfoMarker.sqf"] remoteExec ["execVM", -2];
 
-	sleep 15;
+	sleep 60;
 };
