@@ -969,7 +969,7 @@ uavs = [
 	"CUP_B_USMC_DYN_MQ9",
 	"B_UAV_01_F",
 	"B_UAV_02_dynamicloadout_F",
-	"B_T_UAV_03_dynamicloadout_F",
+	"B_T_UAV_03_dynamicLoadout_F",
 	"B_UAV_05_F",
 	"B_UAV_06_F",
 	"C_UAV_06_F",
