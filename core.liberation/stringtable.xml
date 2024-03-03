@@ -5918,6 +5918,10 @@
                 <English>--- Lawn Mower ---</English>
                 <German>--- Rasenmäher ---</German>
             </Key>
+            <Key ID="MSU_Placeholder_Category_ShootingRange">
+                <English>--- Shooting Range ---</English>
+                <German>--- Schießplatz ---</German>
+            </Key>
             <Key ID="STR_MSU_No_Shooting_Fob">
                 <English>Shooting in the FOB is prohibited!\nYour projectile has been deleted because there are no enemy forces nearby.</English>
                 <German>Das schießen in der FOB ist verboten!\nDein Projektil wurde gelöscht, da sich keine feindlichen Kräfte in der Nähe befinden.</German>
@@ -5929,6 +5933,22 @@
             <Key ID="STR_MSU_Medic_Container_FullhealArea">
                 <English>Full Heal (Area)</English>
                 <German>Endheilung (Bereich)</German>
+            </Key>
+            <Key ID="STR_MSU_Mapinfo_Triggerrange">
+                <English>Zone Trigger Range</English>
+                <German>Zonen Aktivierungsradius</German>
+            </Key>
+            <Key ID="STR_MSU_Mapinfo_ZoneCount">
+                <English>Zone Count</English>
+                <German>Anzahl Zonen</German>
+            </Key>
+            <Key ID="STR_MSU_Mapinfo_CapturedCount">
+                <English>Captured Zones</English>
+                <German>Eingenommene Zonen</German>
+            </Key>
+            <Key ID="STR_MSU_Mapinfo_ToCaptureCount">
+                <English>Zones to capture</English>
+                <German>Einzunehmende Zonen</German>
             </Key>
         </Container>
     </Package>
