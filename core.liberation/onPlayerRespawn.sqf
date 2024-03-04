@@ -29,3 +29,7 @@ if (playerFirstSpawn) then {
 } else {
 	["ReassignZeusCurator", [player]] call CBA_fnc_serverEvent;
 };
+
+// Arma gives 1 Score per enemy kill -> Score is basically rank points, so you get 1 extra rank point for kills.
+// This script disables it. Need to refresh the script each time a unit respawns
+[[player], "scripts\server\resources\disableArmaScoreGain.sqf"] remoteExec ["execVM", 2];
