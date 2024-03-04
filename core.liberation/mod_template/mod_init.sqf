@@ -37,6 +37,7 @@ MSU_Placeholder_Category_Flag = localize "MSU_Placeholder_Category_Flag";
 MSU_Placeholder_Category_Camp = localize "MSU_Placeholder_Category_Camp";
 MSU_Placeholder_Category_Pad = localize "MSU_Placeholder_Category_Pad";
 MSU_Placeholder_Category_Cutter = localize "MSU_Placeholder_Category_Cutter";
+MSU_Placeholder_Category_ShootingRange = localize "MSU_Placeholder_Category_ShootingRange";
 
 
 
