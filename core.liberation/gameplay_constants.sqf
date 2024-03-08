@@ -114,7 +114,7 @@ building_penalty_isActive = false;
 air_cannot_trigger_on = true;
 
 // slot system
-msu_slot_system = true;
+msu_slot_system = false;
 
 // AI Leaders have automaticly radios
 AI_leader_radio = false;
