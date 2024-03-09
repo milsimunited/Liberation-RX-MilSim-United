@@ -56,10 +56,10 @@ tfar_channel = "╠-● Ingame [TFAR]";
 
 // gain and punishment
 respawn_ammo = 50; // +/- is conditional
-opfor_kill_score = 0;
-opfor_kill_ammo = 0;
-opfor_kill_score_infantry = 8;
-opfor_kill_ammo_infantry = 14;
+MSU_Kill_AddScore = 0;
+MSU_Kill_AddAmmo = 0;
+MSU_InfantryKill_AddScore = 8;
+MSU_InfantryKill_AddAmmo = 14;
 kamikaze_kill_score = 16;
 kamikaze_kill_ammo = 28;
 civkill_score = -16;
@@ -113,26 +113,8 @@ building_penalty_isActive = false;
 // Do not allow air vehicles to trigger zones. 
 air_cannot_trigger_on = true;
 
-
-// resources
-msu_resource_min_players = 10;
-msu_fuel_min = 10; 
-
-msu_fuel_aplane = 0;                //Attack Planes
-msu_fuel_plane = 0;                //Logi Planes
-msu_fuel_aheli = 0;                //Attack Helis
-msu_fuel_heli = 0;                //Logi Helis
-msu_fuel_mbt = 0;
-msu_fuel_ifv = 0;
-msu_fuel_apc = 0;                 //ZB MRAP,GMG
-msu_fuel_harmed = 0;              //12,7+ Autos
-msu_fuel_larmed = 0;              //7,62+ Autos
-msu_fuel_uarmed = 0;              //Unarmed Autos
-msu_fuel_blogi = 0;              //Boden Logi Autos
-msu_fuel_bat = 0;              //BAT Sani Autos
-
 // slot system
-msu_slot_system = true;
+msu_slot_system = false;
 
 // AI Leaders have automaticly radios
 AI_leader_radio = false;

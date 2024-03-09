@@ -38,3 +38,46 @@ MSU_Placeholder_Category_Camp = localize "MSU_Placeholder_Category_Camp";
 MSU_Placeholder_Category_Pad = localize "MSU_Placeholder_Category_Pad";
 MSU_Placeholder_Category_Cutter = localize "MSU_Placeholder_Category_Cutter";
 MSU_Placeholder_Category_ShootingRange = localize "MSU_Placeholder_Category_ShootingRange";
+
+
+
+// Fuel System Base Values
+MSU_Fuel_BaseFuel = 60;
+MSU_Fuel_FuelPerPlayer = 12;
+
+// Fuel System
+MSU_Fuel_LightVehicle_Class1 = 0;
+MSU_Fuel_LightVehicle_Class2 = 0;
+MSU_Fuel_LightVehicle_Class3 = 0;
+MSU_Fuel_HeavyVehicle_Class1 = 0;
+MSU_Fuel_HeavyVehicle_Class2 = 0;
+MSU_Fuel_HeavyVehicle_Class3 = 0;
+MSU_Fuel_Artillery_Class1 = 35;
+MSU_Fuel_Artillery_Class2 = 40;
+MSU_Fuel_APC_Class1 = 20;
+MSU_Fuel_APC_Class2 = 35;
+MSU_Fuel_MBT_Class1 = 50;
+MSU_Fuel_AA_Class1 = 40;
+MSU_Fuel_TransportHeli_Infantry_Class1 = 0;
+MSU_Fuel_TransportHeli_Infantry_Class2 = 0;
+MSU_Fuel_TransportHeli_Vehicle_Class1 = 0;
+MSU_Fuel_TransportHeli_Vehicle_Class2 = 0;
+MSU_Fuel_AttackHeli_Class1 = 50;
+MSU_Fuel_AttackHeli_Class2 = 60;
+MSU_Fuel_TransportPlane_Class1 = 0;
+MSU_Fuel_TransportPlane_Class2 = 0;
+MSU_Fuel_ArmedPlane_Class1 = 50;
+MSU_Fuel_ArmedPlane_Class2 = 60;
+MSU_Fuel_FighterJet_Class1 = 70;
+MSU_Fuel_FighterJet_Class2 = 85;
+MSU_Fuel_Drones_Class1 = 0;
+MSU_Fuel_Drones_Class2 = 50;
+MSU_Fuel_MedicVehicles_Class1 = 0;
+MSU_Fuel_MedicVehicles_Class2 = 0;
+MSU_Fuel_LogisticVehicles_Class1 = 0;
+MSU_Fuel_LogisticVehicles_Class2 = 0;
+MSU_Fuel_Boats_Class1 = 0;
+MSU_Fuel_Boats_Class2 = 0;
+MSU_Fuel_StaticVehicles_Class1 = 0;
+MSU_Fuel_StaticVehicles_Class2 = 20;
+MSU_Fuel_StaticVehicles_Class3 = 60;
