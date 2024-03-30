@@ -1015,6 +1015,7 @@ log_on_server = compileFinal "
 ["rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy", "InitPost", {
     params ["_vehicle"];
 	_vehicle setVariable ["ace_medical_medicClass", 1];
+	[_vehicle,3] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["CUP_B_FV432_GB_Ambulance", "InitPost", {
@@ -1035,6 +1036,7 @@ log_on_server = compileFinal "
 ["B_Truck_01_medical_F", "InitPost", {
     params ["_vehicle"];
 	_vehicle setVariable ["ace_medical_medicClass", 1];
+	[_vehicle,3] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["CUP_B_LR_Ambulance_GB_D", "InitPost", {
