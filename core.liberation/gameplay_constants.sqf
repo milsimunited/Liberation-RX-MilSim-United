@@ -56,8 +56,8 @@ tfar_channel = "╠-● Ingame [TFAR]";
 
 // gain and punishment
 respawn_ammo = 50; // +/- is conditional
-MSU_Kill_AddScore = 0;
-MSU_Kill_AddAmmo = 0;
+MSU_Kill_AddScore = 8;
+MSU_Kill_AddAmmo = 14;
 MSU_InfantryKill_AddScore = 8;
 MSU_InfantryKill_AddAmmo = 14;
 kamikaze_kill_score = 16;
