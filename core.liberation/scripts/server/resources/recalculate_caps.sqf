@@ -9,6 +9,13 @@ infantry_cap = base_infantry_cap;
 } foreach blufor_sectors;
 
 
+
+fuel_cap = 50;
+
+
+/*
+// Removes HCs but throws error when working in Eden aka not isDedicated
+
 // Get Player Count for Fuel calculation
 _players = count allPlayers;
 // Exclude Headless Clients from player count
