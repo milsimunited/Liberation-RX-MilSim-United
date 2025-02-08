@@ -40,7 +40,7 @@ if ( !isNil "GRLIB_whitelisted_steamids" ) then {
 
 
 // TFR Checker !isServer
-if(tfar_checker) then {
+/*if(tfar_checker) then {
 
 	waitUntil {!isNull player };
 
@@ -84,7 +84,7 @@ if(tfar_checker) then {
 	sleep 2;
 	titleText ["TFAR Plugin working, Welcome!","PLAIN DOWN"];
 
-};
+};*/
 
 
 

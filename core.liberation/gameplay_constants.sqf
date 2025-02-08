@@ -1,4 +1,4 @@
-GRLIB_save_key = "MilSim_United";
+GRLIB_save_key = "Liberation_RX";
 // change this value if you want different saveGames on different map
 GRLIB_side_resistance = resistance;
 GRLIB_side_civilian = civilian;
@@ -49,9 +49,9 @@ GRLIB_offload_diag = false;
 // NRE_Key = 199;
 MGR_Key = 19;
 
-// TFAR checker
+// TFAR checker (\scripts\client\init_client.sqf)
 tfar_checker = false;
-ts_server_name = "MilSim United";
+ts_server_name = "Server name";
 tfar_channel = "╠-● Ingame [TFAR]";
 
 // gain and punishment
@@ -176,26 +176,12 @@ ied_enemy_sector = ["ACE_IEDLandBig_Range", "APERSMine", "APERSBoundingMine", "I
 
 
 moderators = [
-    "76561198057808323", // Johannes
-    "76561198019854511", // Voltaren
-    "76561198203314980", // Bobi
-    "76561198094301584", // Devin
-    "76561198283765221", // Steakman
-    "76561197993044168", // Huber Sepp
-    "76561198095167425", // Sebi
-    "76561198085753428", // Joker
-    "76561198043617179"  // Mantanismus
+    "76561197993044168" // Huber Sepp
 ];
 
 curatorLogicGroup = createGroup [sideLogic, false];
 allowed_zeus_curators = [
-    ["76561198057808323", "Johannes"],
-    ["76561198019854511", "Voltaren"],
-    ["76561198283765221", "Steakman"],
-    ["76561197993044168", "Huber Sepp"],
-    ["76561198095167425", "Sebi"],
-    ["76561198094301584", "Devin"],
-    ["76561198085753428", "Joker"]
+    ["76561197993044168", "Huber Sepp"]
 ];
 
 
