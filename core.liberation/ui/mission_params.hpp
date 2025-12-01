@@ -10,7 +10,7 @@ class Params
 		title = $STR_PARAMS_UNITCAP;
 		values[] = {0.5,0.75,1,1.25,1.5,2};
 		texts[] = {$STR_PARAMS_UNITCAP1,$STR_PARAMS_UNITCAP2,$STR_PARAMS_UNITCAP3,$STR_PARAMS_UNITCAP4,$STR_PARAMS_UNITCAP5,$STR_PARAMS_UNITCAP6};
-		default = 1.5;
+		default = 1;
 	};
 	class FancyInfo {
 		title = $STR_FANCY;
@@ -112,7 +112,7 @@ class Params
 		title = $STR_PARAMS_DIFFICULTY;
 		values[] = { 0.5, 0.75, 1, 1.25, 1.5, 2, 4, 8 };
 		texts[] = { $STR_PARAMS_DIFFICULTY1, $STR_PARAMS_DIFFICULTY2, $STR_PARAMS_DIFFICULTY3, $STR_PARAMS_DIFFICULTY4, $STR_PARAMS_DIFFICULTY5, $STR_PARAMS_DIFFICULTY6, $STR_PARAMS_DIFFICULTY7, $STR_PARAMS_DIFFICULTY8 };
-		default = 4;
+		default = 1;
 	};
 	class Aggressivity{
 		title = $STR_AGGRESSIVITY_PARAM;
@@ -196,7 +196,7 @@ class Params
 		title = $STR_PARAMS_CIVILIANS;
 		values[] = {0,0.5,1,2};
 		texts[] = {$STR_PARAMS_CIVILIANS1,$STR_PARAMS_CIVILIANS2,$STR_PARAMS_CIVILIANS3,$STR_PARAMS_CIVILIANS4};
-		default = 2;
+		default = 1;
 	};
 	class WildLife{
 		title = $STR_PARAM_WILDLIFE;
@@ -208,7 +208,7 @@ class Params
 		title = $STR_PARAM_PATROL;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 0;
+		default = 1;
 	};
 	class TeamkillPenalty{
 		title = $STR_PARAM_TEAMKILL_PENALTY;
@@ -250,7 +250,7 @@ class Params
 		title = $STR_PARAM_FOBS_COUNT;
 		values[] = {1,2,3,5,7,10,15,20,26};
 		texts[] = {1,2,3,5,7,10,15,20,26};
-		default = 5;
+		default = 1;
 	};
 	class SquadSize{
 		title = $STR_PARAM_SQUAD_SIZE_START;

@@ -8,34 +8,34 @@ GRLIB_respawn_marker = "respawn_west";
 GRLIB_sector_size = 800;
 GRLIB_capture_size = 200;
 GRLIB_radiotower_size = 3000;
-GRLIB_spawn_min = 1000;
-GRLIB_spawn_max = 2500;
+GRLIB_spawn_min = 800;
+GRLIB_spawn_max = 1600;
 GRLIB_recycling_percentage = 1.00;
 GRLIB_endgame = 0;
 GRLIB_vulnerability_timer = 1000;
 GRLIB_defended_buildingPos_part = 0.0;
 GRLIB_sector_military_value = 2;
 GRLIB_secondary_objective_impact = 0.4;
-GRLIB_sector_spawn_factor = 2.8;
-GRLIB_sector_cap = 70 * GRLIB_unitcap;
-GRLIB_battlegroup_cap = 75 * GRLIB_unitcap;
-GRLIB_patrol_cap = 10 * GRLIB_unitcap;
+GRLIB_sector_spawn_factor = 1;
+GRLIB_sector_cap = 50 * GRLIB_unitcap;
+GRLIB_battlegroup_cap = 55 * GRLIB_unitcap;
+GRLIB_patrol_cap = 55 * GRLIB_unitcap;
 GRLIB_blufor_cap = 10 * GRLIB_unitcap;
 GRLIB_battlegroup_size = 5;
 GRLIB_civilians_amount = 1.1 * GRLIB_civilian_activity;
-GRLIB_fob_range = 450;
-GRLIB_surrender_chance = 45;
+GRLIB_fob_range = 200;
+GRLIB_surrender_chance = 69;
 GRLIB_secondary_missions_costs = [ 30,3 ];
 GRLIB_halo_altitude = 2000;
 GRLIB_civ_killing_penalty = 0;
 GRLIB_squad_size_bonus = 0;
 GRLIB_perm_ban = -1000000;
 MSU_Rank_Private = 0;
-MSU_Rank_Corporal = 500;
-MSU_Rank_Sergeant = 800;
-MSU_Rank_Captain = 1300;
-MSU_Rank_Major = 1700;
-GRLIB_date_year = 2023;
+MSU_Rank_Corporal = 250;
+MSU_Rank_Sergeant = 500;
+MSU_Rank_Captain = 750;
+MSU_Rank_Major = 1000;
+GRLIB_date_year = 2025;
 GRLIB_date_month = 7;
 GRLIB_date_day = 30;
 GRLIB_nights_start = 21;
@@ -56,20 +56,20 @@ tfar_channel = "╠-● Ingame [TFAR]";
 
 // gain and punishment
 respawn_ammo = 50; // +/- is conditional
-MSU_Kill_AddScore = 8;
-MSU_Kill_AddAmmo = 14;
-MSU_InfantryKill_AddScore = 8;
-MSU_InfantryKill_AddAmmo = 14;
-kamikaze_kill_score = 16;
-kamikaze_kill_ammo = 28;
-civkill_score = -16;
-civkill_ammo = -28;
-civkill_combat_readiness = 5;
+MSU_Kill_AddScore = 2;
+MSU_Kill_AddAmmo = 2;
+MSU_InfantryKill_AddScore = 10;
+MSU_InfantryKill_AddAmmo = 10;
+kamikaze_kill_score = 20;
+kamikaze_kill_ammo = 20;
+civkill_score = -20;
+civkill_ammo = -20;
+civkill_combat_readiness = 20;
 tkill_score = -4;
 tkill_ammo = -10;
 tk_active = false; //NEW Tkillscript with dialog
-msu_score_min = -20;
-msu_score_max = 2000;
+msu_score_min = -100;
+msu_score_max = 1200;
 msu_ammo_min = 0;
 msu_ammo_max = 999999;
 MSU_DisableFobFiring = true;
@@ -80,31 +80,34 @@ MSU_DisableFobFiring = true;
 
 
 // logistics
-prisoner_intel = 16;
-prisoner_score = 16;
-prisoner_ammo = 60;
+prisoner_intel = 20;
+prisoner_score = 20;
+prisoner_ammo = 20;
 prisoner_combat_readiness = 20;
 prisoner_i = 0;
 
-box_recycle_value = 36; // Only use by 2 dividable numbers
+box_recycle_value = 40; // Only use by 2 dividable numbers
 logistics_ammo_for_all = true;
 logistics_ammo_increase = true;
 
 
 // Sector config
-sector_rank_gain = 20;
+sector_rank_gain = 100;
 fallback_income = 100;
 income_sectors_bigtown = 100;
 income_sectors_capture = 100;
 income_sectors_military = 100;
 income_sectors_factory = 100;
 income_sectors_tower = 100;
-readiness_increase_bigtown = 4;
-readiness_increase_capture = 4;
-readiness_increase_military = 4;
-readiness_increase_factory = 4;
-readiness_increase_tower = 4;
+readiness_increase_bigtown = 5;
+readiness_increase_capture = 5;
+readiness_increase_military = 5;
+readiness_increase_factory = 5;
+readiness_increase_tower = 5;
 Sector_ammo_for_all = false;
+
+// Sector marker names
+//bigtown_1, military_1, capture_1, factory_1, tower_1
 
 
 // Building Penalty
@@ -301,7 +304,7 @@ MSU_Eng_Div = 1;
 
 msu_civ_uniform = 'U_BG_Guerilla3_1';
 
-ai_equipment_replacement = true;
+ai_equipment_replacement = false;
 ai_replacement_classname = "rhs_vmf_flora_rifleman";
 ai_replacement_weapon = "hlc_rifle_g3a3";
 ai_replacement_magazine = "ACE_20Rnd_762x51_M118LR_Mag";
@@ -1631,21 +1634,3 @@ MSU_blacklisted_from_arsenal = [
 ];
 
 // MSU_whitelisted_from_arsenal = [];
-
-/*
-To change the variables "GRLIB_sector_size", "GRLIB_capture_size" or "GRLIB_radiotower_size" dynamically,
-create a Game-Logic object in the mission.sqm file and insert the following code in the "Init":
-
-MSU_currentMap_sectorSize = 1000;
-MSU_currentMap_captureSize = 250;
-MSU_currentMap_radiotowerSize = 4000;
-*/
-if ((!(isNil "MSU_currentMap_sectorSize")) && (MSU_currentMap_sectorSize != 0)) then {
-    GRLIB_sector_size = MSU_currentMap_sectorSize;
-};
-if ((!(isNil "MSU_currentMap_captureSize")) && (MSU_currentMap_captureSize != 0)) then {
-    GRLIB_capture_size = MSU_currentMap_captureSize;
-};
-if ((!(isNil "MSU_currentMap_radiotowerSize")) && (MSU_currentMap_radiotowerSize != 0)) then {
-    GRLIB_radiotower_size = MSU_currentMap_radiotowerSize;
-};

@@ -107,7 +107,10 @@ if ( (!(_sector in blufor_sectors)) &&  ( ( [ getmarkerpos _sector , [ _opforcou
 		_building_ai_max = 0;
 		_vehtospawn = [( [] call F_getAdaptiveVehicle ),( [] call F_getAdaptiveVehicle )];
 		if(floor(random 100) > (33 / GRLIB_difficulty_modifier)) then { _vehtospawn pushback ( [] call F_getAdaptiveVehicle ); };
+		_spawncivs = true;
 		[markerPos _sector, 50] call createlandmines;
+		_iedcount = (floor (random 3)) * GRLIB_difficulty_modifier;
+		if ( _iedcount > 5 ) then { _iedcount = 5 };
 	};
 
 	if ( _building_ai_max > 0 && GRLIB_adaptive_opfor ) then {

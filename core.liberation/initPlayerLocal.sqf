@@ -29,10 +29,7 @@ Stufe 3: Mit Unterstützung der IT.<br />
 <br />
 3. Gruppen und Kommunikation<br />
 3.1 Funkrufnamen sollen kurz, international und gut aussprechbar sein. <br />
-3.2 Frequenz 50 ist ausschließlich zur Bodenkommunikation. <br />
-3.3 Frequenz 51 ist ausschließlich zur Boden-Luft-Kommunikation. <br />
-3.4 Frequenz 52 ist ausschließlich zur Luftkommunikation. <br />
-3.5 Funkdisziplin ist einzuhalten, kurze Funksprüche.<br />
+3.2 Funkdisziplin ist einzuhalten.<br />
 <br />
 <br />
 4. Spezial-Slots<br />
@@ -69,10 +66,7 @@ Stage 3: With the support of IT.<br />
 <br />
 3. Groups and communication<br />
 3.1 Radio call names should be short, international and easy to pronounce. <br />
-3.2 Frequency 50 is exclusively for ground communication. <br />
-3.3 Frequency 51 is exclusively for ground-air communication. <br />
-3.4 Frequency 52 is exclusively for air communication. <br />
-3.5 Radio discipline must be observed, short radio messages.<br />
+3.2 Radio discipline must be observed.<br />
 <br />
 <br />
 4. Special slots<br />
@@ -201,14 +195,14 @@ player addEventHandler ["Fired", {
 hint format['
 	Karte öffnen, Regeln lesen! \n
 	Open map, read rules! \n
-	TeamSpeak Server: milsim-united.teamspeak.me \n
+	TeamSpeak Server: ts3.tacticalteam.de \n
 '];
 
 sleep 180;
 hint format['
 	Karte öffnen, Regeln lesen! \n
 	Open map, read rules! \n
-	TeamSpeak Server: milsim-united.teamspeak.me \n
+	TeamSpeak Server: ts3.tacticalteam.de \n
 '];
 
 

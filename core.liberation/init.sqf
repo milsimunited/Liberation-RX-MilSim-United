@@ -369,47 +369,17 @@ msu_playable_units = ["B_Soldier_F", "B_medic_F", "B_engineer_F", "B_soldier_exp
 
 
 // opfor
-["rhs_mvd_izlom_arifleman_rpk", "InitPost", {
+["CUP_O_RU_Crew", "InitPost", {
 	params ["_vehicle"];
 	[_vehicle] spawn loadout_militia;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
-["rhs_vdv_recon_marksman_vss", "InitPost", {
+["CUP_O_RU_Pilot", "InitPost", {
 	params ["_vehicle"];
 	[_vehicle] spawn loadout_militia;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
-["rhs_mvd_izlom_rifleman_asval", "InitPost", {
-	params ["_vehicle"];
-	[_vehicle] spawn loadout_militia;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["O_T_Crew_F", "InitPost", {
-	params ["_vehicle"];
-	[_vehicle] spawn loadout_militia;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["O_T_Soldier_F", "InitPost", {
-	params ["_vehicle"];
-	[_vehicle] spawn loadout_militia;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhs_vmf_flora_sergeant", "InitPost", {
-	params ["_vehicle"];
-	[_vehicle] spawn loadout_militia;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhs_vmf_flora_rifleman", "InitPost", {
-	params ["_vehicle"];
-	[_vehicle] spawn loadout_militia;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhs_vmf_flora_driver", "InitPost", {
-	params ["_vehicle"];
-	[_vehicle] spawn loadout_militia;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["PRACS_SLA_AA_Vehicle_Crew", "InitPost", {
+["CUP_O_RU_Soldier", "InitPost", {
 	params ["_vehicle"];
 	[_vehicle] spawn loadout_militia;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
@@ -606,35 +576,11 @@ log_on_server = compileFinal "
 
 
 
-["rhsusf_M977A4_AMMO_BKIT_usarmy_wd", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 150000] call ace_rearm_fnc_makeSource;
-	_vehicle setVariable ["ACE_isRepairVehicle",1];
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M977A4_AMMO_BKIT_usarmy_d", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 150000] call ace_rearm_fnc_makeSource;
-	_vehicle setVariable ["ACE_isRepairVehicle",1];
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["B_CargoNet_01_ammo_F", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 1500] call ace_rearm_fnc_makeSource;
-	_vehicle setVariable ["ACE_isRepairVehicle",1];
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
 ["rhs_kamaz5350_ammo_vmf", "InitPost", {
     params ["_vehicle"];
 	[_vehicle,12] call ace_cargo_fnc_setSpace;
 	[_vehicle, 150000] call ace_rearm_fnc_makeSource;
     [_vehicle, 15000] call ace_refuel_fnc_makeSource;
-	_vehicle setVariable ["ACE_isRepairVehicle",1];
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_m1152_rsv_usarmy_wd", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,8] call ace_cargo_fnc_setSpace;
 	_vehicle setVariable ["ACE_isRepairVehicle",1];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
@@ -679,36 +625,6 @@ log_on_server = compileFinal "
 ["rnt_mantis_base", "InitPost", {
     params ["_vehicle"];
 	[_vehicle, -1] call ace_cargo_fnc_setSize;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M1220_MK19_usarmy_wd", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,5] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M1220_usarmy_wd", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,5] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M1220_M153_M2_usarmy_wd", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,5] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M1230_M2_usarmy_wd", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,5] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M1230a1_usarmy_wd", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,5] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M1230_MK19_usarmy_wd", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,5] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["BWA3_WLP14_Ammo_Fleck", "InitPost", {
@@ -821,102 +737,14 @@ log_on_server = compileFinal "
 	[_vehicle, 16] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
-["rhsusf_M1084A1R_SOV_M2_D_fmtv_socom", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 30] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,8] call ace_cargo_fnc_setSpace;
-	[_vehicle, 1000] call ace_rearm_fnc_makeSource;
-    [_vehicle, 1250] call ace_refuel_fnc_makeSource;
-	_vehicle setVariable ["ACE_isRepairVehicle",1];
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M1078A1P2_B_WD_fmtv_usarmy", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 12] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 12] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M1078A1P2_B_WD_flatbed_fmtv_usarmy", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 12] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M1078A1P2_B_M2_WD_flatbed_fmtv_usarmy", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 12] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M1078A1P2_B_WD_CP_fmtv_usarmy", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 12] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
 ["B_T_UGV_01_olive_F", "InitPost", {
     params ["_vehicle"];
 	[_vehicle, 3] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
-["rhsusf_M977A4_BKIT_usarmy_wd", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 30] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M977A4_BKIT_M2_usarmy_wd", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 30] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_C130J_Cargo", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 50] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_C130J", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 16] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_CH_47F_10_cargo", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 30] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_CH_47F_10", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 7] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_UH1Y_UNARMED_d", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 2] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_UH60M2_d", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 2] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
 ["BWA3_NH90_TTH_Fleck", "InitPost", {
     params ["_vehicle"];
 	[_vehicle, 7] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["UK3CB_BAF_Merlin_HC4_32", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 7] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["UK3CB_BAF_Merlin_HC4_18_GPMG", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 2] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["BWA3_NH90_TTH_M3M_Fleck", "InitPost", {
@@ -934,39 +762,9 @@ log_on_server = compileFinal "
 	[_vehicle, 7] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
-["RHS_UH60M_d", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 2] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M1083A1P2_WD_flatbed_fmtv_usarmy", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 12] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_UH60M_MEV_d", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 2] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_UH60M_MEV2_d", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 2] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
 ["B_T_UGV_01_rcws_olive_F", "InitPost", {
     params ["_vehicle"];
 	[_vehicle, 1] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_Mi8AMT_vvs", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 7] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_Mi8AMT_vvs", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle, 7] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["Land_Pod_Heli_Transport_04_covered_F", "InitPost", {
@@ -975,12 +773,6 @@ log_on_server = compileFinal "
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["UK3CB_BAF_Merlin_HC3_Cargo", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,16] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-
-["UK3CB_BAF_Merlin_HC4_Cargo", "InitPost", {
     params ["_vehicle"];
 	[_vehicle,16] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
@@ -1007,23 +799,7 @@ log_on_server = compileFinal "
 	_vehicle setVariable ["ace_medical_medicClass", 1];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
-["TK_GUE_WarfareBFieldhHospital_Base_EP1", "InitPost", {
-    params ["_vehicle"];
-	_vehicle setVariable ["ace_medical_medicClass", 1];
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy", "InitPost", {
-    params ["_vehicle"];
-	_vehicle setVariable ["ace_medical_medicClass", 1];
-	[_vehicle,3] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
 ["CUP_B_FV432_GB_Ambulance", "InitPost", {
-    params ["_vehicle"];
-	_vehicle setVariable ["ace_medical_medicClass", 1];
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy", "InitPost", {
     params ["_vehicle"];
 	_vehicle setVariable ["ace_medical_medicClass", 1];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
@@ -1049,11 +825,6 @@ log_on_server = compileFinal "
 	_vehicle setVariable ["ace_medical_medicClass", 1];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
-["ffaa_et_toa_ambulancia", "InitPost", {
-    params ["_vehicle"];
-	_vehicle setVariable ["ace_medical_medicClass", 1];
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
 ["CUP_B_UH60M_Unarmed_FFV_MEV_US", "InitPost", {
     params ["_vehicle"];
 	_vehicle setVariable ["ace_medical_medicClass", 1];
@@ -1067,76 +838,6 @@ log_on_server = compileFinal "
 ["Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_San", "InitPost", {
     params ["_vehicle"];
 	_vehicle setVariable ["ace_medical_medicClass", 1];
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["UK3CB_BAF_LandRover_Amb_FFR_Green_A", "InitPost", {
-    params ["_vehicle"];
-	_vehicle setVariable ["ace_medical_medicClass", 1];
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,12] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhs_kamaz5350_open_msv", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,12] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["UK3CB_BAF_Husky_Passenger_HMG_Green_DPMW", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,4] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_CH53e_USMC_cargo", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,30] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_CH53E_USMC_GAU21_D", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,7] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_CH53e_USMC_D", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,7] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_MELB_AH6M", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,0] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_MELB_MH6M", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,2] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhs_mi28n_vvsc", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,2] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_Mi24P_vvs", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,2] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_Mi24V_vvs", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,2] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_Mi8MTV3_heavy_vvs", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,7] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["UK3CB_BAF_Wildcat_AH1_CAS_6A", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,2] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["BWA3_Tiger", "InitPost", {
@@ -1157,28 +858,6 @@ log_on_server = compileFinal "
 ["O_Heli_Attack_02_dynamicloadout_F", "InitPost", {
     params ["_vehicle"];
 	[_vehicle,0] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_Ka52_vvsc", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,0] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-
-["RHS_UH60M_ESSS_d", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,2] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_UH1Y_d", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,2] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_M977A4_BKIT_M2_usarmy_wd", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,12] call ace_cargo_fnc_setSpace;
-	_vehicle setVariable ["ACE_isRepairVehicle",1];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["BWA3_WLP14_Ammo_Fleck", "InitPost", {
@@ -1229,66 +908,6 @@ log_on_server = compileFinal "
 	] call BIS_fnc_initVehicle;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
-["RHS_CH_47F", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,24] call ace_cargo_fnc_setSpace;
-	[
-		_vehicle,
-		["Green",1], 
-		true
-	] call BIS_fnc_initVehicle;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["TF373_SOAR_MH47G", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,24] call ace_cargo_fnc_setSpace;
-	[
-		_vehicle,
-		["TF373_MH47G_Legacy_Clean_No_Callsign",1], 
-		["HideFrontLeftSki",1,"HideFrontRightSki",1,"HideBackLeftSki",1,"HideBackRightSki",1,"HideFlag",1,"HideM134Belt_2",0,"HideM134Belt_1",0,"HideSlingHatch",0,"HideM134_L",0,"HideM134_R",0,"HideProbe",0,"HideCargoSeats",0,"crew_door_right",0,"crew_door_bar_rotate",0]
-	] call BIS_fnc_initVehicle;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["TF373_SOAR_MH47G_EasyActions", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,24] call ace_cargo_fnc_setSpace;
-	[
-		_vehicle,
-		["TF373_MH47G_Legacy_Clean_No_Callsign",1], 
-		["HideFrontLeftSki",1,"HideFrontRightSki",1,"HideBackLeftSki",1,"HideBackRightSki",1,"HideFlag",1,"HideM134Belt_2",0,"HideM134Belt_1",0,"HideSlingHatch",0,"HideM134_L",0,"HideM134_R",0,"HideProbe",0,"HideCargoSeats",0,"crew_door_right",0,"crew_door_bar_rotate",0]
-	] call BIS_fnc_initVehicle;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_Mi8mt_vdv", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,12] call ace_cargo_fnc_setSpace;
-	[
-		_vehicle,
-		["Green",1], 
-		true
-	] call BIS_fnc_initVehicle;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_UH60M", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,8] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["RHS_Mi8MTV3_heavy_vdv", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,4] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["UK3CB_BAF_Merlin_HC3_CSAR_DPMW_RM", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,12] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["UK3CB_BAF_MAN_HX58_Cargo_Green_A_DPMW_RM", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,12] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
 ["B_Boat_Transport_01_F", "InitPost", {
     params ["_vehicle"];
 	[_vehicle,3] call ace_cargo_fnc_setSize;
@@ -1305,11 +924,6 @@ log_on_server = compileFinal "
 ["B_Boat_Armed_01_minigun_F", "InitPost", {
     params ["_vehicle"];
 	[_vehicle,4] call ace_cargo_fnc_setSpace;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-
-["rhsusf_mkvsoc", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,12] call ace_cargo_fnc_setSpace;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["I_Plane_Fighter_04_F", "InitPost", {

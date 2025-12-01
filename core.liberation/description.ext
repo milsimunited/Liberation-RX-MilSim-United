@@ -3,9 +3,9 @@ onLoadName = $STR_MISSION_TITLE;
 briefingName = $STR_MISSION_TITLE;
 onLoadMission = $STR_MISSION_DESCRIPTION;
 overviewText = $STR_MISSION_DESCRIPTION;
-overviewPicture = "res\MilSimUnited.paa";
-loadScreen = "res\MilSimUnited.paa";
-onLoadIntro = "MilSim United";
+overviewPicture = "res\ttt_logo.paa";
+loadScreen = "res\ttt_logo.paa";
+onLoadIntro = "tacticalteam.de";
 
 respawn = 3;
 respawndelay = 5;

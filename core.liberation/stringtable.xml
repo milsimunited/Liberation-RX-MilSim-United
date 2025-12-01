@@ -13,13 +13,13 @@
                     <Japanese>バージョン0.927</Japanese>
             </Key>
             <Key ID="STR_MISSION_DESCRIPTION">
-                    <Original>MilSim United</Original>
-                    <French>MilSim United</French>
-                    <German>MilSim United</German>
-                    <Spanish>MilSim United</Spanish>
-                    <Russian>MilSim United</Russian>
-                    <Chinesesimp>MilSim United</Chinesesimp>
-                    <Japanese>MilSim United</Japanese>
+                    <Original>tacticalteam.de</Original>
+                    <French>tacticalteam.de</French>
+                    <German>tacticalteam.de</German>
+                    <Spanish>tacticalteam.de</Spanish>
+                    <Russian>tacticalteam.de</Russian>
+                    <Chinesesimp>tacticalteam.de</Chinesesimp>
+                    <Japanese>tacticalteam.de</Japanese>
             </Key>
             <Key ID="STR_Deploy_OnPoint">
                     <Original>Deploy</Original>
@@ -3867,9 +3867,9 @@
             <!--  Added in 0.927 -->
             <Key ID="STR_NOTICE_TEXT1">
                     <Original>&lt;br/&gt;
-                    Welcome to &lt;t color='#00ff00'&gt;LiberationRX  -  MilSim United&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;
+                    Welcome to &lt;t color='#00ff00'&gt;LiberationRX  -  tacticalteam.de&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;
                     Play as you wish but try to work together.&lt;br/&gt;
-                    Therefore you need to join us on TeamSpeak: &lt;t color='#0080ff'&gt;milsim-united.teamspeak.me&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;
+                    Therefore you need to join us on TeamSpeak: &lt;t color='#0080ff'&gt;ts3.tacticalteam.de&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;
                     Ammo is the currency. Earn it by conquering, side missions,&lt;br/&gt;
                     returning prisoners, recycling and fighting enemies.&lt;br/&gt;&lt;br/&gt;
                     Respawning or disconnecting while unconscious costs some of your ammo.&lt;br/&gt;&lt;br/&gt;
@@ -3878,9 +3878,9 @@
                     Good game !!
                     </Original>
                     <French>&lt;br/&gt;
-                    Welcome to &lt;t color='#00ff00'&gt;LiberationRX  -  MilSim United&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;
+                    Welcome to &lt;t color='#00ff00'&gt;LiberationRX  -  tacticalteam.de&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;
                     Play as you wish but try to work together.&lt;br/&gt;
-                    Therefore you need to join us on TeamSpeak: &lt;t color='#0080ff'&gt;milsim-united.teamspeak.me&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;
+                    Therefore you need to join us on TeamSpeak: &lt;t color='#0080ff'&gt;ts3.tacticalteam.de&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;
                     Ammo is the currency. Earn it by conquering, side missions,&lt;br/&gt;
                     returning prisoners, recycling and fighting enemies.&lt;br/&gt;&lt;br/&gt;
                     Respawning or disconnecting while unconscious costs some of your ammo.&lt;br/&gt;&lt;br/&gt;
@@ -3889,9 +3889,9 @@
                     Good game !!
                     </French>
                     <Chinesesimp>&lt;br/&gt;
-                    Welcome to &lt;t color='#00ff00'&gt;LiberationRX  -  MilSim United&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;
+                    Welcome to &lt;t color='#00ff00'&gt;LiberationRX  -  tacticalteam.de&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;
                     Play as you wish but try to work together.&lt;br/&gt;
-                    Therefore you need to join us on TeamSpeak: &lt;t color='#0080ff'&gt;milsim-united.teamspeak.me&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;
+                    Therefore you need to join us on TeamSpeak: &lt;t color='#0080ff'&gt;ts3.tacticalteam.de&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;
                     Ammo is the currency. Earn it by conquering, side missions,&lt;br/&gt;
                     returning prisoners, recycling and fighting enemies.&lt;br/&gt;&lt;br/&gt;
                     Respawning or disconnecting while unconscious costs some of your ammo.&lt;br/&gt;&lt;br/&gt;
@@ -3900,9 +3900,9 @@
                     Good game !!
                     </Chinesesimp>
                     <Japanese>&lt;br/&gt;
-                    Welcome to &lt;t color='#00ff00'&gt;LiberationRX  -  MilSim United&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;
+                    Welcome to &lt;t color='#00ff00'&gt;LiberationRX  -  tacticalteam.de&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;
                     Play as you wish but try to work together.&lt;br/&gt;
-                    Therefore you need to join us on TeamSpeak: &lt;t color='#0080ff'&gt;milsim-united.teamspeak.me&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;
+                    Therefore you need to join us on TeamSpeak: &lt;t color='#0080ff'&gt;ts3.tacticalteam.de&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;
                     Ammo is the currency. Earn it by conquering, side missions,&lt;br/&gt;
                     returning prisoners, recycling and fighting enemies.&lt;br/&gt;&lt;br/&gt;
                     Respawning or disconnecting while unconscious costs some of your ammo.&lt;br/&gt;&lt;br/&gt;

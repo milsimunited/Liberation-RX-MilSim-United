@@ -8,6 +8,8 @@
 		Assigns the player to the zeus curator object with the same UID
 */
 
+sleep 5;
+
 _player = _this select 0;
 // Gets the UID of the player
 playerUid = (getPlayerUID _player);

@@ -5,13 +5,13 @@ player allowDamage false;
 disableUserInput true;
 player setPosATL ((getmarkerpos GRLIB_respawn_marker) findEmptyPosition [0,50]);
 GRLIB_player_spawned = false;
-removeAllWeapons player;
-removeAllItems player;
-removeAllAssignedItems player;
-removeVest player;
-removeBackpack player;
-removeHeadgear player;
-removeGoggles player;
+// removeAllWeapons player;
+// removeAllItems player;
+// removeAllAssignedItems player;
+// removeVest player;
+// removeBackpack player;
+// removeHeadgear player;
+// removeGoggles player;
 player setVariable ["GREUH_stuff_price", 0];
 GRLIB_backup_loadout = [player] call F_getLoadout;
 
@@ -21,6 +21,8 @@ player allowDamage true;
 
 [] execVM "scripts\client\spawn\redeploy_manager.sqf";
 [] execVM "scripts\client\misc\welcome.sqf";
+
+sleep 5;
 
 // Checks if player is spawning for the first time after loading into the mission
 // If player is not spawning for the first time: Call Event to reassign Zeus Curator
