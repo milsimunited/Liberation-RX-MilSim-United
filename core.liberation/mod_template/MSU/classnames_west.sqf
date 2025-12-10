@@ -20,15 +20,15 @@ repair_sling_typename = "B_Slingload_01_Repair_F";
 fuel_sling_typename = "B_Slingload_01_Fuel_F";
 ammo_sling_typename = "B_Slingload_01_Ammo_F";
 medic_sling_typename = "B_Slingload_01_Medevac_F";
-pilot_classname = "rhsusf_army_ucp_helipilot";
-crewman_classname = "rhsusf_army_ucp_crewman";
-A3W_BoxWps = "rhs_weapon_crate";
+pilot_classname = "BWA3_Helipilot";
+crewman_classname = "BWA3_Crew_Fleck";
+A3W_BoxWps = "B_CargoNet_01_ammo_F";
 
 units_loadout_overide = [];
 
 // [className, MANPOWER, ammo, fuel, rank]
 infantry_units = [
-	["BWA3_Medic_Fleck", 0, ai_value, 0, MSU_Rank_Private]
+	["BWA3_Medic_Fleck", 0, ai_value, 0, MSU_Rank_Sergeant]
 ];
 
 small_infantry_transport_unarmed = [
@@ -668,7 +668,7 @@ support_crates = [
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Category_Logistics],
 	["Land_IntravenStand_01_empty_F", 0, 0, 0, MSU_Rank_Private],
 	["Box_IED_exp_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_RepairDepot_01_green_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_RepairDepot_01_green_F", 0, 0, 0, MSU_Rank_Sergeant],
 	["US_WarfareBVehicleServicePoint_Base_EP1", 0, 0, 0, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Category_MaintenanceSmall],
 	["B_CargoNet_01_ammo_F", 0, 0, 0, MSU_Rank_Private],
@@ -707,7 +707,7 @@ support_crates = [
 	["BWA3_WLP14_Flatbed_Winter", 0, 0, 0, MSU_Rank_Private],
 	["BWA3_TCK9_fuel_Winter", 0, 0, 0, MSU_Rank_Private],
 	["BWA3_WLP14_Repair_Winter", 0, 0, 0, MSU_Rank_Private],
-	["B_supplyCrate_F", 0, 2000, 0, MSU_Rank_Private],
+	["B_supplyCrate_F", 0, 0, 0, MSU_Rank_Sergeant],
 	// FOB
 	[FOB_box_typename, 0, 0, 0, 9999],
 	[FOB_truck_typename, 0, 0, 0, 9999]

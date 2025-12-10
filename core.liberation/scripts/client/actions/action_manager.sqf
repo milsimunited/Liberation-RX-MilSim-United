@@ -389,7 +389,7 @@ while { true } do {
 
 		// Destroy Outpost
 		_idact_destroyfob = _id_actions select 28;
-		if ((_fobdistance < _distarsenal && (player distance2D lhd) >= 200) && (_near_outpost) && ( (score player >= MSU_Rank_Corporal) || (player == ( [] call F_getCommander ) || [] call is_admin) )) then {
+		if ((_fobdistance < _distarsenal && (player distance2D lhd) >= 200) && (_near_outpost) && ( (score player >= MSU_Rank_Sergeant) || (player == ( [] call F_getCommander ) || [] call is_admin) )) then {
 			if ( _idact_destroyfob == -1 ) then {
 				_idact = player addAction ["<t color='#FF6F00'>" + localize "STR_DESTROY_OUTPOST" + "</t> <img size='1' image='res\ui_deployfob.paa'/>","scripts\client\actions\do_destroy_fob.sqf",([] call F_getNearestFob),-981,false,true,"","build_confirmed == 0 && !(cursorObject getVariable ['fob_in_use', false])"];
 				_id_actions set [28, _idact];

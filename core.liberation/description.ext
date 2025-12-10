@@ -107,7 +107,7 @@ class cfgSounds {
 class Header {
 	gameType = "CTI";
 	minPlayers = 1;
-	maxPlayers = 64;
+	maxPlayers = 24;
 };
 
 class CfgDebriefing {

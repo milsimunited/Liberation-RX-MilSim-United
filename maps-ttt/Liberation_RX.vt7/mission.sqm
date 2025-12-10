@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=470;
+		nextID=474;
 	};
 	class Camera
 	{
-		pos[]={7888.9849,21.601923,323.35083};
-		dir[]={-0.81159556,-0.57968259,-0.072823249};
-		up[]={-0.57737035,0.81483644,-0.051805716};
-		aside[]={-0.089368485,-8.2538463e-08,0.99600875};
+		pos[]={7893.1255,18.899857,290.02975};
+		dir[]={0.79682434,-0.25636619,-0.54712647};
+		up[]={0.21134193,0.96657974,-0.1451145};
+		aside[]={-0.56604385,7.4505806e-09,-0.82437515};
 	};
 };
 binarizationWanted=0;
@@ -36,6 +36,7 @@ addons[]=
 	"CUP_Weapons_Ammunition",
 	"CUP_Weapons_Phantom",
 	"A3_Weapons_F",
+	"A3_Drones_F_Weapons_F_Gamma_Items",
 	"CUP_Creatures_Military_USArmy",
 	"ace_compat_cup_units",
 	"CUP_Creatures_Extra_OpsCore",
@@ -48,10 +49,16 @@ addons[]=
 	"ace_captives",
 	"acre_sys_prc148",
 	"ace_nightvision",
+	"itc_land_veh_uav01",
 	"CUP_Weapons_PK",
 	"ace_tracers",
 	"CUP_Weapons_MAAWS",
 	"ace_compat_cup_weapons",
+	"ace_explosives",
+	"A3_Weapons_F_Explosives",
+	"A3_Weapons_F_Orange",
+	"ace_arsenal",
+	"A3_Weapons_F_Items",
 	"A3_Modules_F",
 	"grad_trenches_assets",
 	"grad_trenches_functions",
@@ -72,7 +79,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=34;
+		items=39;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -109,175 +116,208 @@ class AddonsMetaData
 		};
 		class Item6
 		{
+			className="A3_Drones_F";
+			name="Arma 3 Beta - Drones";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
 			className="CUP_Creatures_Military_USArmy";
 			name="CUP_Creatures_Military_USArmy";
 		};
-		class Item7
+		class Item8
 		{
 			className="ace_compat_cup_units";
 			name="ACE3 - CUP Units Compatibility";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item8
+		class Item9
 		{
 			className="CUP_Creatures_Extra";
 			name="CUP_Creatures_Extra_OpsCore";
 		};
-		class Item9
+		class Item10
 		{
 			className="ttt_uniforms";
 			name="TTT - Uniforms";
 			author="Tactical Training Team";
 			url="https://tacticalteam.de";
 		};
-		class Item10
+		class Item11
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item11
+		class Item12
 		{
 			className="cfp_vests";
 			name="cfp_vests";
 			author="CFP Team";
 		};
-		class Item12
+		class Item13
 		{
 			className="ace_chemlights";
 			name="ACE3 - Chemlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item13
+		class Item14
 		{
 			className="cTab";
 			name="cTab";
 		};
-		class Item14
+		class Item15
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item15
+		class Item16
 		{
 			className="acre_sys_prc148";
 			name="ACRE2 - AN/PRC-148";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item16
+		class Item17
 		{
 			className="ace_nightvision";
 			name="ACE3 - Night Vision";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item17
+		class Item18
+		{
+			className="itc_land_veh_uav01";
+			name="itc_land_veh_uav01";
+		};
+		class Item19
 		{
 			className="CUP_Weapons_PK";
 			name="CUP_Weapons_PK";
 		};
-		class Item18
+		class Item20
 		{
 			className="ace_tracers";
 			name="ACE3 - Tracers";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item19
+		class Item21
 		{
 			className="CUP_Weapons_MAAWS";
 			name="CUP_Weapons_MAAWS";
 		};
-		class Item20
+		class Item22
 		{
 			className="ace_compat_cup_weapons";
 			name="ACE3 - CUP Weapons Compatibility";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item21
+		class Item23
+		{
+			className="ace_explosives";
+			name="ACE3 - Explosives";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item24
+		{
+			className="A3_Weapons_F_Orange";
+			name="Arma 3 Orange - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item25
+		{
+			className="ace_arsenal";
+			name="ACE3 - Arsenal";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item26
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item27
 		{
 			className="grad_trenches_assets";
 			name="grad_trenches_assets";
 		};
-		class Item23
+		class Item28
 		{
 			className="grad_trenches_functions";
 			name="grad_trenches_functions";
 		};
-		class Item24
+		class Item29
 		{
 			className="CUP_WarfareBuildings";
 			name="CUP_WarfareBuildings";
 		};
-		class Item25
+		class Item30
 		{
 			className="CUP_StandaloneTerrains_Core_Faction";
 			name="CUP_StandaloneTerrains_Core_Faction";
 		};
-		class Item26
+		class Item31
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item32
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item33
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item34
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item35
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item31
+		class Item36
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item32
+		class Item37
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item33
+		class Item38
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
@@ -303,7 +343,7 @@ class ScenarioData
 	{
 		gameType="CTI";
 		minPlayers=1;
-		maxPlayers=28;
+		maxPlayers=24;
 	};
 	wreckRemovalMaxTime=3600;
 };
@@ -564,9 +604,24 @@ class Mission
 											};
 										};
 									};
+									class backpack
+									{
+										typeName="B_AssaultPack_rgr";
+										isBackpack=1;
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="ITC_Land_B_AR2i_Packed";
+												count=1;
+											};
+										};
+									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
+									gps="B_UavTerminal";
 									goggles="CUP_G_Tan_Scarf_Shades";
 									headgear="CUP_H_OpsCore_Spray_SF";
 								};
@@ -2085,7 +2140,7 @@ class Mission
 							{
 								rank="COLONEL";
 								init="call{this setSpeaker ""NoVoice""; " \n "this setUnitTrait [""Medic"",true]; " \n "this setUnitTrait [""Engineer"",true]; " \n "this setUnitTrait [""explosiveSpecialist"",true]; " \n "this setVariable [""ACE_medical_medicClass"", 2]; " \n "this setVariable [""ACE_isEngineer"", 2];" \n "this setVariable [""ACE_isEOD"", 1];}";
-								description="Schütze";
+								description="Pionier";
 								isPlayable=1;
 								class Inventory
 								{
@@ -2187,7 +2242,7 @@ class Mission
 										};
 										class ItemCargo
 										{
-											items=4;
+											items=5;
 											class Item0
 											{
 												name="ItemAndroid";
@@ -2206,6 +2261,45 @@ class Mission
 											class Item3
 											{
 												name="ACE_NVG_Wide_Black_WP";
+												count=1;
+											};
+											class Item4
+											{
+												name="ACE_M26_Clacker";
+												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_Kitbag_rgr";
+										isBackpack=1;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="DemoCharge_Remote_Mag";
+												count=6;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="MineDetector";
+												count=1;
+											};
+											class Item1
+											{
+												name="ToolKit";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_M26_Clacker";
 												count=1;
 											};
 										};
@@ -2547,9 +2641,24 @@ class Mission
 											};
 										};
 									};
+									class backpack
+									{
+										typeName="B_AssaultPack_rgr";
+										isBackpack=1;
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="ITC_Land_B_AR2i_Packed";
+												count=1;
+											};
+										};
+									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
+									gps="B_UavTerminal";
 									goggles="CUP_G_Tan_Scarf_Shades";
 									headgear="CUP_H_OpsCore_Spray_SF";
 								};
@@ -4068,7 +4177,7 @@ class Mission
 							{
 								rank="COLONEL";
 								init="call{this setSpeaker ""NoVoice""; " \n "this setUnitTrait [""Medic"",true]; " \n "this setUnitTrait [""Engineer"",true]; " \n "this setUnitTrait [""explosiveSpecialist"",true]; " \n "this setVariable [""ACE_medical_medicClass"", 2]; " \n "this setVariable [""ACE_isEngineer"", 2];" \n "this setVariable [""ACE_isEOD"", 1];}";
-								description="Schütze";
+								description="Pionier";
 								isPlayable=1;
 								class Inventory
 								{
@@ -4170,7 +4279,7 @@ class Mission
 										};
 										class ItemCargo
 										{
-											items=4;
+											items=5;
 											class Item0
 											{
 												name="ItemAndroid";
@@ -4189,6 +4298,45 @@ class Mission
 											class Item3
 											{
 												name="ACE_NVG_Wide_Black_WP";
+												count=1;
+											};
+											class Item4
+											{
+												name="ACE_M26_Clacker";
+												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_Kitbag_rgr";
+										isBackpack=1;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="DemoCharge_Remote_Mag";
+												count=6;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="MineDetector";
+												count=1;
+											};
+											class Item1
+											{
+												name="ToolKit";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_M26_Clacker";
 												count=1;
 											};
 										};
@@ -4529,9 +4677,24 @@ class Mission
 											};
 										};
 									};
+									class backpack
+									{
+										typeName="B_AssaultPack_rgr";
+										isBackpack=1;
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="ITC_Land_B_AR2i_Packed";
+												count=1;
+											};
+										};
+									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
+									gps="B_UavTerminal";
 									goggles="CUP_G_Tan_Scarf_Shades";
 									headgear="CUP_H_OpsCore_Spray_SF";
 								};
@@ -6050,7 +6213,7 @@ class Mission
 							{
 								rank="COLONEL";
 								init="call{this setSpeaker ""NoVoice""; " \n "this setUnitTrait [""Medic"",true]; " \n "this setUnitTrait [""Engineer"",true]; " \n "this setUnitTrait [""explosiveSpecialist"",true]; " \n "this setVariable [""ACE_medical_medicClass"", 2]; " \n "this setVariable [""ACE_isEngineer"", 2];" \n "this setVariable [""ACE_isEOD"", 1];}";
-								description="Schütze";
+								description="Pionier";
 								isPlayable=1;
 								class Inventory
 								{
@@ -6152,7 +6315,7 @@ class Mission
 										};
 										class ItemCargo
 										{
-											items=4;
+											items=5;
 											class Item0
 											{
 												name="ItemAndroid";
@@ -6171,6 +6334,45 @@ class Mission
 											class Item3
 											{
 												name="ACE_NVG_Wide_Black_WP";
+												count=1;
+											};
+											class Item4
+											{
+												name="ACE_M26_Clacker";
+												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_Kitbag_rgr";
+										isBackpack=1;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="DemoCharge_Remote_Mag";
+												count=6;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="MineDetector";
+												count=1;
+											};
+											class Item1
+											{
+												name="ToolKit";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_M26_Clacker";
 												count=1;
 											};
 										};
@@ -7163,9 +7365,24 @@ class Mission
 											};
 										};
 									};
+									class backpack
+									{
+										typeName="B_AssaultPack_rgr";
+										isBackpack=1;
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="ITC_Land_B_AR2i_Packed";
+												count=1;
+											};
+										};
+									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
+									gps="B_UavTerminal";
 									goggles="CUP_G_Tan_Scarf_Shades";
 									headgear="CUP_H_OpsCore_Spray_SF";
 								};
@@ -8686,7 +8903,7 @@ class Mission
 							{
 								rank="COLONEL";
 								init="call{this setSpeaker ""NoVoice""; " \n "this setUnitTrait [""Medic"",true]; " \n "this setUnitTrait [""Engineer"",true]; " \n "this setUnitTrait [""explosiveSpecialist"",true]; " \n "this setVariable [""ACE_medical_medicClass"", 2]; " \n "this setVariable [""ACE_isEngineer"", 2];" \n "this setVariable [""ACE_isEOD"", 1];}";
-								description="Schütze";
+								description="Pionier";
 								isPlayable=1;
 								class Inventory
 								{
@@ -8788,7 +9005,7 @@ class Mission
 										};
 										class ItemCargo
 										{
-											items=4;
+											items=5;
 											class Item0
 											{
 												name="ItemAndroid";
@@ -8807,6 +9024,45 @@ class Mission
 											class Item3
 											{
 												name="ACE_NVG_Wide_Black_WP";
+												count=1;
+											};
+											class Item4
+											{
+												name="ACE_M26_Clacker";
+												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_Kitbag_rgr";
+										isBackpack=1;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="DemoCharge_Remote_Mag";
+												count=6;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="MineDetector";
+												count=1;
+											};
+											class Item1
+											{
+												name="ToolKit";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_M26_Clacker";
 												count=1;
 											};
 										};

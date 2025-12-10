@@ -5,14 +5,14 @@ GRLIB_side_civilian = civilian;
 GRLIB_respawn_marker = "respawn_west";
 // It's possible to set this map dependent values via a gamelogic object - See end of file for more info
 // Works for: GRLIB_sector_size, GRLIB_capture_size and GRLIB_radiotower_size
-GRLIB_sector_size = 600;
-GRLIB_capture_size = 100;
+GRLIB_sector_size = 500;
+GRLIB_capture_size = 200;
 GRLIB_radiotower_size = 3000;
 GRLIB_spawn_min = 800;
 GRLIB_spawn_max = 1600;
 GRLIB_recycling_percentage = 1.00;
 GRLIB_endgame = 0;
-GRLIB_vulnerability_timer = 1000;
+GRLIB_vulnerability_timer = 600;
 GRLIB_defended_buildingPos_part = 0.0;
 GRLIB_sector_military_value = 2;
 GRLIB_secondary_objective_impact = 0.4;
@@ -72,7 +72,7 @@ msu_score_min = -100;
 msu_score_max = 1200;
 msu_ammo_min = 0;
 msu_ammo_max = 999999;
-MSU_DisableFobFiring = true;
+MSU_DisableFobFiring = false;
 
 // tkill_script in init.sqf
 // pylon_restrictions in init.sqf
@@ -172,7 +172,7 @@ force_datalink = true;
 force_sensorTarget_opfor = false;
 
 //Enemy IEDs
-ied_enemy_sector = ["ACE_IEDLandBig_Range", "APERSMine", "APERSBoundingMine", "IEDUrbanBig_F", "APERSTripMine"];
+ied_enemy_sector = ["ACE_IEDLandBig_Range", "IEDUrbanBig_F"];
 
 
 
