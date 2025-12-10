@@ -94,6 +94,11 @@ addMissionEventHandler ['EntityKilled', {
 			_unit setVariable ["GREUH_ammo_count", ((_unit getVariable ["GREUH_ammo_count", 25]) - 25), true];
 		};
 	}];
+
+	// hs_spawn min dist
+	if ( (combat_readiness < bg_readiness_min) || ((_spawn_position distance2D ([] call F_getNearestFob) < GRLIB_sector_size*2)) || (_spawn_position distance2D lhd < GRLIB_sector_size*2) || (_spawn_position distance2D myLARsBox < GRLIB_sector_size*2) || (_spawn_position isEqualTo [0,0]) ) then {
+		_too_close = true;
+	};
 */
 
 
@@ -105,49 +110,38 @@ hs_spawn = compileFinal "
 		_headlessClients = entities 'HeadlessClient_F';
 		_humanPlayers = allPlayers - _headlessClients;
 		_count_players = count _humanPlayers;
+		huber_commando_dist = 300;
+		huber_commando_dist2 = 500;
 		
-		if(_count_players > 9) then {
-			_player = selectRandom _humanPlayers;
+		{
+			_player = _x;
 			_too_close = false;
 			
-			_spawn_position = [ [ [getPos _player, GRLIB_sector_size+GRLIB_capture_size] ], ['water'] ] call BIS_fnc_randomPos;
+			_spawn_position = [ [ [getPos _player, huber_commando_dist2] ], ['water'] ] call BIS_fnc_randomPos;
 
-			if ( (combat_readiness < bg_readiness_min) || ((_spawn_position distance2D ([] call F_getNearestFob) < GRLIB_sector_size*2)) || (_spawn_position distance2D lhd < GRLIB_sector_size*2) || (_spawn_position distance2D myLARsBox < GRLIB_sector_size*2) || (_spawn_position isEqualTo [0,0]) ) then {
+			if ( (_spawn_position distance _player < huber_commando_dist) || ((_spawn_position distance2D ([] call F_getNearestFob) < huber_commando_dist2)) || (_spawn_position distance2D lhd < huber_commando_dist2) || (_spawn_position isEqualTo [0,0]) ) then {
 				_too_close = true;
 			};
 			
 			if (_too_close == false) then {
-				{
-					if (_spawn_position distance _x < GRLIB_sector_size) then {
-						_too_close = true;
-					};
-				} forEach allPlayers;
-			};
-			
-			if (_too_close == false) then {
 				_group_spawn = createGroup opfor;
+				_spawn_opfor = selectRandom militia_squad;
 				
-				opfor_machinegunner createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
-				opfor_sharpshooter createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
-				opfor_grenadier createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
-				opfor_rifleman createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
-				opfor_aa createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
-				opfor_at createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.4, 'private']; sleep 1;
+				_spawn_opfor createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
 
-				_wp1_spawn = _group_spawn addWaypoint [getPosWorld _player, GRLIB_capture_size*3];
+				_wp1_spawn = _group_spawn addWaypoint [getPosWorld _player, huber_commando_dist];
 				_wp1_spawn setwaypointtype 'MOVE';
 				_wp1_spawn setWaypointBehaviour 'AWARE';
 				_wp1_spawn setWaypointSpeed 'FULL';
 
-				_wp2_spawn = _group_spawn addWaypoint [getPos _player, GRLIB_capture_size*3];
+				_wp2_spawn = _group_spawn addWaypoint [getPos _player, huber_commando_dist];
 
-				_wp3_spawn = _group_spawn addWaypoint [getPos _player, GRLIB_capture_size*2];
+				_wp3_spawn = _group_spawn addWaypoint [getPos _player, huber_commando_dist];
 
-				_wp4_spawn = _group_spawn addWaypoint [getpos _player, GRLIB_capture_size*4];
+				_wp4_spawn = _group_spawn addWaypoint [getpos _player, huber_commando_dist];
 				_wp4_spawn setWaypointStatements ['true', '{deleteVehicle _x} forEach thisList;'];
 			};
-		};
-		
+		} forEach allPlayers;
 	};
 
 ";
@@ -160,7 +154,7 @@ hs_spawn = compileFinal "
 
 while { true } do {
 	sleep msu_heartbeat;
-	_hs_time = systemTime;
+	/*_hs_time = systemTime;
 
 	if (((_hs_time select 3) == 5) && ((_hs_time select 4) < 30)) then {
 		_msg = format['Server restart and maintenance at 05:30. Recycle your vehicles in time! Server-Neustart und Wartung um 05:30. Fahrzeuge rechtzeitig recyceln!'];
@@ -169,7 +163,7 @@ while { true } do {
 	if (((_hs_time select 3) == 15) && ((_hs_time select 4) >= 30)) then {
 		_msg = format['Server restart at the next full hour. Recycle your vehicles in time! Server-Neustart zur nächsten vollen Stunde. Fahrzeuge rechtzeitig recyceln!'];
 		[gamelogic, _msg] remoteExec ["globalChat", 0];
-	};
+	};*/
 
 	[] spawn hs_spawn;
 };

@@ -29,6 +29,7 @@ active_sectors pushback _sector; publicVariable "active_sectors";
 
 diag_log format ["Spawn Defend Sector %1 at %2", _sector, time];
 private _opforcount = [] call F_opforCap;
+private _bluforcount = GRLIB_side_friendly countSide allUnits;
 sleep 10;
 
 if ( (!(_sector in blufor_sectors)) &&  ( ( [ getmarkerpos _sector , [ _opforcount ] call F_getCorrectedSectorRange , GRLIB_side_friendly ] call F_getUnitsCount ) > 0 ) ) then {
@@ -98,20 +99,35 @@ if ( (!(_sector in blufor_sectors)) &&  ( ( [ getmarkerpos _sector , [ _opforcou
 		if ( _iedcount > 5 ) then { _iedcount = 5 };
 	};
 
+
 	if ( _sector in sectors_tower ) then {
-		_spawncivs = false;
 		_squad1 = ([] call F_getAdaptiveSquadComp);
-		_squad2 = ([] call F_getAdaptiveSquadComp);
-		_squad3 = ([] call F_getAdaptiveSquadComp);
+		_vehtospawn pushback ( [] call F_getAdaptiveVehicle );
+
+		if(_bluforcount > 6) then {
+			_squad2 = ([] call F_getAdaptiveSquadComp);
+			_vehtospawn pushback ( [] call F_getAdaptiveVehicle );
+		};
+
+		if(_bluforcount > 12) then {
+			_squad3 = ([] call F_getAdaptiveSquadComp);
+			_vehtospawn pushback ( [] call F_getAdaptiveVehicle );
+		};
+
+		if(_bluforcount > 18) then {
+			_squad3 = ([] call F_getAdaptiveSquadComp);
+			_vehtospawn pushback ( [] call F_getAdaptiveVehicle );
+		};
 		
 		_building_ai_max = 0;
-		_vehtospawn = [( [] call F_getAdaptiveVehicle ),( [] call F_getAdaptiveVehicle )];
-		if(floor(random 100) > (33 / GRLIB_difficulty_modifier)) then { _vehtospawn pushback ( [] call F_getAdaptiveVehicle ); };
+
 		_spawncivs = true;
+
 		[markerPos _sector, 50] call createlandmines;
 		_iedcount = (floor (random 3)) * GRLIB_difficulty_modifier;
 		if ( _iedcount > 5 ) then { _iedcount = 5 };
 	};
+
 
 	if ( _building_ai_max > 0 && GRLIB_adaptive_opfor ) then {
 		_building_ai_max = round ( _building_ai_max * ([] call F_adaptiveOpforFactor));

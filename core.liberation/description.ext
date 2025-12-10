@@ -3,8 +3,8 @@ onLoadName = $STR_MISSION_TITLE;
 briefingName = $STR_MISSION_TITLE;
 onLoadMission = $STR_MISSION_DESCRIPTION;
 overviewText = $STR_MISSION_DESCRIPTION;
-overviewPicture = "res\ttt_logo.paa";
-loadScreen = "res\ttt_logo.paa";
+overviewPicture = "res\liberation.paa";
+loadScreen = "res\liberation.paa";
 onLoadIntro = "tacticalteam.de";
 
 respawn = 3;

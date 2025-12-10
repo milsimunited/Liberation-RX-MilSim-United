@@ -5,8 +5,8 @@ GRLIB_side_civilian = civilian;
 GRLIB_respawn_marker = "respawn_west";
 // It's possible to set this map dependent values via a gamelogic object - See end of file for more info
 // Works for: GRLIB_sector_size, GRLIB_capture_size and GRLIB_radiotower_size
-GRLIB_sector_size = 800;
-GRLIB_capture_size = 200;
+GRLIB_sector_size = 600;
+GRLIB_capture_size = 100;
 GRLIB_radiotower_size = 3000;
 GRLIB_spawn_min = 800;
 GRLIB_spawn_max = 1600;
@@ -23,7 +23,7 @@ GRLIB_patrol_cap = 55 * GRLIB_unitcap;
 GRLIB_blufor_cap = 10 * GRLIB_unitcap;
 GRLIB_battlegroup_size = 5;
 GRLIB_civilians_amount = 1.1 * GRLIB_civilian_activity;
-GRLIB_fob_range = 200;
+GRLIB_fob_range = 300;
 GRLIB_surrender_chance = 69;
 GRLIB_secondary_missions_costs = [ 30,3 ];
 GRLIB_halo_altitude = 2000;
