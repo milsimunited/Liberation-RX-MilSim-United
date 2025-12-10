@@ -34,7 +34,7 @@ while { true } do {
 	if ([] call is_menuok) then {
 		_fobdistance = round (player distance2D ([] call F_getNearestFob));
 		_near_outpost = (count (player nearObjects [FOB_outpost, _distfob]) > 0);
-		_near_arsenal = [player, "ARSENAL", _distarsenal, true] call F_check_near;
+		_near_arsenal = [player, "ARSENAL", _distarsenal, false] call F_check_near;
 		_near_spawn = ([player, "SPAWNT", _distvehclose, true] call F_check_near || [player, "SPAWNV", _distvehclose, true] call F_check_near);		
 		_near_fobbox = player nearEntities [[FOB_box_typename, FOB_truck_typename, FOB_box_outpost], _distvehclose];
 		
@@ -223,8 +223,9 @@ while { true } do {
 		};
 
 		// Arsenal
+		// (_near_arsenal || (player distance2D lhd) <= 200) && (score player >= GRLIB_perm_inf) 
 		_idact_arsenal = _id_actions select 16;
-		if (GRLIB_enable_arsenal && (_near_arsenal || (player distance2D lhd) <= 200) ) then { // && (score player >= GRLIB_perm_inf) 
+		if (GRLIB_enable_arsenal && _near_arsenal) then { 
 			if (_idact_arsenal == -1) then {
 				_idact = player addAction ["<t color='#FFFF00'>" + localize "STR_ARSENAL_ACTION" + "</t> <img size='1' image='res\ui_arsenal.paa'/>","scripts\client\actions\open_arsenal.sqf","",-500,true,true,"","build_confirmed == 0"];
 				_id_actions set [16, _idact];
@@ -279,7 +280,7 @@ while { true } do {
 		};
 
 		// Secondary Objectives
-		_idact_secondary = _id_actions select 21;
+		/*_idact_secondary = _id_actions select 21;
 		if (count GRLIB_all_fobs > 0 && ( GRLIB_endgame == 0 ) && (_fobdistance < _distredeploy || (player distance2D lhd) <= 200) ) then { //  && (!_near_outpost) && (score player >= GRLIB_perm_air ||  player == ( [] call F_getCommander ) || [] call is_admin)
 			if ( _idact_secondary == -1 ) then {
 				_idact = player addAction ["<t color='#FFFF00'>" + localize "STR_SECONDARY_OBJECTIVES" + "</t>","scripts\client\ui\secondary_ui.sqf","",-995,false,true,"","build_confirmed == 0"];
@@ -290,7 +291,7 @@ while { true } do {
 				player removeAction _idact_secondary;
 				_id_actions set [21, -1];
 			};
-		};
+		};*/
 
 		// Pack FOB
 		_idact_packfob = _id_actions select 22;

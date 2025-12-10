@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=3061;
+		nextID=3062;
 	};
 	class LayerIndexProvider
 	{
-		nextID=458;
+		nextID=470;
 	};
 	class Camera
 	{
-		pos[]={7878.5376,4.9161854,325.98572};
-		dir[]={0.92057055,-0.061521236,-0.38570097};
-		up[]={0.056742121,0.99810576,-0.023773834};
-		aside[]={-0.38643298,0,-0.92231762};
+		pos[]={7888.9849,21.601923,323.35083};
+		dir[]={-0.81159556,-0.57968259,-0.072823249};
+		up[]={-0.57737035,0.81483644,-0.051805716};
+		aside[]={-0.089368485,-8.2538463e-08,0.99600875};
 	};
 };
 binarizationWanted=0;
@@ -50,6 +50,8 @@ addons[]=
 	"ace_nightvision",
 	"CUP_Weapons_PK",
 	"ace_tracers",
+	"CUP_Weapons_MAAWS",
+	"ace_compat_cup_weapons",
 	"A3_Modules_F",
 	"grad_trenches_assets",
 	"grad_trenches_functions",
@@ -70,7 +72,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=32;
+		items=34;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -189,81 +191,93 @@ class AddonsMetaData
 		};
 		class Item19
 		{
+			className="CUP_Weapons_MAAWS";
+			name="CUP_Weapons_MAAWS";
+		};
+		class Item20
+		{
+			className="ace_compat_cup_weapons";
+			name="ACE3 - CUP Weapons Compatibility";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item21
+		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item20
+		class Item22
 		{
 			className="grad_trenches_assets";
 			name="grad_trenches_assets";
 		};
-		class Item21
+		class Item23
 		{
 			className="grad_trenches_functions";
 			name="grad_trenches_functions";
 		};
-		class Item22
+		class Item24
 		{
 			className="CUP_WarfareBuildings";
 			name="CUP_WarfareBuildings";
 		};
-		class Item23
+		class Item25
 		{
 			className="CUP_StandaloneTerrains_Core_Faction";
 			name="CUP_StandaloneTerrains_Core_Faction";
 		};
-		class Item24
+		class Item26
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item25
+		class Item27
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item26
+		class Item28
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item29
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item30
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item31
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item30
+		class Item32
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item31
+		class Item33
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
@@ -275,7 +289,8 @@ class AddonsMetaData
 dlcs[]=
 {
 	"CUP_Weapons",
-	"CUP_Units"
+	"CUP_Units",
+	"CommunityUpgradeProject"
 };
 randomSeed=2580761;
 class ScenarioData
@@ -402,7 +417,7 @@ class Mission
 			name="lib_basics";
 			class Entities
 			{
-				items=27;
+				items=26;
 				class Item0
 				{
 					dataType="Group";
@@ -415,8 +430,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7864.125,1.2109604,315.17499};
-								angles[]={0,1.9226547,6.1879115};
+								position[]={7864.125,1.2109603,315.17499};
+								angles[]={0,1.9226547,6.1879077};
 							};
 							side="West";
 							flags=6;
@@ -424,7 +439,7 @@ class Mission
 							{
 								rank="COLONEL";
 								init="call{this setSpeaker ""NoVoice""; " \n "this setUnitTrait [""Medic"",true]; " \n "this setUnitTrait [""Engineer"",true]; " \n "this setUnitTrait [""explosiveSpecialist"",true]; " \n "this setVariable [""ACE_medical_medicClass"", 2]; " \n "this setVariable [""ACE_isEngineer"", 2];" \n "this setVariable [""ACE_isEOD"", 1];}";
-								description="Führung@Infanterie 1";
+								description="Führung@Gruppe 1";
 								isPlayable=1;
 								class Inventory
 								{
@@ -558,6 +573,7 @@ class Mission
 							};
 							id=2791;
 							type="B_Soldier_F";
+							atlOffset=-1.1920929e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -1739,7 +1755,7 @@ class Mission
 							{
 								rank="COLONEL";
 								init="call{this setSpeaker ""NoVoice""; " \n "this setUnitTrait [""Medic"",true]; " \n "this setUnitTrait [""Engineer"",true]; " \n "this setUnitTrait [""explosiveSpecialist"",true]; " \n "this setVariable [""ACE_medical_medicClass"", 2]; " \n "this setVariable [""ACE_isEngineer"", 2];" \n "this setVariable [""ACE_isEOD"", 1];}";
-								description="Schütze";
+								description="AT";
 								isPlayable=1;
 								class Inventory
 								{
@@ -1752,6 +1768,16 @@ class Mission
 										{
 											name="CUP_30Rnd_545x39_AK74M_camo_M";
 											ammoLeft=30;
+										};
+									};
+									class secondaryWeapon
+									{
+										name="CUP_launch_MAAWS";
+										optics="CUP_optic_MAAWS_Scope";
+										class primaryMuzzleMag
+										{
+											name="CUP_MAAWS_HEAT_M";
+											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -1861,6 +1887,21 @@ class Mission
 											{
 												name="ACE_NVG_Wide_Black_WP";
 												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_AssaultPack_rgr";
+										isBackpack=1;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="CUP_MAAWS_HEAT_M";
+												count=2;
+												ammoLeft=1;
 											};
 										};
 									};
@@ -2341,6 +2382,7 @@ class Mission
 					{
 					};
 					id=2790;
+					atlOffset=-1.1920929e-07;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2352,7 +2394,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="Infanterie 1";
+									value="Gruppe 1";
 								};
 							};
 						};
@@ -2372,7 +2414,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={7865.125,1.157988,318.04999};
-								angles[]={6.2558889,1.9226547,6.187912};
+								angles[]={6.2558885,1.9226547,6.1879077};
 							};
 							side="West";
 							flags=6;
@@ -2380,7 +2422,7 @@ class Mission
 							{
 								rank="COLONEL";
 								init="call{this setSpeaker ""NoVoice""; " \n "this setUnitTrait [""Medic"",true]; " \n "this setUnitTrait [""Engineer"",true]; " \n "this setUnitTrait [""explosiveSpecialist"",true]; " \n "this setVariable [""ACE_medical_medicClass"", 2]; " \n "this setVariable [""ACE_isEngineer"", 2];" \n "this setVariable [""ACE_isEOD"", 1];}";
-								description="Führung@Infanterie 2";
+								description="Führung@Gruppe 2";
 								isPlayable=1;
 								class Inventory
 								{
@@ -3695,7 +3737,7 @@ class Mission
 							{
 								rank="COLONEL";
 								init="call{this setSpeaker ""NoVoice""; " \n "this setUnitTrait [""Medic"",true]; " \n "this setUnitTrait [""Engineer"",true]; " \n "this setUnitTrait [""explosiveSpecialist"",true]; " \n "this setVariable [""ACE_medical_medicClass"", 2]; " \n "this setVariable [""ACE_isEngineer"", 2];" \n "this setVariable [""ACE_isEOD"", 1];}";
-								description="Schütze";
+								description="AT";
 								isPlayable=1;
 								class Inventory
 								{
@@ -3708,6 +3750,16 @@ class Mission
 										{
 											name="CUP_30Rnd_545x39_AK74M_camo_M";
 											ammoLeft=30;
+										};
+									};
+									class secondaryWeapon
+									{
+										name="CUP_launch_MAAWS";
+										optics="CUP_optic_MAAWS_Scope";
+										class primaryMuzzleMag
+										{
+											name="CUP_MAAWS_HEAT_M";
+											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -3817,6 +3869,21 @@ class Mission
 											{
 												name="ACE_NVG_Wide_Black_WP";
 												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_AssaultPack_rgr";
+										isBackpack=1;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="CUP_MAAWS_HEAT_M";
+												count=2;
+												ammoLeft=1;
 											};
 										};
 									};
@@ -4309,7 +4376,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="Infanterie 2";
+									value="Gruppe 2";
 								};
 							};
 						};
@@ -4329,7 +4396,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={7866.25,1.0882564,320.92499};
-								angles[]={6.2513428,1.9226547,6.1766505};
+								angles[]={6.2513504,1.9226547,6.1766505};
 							};
 							side="West";
 							flags=6;
@@ -4337,7 +4404,7 @@ class Mission
 							{
 								rank="COLONEL";
 								init="call{this setSpeaker ""NoVoice""; " \n "this setUnitTrait [""Medic"",true]; " \n "this setUnitTrait [""Engineer"",true]; " \n "this setUnitTrait [""explosiveSpecialist"",true]; " \n "this setVariable [""ACE_medical_medicClass"", 2]; " \n "this setVariable [""ACE_isEngineer"", 2];" \n "this setVariable [""ACE_isEOD"", 1];}";
-								description="Führung@Infanterie 3";
+								description="Führung@Gruppe 3";
 								isPlayable=1;
 								class Inventory
 								{
@@ -5652,7 +5719,7 @@ class Mission
 							{
 								rank="COLONEL";
 								init="call{this setSpeaker ""NoVoice""; " \n "this setUnitTrait [""Medic"",true]; " \n "this setUnitTrait [""Engineer"",true]; " \n "this setUnitTrait [""explosiveSpecialist"",true]; " \n "this setVariable [""ACE_medical_medicClass"", 2]; " \n "this setVariable [""ACE_isEngineer"", 2];" \n "this setVariable [""ACE_isEOD"", 1];}";
-								description="Schütze";
+								description="AT";
 								isPlayable=1;
 								class Inventory
 								{
@@ -5665,6 +5732,16 @@ class Mission
 										{
 											name="CUP_30Rnd_545x39_AK74M_camo_M";
 											ammoLeft=30;
+										};
+									};
+									class secondaryWeapon
+									{
+										name="CUP_launch_MAAWS";
+										optics="CUP_optic_MAAWS_Scope";
+										class primaryMuzzleMag
+										{
+											name="CUP_MAAWS_HEAT_M";
+											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -5774,6 +5851,21 @@ class Mission
 											{
 												name="ACE_NVG_Wide_Black_WP";
 												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_AssaultPack_rgr";
+										isBackpack=1;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="CUP_MAAWS_HEAT_M";
+												count=2;
+												ammoLeft=1;
 											};
 										};
 									};
@@ -6266,7 +6358,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="Infanterie 3";
+									value="Gruppe 3";
 								};
 							};
 						};
@@ -6937,7 +7029,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7867.75,1.0014389,323.67499};
+								position[]={7867.75,1.0015988,323.67499};
 								angles[]={6.2740922,1.9226547,6.2286263};
 							};
 							side="West";
@@ -6946,7 +7038,7 @@ class Mission
 							{
 								rank="COLONEL";
 								init="call{this setSpeaker ""NoVoice""; " \n "this setUnitTrait [""Medic"",true]; " \n "this setUnitTrait [""Engineer"",true]; " \n "this setUnitTrait [""explosiveSpecialist"",true]; " \n "this setVariable [""ACE_medical_medicClass"", 2]; " \n "this setVariable [""ACE_isEngineer"", 2];" \n "this setVariable [""ACE_isEOD"", 1];}";
-								description="Führung@Infanterie 4";
+								description="Führung@Gruppe 4";
 								isPlayable=1;
 								class Inventory
 								{
@@ -7080,7 +7172,7 @@ class Mission
 							};
 							id=3050;
 							type="B_Soldier_F";
-							atlOffset=0.012840033;
+							atlOffset=0.013000011;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -8263,7 +8355,7 @@ class Mission
 							{
 								rank="COLONEL";
 								init="call{this setSpeaker ""NoVoice""; " \n "this setUnitTrait [""Medic"",true]; " \n "this setUnitTrait [""Engineer"",true]; " \n "this setUnitTrait [""explosiveSpecialist"",true]; " \n "this setVariable [""ACE_medical_medicClass"", 2]; " \n "this setVariable [""ACE_isEngineer"", 2];" \n "this setVariable [""ACE_isEOD"", 1];}";
-								description="Schütze";
+								description="AT";
 								isPlayable=1;
 								class Inventory
 								{
@@ -8276,6 +8368,16 @@ class Mission
 										{
 											name="CUP_30Rnd_545x39_AK74M_camo_M";
 											ammoLeft=30;
+										};
+									};
+									class secondaryWeapon
+									{
+										name="CUP_launch_MAAWS";
+										optics="CUP_optic_MAAWS_Scope";
+										class primaryMuzzleMag
+										{
+											name="CUP_MAAWS_HEAT_M";
+											ammoLeft=1;
 										};
 									};
 									class handgun
@@ -8385,6 +8487,21 @@ class Mission
 											{
 												name="ACE_NVG_Wide_Black_WP";
 												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_AssaultPack_rgr";
+										isBackpack=1;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="CUP_MAAWS_HEAT_M";
+												count=2;
+												ammoLeft=1;
 											};
 										};
 									};
@@ -8866,7 +8983,7 @@ class Mission
 					{
 					};
 					id=3049;
-					atlOffset=0.012840033;
+					atlOffset=0.013000011;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8878,1262 +8995,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="Infanterie 4";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item26
-				{
-					dataType="Group";
-					side="West";
-					class Entities
-					{
-						items=4;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={7868.5,1.0014389,326.42499};
-								angles[]={6.2808952,1.9226547,6.2399812};
-							};
-							side="West";
-							flags=6;
-							class Attributes
-							{
-								rank="COLONEL";
-								init="call{this setSpeaker ""NoVoice""; " \n "this setUnitTrait [""Medic"",true]; " \n "this setUnitTrait [""Engineer"",true]; " \n "this setUnitTrait [""explosiveSpecialist"",true]; " \n "this setVariable [""ACE_medical_medicClass"", 2]; " \n "this setVariable [""ACE_isEngineer"", 2];" \n "this setVariable [""ACE_isEOD"", 1];}";
-								description="Führung@Besatzung";
-								isPlayable=1;
-								class Inventory
-								{
-									class primaryWeapon
-									{
-										name="CUP_arifle_AK74M_top_rail_camo";
-										optics="CUP_optic_HensoldtZO_low";
-										firemode="CUP_arifle_AK74M_top_rail_camo:FullAuto";
-										class primaryMuzzleMag
-										{
-											name="CUP_30Rnd_545x39_AK74M_camo_M";
-											ammoLeft=30;
-										};
-									};
-									class handgun
-									{
-										name="CUP_hgun_Phantom";
-										class primaryMuzzleMag
-										{
-											name="CUP_18Rnd_9x19_Phantom";
-											ammoLeft=18;
-										};
-									};
-									class uniform
-									{
-										typeName="ttt_Uniform_plain_US_Desert";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=1;
-											class Item0
-											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
-											};
-										};
-										class ItemCargo
-										{
-											items=5;
-											class Item0
-											{
-												name="ACE_tourniquet";
-												count=4;
-											};
-											class Item1
-											{
-												name="ACE_splint";
-												count=2;
-											};
-											class Item2
-											{
-												name="ACE_morphine";
-												count=1;
-											};
-											class Item3
-											{
-												name="ACE_epinephrine";
-												count=2;
-											};
-											class Item4
-											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-										};
-									};
-									class vest
-									{
-										typeName="SP_PlateCarrier1_Green";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=4;
-											class Item0
-											{
-												name="CUP_30Rnd_545x39_AK74M_camo_M";
-												count=6;
-												ammoLeft=30;
-											};
-											class Item1
-											{
-												name="HandGrenade";
-												count=1;
-												ammoLeft=1;
-											};
-											class Item2
-											{
-												name="SmokeShell";
-												count=1;
-												ammoLeft=1;
-											};
-											class Item3
-											{
-												name="ACE_Chemlight_IR";
-												count=1;
-												ammoLeft=1;
-											};
-										};
-										class ItemCargo
-										{
-											items=4;
-											class Item0
-											{
-												name="ItemAndroid";
-												count=1;
-											};
-											class Item1
-											{
-												name="ACE_CableTie";
-												count=6;
-											};
-											class Item2
-											{
-												name="ACRE_PRC148";
-												count=2;
-											};
-											class Item3
-											{
-												name="ACE_NVG_Wide_Black_WP";
-												count=1;
-											};
-										};
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ItemWatch";
-									goggles="CUP_G_Tan_Scarf_Shades";
-									headgear="CUP_H_OpsCore_Spray_SF";
-								};
-							};
-							id=3057;
-							type="B_Soldier_F";
-							atlOffset=0.020086467;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="acre_sys_radio_edenSetup";
-									expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=2;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="unitName";
-									expression="_this setname _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="Rifleman";
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="face";
-									expression="_this setface _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="GreekHead_A3_03";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ace_isEOD";
-									expression="_this setVariable ['ACE_isEOD', _value, true]";
-									class Value
-									{
-										class data
-										{
-											singleType="BOOL";
-											value=1;
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=1.04;
-										};
-									};
-								};
-								class Attribute6
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="ACE_NoVoice";
-										};
-									};
-								};
-								class Attribute7
-								{
-									property="ace_isMedic";
-									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=2;
-										};
-									};
-								};
-								class Attribute8
-								{
-									property="iedd_ied_sides";
-									expression="_this setVariable ['iedd_ied_sides',_value];";
-									class Value
-									{
-										class data
-										{
-											singleType="ARRAY";
-											class value
-											{
-												items=4;
-												class Item0
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=0;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=-1;
-													};
-												};
-												class Item2
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=2;
-													};
-												};
-												class Item3
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=3;
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=9;
-							};
-						};
-						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={7864.875,1.3849432,327.92499};
-								angles[]={6.2808952,1.9104549,6.1252403};
-							};
-							side="West";
-							flags=4;
-							class Attributes
-							{
-								rank="COLONEL";
-								init="call{this setSpeaker ""NoVoice""; " \n "this setUnitTrait [""Medic"",true]; " \n "this setUnitTrait [""Engineer"",true]; " \n "this setUnitTrait [""explosiveSpecialist"",true]; " \n "this setVariable [""ACE_medical_medicClass"", 2]; " \n "this setVariable [""ACE_isEngineer"", 2];" \n "this setVariable [""ACE_isEOD"", 1];}";
-								description="Besatzung";
-								isPlayable=1;
-								class Inventory
-								{
-									class primaryWeapon
-									{
-										name="CUP_arifle_AK74M_top_rail_camo";
-										optics="CUP_optic_HensoldtZO_low";
-										firemode="CUP_arifle_AK74M_top_rail_camo:FullAuto";
-										class primaryMuzzleMag
-										{
-											name="CUP_30Rnd_545x39_AK74M_camo_M";
-											ammoLeft=30;
-										};
-									};
-									class handgun
-									{
-										name="CUP_hgun_Phantom";
-										class primaryMuzzleMag
-										{
-											name="CUP_18Rnd_9x19_Phantom";
-											ammoLeft=18;
-										};
-									};
-									class uniform
-									{
-										typeName="ttt_Uniform_plain_US_Desert";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=1;
-											class Item0
-											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
-											};
-										};
-										class ItemCargo
-										{
-											items=5;
-											class Item0
-											{
-												name="ACE_tourniquet";
-												count=4;
-											};
-											class Item1
-											{
-												name="ACE_splint";
-												count=2;
-											};
-											class Item2
-											{
-												name="ACE_morphine";
-												count=1;
-											};
-											class Item3
-											{
-												name="ACE_epinephrine";
-												count=2;
-											};
-											class Item4
-											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-										};
-									};
-									class vest
-									{
-										typeName="SP_PlateCarrier1_Green";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=4;
-											class Item0
-											{
-												name="CUP_30Rnd_545x39_AK74M_camo_M";
-												count=6;
-												ammoLeft=30;
-											};
-											class Item1
-											{
-												name="HandGrenade";
-												count=1;
-												ammoLeft=1;
-											};
-											class Item2
-											{
-												name="SmokeShell";
-												count=1;
-												ammoLeft=1;
-											};
-											class Item3
-											{
-												name="ACE_Chemlight_IR";
-												count=1;
-												ammoLeft=1;
-											};
-										};
-										class ItemCargo
-										{
-											items=4;
-											class Item0
-											{
-												name="ItemAndroid";
-												count=1;
-											};
-											class Item1
-											{
-												name="ACE_CableTie";
-												count=6;
-											};
-											class Item2
-											{
-												name="ACRE_PRC148";
-												count=1;
-											};
-											class Item3
-											{
-												name="ACE_NVG_Wide_Black_WP";
-												count=1;
-											};
-										};
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ItemWatch";
-									goggles="CUP_G_Tan_Scarf_Shades";
-									headgear="CUP_H_OpsCore_Spray_SF";
-								};
-							};
-							id=3058;
-							type="B_Soldier_F";
-							atlOffset=-0.0089249611;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="acre_sys_radio_edenSetup";
-									expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=2;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="unitName";
-									expression="_this setname _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="Rifleman";
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="face";
-									expression="_this setface _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="GreekHead_A3_03";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ace_isEOD";
-									expression="_this setVariable ['ACE_isEOD', _value, true]";
-									class Value
-									{
-										class data
-										{
-											singleType="BOOL";
-											value=1;
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=1.04;
-										};
-									};
-								};
-								class Attribute6
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="ACE_NoVoice";
-										};
-									};
-								};
-								class Attribute7
-								{
-									property="ace_isMedic";
-									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=2;
-										};
-									};
-								};
-								class Attribute8
-								{
-									property="iedd_ied_sides";
-									expression="_this setVariable ['iedd_ied_sides',_value];";
-									class Value
-									{
-										class data
-										{
-											singleType="ARRAY";
-											class value
-											{
-												items=4;
-												class Item0
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=0;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=-1;
-													};
-												};
-												class Item2
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=2;
-													};
-												};
-												class Item3
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=3;
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=9;
-							};
-						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={7862.875,1.6861136,328.79999};
-								angles[]={6.2513409,1.9226547,6.154213};
-							};
-							side="West";
-							flags=4;
-							class Attributes
-							{
-								rank="COLONEL";
-								init="call{this setSpeaker ""NoVoice""; " \n "this setUnitTrait [""Medic"",true]; " \n "this setUnitTrait [""Engineer"",true]; " \n "this setUnitTrait [""explosiveSpecialist"",true]; " \n "this setVariable [""ACE_medical_medicClass"", 2]; " \n "this setVariable [""ACE_isEngineer"", 2];" \n "this setVariable [""ACE_isEOD"", 1];}";
-								description="Besatzung";
-								isPlayable=1;
-								class Inventory
-								{
-									class primaryWeapon
-									{
-										name="CUP_arifle_AK74M_top_rail_camo";
-										optics="CUP_optic_HensoldtZO_low";
-										firemode="CUP_arifle_AK74M_top_rail_camo:FullAuto";
-										class primaryMuzzleMag
-										{
-											name="CUP_30Rnd_545x39_AK74M_camo_M";
-											ammoLeft=30;
-										};
-									};
-									class handgun
-									{
-										name="CUP_hgun_Phantom";
-										class primaryMuzzleMag
-										{
-											name="CUP_18Rnd_9x19_Phantom";
-											ammoLeft=18;
-										};
-									};
-									class uniform
-									{
-										typeName="ttt_Uniform_plain_US_Desert";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=1;
-											class Item0
-											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
-											};
-										};
-										class ItemCargo
-										{
-											items=5;
-											class Item0
-											{
-												name="ACE_tourniquet";
-												count=4;
-											};
-											class Item1
-											{
-												name="ACE_splint";
-												count=2;
-											};
-											class Item2
-											{
-												name="ACE_morphine";
-												count=1;
-											};
-											class Item3
-											{
-												name="ACE_epinephrine";
-												count=2;
-											};
-											class Item4
-											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-										};
-									};
-									class vest
-									{
-										typeName="SP_PlateCarrier1_Green";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=4;
-											class Item0
-											{
-												name="CUP_30Rnd_545x39_AK74M_camo_M";
-												count=6;
-												ammoLeft=30;
-											};
-											class Item1
-											{
-												name="HandGrenade";
-												count=1;
-												ammoLeft=1;
-											};
-											class Item2
-											{
-												name="SmokeShell";
-												count=1;
-												ammoLeft=1;
-											};
-											class Item3
-											{
-												name="ACE_Chemlight_IR";
-												count=1;
-												ammoLeft=1;
-											};
-										};
-										class ItemCargo
-										{
-											items=4;
-											class Item0
-											{
-												name="ItemAndroid";
-												count=1;
-											};
-											class Item1
-											{
-												name="ACE_CableTie";
-												count=6;
-											};
-											class Item2
-											{
-												name="ACRE_PRC148";
-												count=1;
-											};
-											class Item3
-											{
-												name="ACE_NVG_Wide_Black_WP";
-												count=1;
-											};
-										};
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ItemWatch";
-									goggles="CUP_G_Tan_Scarf_Shades";
-									headgear="CUP_H_OpsCore_Spray_SF";
-								};
-							};
-							id=3059;
-							type="B_Soldier_F";
-							atlOffset=-0.0089249611;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="acre_sys_radio_edenSetup";
-									expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=2;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="unitName";
-									expression="_this setname _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="Rifleman";
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="face";
-									expression="_this setface _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="GreekHead_A3_03";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ace_isEOD";
-									expression="_this setVariable ['ACE_isEOD', _value, true]";
-									class Value
-									{
-										class data
-										{
-											singleType="BOOL";
-											value=1;
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=1.04;
-										};
-									};
-								};
-								class Attribute6
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="ACE_NoVoice";
-										};
-									};
-								};
-								class Attribute7
-								{
-									property="ace_isMedic";
-									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=2;
-										};
-									};
-								};
-								class Attribute8
-								{
-									property="iedd_ied_sides";
-									expression="_this setVariable ['iedd_ied_sides',_value];";
-									class Value
-									{
-										class data
-										{
-											singleType="ARRAY";
-											class value
-											{
-												items=4;
-												class Item0
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=0;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=-1;
-													};
-												};
-												class Item2
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=2;
-													};
-												};
-												class Item3
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=3;
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=9;
-							};
-						};
-						class Item3
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={7866.5,1.1246955,327.29999};
-								angles[]={6.2808952,1.9186753,6.1252403};
-							};
-							side="West";
-							flags=4;
-							class Attributes
-							{
-								rank="COLONEL";
-								init="call{this setSpeaker ""NoVoice""; " \n "this setUnitTrait [""Medic"",true]; " \n "this setUnitTrait [""Engineer"",true]; " \n "this setUnitTrait [""explosiveSpecialist"",true]; " \n "this setVariable [""ACE_medical_medicClass"", 2]; " \n "this setVariable [""ACE_isEngineer"", 2];" \n "this setVariable [""ACE_isEOD"", 1];}";
-								description="Besatzung";
-								isPlayable=1;
-								class Inventory
-								{
-									class primaryWeapon
-									{
-										name="CUP_arifle_AK74M_top_rail_camo";
-										optics="CUP_optic_HensoldtZO_low";
-										firemode="CUP_arifle_AK74M_top_rail_camo:FullAuto";
-										class primaryMuzzleMag
-										{
-											name="CUP_30Rnd_545x39_AK74M_camo_M";
-											ammoLeft=30;
-										};
-									};
-									class handgun
-									{
-										name="CUP_hgun_Phantom";
-										class primaryMuzzleMag
-										{
-											name="CUP_18Rnd_9x19_Phantom";
-											ammoLeft=18;
-										};
-									};
-									class uniform
-									{
-										typeName="ttt_Uniform_plain_US_Desert";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=1;
-											class Item0
-											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
-											};
-										};
-										class ItemCargo
-										{
-											items=5;
-											class Item0
-											{
-												name="ACE_tourniquet";
-												count=4;
-											};
-											class Item1
-											{
-												name="ACE_splint";
-												count=2;
-											};
-											class Item2
-											{
-												name="ACE_morphine";
-												count=1;
-											};
-											class Item3
-											{
-												name="ACE_epinephrine";
-												count=2;
-											};
-											class Item4
-											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-										};
-									};
-									class vest
-									{
-										typeName="SP_PlateCarrier1_Green";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=4;
-											class Item0
-											{
-												name="CUP_30Rnd_545x39_AK74M_camo_M";
-												count=6;
-												ammoLeft=30;
-											};
-											class Item1
-											{
-												name="HandGrenade";
-												count=1;
-												ammoLeft=1;
-											};
-											class Item2
-											{
-												name="SmokeShell";
-												count=1;
-												ammoLeft=1;
-											};
-											class Item3
-											{
-												name="ACE_Chemlight_IR";
-												count=1;
-												ammoLeft=1;
-											};
-										};
-										class ItemCargo
-										{
-											items=4;
-											class Item0
-											{
-												name="ItemAndroid";
-												count=1;
-											};
-											class Item1
-											{
-												name="ACE_CableTie";
-												count=6;
-											};
-											class Item2
-											{
-												name="ACRE_PRC148";
-												count=1;
-											};
-											class Item3
-											{
-												name="ACE_NVG_Wide_Black_WP";
-												count=1;
-											};
-										};
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ItemWatch";
-									goggles="CUP_G_Tan_Scarf_Shades";
-									headgear="CUP_H_OpsCore_Spray_SF";
-								};
-							};
-							id=3060;
-							type="B_Soldier_F";
-							atlOffset=-0.0089248419;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="acre_sys_radio_edenSetup";
-									expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=2;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="unitName";
-									expression="_this setname _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="Rifleman";
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="face";
-									expression="_this setface _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="GreekHead_A3_03";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ace_isEOD";
-									expression="_this setVariable ['ACE_isEOD', _value, true]";
-									class Value
-									{
-										class data
-										{
-											singleType="BOOL";
-											value=1;
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=1.04;
-										};
-									};
-								};
-								class Attribute6
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="ACE_NoVoice";
-										};
-									};
-								};
-								class Attribute7
-								{
-									property="ace_isMedic";
-									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=2;
-										};
-									};
-								};
-								class Attribute8
-								{
-									property="iedd_ied_sides";
-									expression="_this setVariable ['iedd_ied_sides',_value];";
-									class Value
-									{
-										class data
-										{
-											singleType="ARRAY";
-											class value
-											{
-												items=4;
-												class Item0
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=0;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=-1;
-													};
-												};
-												class Item2
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=2;
-													};
-												};
-												class Item3
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=3;
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=9;
-							};
-						};
-					};
-					class Attributes
-					{
-					};
-					id=3056;
-					atlOffset=0.020086467;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="groupID";
-							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Besatzung";
+									value="Gruppe 4";
 								};
 							};
 						};
@@ -10142,7 +9004,7 @@ class Mission
 				};
 			};
 			id=1761;
-			atlOffset=-0.24976623;
+			atlOffset=-0.30503213;
 		};
 		class Item1
 		{
@@ -11894,11 +10756,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=29;
+			nextID=25;
 		};
 		class Links
 		{
-			items=29;
+			items=25;
 			class Item0
 			{
 				linkID=0;
@@ -12143,46 +11005,6 @@ class Mission
 			{
 				linkID=24;
 				item0=3055;
-				item1=2560;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item25
-			{
-				linkID=25;
-				item0=3057;
-				item1=2560;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item26
-			{
-				linkID=26;
-				item0=3058;
-				item1=2560;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item27
-			{
-				linkID=27;
-				item0=3059;
-				item1=2560;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item28
-			{
-				linkID=28;
-				item0=3060;
 				item1=2560;
 				class CustomData
 				{

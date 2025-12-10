@@ -7,7 +7,7 @@ GRLIB_color_friendly = "ColorBLUFOR";
 
 huron_typename = "B_Heli_Transport_03_F";
 // comment to use value from lobby/server.cfg
-FOB_typename = "Land_MedicalTent_01_aaf_generic_open_F";
+FOB_typename = "LAV25_HQ_unfolded";
 FOB_box_typename = "B_Slingload_01_Cargo_F";
 FOB_truck_typename = "CUP_B_LAV25_HQ_green";
 FOB_outpost = "";
@@ -483,7 +483,6 @@ logistics_vehicle_ground = [
 	["B_Truck_01_fuel_F", 0, 150, MSU_Fuel_LogisticVehicles_Class2, MSU_Rank_Private],
 	["B_Truck_01_Repair_F", 0, 150, MSU_Fuel_LogisticVehicles_Class2, MSU_Rank_Private],
 	["B_Truck_01_box_F", 0, 150, MSU_Fuel_LogisticVehicles_Class1, MSU_Rank_Private],
-	["B_APC_Tracked_01_CRV_F", 0, 800, MSU_Fuel_LogisticVehicles_Class2, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
 	["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom", 0, 150, MSU_Fuel_LogisticVehicles_Class2, MSU_Rank_Private],
 	["rhsusf_M1084A1R_SOV_M2_D_fmtv_socom", 0, 150, MSU_Fuel_LogisticVehicles_Class1, MSU_Rank_Private],
@@ -708,6 +707,7 @@ support_crates = [
 	["BWA3_WLP14_Flatbed_Winter", 0, 0, 0, MSU_Rank_Private],
 	["BWA3_TCK9_fuel_Winter", 0, 0, 0, MSU_Rank_Private],
 	["BWA3_WLP14_Repair_Winter", 0, 0, 0, MSU_Rank_Private],
+	["B_supplyCrate_F", 0, 2000, 0, MSU_Rank_Private],
 	// FOB
 	[FOB_box_typename, 0, 0, 0, 9999],
 	[FOB_truck_typename, 0, 0, 0, 9999]

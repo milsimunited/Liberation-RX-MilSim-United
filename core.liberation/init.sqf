@@ -574,6 +574,12 @@ log_on_server = compileFinal "
 	[_vehicle, 1000000] call ace_rearm_fnc_makeSource;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
+["B_supplyCrate_F", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle,80] call ace_cargo_fnc_setSize;
+	[_vehicle,1] call ace_cargo_fnc_setSpace;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
 
 
 ["rhs_kamaz5350_ammo_vmf", "InitPost", {
