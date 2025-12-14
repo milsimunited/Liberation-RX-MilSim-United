@@ -128,7 +128,7 @@ opfor_air = [
 ];
 
 opfor_statics = [
-	"CFP_O_WAGNER_ZU_23_WDL_01"
+	"CUP_O_2S6M_RU"
 ];
 
 opfor_reinforcement_vehicles = [

@@ -149,14 +149,14 @@ fob_hunting_readiness = 40;
 
 // Battlegroup readiness
 bg_readiness_cooldown = false;
-bg_readiness_min = 60;
-bg_readiness_high = 90;
+bg_readiness_min = 25;
+bg_readiness_high = 75;
 // msu loops
 msu_heartbeat = 240;
 huber_commandos = true;
 
-// Battlegroup sleeping (divided with csat aggressivity)
-bg_sleeptimer = 2400; 
+// Battlegroup sleeping
+bg_sleeptimer = 1200;
 sector_reinforcement = true;
 limit_bg_dist = GRLIB_spawn_max; 
 reinforce_spawn_min = GRLIB_spawn_min;
