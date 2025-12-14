@@ -6,7 +6,7 @@ waitUntil {
 
 _rules = "
 DE:<br />
-Regelwerk MiSim United<br />
+Regeln<br />
 <br />
 1. Rechtliches<br />
 1.1 Trolling, Beleidigung, Rassismus, sexuelle Belästigung so wie alles was strafrechtlich verfolgt wird, ist verboten und führt zum Ausschluss. <br />
@@ -43,7 +43,7 @@ Boden- und Luftfahrzeuge sind vorrangig Unterstützungselemente. Wenn Infanterie
 <br />
 <br />
 EN:<br />
-Rules MiSim United<br />
+Rules<br />
 <br />
 1. Legal matters<br />
 1.1 Trolling, insults, racism, sexual harassment as well as anything that can be prosecuted under criminal law is prohibited and will lead to exclusion. <br />
