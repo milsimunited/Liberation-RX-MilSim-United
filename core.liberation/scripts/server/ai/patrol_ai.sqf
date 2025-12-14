@@ -74,7 +74,7 @@ while { count (units _grp) > 0 } do {
 		} else {
 			private _patrol_startpos = getpos (leader _grp);
 			private _sector_radius = 4000;
-			private _sector_list = (sectors_allSectors - blufor_sectors - sectors_tower);
+			private _sector_list = (sectors_allSectors - blufor_sectors);
 			private _max_waypoints = 4;  // + back to startpos and cycle
 
 			if (_patrol_type == 1) then {

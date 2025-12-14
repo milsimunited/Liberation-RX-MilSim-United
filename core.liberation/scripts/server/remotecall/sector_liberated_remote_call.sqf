@@ -121,10 +121,9 @@ trigger_server_save = true;
 sleep 45;
 
 if (GRLIB_endgame == 0) then {
-	if ((!( _liberated_sector in sectors_tower )) &&
-	((floor(random (200.0 / (GRLIB_difficulty_modifier * GRLIB_csat_aggressivity) )) < (combat_readiness - 20)) || ( _liberated_sector in sectors_bigtown )) &&
+	if ( ((floor(random (200.0 / (GRLIB_difficulty_modifier * GRLIB_csat_aggressivity) )) < (combat_readiness - 20)) || ( _liberated_sector in sectors_bigtown )) &&
 	([] call F_opforCap < GRLIB_battlegroup_cap) &&
-	(diag_fps > 15.0)) then {
+	(diag_fps > 15.0) ) then {
 		[ markerPos _liberated_sector ] spawn spawn_battlegroup;
 	};
 };
