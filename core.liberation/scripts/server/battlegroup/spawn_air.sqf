@@ -5,9 +5,7 @@ private _planeType = opfor_air;
 if (_side == GRLIB_side_friendly) then {_planeType = blufor_air};
 
 private _planes_number = 1;
-if ( combat_readiness >= bg_readiness_min ) then { _planes_number = 2; };
-if ( combat_readiness >= bg_readiness_high ) then { _planes_number = 3; };
-if ( combat_readiness >= bg_readiness_high*2 ) then { _planes_number = 4; };
+if ( combat_readiness >= bg_readiness_high ) then { _planes_number = 2; };
 
 private _air_spawnpoint = ( [ sectors_airspawn , [ _first_objective ] , { (markerpos _x) distance _input0 }, "ASCEND"] call BIS_fnc_sortBy ) select 0;
 private _air_grp = createGroup [_side, true];

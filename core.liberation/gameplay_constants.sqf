@@ -24,7 +24,7 @@ GRLIB_blufor_cap = 10 * GRLIB_unitcap;
 GRLIB_battlegroup_size = 5;
 GRLIB_civilians_amount = 1.1 * GRLIB_civilian_activity;
 GRLIB_fob_range = 300;
-GRLIB_surrender_chance = 69;
+GRLIB_surrender_chance = 80;
 GRLIB_secondary_missions_costs = [ 30,3 ];
 GRLIB_halo_altitude = 2000;
 GRLIB_civ_killing_penalty = 0;
@@ -147,20 +147,20 @@ readiness_calc_sm_town = true;
 limit_readiness = true;
 fob_hunting_readiness = 40;
 
-// Battlegroup readiness
+// Battlegroups
 bg_readiness_cooldown = false;
 bg_readiness_min = 25;
 bg_readiness_high = 75;
-// msu loops
-msu_heartbeat = 240;
-huber_commandos = true;
-
-// Battlegroup sleeping
-bg_sleeptimer = 1200;
+bg_random = false;
 sector_reinforcement = true;
+bg_sleeptimer = 1200;
 limit_bg_dist = GRLIB_spawn_max; 
 reinforce_spawn_min = GRLIB_spawn_min;
 unload_distance = 100;
+
+// msu loops
+msu_heartbeat = 240;
+huber_commandos = true;
 
 // Deactivate HC spawning
 hc_spawn_off = true;

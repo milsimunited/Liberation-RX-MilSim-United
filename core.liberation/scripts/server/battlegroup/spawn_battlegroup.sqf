@@ -48,7 +48,7 @@ if (_spawn_marker != "") then {
 	if (combat_readiness < bg_readiness_high) then {
 		_target_size = round (_target_size * 0.75)
 	};
-	if (count allPlayers <= 9) then {
+	if (GRLIB_side_friendly countSide allUnits <= 6) then {
 		_target_size = round (_target_size * 0.75)
 	};
 	while { count _selected_opfor_battlegroup < _target_size } do {
@@ -87,7 +87,7 @@ if (_spawn_marker != "") then {
 	} forEach _selected_opfor_battlegroup;
 
 	sleep 5;
-	if ((combat_readiness >= bg_readiness_min) && !(_attackInProgress)) then {
+	if ((combat_readiness >= bg_readiness_min)) then {
 		private _objectivepos = ([markerPos _spawn_marker] call F_getNearestBluforObjective) select 0;
 
 		[_objectivepos, GRLIB_side_enemy] spawn spawn_air;

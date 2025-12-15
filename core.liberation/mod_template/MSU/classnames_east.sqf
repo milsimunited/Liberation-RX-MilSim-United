@@ -107,7 +107,9 @@ opfor_battlegroup_vehicles = [
 
 opfor_battlegroup_vehicles_low_intensity = [
 	"CUP_O_GAZ_Vodnik_BPPU_RU",
-	"CFP_O_WAGNER_BTR_80_WDL_01"
+	"CFP_O_WAGNER_BTR_80_WDL_01",
+    "CUP_O_T90_RU",
+	"CUP_O_2S6M_RU"
 ];
 
 opfor_troup_transports = [

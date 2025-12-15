@@ -1,5 +1,7 @@
 private [ "_sleeptime", "_countplayers" ];
 
+if (!bg_random) exitWith {};
+
 if (isNil "bg_sleeptimer") then {bg_sleeptimer = 1800};
 
 if (combat_readiness <= 0) then {combat_readiness = 1};
