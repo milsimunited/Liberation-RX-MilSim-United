@@ -188,7 +188,7 @@ if ( (!(_sector in blufor_sectors)) &&  ( ( [ getmarkerpos _sector , [ _opforcou
 
 	sleep 10;
 
-	if ( _sector in sectors_factory + sectors_capture + sectors_bigtown + sectors_military ) then {
+	if ( sector_reinforcement ) then {
 		[ _sector ] spawn reinforcements_manager;
 	};
 
