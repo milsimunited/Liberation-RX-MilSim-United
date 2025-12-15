@@ -1117,6 +1117,9 @@ log_on_server = compileFinal "
 
 
 
+0 setFog 0;
+
+
 
 //["USAF_A10", "InitPost", {
 //    params ["_vehicle"];
