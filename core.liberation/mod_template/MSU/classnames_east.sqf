@@ -41,17 +41,18 @@ opfor_ammo_container = "Land_Pod_Heli_Transport_04_ammo_F";
 opfor_flag = "Flag_CSAT_F";
 
 militia_squad = [
-	"CFP_O_WAGNER_Team_Coordinator_WDL_01",
-	"CFP_O_WAGNER_Contractor_1_WDL_01",
-	"CFP_O_WAGNER_Contractor_2_WDL_01",
-	"CFP_O_WAGNER_Security_Contractor_AK74_GL_WDL_01",
-	"CFP_O_WAGNER_Security_Contractor_AK74_GL_WDL_01",
-	"CFP_O_WAGNER_Field_Specialist_RPK_WDL_01",
-	"CFP_O_WAGNER_Field_Specialist_PKM_WDL_01",
-	"CFP_O_WAGNER_Field_Specialist_RPG_18_WDL_01",
-	"CFP_O_WAGNER_Field_Specialist_RPG_18_WDL_01",
-	"CFP_O_WAGNER_Marksman_WDL_01",
-	"CFP_O_WAGNER_Security_Contractor_SVD_WDL_01"
+	opfor_at,
+	opfor_grenadier,
+	opfor_machinegunner,
+	opfor_sniper,
+	opfor_sentry,
+	opfor_rifleman,
+	opfor_aa,
+	opfor_at,
+	opfor_grenadier,
+	opfor_heavygunner,
+	opfor_sharpshooter,
+	opfor_aa
 ];
 private _editFullMilitiaSquadLoadout = false;
 

@@ -3,7 +3,9 @@ diag_log format [ "Spawning regular squad at %1", time ];
 params [ "_sector", "_squadies_to_spawn" ];
 private [ "_sectorpos", "_spawnpos", "_grp", "_nextunit", "_corrected_amount" ];
 
-_corrected_amount = round ( (count _squadies_to_spawn) * ([] call F_adaptiveOpforFactor) );
+//_corrected_amount = round ( (count _squadies_to_spawn) * ([] call F_adaptiveOpforFactor) );
+_corrected_amount = 1 + (GRLIB_side_friendly countSide allUnits);
+
 _grp = createGroup [GRLIB_side_enemy, true];
 {
 	if ( ( count units _grp ) < _corrected_amount) then {

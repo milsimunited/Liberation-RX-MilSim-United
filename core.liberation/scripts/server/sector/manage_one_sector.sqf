@@ -102,20 +102,21 @@ if ( (!(_sector in blufor_sectors)) &&  ( ( [ getmarkerpos _sector , [ _opforcou
 
 	if ( _sector in sectors_tower ) then {
 		_squad1 = ([] call F_getAdaptiveSquadComp);
+		_squad2 = ([] call F_getAdaptiveSquadComp);
+		_squad3 = ([] call F_getAdaptiveSquadComp);
+		_squad4 = ([] call F_getAdaptiveSquadComp);
+
 		_vehtospawn pushback (selectRandom militia_vehicles);
 
 		if(_bluforcount > 6) then {
-			_squad2 = ([] call F_getAdaptiveSquadComp);
 			_vehtospawn pushback (selectRandom militia_vehicles);
 		};
 
 		if(_bluforcount > 12) then {
-			_squad3 = ([] call F_getAdaptiveSquadComp);
 			_vehtospawn pushback (selectRandom militia_vehicles);
 		};
 
 		if(_bluforcount > 18) then {
-			_squad3 = ([] call F_getAdaptiveSquadComp);
 			_vehtospawn pushback (selectRandom militia_vehicles);
 		};
 		
