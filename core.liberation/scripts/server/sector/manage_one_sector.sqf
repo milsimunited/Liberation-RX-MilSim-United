@@ -16,6 +16,10 @@ private _squad1 = [];
 private _squad2 = [];
 private _squad3 = [];
 private _squad4 = [];
+private _squad5 = [];
+private _squad6 = [];
+private _squad7 = [];
+private _squad8 = [];
 private _minimum_building_positions = 5;
 private _max_prisonners = 5;
 private _sector_despawn_tickets = 24;
@@ -105,6 +109,10 @@ if ( (!(_sector in blufor_sectors)) &&  ( ( [ getmarkerpos _sector , [ _opforcou
 		_squad2 = ([] call F_getAdaptiveSquadComp);
 		_squad3 = ([] call F_getAdaptiveSquadComp);
 		_squad4 = ([] call F_getAdaptiveSquadComp);
+		_squad5 = ([] call F_getAdaptiveSquadComp);
+		_squad6 = ([] call F_getAdaptiveSquadComp);
+		_squad7 = ([] call F_getAdaptiveSquadComp);
+		_squad8 = ([] call F_getAdaptiveSquadComp);
 
 		_vehtospawn pushback (selectRandom militia_vehicles);
 
@@ -175,6 +183,30 @@ if ( (!(_sector in blufor_sectors)) &&  ( ( [ getmarkerpos _sector , [ _opforcou
 
 	if ( count _squad4 > 0 ) then {
 		_grp = [ _sector, _squad4 ] call F_spawnRegularSquad;
+		[ _grp, _sectorpos ] spawn add_defense_waypoints;
+		_managed_units = _managed_units + (units _grp);
+	};
+
+	if ( count _squad5 > 0 ) then {
+		_grp = [ _sector, _squad5 ] call F_spawnRegularSquad;
+		[ _grp, _sectorpos ] spawn add_defense_waypoints;
+		_managed_units = _managed_units + (units _grp);
+	};
+
+	if ( count _squad6 > 0 ) then {
+		_grp = [ _sector, _squad6 ] call F_spawnRegularSquad;
+		[ _grp, _sectorpos ] spawn add_defense_waypoints;
+		_managed_units = _managed_units + (units _grp);
+	};
+
+	if ( count _squad7 > 0 ) then {
+		_grp = [ _sector, _squad7 ] call F_spawnRegularSquad;
+		[ _grp, _sectorpos ] spawn add_defense_waypoints;
+		_managed_units = _managed_units + (units _grp);
+	};
+	
+	if ( count _squad8 > 0 ) then {
+		_grp = [ _sector, _squad8 ] call F_spawnRegularSquad;
 		[ _grp, _sectorpos ] spawn add_defense_waypoints;
 		_managed_units = _managed_units + (units _grp);
 	};

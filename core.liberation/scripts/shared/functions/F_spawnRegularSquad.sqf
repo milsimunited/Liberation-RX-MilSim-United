@@ -4,7 +4,18 @@ params [ "_sector", "_squadies_to_spawn" ];
 private [ "_sectorpos", "_spawnpos", "_grp", "_nextunit", "_corrected_amount" ];
 
 //_corrected_amount = round ( (count _squadies_to_spawn) * ([] call F_adaptiveOpforFactor) );
-_corrected_amount = 1 + (GRLIB_side_friendly countSide allUnits);
+
+_corrected_amount = GRLIB_side_friendly countSide allUnits;
+
+if ( _corrected_amount > 3 && _corrected_amount < 9) then {
+	_corrected_amount = 4;
+}else{
+	if ( _corrected_amount > 9) then {
+		_corrected_amount = 6;
+	};
+};
+
+_squadies_to_spawn = _squadies_to_spawn call BIS_fnc_arrayShuffle;
 
 _grp = createGroup [GRLIB_side_enemy, true];
 {
