@@ -10,31 +10,25 @@ sleep 5;
 while {(count (waypoints _grp)) != 0} do {deleteWaypoint ((waypoints _grp) select 0);};
 {_x doFollow leader _grp} foreach units _grp;
 
-if ( _is_infantry ) then {
-	_waypoint = _grp addWaypoint [_flagpos, _radius];
-	_waypoint setWaypointType "MOVE";
-	_waypoint setWaypointBehaviour "AWARE";
-	_waypoint setWaypointCombatMode "GREEN";
-	_waypoint setWaypointSpeed "LIMITED";
-	_waypoint setWaypointCompletionRadius 10;
 
-	_waypoint = _grp addWaypoint [_flagpos,_radius];
-	_waypoint setWaypointType "MOVE";
-	_waypoint = _grp addWaypoint [_flagpos, _radius];
-	_waypoint setWaypointType "MOVE";
-	_waypoint = _grp addWaypoint [_flagpos, _radius];
-	_waypoint setWaypointType "MOVE";
+_waypoint = _grp addWaypoint [_flagpos, _radius];
+_waypoint setWaypointType "MOVE";
+_waypoint setWaypointBehaviour "AWARE";
+_waypoint setWaypointCombatMode "GREEN";
+_waypoint setWaypointSpeed "LIMITED";
+_waypoint setWaypointCompletionRadius 10;
 
-	_waypoint = _grp addWaypoint [_flagpos, _radius];
-	_waypoint setWaypointType "CYCLE";
-} else {
-	_waypoint = _grp addWaypoint [_basepos, 1];
-	_waypoint setWaypointType "MOVE";
-	_waypoint setWaypointBehaviour "SAFE";
-	_waypoint setWaypointCombatMode "GREEN";
-	_waypoint setWaypointSpeed "LIMITED";
-	_waypoint setWaypointCompletionRadius 30;
-};
+_waypoint = _grp addWaypoint [_flagpos,_radius];
+_waypoint setWaypointType "MOVE";
+_waypoint = _grp addWaypoint [_flagpos, _radius];
+_waypoint setWaypointType "MOVE";
+_waypoint = _grp addWaypoint [_flagpos, _radius];
+_waypoint setWaypointType "MOVE";
+
+_waypoint = _grp addWaypoint [_flagpos, _radius];
+_waypoint setWaypointType "CYCLE";
+
+
 _grp setCurrentWaypoint [_grp, 0];
 
 waitUntil {
