@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=3072;
+		nextID=3077;
 	};
 	class LayerIndexProvider
 	{
-		nextID=490;
+		nextID=518;
 	};
 	class Camera
 	{
-		pos[]={8029.3901,15.364227,265.19785};
-		dir[]={0.89331359,-0.28433484,-0.34805825};
-		up[]={0.2649354,0.95872504,-0.10322573};
-		aside[]={-0.36304283,7.4505806e-09,-0.93177247};
+		pos[]={7869.7998,11.878188,333.36603};
+		dir[]={-0.36065516,-0.62942004,-0.68830103};
+		up[]={-0.2921294,0.77706528,-0.55752134};
+		aside[]={-0.88576996,-1.4901161e-08,0.46412471};
 	};
 };
 binarizationWanted=0;
@@ -41,6 +41,7 @@ addons[]=
 	"ace_compat_cup_units",
 	"CUP_Creatures_Extra_OpsCore",
 	"ttt_uniforms",
+	"kat_pharma",
 	"ace_medical_treatment",
 	"kat_breathing",
 	"cfp_vests",
@@ -51,9 +52,8 @@ addons[]=
 	"acre_sys_prc148",
 	"ace_nightvision",
 	"itc_land_veh_uav01",
-	"kat_pharma",
 	"kat_airway",
-	"kat_circulation",
+	"kat_vitals",
 	"CUP_Weapons_PK",
 	"ace_tracers",
 	"CUP_Weapons_MAAWS",
@@ -157,69 +157,69 @@ class AddonsMetaData
 		};
 		class Item11
 		{
+			className="kat_pharma";
+			name="KAT - ADV Medical: Pharma";
+			author="Katalam";
+			url="https://github.com/KAT-Advanced-Medical/KAM";
+		};
+		class Item12
+		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item12
+		class Item13
 		{
 			className="kat_breathing";
 			name="KAT - ADV Medical: Breathing";
 			author="Katalam";
 			url="https://github.com/KAT-Advanced-Medical/KAM";
 		};
-		class Item13
+		class Item14
 		{
 			className="cfp_vests";
 			name="cfp_vests";
 			author="CFP Team";
 		};
-		class Item14
+		class Item15
 		{
 			className="ace_chemlights";
 			name="ACE3 - Chemlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item15
+		class Item16
 		{
 			className="ctab";
 			name="cTab";
 			author="cTab Authors";
 		};
-		class Item16
+		class Item17
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item17
+		class Item18
 		{
 			className="acre_sys_prc148";
 			name="ACRE2 - AN/PRC-148";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item18
+		class Item19
 		{
 			className="ace_nightvision";
 			name="ACE3 - Night Vision";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item19
+		class Item20
 		{
 			className="itc_land_veh_uav01";
 			name="itc_land_veh_uav01";
-		};
-		class Item20
-		{
-			className="kat_pharma";
-			name="KAT - ADV Medical: Pharma";
-			author="Katalam";
-			url="https://github.com/KAT-Advanced-Medical/KAM";
 		};
 		class Item21
 		{
@@ -230,9 +230,9 @@ class AddonsMetaData
 		};
 		class Item22
 		{
-			className="kat_circulation";
-			name="KAT - ADV Medical: Circulation";
-			author="Katalam";
+			className="kat_vitals";
+			name="KAT - ADV Medical: Vitals";
+			author="Mazinski";
 			url="https://github.com/KAT-Advanced-Medical/KAM";
 		};
 		class Item23
@@ -600,7 +600,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={7864.125,1.2109604,315.17499};
-								angles[]={-0,1.9226547,6.1879115};
+								angles[]={0,1.9226547,6.1879115};
 							};
 							side="West";
 							flags=6;
@@ -641,14 +641,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -656,28 +656,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -966,14 +961,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -981,28 +976,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -1072,34 +1062,34 @@ class Mission
 											items=2;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=8;
+												name="kat_Penthrox";
+												count=6;
 												ammoLeft=10;
 											};
 											class Item1
 											{
-												name="kat_Carbonate";
+												name="kat_Painkiller";
 												count=4;
-												ammoLeft=10;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=18;
+											items=17;
 											class Item0
 											{
 												name="ACE_packingBandage";
-												count=48;
+												count=30;
 											};
 											class Item1
 											{
 												name="ACE_elasticBandage";
-												count=48;
+												count=30;
 											};
 											class Item2
 											{
 												name="ACE_epinephrine";
-												count=8;
+												count=12;
 											};
 											class Item3
 											{
@@ -1108,73 +1098,68 @@ class Mission
 											};
 											class Item4
 											{
-												name="ACE_splint";
-												count=8;
-											};
-											class Item5
-											{
 												name="ACE_surgicalKit";
 												count=1;
 											};
-											class Item6
+											class Item5
 											{
 												name="ACE_suture";
+												count=30;
+											};
+											class Item6
+											{
+												name="ACE_tourniquet";
 												count=12;
 											};
 											class Item7
 											{
-												name="ACE_tourniquet";
+												name="kat_IV_16";
 												count=8;
 											};
 											class Item8
 											{
-												name="ACE_salineIV";
-												count=12;
+												name="kat_chestSeal";
+												count=8;
 											};
 											class Item9
 											{
-												name="kat_IV_16";
-												count=12;
+												name="kat_larynx";
+												count=8;
 											};
 											class Item10
 											{
-												name="kat_chestSeal";
-												count=12;
+												name="kat_basicDiagnostic";
+												count=1;
 											};
 											class Item11
 											{
-												name="kat_IO_FAST";
+												name="ACE_salineIV_250";
 												count=4;
 											};
 											class Item12
 											{
-												name="kat_larynx";
-												count=2;
+												name="ACE_salineIV_500";
+												count=4;
 											};
 											class Item13
 											{
-												name="kat_BVM";
-												count=1;
+												name="kat_pocketBVM";
+												count=3;
 											};
 											class Item14
 											{
-												name="kat_Pulseoximeter";
-												count=1;
+												name="kat_ncdKit";
+												count=6;
 											};
 											class Item15
 											{
-												name="kat_accuvac";
-												count=1;
+												name="kat_naloxone";
+												count=8;
 											};
 											class Item16
 											{
-												name="kat_X_AED";
-												count=1;
-											};
-											class Item17
-											{
-												name="kat_guedel";
-												count=2;
+												name="ACE_adenosine";
+												count=4;
 											};
 										};
 									};
@@ -1391,14 +1376,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -1406,28 +1391,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -1715,14 +1695,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -1730,28 +1710,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -2050,14 +2025,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -2065,28 +2040,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -2375,14 +2345,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -2390,28 +2360,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -2754,14 +2719,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -2769,28 +2734,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -3079,14 +3039,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -3094,28 +3054,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -3185,34 +3140,34 @@ class Mission
 											items=2;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=8;
+												name="kat_Penthrox";
+												count=6;
 												ammoLeft=10;
 											};
 											class Item1
 											{
-												name="kat_Carbonate";
+												name="kat_Painkiller";
 												count=4;
-												ammoLeft=10;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=18;
+											items=17;
 											class Item0
 											{
 												name="ACE_packingBandage";
-												count=48;
+												count=30;
 											};
 											class Item1
 											{
 												name="ACE_elasticBandage";
-												count=48;
+												count=30;
 											};
 											class Item2
 											{
 												name="ACE_epinephrine";
-												count=8;
+												count=12;
 											};
 											class Item3
 											{
@@ -3221,73 +3176,68 @@ class Mission
 											};
 											class Item4
 											{
-												name="ACE_splint";
-												count=8;
-											};
-											class Item5
-											{
 												name="ACE_surgicalKit";
 												count=1;
 											};
-											class Item6
+											class Item5
 											{
 												name="ACE_suture";
+												count=30;
+											};
+											class Item6
+											{
+												name="ACE_tourniquet";
 												count=12;
 											};
 											class Item7
 											{
-												name="ACE_tourniquet";
+												name="kat_IV_16";
 												count=8;
 											};
 											class Item8
 											{
-												name="ACE_salineIV";
-												count=12;
+												name="kat_chestSeal";
+												count=8;
 											};
 											class Item9
 											{
-												name="kat_IV_16";
-												count=12;
+												name="kat_larynx";
+												count=8;
 											};
 											class Item10
 											{
-												name="kat_chestSeal";
-												count=12;
+												name="kat_basicDiagnostic";
+												count=1;
 											};
 											class Item11
 											{
-												name="kat_IO_FAST";
+												name="ACE_salineIV_250";
 												count=4;
 											};
 											class Item12
 											{
-												name="kat_larynx";
-												count=2;
+												name="ACE_salineIV_500";
+												count=4;
 											};
 											class Item13
 											{
-												name="kat_BVM";
-												count=1;
+												name="kat_pocketBVM";
+												count=3;
 											};
 											class Item14
 											{
-												name="kat_Pulseoximeter";
-												count=1;
+												name="kat_ncdKit";
+												count=6;
 											};
 											class Item15
 											{
-												name="kat_accuvac";
-												count=1;
+												name="kat_naloxone";
+												count=8;
 											};
 											class Item16
 											{
-												name="kat_X_AED";
-												count=1;
-											};
-											class Item17
-											{
-												name="kat_guedel";
-												count=2;
+												name="ACE_adenosine";
+												count=4;
 											};
 										};
 									};
@@ -3504,14 +3454,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -3519,28 +3469,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -3828,14 +3773,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -3843,28 +3788,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -4163,14 +4103,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -4178,28 +4118,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -4488,14 +4423,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -4503,28 +4438,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -4867,14 +4797,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -4882,28 +4812,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -5192,14 +5117,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -5207,28 +5132,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -5298,34 +5218,34 @@ class Mission
 											items=2;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=8;
+												name="kat_Penthrox";
+												count=6;
 												ammoLeft=10;
 											};
 											class Item1
 											{
-												name="kat_Carbonate";
+												name="kat_Painkiller";
 												count=4;
-												ammoLeft=10;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=18;
+											items=17;
 											class Item0
 											{
 												name="ACE_packingBandage";
-												count=48;
+												count=30;
 											};
 											class Item1
 											{
 												name="ACE_elasticBandage";
-												count=48;
+												count=30;
 											};
 											class Item2
 											{
 												name="ACE_epinephrine";
-												count=8;
+												count=12;
 											};
 											class Item3
 											{
@@ -5334,73 +5254,68 @@ class Mission
 											};
 											class Item4
 											{
-												name="ACE_splint";
-												count=8;
-											};
-											class Item5
-											{
 												name="ACE_surgicalKit";
 												count=1;
 											};
-											class Item6
+											class Item5
 											{
 												name="ACE_suture";
+												count=30;
+											};
+											class Item6
+											{
+												name="ACE_tourniquet";
 												count=12;
 											};
 											class Item7
 											{
-												name="ACE_tourniquet";
+												name="kat_IV_16";
 												count=8;
 											};
 											class Item8
 											{
-												name="ACE_salineIV";
-												count=12;
+												name="kat_chestSeal";
+												count=8;
 											};
 											class Item9
 											{
-												name="kat_IV_16";
-												count=12;
+												name="kat_larynx";
+												count=8;
 											};
 											class Item10
 											{
-												name="kat_chestSeal";
-												count=12;
+												name="kat_basicDiagnostic";
+												count=1;
 											};
 											class Item11
 											{
-												name="kat_IO_FAST";
+												name="ACE_salineIV_250";
 												count=4;
 											};
 											class Item12
 											{
-												name="kat_larynx";
-												count=2;
+												name="ACE_salineIV_500";
+												count=4;
 											};
 											class Item13
 											{
-												name="kat_BVM";
-												count=1;
+												name="kat_pocketBVM";
+												count=3;
 											};
 											class Item14
 											{
-												name="kat_Pulseoximeter";
-												count=1;
+												name="kat_ncdKit";
+												count=6;
 											};
 											class Item15
 											{
-												name="kat_accuvac";
-												count=1;
+												name="kat_naloxone";
+												count=8;
 											};
 											class Item16
 											{
-												name="kat_X_AED";
-												count=1;
-											};
-											class Item17
-											{
-												name="kat_guedel";
-												count=2;
+												name="ACE_adenosine";
+												count=4;
 											};
 										};
 									};
@@ -5617,14 +5532,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -5632,28 +5547,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -5941,14 +5851,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -5956,28 +5866,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -6276,14 +6181,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -6291,28 +6196,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -6601,14 +6501,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -6616,28 +6516,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -7630,14 +7525,14 @@ class Mission
 											items=1;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
 											};
 										};
 										class ItemCargo
 										{
-											items=6;
+											items=5;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -7645,28 +7540,23 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
 											{
-												name="ACE_morphine";
-												count=1;
+												name="kat_chestSeal";
+												count=2;
 											};
 											class Item3
 											{
-												name="ACE_epinephrine";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
 											};
 											class Item4
 											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
-											{
-												name="kat_chestSeal";
-												count=1;
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -7984,20 +7874,20 @@ class Mission
 											items=2;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
-											};
-											class Item1
-											{
 												name="ACE_Chemlight_IR";
 												count=1;
 												ammoLeft=1;
 											};
+											class Item1
+											{
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
+											};
 										};
 										class ItemCargo
 										{
-											items=9;
+											items=8;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -8005,43 +7895,38 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_morphine";
-												count=1;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
-											{
-												name="ACE_epinephrine";
-												count=1;
-											};
-											class Item3
-											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item4
 											{
 												name="ACE_CableTie";
 												count=1;
 											};
-											class Item5
+											class Item3
 											{
 												name="kat_chestSeal";
-												count=1;
+												count=2;
 											};
-											class Item6
+											class Item4
 											{
 												name="ACRE_PRC148";
 												count=2;
 											};
-											class Item7
+											class Item5
 											{
 												name="ItemAndroid";
 												count=1;
 											};
-											class Item8
+											class Item6
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
+											};
+											class Item7
+											{
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -8279,20 +8164,20 @@ class Mission
 											items=2;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
-											};
-											class Item1
-											{
 												name="ACE_Chemlight_IR";
 												count=1;
 												ammoLeft=1;
 											};
+											class Item1
+											{
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
+											};
 										};
 										class ItemCargo
 										{
-											items=9;
+											items=8;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -8300,43 +8185,38 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_morphine";
-												count=1;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
-											{
-												name="ACE_epinephrine";
-												count=1;
-											};
-											class Item3
-											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item4
 											{
 												name="ACE_CableTie";
 												count=1;
 											};
-											class Item5
+											class Item3
 											{
 												name="kat_chestSeal";
-												count=1;
+												count=2;
 											};
-											class Item6
+											class Item4
 											{
 												name="ACRE_PRC148";
 												count=1;
 											};
-											class Item7
+											class Item5
 											{
 												name="ItemAndroid";
 												count=1;
 											};
-											class Item8
+											class Item6
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
+											};
+											class Item7
+											{
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -8574,20 +8454,20 @@ class Mission
 											items=2;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
-											};
-											class Item1
-											{
 												name="ACE_Chemlight_IR";
 												count=1;
 												ammoLeft=1;
 											};
+											class Item1
+											{
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
+											};
 										};
 										class ItemCargo
 										{
-											items=9;
+											items=8;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -8595,43 +8475,38 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_morphine";
-												count=1;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
-											{
-												name="ACE_epinephrine";
-												count=1;
-											};
-											class Item3
-											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item4
 											{
 												name="ACE_CableTie";
 												count=1;
 											};
-											class Item5
+											class Item3
 											{
 												name="kat_chestSeal";
-												count=1;
+												count=2;
 											};
-											class Item6
+											class Item4
 											{
 												name="ACRE_PRC148";
 												count=1;
 											};
-											class Item7
+											class Item5
 											{
 												name="ItemAndroid";
 												count=1;
 											};
-											class Item8
+											class Item6
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_elasticBandage";
+												count=10;
+											};
+											class Item7
+											{
+												name="ACE_quikclot";
+												count=10;
 											};
 										};
 									};
@@ -8899,20 +8774,20 @@ class Mission
 											items=2;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
-											};
-											class Item1
-											{
 												name="ACE_Chemlight_IR";
 												count=1;
 												ammoLeft=1;
 											};
+											class Item1
+											{
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
+											};
 										};
 										class ItemCargo
 										{
-											items=9;
+											items=8;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -8920,43 +8795,38 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_morphine";
-												count=1;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
-											{
-												name="ACE_epinephrine";
-												count=1;
-											};
-											class Item3
-											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item4
 											{
 												name="ACE_CableTie";
 												count=1;
 											};
-											class Item5
+											class Item3
 											{
 												name="kat_chestSeal";
-												count=1;
+												count=2;
 											};
-											class Item6
+											class Item4
 											{
 												name="ACRE_PRC148";
 												count=1;
 											};
-											class Item7
+											class Item5
 											{
 												name="ItemAndroid";
 												count=1;
 											};
-											class Item8
+											class Item6
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_quikclot";
+												count=10;
+											};
+											class Item7
+											{
+												name="ACE_elasticBandage";
+												count=10;
 											};
 										};
 									};
@@ -9223,32 +9093,32 @@ class Mission
 											items=4;
 											class Item0
 											{
-												name="ACE_painkillers";
-												count=1;
-												ammoLeft=10;
-											};
-											class Item1
-											{
 												name="ACE_Chemlight_IR";
 												count=1;
 												ammoLeft=1;
 											};
-											class Item2
+											class Item1
 											{
 												name="SmokeShellOrange";
 												count=1;
 												ammoLeft=1;
 											};
-											class Item3
+											class Item2
 											{
 												name="CUP_30Rnd_545x39_AK74M_camo_M";
 												count=2;
 												ammoLeft=30;
 											};
+											class Item3
+											{
+												name="kat_Painkiller";
+												count=2;
+												ammoLeft=4;
+											};
 										};
 										class ItemCargo
 										{
-											items=9;
+											items=8;
 											class Item0
 											{
 												name="ACE_tourniquet";
@@ -9256,43 +9126,38 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_splint";
-												count=2;
+												name="ACE_packingBandage";
+												count=10;
 											};
 											class Item2
-											{
-												name="ACE_morphine";
-												count=1;
-											};
-											class Item3
-											{
-												name="ACE_epinephrine";
-												count=1;
-											};
-											class Item4
-											{
-												name="ACE_packingBandage";
-												count=12;
-											};
-											class Item5
 											{
 												name="ACRE_PRC148";
 												count=1;
 											};
-											class Item6
+											class Item3
 											{
 												name="ItemAndroid";
 												count=1;
 											};
-											class Item7
+											class Item4
 											{
 												name="ACE_CableTie";
 												count=1;
 											};
-											class Item8
+											class Item5
 											{
 												name="kat_chestSeal";
-												count=1;
+												count=2;
+											};
+											class Item6
+											{
+												name="ACE_quikclot";
+												count=5;
+											};
+											class Item7
+											{
+												name="ACE_elasticBandage";
+												count=5;
 											};
 										};
 									};
@@ -10204,11 +10069,11 @@ class Mission
 				class Item59
 				{
 					dataType="Marker";
-					position[]={5901.6499,464.51099,13302.6};
+					position[]={6669,464.5,945.25};
 					name="opfor_point_61";
 					type="Empty";
 					id=842;
-					atlOffset=445.21793;
+					atlOffset=488.56042;
 				};
 				class Item60
 				{
