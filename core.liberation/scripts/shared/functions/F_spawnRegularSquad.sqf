@@ -1,19 +1,26 @@
 diag_log format [ "Spawning regular squad at %1", time ];
 
 params [ "_sector", "_squadies_to_spawn" ];
-private [ "_sectorpos", "_spawnpos", "_grp", "_nextunit", "_corrected_amount" ];
+private [ "_sectorpos", "_spawnpos", "_grp", "_nextunit", "_corrected_amount", "_player_count" ];
 
 //_corrected_amount = round ( (count _squadies_to_spawn) * ([] call F_adaptiveOpforFactor) );
 
-_corrected_amount = GRLIB_side_friendly countSide allUnits;
 
-if ( _corrected_amount > 3 && _corrected_amount < 9) then {
-	_corrected_amount = 4;
+_player_count = GRLIB_side_friendly countSide allUnits;
+_corrected_amount = 4;
+
+if ( _player_count <= 2) then {
+	_corrected_amount = 1;
 }else{
-	if ( _corrected_amount > 9) then {
-		_corrected_amount = 6;
+	if ( _player_count <= 4) then {
+		_corrected_amount = 2;
+	}else{
+		if ( _player_count <= 6) then {
+			_corrected_amount = 3;
+		};
 	};
 };
+
 
 _squadies_to_spawn = _squadies_to_spawn call BIS_fnc_arrayShuffle;
 

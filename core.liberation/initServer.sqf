@@ -127,7 +127,7 @@ hs_spawn = compileFinal "
 				_group_spawn = createGroup opfor;
 				_spawn_opfor = selectRandom militia_squad;
 				
-				_spawn_opfor createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.9, 'private']; sleep 1;
+				_spawn_opfor createUnit [_spawn_position, _group_spawn, hs_spawn_init, 0.3, 'private']; sleep 1;
 
 				_wp1_spawn = _group_spawn addWaypoint [getPosWorld _player, huber_commando_dist];
 				_wp1_spawn setwaypointtype 'MOVE';

@@ -109,23 +109,26 @@ if ( (!(_sector in blufor_sectors)) &&  ( ( [ getmarkerpos _sector , [ _opforcou
 		_squad2 = ([] call F_getAdaptiveSquadComp);
 		_squad3 = ([] call F_getAdaptiveSquadComp);
 		_squad4 = ([] call F_getAdaptiveSquadComp);
-		_squad5 = ([] call F_getAdaptiveSquadComp);
-		_squad6 = ([] call F_getAdaptiveSquadComp);
-		_squad7 = ([] call F_getAdaptiveSquadComp);
-		_squad8 = ([] call F_getAdaptiveSquadComp);
 
 		_vehtospawn pushback (selectRandom militia_vehicles);
 
-		if(_bluforcount > 6) then {
+		if(_bluforcount >= 8) then {
+			_squad5 = ([] call F_getAdaptiveSquadComp);
 			_vehtospawn pushback (selectRandom militia_vehicles);
 		};
 
-		if(_bluforcount > 12) then {
+		if(_bluforcount >= 12) then {
+			_squad6 = ([] call F_getAdaptiveSquadComp);
 			_vehtospawn pushback (selectRandom militia_vehicles);
 		};
 
-		if(_bluforcount > 18) then {
+		if(_bluforcount >= 14) then {
+			_squad7 = ([] call F_getAdaptiveSquadComp);
 			_vehtospawn pushback (selectRandom militia_vehicles);
+		};
+
+		if(_bluforcount >= 16) then {
+			_squad8 = ([] call F_getAdaptiveSquadComp);
 		};
 		
 		_building_ai_max = 0;
@@ -134,7 +137,7 @@ if ( (!(_sector in blufor_sectors)) &&  ( ( [ getmarkerpos _sector , [ _opforcou
 
 		[markerPos _sector, 50] call createlandmines;
 		_iedcount = (floor (random 3)) * GRLIB_difficulty_modifier;
-		if ( _iedcount > 5 ) then { _iedcount = 5 };
+		if ( _iedcount > 4 ) then { _iedcount = 4 };
 	};
 
 
