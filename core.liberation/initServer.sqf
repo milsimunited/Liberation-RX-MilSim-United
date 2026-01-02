@@ -150,7 +150,7 @@ hs_spawn = compileFinal "
 // Server is started at the first day of the month AND
 // Server-Time is between 05:30 and 05:45
 [] execVM "MilSimUnited\checkSystemTime.sqf";
-["Initialize", [true]] call BIS_fnc_dynamicGroups;
+//["Initialize", [true]] call BIS_fnc_dynamicGroups;
 
 while { true } do {
 	sleep msu_heartbeat;
