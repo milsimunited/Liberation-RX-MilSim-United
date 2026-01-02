@@ -171,9 +171,9 @@ GREUH_TipsText = [];
 // Sign Add
 addMissionEventHandler ["Draw3D",{
 	private _pos = ASLToAGL getPosASL chimera_sign;
-	if (player distance2D _pos <= 30) then {
+	/*if (player distance2D _pos <= 30) then {
 		drawIcon3D ["", [1,1,1,1], _pos vectorAdd [0, 0, 3], 0, 0, 0, "- READ ME -", 2, 0.05, "TahomaB"];
-	};
+	};*/
 
 	private _near_grave = nearestObjects [player, GRLIB_player_grave, 2];
 	if (count (_near_grave) != 0) then {
