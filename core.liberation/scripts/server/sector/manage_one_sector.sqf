@@ -103,31 +103,32 @@ if ( (!(_sector in blufor_sectors)) &&  ( ( [ getmarkerpos _sector , [ _opforcou
 		if ( _iedcount > 5 ) then { _iedcount = 5 };
 	};
 
-
 	if ( _sector in sectors_tower ) then {
 		_squad1 = ([] call F_getAdaptiveSquadComp);
 		_squad2 = ([] call F_getAdaptiveSquadComp);
 		_squad3 = ([] call F_getAdaptiveSquadComp);
-		_squad4 = ([] call F_getAdaptiveSquadComp);
 
 		_vehtospawn pushback (selectRandom militia_vehicles);
 
-		if(_bluforcount >= 8) then {
+		if(_bluforcount >= 12) then {
+			_squad4 = ([] call F_getAdaptiveSquadComp);
+		};
+
+		if(_bluforcount >= 16) then {
 			_squad5 = ([] call F_getAdaptiveSquadComp);
 			_vehtospawn pushback (selectRandom militia_vehicles);
 		};
 
-		if(_bluforcount >= 12) then {
+		if(_bluforcount >= 20) then {
 			_squad6 = ([] call F_getAdaptiveSquadComp);
-			_vehtospawn pushback (selectRandom militia_vehicles);
 		};
 
-		if(_bluforcount >= 14) then {
+		if(_bluforcount >= 24) then {
 			_squad7 = ([] call F_getAdaptiveSquadComp);
 			_vehtospawn pushback (selectRandom militia_vehicles);
 		};
 
-		if(_bluforcount >= 16) then {
+		if(_bluforcount >= 28) then {
 			_squad8 = ([] call F_getAdaptiveSquadComp);
 		};
 		
@@ -136,8 +137,7 @@ if ( (!(_sector in blufor_sectors)) &&  ( ( [ getmarkerpos _sector , [ _opforcou
 		_spawncivs = true;
 
 		[markerPos _sector, 50] call createlandmines;
-		_iedcount = (floor (random 3)) * GRLIB_difficulty_modifier;
-		if ( _iedcount > 4 ) then { _iedcount = 4 };
+		_iedcount = 0;
 	};
 
 
