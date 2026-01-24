@@ -10,7 +10,10 @@ GRLIB_whitelisted_tags = [
 // For example: "76561198016642627"
 // To know that information: https://steamid.io/
 GRLIB_whitelisted_steamids = [
-    "76561197993044168" // Huber Sepp
+    "76561197993044168", // Huber Sepp
+    "76561198014636795", // Andx
+    "76561198020511076", // ElBasto
+    "76561199219531332" // Mombi
 ];
 
 // Allow player to use the Light Admin Menu (aka Moderators)

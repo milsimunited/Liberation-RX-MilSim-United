@@ -94,7 +94,7 @@ class Params
 		title = $STR_PARAM_FOB_TYPE ;
 		values[] = {0,1};
 		texts[] = {"Huron", "Truck"};
-		default = 1;
+		default = 0;
 	};
 	class HuronType{
 		title = $STR_PARAM_HURON_TYPE ;
@@ -250,7 +250,7 @@ class Params
 		title = $STR_PARAM_FOBS_COUNT;
 		values[] = {1,2,3,5,7,10,15,20,26};
 		texts[] = {1,2,3,5,7,10,15,20,26};
-		default = 1;
+		default = 2;
 	};
 	class SquadSize{
 		title = $STR_PARAM_SQUAD_SIZE_START;
