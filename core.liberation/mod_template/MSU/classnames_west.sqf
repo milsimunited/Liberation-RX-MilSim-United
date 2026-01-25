@@ -709,8 +709,8 @@ support_crates = [
 	["BWA3_WLP14_Repair_Winter", 0, 0, 0, MSU_Rank_Private],
 	["B_supplyCrate_F", 0, 0, 0, MSU_Rank_Private],
 	// FOB
-	[FOB_box_typename, 0, 0, 0, 1200],
-	[FOB_truck_typename, 0, 0, 0, 1200]
+	[FOB_box_typename, 0, 1200, 0, MSU_Rank_Private],
+	[FOB_truck_typename, 0, 1200, 0, MSU_Rank_Private]
 ];
 
 buildings_west = [
