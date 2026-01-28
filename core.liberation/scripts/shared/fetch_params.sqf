@@ -136,7 +136,7 @@ if ( GRLIB_disable_death_chat == 1 ) then { GRLIB_disable_death_chat = true } el
 if (GRLIB_sector_radius != 0) then { GRLIB_sector_size = GRLIB_sector_radius };
 
 // ACE
-if ( GRLIB_ACE_enabled ) then {	GRLIB_revive = 0; GRLIB_fatigue = true; GRLIB_fancy_info = 0; GRLIB_limited_arsenal = true; };  // Disable PAR/Fatigue/Fancy if ACE present
+if ( GRLIB_ACE_enabled ) then {	GRLIB_revive = 0; GRLIB_fatigue = true; GRLIB_fancy_info = 0; };  // Disable PAR/Fatigue/Fancy if ACE present
 
 // Check MOD
 GRLIB_mod_enabled = true;

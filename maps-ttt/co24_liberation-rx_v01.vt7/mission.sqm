@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=568;
+		nextID=586;
 	};
 	class Camera
 	{
-		pos[]={8062.9263,12.974031,422.50934};
-		dir[]={0.87504321,-0.21243191,0.43495497};
-		up[]={0.19023135,0.97717798,0.094557628};
-		aside[]={0.44511494,1.7910497e-07,-0.8954826};
+		pos[]={8018.688,9.1145449,221.2485};
+		dir[]={0.76282644,-0.1874074,-0.61884928};
+		up[]={0.14553793,0.98228228,-0.11806885};
+		aside[]={-0.63001168,-7.4505806e-09,-0.77658582};
 	};
 };
 binarizationWanted=0;
@@ -583,7 +583,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={7864.125,1.2109604,315.17499};
-								angles[]={-0,1.9226547,6.1879115};
+								angles[]={0,1.9226547,6.1879115};
 							};
 							side="West";
 							flags=6;
@@ -614,6 +614,10 @@ class Mission
 											name="CUP_18Rnd_9x19_Phantom";
 											ammoLeft=18;
 										};
+									};
+									class binocular
+									{
+										name="Rangefinder";
 									};
 									class uniform
 									{
@@ -1669,6 +1673,10 @@ class Mission
 											ammoLeft=18;
 										};
 									};
+									class binocular
+									{
+										name="Rangefinder";
+									};
 									class uniform
 									{
 										typeName="ttt_Uniform_Black_US_Desert";
@@ -1998,6 +2006,10 @@ class Mission
 											name="CUP_18Rnd_9x19_Phantom";
 											ammoLeft=18;
 										};
+									};
+									class binocular
+									{
+										name="Rangefinder";
 									};
 									class uniform
 									{
@@ -2692,6 +2704,10 @@ class Mission
 											name="CUP_18Rnd_9x19_Phantom";
 											ammoLeft=18;
 										};
+									};
+									class binocular
+									{
+										name="Rangefinder";
 									};
 									class uniform
 									{
@@ -3747,6 +3763,10 @@ class Mission
 											ammoLeft=18;
 										};
 									};
+									class binocular
+									{
+										name="Rangefinder";
+									};
 									class uniform
 									{
 										typeName="ttt_Uniform_Black_US_Desert";
@@ -4076,6 +4096,10 @@ class Mission
 											name="CUP_18Rnd_9x19_Phantom";
 											ammoLeft=18;
 										};
+									};
+									class binocular
+									{
+										name="Rangefinder";
 									};
 									class uniform
 									{
@@ -4770,6 +4794,10 @@ class Mission
 											name="CUP_18Rnd_9x19_Phantom";
 											ammoLeft=18;
 										};
+									};
+									class binocular
+									{
+										name="Rangefinder";
 									};
 									class uniform
 									{
@@ -5825,6 +5853,10 @@ class Mission
 											ammoLeft=18;
 										};
 									};
+									class binocular
+									{
+										name="Rangefinder";
+									};
 									class uniform
 									{
 										typeName="ttt_Uniform_Black_US_Desert";
@@ -6154,6 +6186,10 @@ class Mission
 											name="CUP_18Rnd_9x19_Phantom";
 											ammoLeft=18;
 										};
+									};
+									class binocular
+									{
+										name="Rangefinder";
 									};
 									class uniform
 									{
@@ -7351,8 +7387,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={7835.519,2.9784329,322.55469};
-						angles[]={6.2695355,5.61307,6.185658};
+						position[]={7835.519,2.9784369,322.55499};
+						angles[]={6.2695365,5.6130662,6.1856561};
 					};
 					name="zm1";
 					id=2566;
@@ -7480,6 +7516,10 @@ class Mission
 											name="CUP_18Rnd_9x19_Phantom";
 											ammoLeft=18;
 										};
+									};
+									class binocular
+									{
+										name="Rangefinder";
 									};
 									class uniform
 									{
@@ -7800,6 +7840,10 @@ class Mission
 											name="CUP_18Rnd_9x19_Phantom";
 											ammoLeft=18;
 										};
+									};
+									class binocular
+									{
+										name="Rangefinder";
 									};
 									class uniform
 									{
@@ -9617,7 +9661,7 @@ class Mission
 				};
 			};
 			id=1761;
-			atlOffset=-0.081010699;
+			atlOffset=-0.08101058;
 		};
 		class Item1
 		{
