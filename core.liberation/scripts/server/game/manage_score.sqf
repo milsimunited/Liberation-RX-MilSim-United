@@ -74,7 +74,8 @@ while { true } do {
 						};
 					};
 
-					_msg = format ["%1%2", _msg, _msg2];
+					//_msg = format ["%1%2", _msg, _msg2];
+					_msg = format ["%1", _msg];
 					[_msg, 0, 0, 5, 0, 0, 90] remoteExec ["BIS_fnc_dynamicText", owner _x];
 					["FD_Finish_F"] remoteExec ["playSound", owner _x];
 
