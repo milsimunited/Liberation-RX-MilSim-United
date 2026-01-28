@@ -7,12 +7,12 @@ private [ "_sectorpos", "_spawnpos", "_grp", "_nextunit", "_corrected_amount", "
 
 
 _player_count = GRLIB_side_friendly countSide allUnits;
-_corrected_amount = 4;
+_corrected_amount = 5;
 
-if ( _player_count <= 2) then {
+if ( _player_count <= 3) then {
 	_corrected_amount = 1;
 }else{
-	if ( _player_count <= 4) then {
+	if ( _player_count <= 5) then {
 		_corrected_amount = 2;
 	}else{
 		if ( _player_count <= 6) then {
