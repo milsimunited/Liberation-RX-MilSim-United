@@ -136,7 +136,7 @@ if ( (!(_sector in blufor_sectors)) &&  ( ( [ getmarkerpos _sector , [ _opforcou
 
 		_spawncivs = true;
 
-		[markerPos _sector, 50] call createlandmines;
+		//[markerPos _sector, 3] call createlandmines;
 		_iedcount = 0;
 	};
 
@@ -240,7 +240,7 @@ if ( (!(_sector in blufor_sectors)) &&  ( ( [ getmarkerpos _sector , [ _opforcou
 					[_x] spawn prisonner_ai;
 					_max_prisonners = _max_prisonners - 1;
 				} else {
-					if ( ((random 100) <= 50) ) then { [_x] spawn bomber_ai };
+					//if ( ((random 100) <= 50) ) then { [_x] spawn bomber_ai };
 				};
 			} foreach _enemy_left;
 			sleep 60;
