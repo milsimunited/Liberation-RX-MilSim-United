@@ -179,18 +179,20 @@ ied_enemy_sector = ["ACE_IEDLandBig_Range"];
 
 
 moderators = [
-    "76561197993044168", // Huber Sepp
     "76561198014636795", // Andx
     "76561198020511076", // ElBasto
-    "76561199219531332" // Mombi
+    "76561199219531332", // Mombi
+    "76561198078774591", // EinStein
+    "76561197993044168" // Huber Sepp
 ];
 
 curatorLogicGroup = createGroup [sideLogic, false];
 allowed_zeus_curators = [
-    ["76561197993044168", "Huber Sepp"],
     ["76561198014636795", "Andx"],
     ["76561198020511076", "ElBasto"],
-    ["76561199219531332", "Mombi"]
+    ["76561199219531332", "Mombi"],
+    ["76561198078774591", "EinStein"],
+    ["76561197993044168", "Huber Sepp"]
 ];
 
 
