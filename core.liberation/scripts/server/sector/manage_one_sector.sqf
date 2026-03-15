@@ -24,6 +24,7 @@ private _minimum_building_positions = 5;
 private _max_prisonners = 5;
 private _sector_despawn_tickets = 24;
 private _popfactor = GRLIB_sector_spawn_factor;
+private _friendlyTanksCount = { alive _x &&  side _x == GRLIB_side_friendly &&  _x isKindOf "Tank" } count vehicles; 
 
 if ( GRLIB_unitcap < 1 ) then { _popfactor = GRLIB_unitcap; };
 
@@ -110,26 +111,31 @@ if ( (!(_sector in blufor_sectors)) &&  ( ( [ getmarkerpos _sector , [ _opforcou
 
 		_vehtospawn pushback (selectRandom militia_vehicles);
 
-		if(_bluforcount >= 12) then {
+		if(_bluforcount >= 12 || _friendlyTanksCount > 0) then {
 			_squad4 = ([] call F_getAdaptiveSquadComp);
 		};
 
-		if(_bluforcount >= 16) then {
+		if(_bluforcount >= 16 || _friendlyTanksCount > 0) then {
 			_squad5 = ([] call F_getAdaptiveSquadComp);
 			_vehtospawn pushback (selectRandom militia_vehicles);
 		};
 
-		if(_bluforcount >= 20) then {
+		if(_bluforcount >= 20 || _friendlyTanksCount > 0) then {
 			_squad6 = ([] call F_getAdaptiveSquadComp);
 		};
 
-		if(_bluforcount >= 24) then {
+		if(_bluforcount >= 24 || _friendlyTanksCount > 0) then {
 			_squad7 = ([] call F_getAdaptiveSquadComp);
 			_vehtospawn pushback (selectRandom militia_vehicles);
 		};
 
-		if(_bluforcount >= 28) then {
+		if(_bluforcount >= 28 || _friendlyTanksCount > 0) then {
 			_squad8 = ([] call F_getAdaptiveSquadComp);
+		};
+
+		if(_friendlyTanksCount > 1) then {
+			_vehtospawn pushback (selectRandom militia_vehicles);
+			_vehtospawn pushback (selectRandom militia_vehicles);
 		};
 		
 		_building_ai_max = 0;

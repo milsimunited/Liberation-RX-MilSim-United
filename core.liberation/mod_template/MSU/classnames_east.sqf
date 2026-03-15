@@ -77,10 +77,10 @@ divers_squad = [
 ];
 
 militia_vehicles = [
-	"CUP_O_GAZ_Vodnik_BPPU_RU",
+	/*"CUP_O_GAZ_Vodnik_BPPU_RU",
 	"CFP_O_WAGNER_BTR_80_WDL_01",
-    "CUP_O_T90_RU",
-	"CUP_O_2S6M_RU"
+	"CUP_O_2S6M_RU",*/
+    "CUP_O_T72_RU"
 ];
 
 boats_east = [
@@ -88,29 +88,19 @@ boats_east = [
 ];
 
 opfor_vehicles = [
-	"CUP_O_GAZ_Vodnik_BPPU_RU",
-	"CFP_O_WAGNER_BTR_80_WDL_01",
-    "CUP_O_T90_RU",
-	"CUP_O_2S6M_RU"
+    "CUP_O_T72_RU"
 ];
 
 opfor_vehicles_low_intensity = [
-	"CUP_O_GAZ_Vodnik_BPPU_RU",
-	"CFP_O_WAGNER_BTR_80_WDL_01"
+    "CUP_O_T72_RU"
 ];
 
 opfor_battlegroup_vehicles = [
-	"CUP_O_GAZ_Vodnik_BPPU_RU",
-	"CFP_O_WAGNER_BTR_80_WDL_01",
-    "CUP_O_T90_RU",
-	"CUP_O_2S6M_RU"
+    "CUP_O_T72_RU"
 ];
 
 opfor_battlegroup_vehicles_low_intensity = [
-	"CUP_O_GAZ_Vodnik_BPPU_RU",
-	"CFP_O_WAGNER_BTR_80_WDL_01",
-    "CUP_O_T90_RU",
-	"CUP_O_2S6M_RU"
+    "CUP_O_T72_RU"
 ];
 
 opfor_troup_transports = [
@@ -135,16 +125,13 @@ opfor_statics = [
 ];
 
 opfor_reinforcement_vehicles = [
-	"CUP_O_GAZ_Vodnik_BPPU_RU",
-	"CFP_O_WAGNER_BTR_80_WDL_01",
-    "CUP_O_T90_RU",
-	"CUP_O_2S6M_RU"
+    "CUP_O_T72_RU"
 ];
 
 opfor_recyclable = [
 	["CUP_O_GAZ_Vodnik_BPPU_RU", 0, 200, 0],
 	["CFP_O_WAGNER_BTR_80_WDL_01", 0, 200, 0],
-	["CUP_O_T90_RU", 0, 300, 0],
+	["CUP_O_T72_RU", 0, 300, 0],
 	["CUP_O_2S6M_RU", 0, 300, 0],
 	["CFP_O_WAGNER_Mi8_WDL_01", 0, 400, 0],
 	["CFP_O_WAGNER_Mi24_D_WDL_01", 0, 400, 0],
