@@ -55,7 +55,7 @@ ts_server_name = "Server name";
 tfar_channel = "╠-● Ingame [TFAR]";
 
 // gain and punishment
-respawn_ammo = 50; // +/- is conditional
+respawn_ammo = 100; // +/- is conditional
 MSU_Kill_AddScore = 2;
 MSU_Kill_AddAmmo = 2;
 MSU_InfantryKill_AddScore = 10;

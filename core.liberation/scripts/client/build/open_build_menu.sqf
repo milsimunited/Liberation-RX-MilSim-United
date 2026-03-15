@@ -33,7 +33,8 @@ ctrlShow [ 108, _iscommandant ];
 ctrlShow [ 1085, _iscommandant ];
 
 _squadname = "";
-_buildpages = [
+
+/*_buildpages = [
     localize "STR_BUILD1",
     localize "STR_BUILD2",
     localize "STR_BUILD3",
@@ -58,6 +59,15 @@ _buildpages = [
     localize "STR_BUILD22",
     localize "STR_BUILD23",
     localize "STR_BUILD24",
+    localize "STR_BUILD25",
+    localize "STR_BUILD26"
+];*/
+
+_buildpages = [
+    localize "STR_BUILD1",
+    localize "STR_BUILD12",
+    localize "STR_BUILD16",
+    localize "STR_BUILD23",
     localize "STR_BUILD25",
     localize "STR_BUILD26"
 ];

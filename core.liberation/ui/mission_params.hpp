@@ -94,7 +94,7 @@ class Params
 		title = $STR_PARAM_FOB_TYPE ;
 		values[] = {0,1};
 		texts[] = {"Huron", "Truck"};
-		default = 0;
+		default = 1;
 	};
 	class HuronType{
 		title = $STR_PARAM_HURON_TYPE ;

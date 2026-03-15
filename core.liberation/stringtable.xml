@@ -340,9 +340,9 @@
                     <Japanese>前哨基地コンテナ</Japanese>
             </Key>
             <Key ID="STR_FOBTRUCK">
-                    <Original>FOB Truck</Original>
+                    <Original>FOB Vehicle</Original>
                     <French>Camion FOB</French>
-                    <German>FOB Lastwagen</German>
+                    <German>FOB Fahrzeug</German>
                     <Spanish>Camión de FOB</Spanish>
                     <Russian>FOB грузовик </Russian>
                     <Chinesesimp>FOB 卡车</Chinesesimp>
@@ -1575,9 +1575,9 @@
                     <Japanese>スポーンする弾薬箱をパッシブインカムに変更</Japanese>
             </Key>
             <Key ID="STR_BUILD1">
-                    <Original>Infantry units</Original>
-                    <French>Unités d'infanterie</French>
-                    <German>Infanterie</German>
+                    <Original>--</Original>
+                    <French>--</French>
+                    <German>--</German>
                     <Spanish>Unidades de infantería</Spanish>
                     <Russian>Пехотинцы</Russian>
                     <Chinesesimp>步兵单位</Chinesesimp>
@@ -1674,9 +1674,9 @@
                     <Japanese>APC</Japanese>
             </Key>
             <Key ID="STR_BUILD12">
-                    <Original>MBT</Original>
+                    <Original>Ground</Original>
                     <French>Char de combat principal</French>
-                    <German>MBT</German>
+                    <German>Boden</German>
                     <Spanish>Tanque de batalla principal</Spanish>
                     <Russian>Основной боевой танк</Russian>
                     <Chinesesimp>主战坦克</Chinesesimp>
@@ -1711,9 +1711,9 @@
             </Key>
 
             <Key ID="STR_BUILD16">
-                    <Original>Helicopter armed</Original>
+                    <Original>Helicopter</Original>
                     <French>Hélicoptère armé</French>
-                    <German>Bewaffneter Hubschrauber</German>
+                    <German>Hubschrauber</German>
                     <Spanish>Helicóptero armado</Spanish>
                     <Russian>Вооруженный вертолет</Russian>
                     <Chinesesimp>武装直升机</Chinesesimp>

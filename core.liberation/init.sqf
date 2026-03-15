@@ -970,6 +970,26 @@ log_on_server = compileFinal "
 	}];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
+["BWA3_Leopard2_Tropen", "InitPost", {
+    params ["_vehicle"];
+	[
+		_vehicle,
+		["Tropen1",1], 
+		["unhide_camo_chassis_net",0,"unhide_camo_turret_net",0,"unhide_camo_gun_net",0,"unhide_mudflap",0]
+	] call BIS_fnc_initVehicle;
+	[_vehicle, false, [false,false], true] call ttt_w_shields_fnc_addVehicleShield;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["CUP_B_M1A2C_TUSK_II_NATO", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle, false, [false,false], true] call ttt_w_shields_fnc_addVehicleShield;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["B_Heli_Transport_03_F", "InitPost", {
+    params ["_vehicle"];
+	[_vehicle, true, [false,false], true] call ttt_w_shields_fnc_addVehicleShield;
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
 /*["BWA3_Leopard2_Fleck", "InitPost", {
     params ["_vehicle"];
 	_vehicle addEventHandler ["HandleDamage", {  
@@ -1007,6 +1027,24 @@ log_on_server = compileFinal "
 		_damage = _damage * 1.25;
 		_damage;
 	}];
+}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+["I_MBT_03_cannon_F", "InitPost", {
+	params ["_vehicle"];
+	[
+		_vehicle,
+		["Indep_01",1], 
+		["HideTurret",1,"HideHull",1,"showCamonetHull",1,"showCamonetTurret",1]
+	] call BIS_fnc_initVehicle;
+	
+	_vehicle addEventHandler ["HandleDamage", {  
+		private _unit = _this select 0;
+		private _hitSelection = _this select 1;
+		private _damage = _this select 2;
+		if (_hitSelection isEqualTo "") then {(damage _unit) + (_damage * 3.0)} else {(_unit getHit _hitSelection) + (_damage * 3.0)};
+	}];
+
+	[_vehicle, false, [false,false], true] call ttt_w_shields_fnc_addVehicleShield;
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 ["I_LT_01_cannon_F", "InitPost", {
@@ -1120,9 +1158,6 @@ log_on_server = compileFinal "
 	_vehicle setObjectTextureGlobal [2, '#(rgb,8,8,3)color(0.15,0.15,0.09,3)'];
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
-
-
-
 //["USAF_A10", "InitPost", {
 //    params ["_vehicle"];
 //		private _pylon = getPylonMagazines _vehicle;
@@ -1132,19 +1167,34 @@ log_on_server = compileFinal "
 //	_vehicle setVariable ["ace_pylons_magazineWhitelist",USAF_A10, true]}, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 
+
 // Advanced Singloading
 ASL_SLING_RULES_OVERRIDE = [ 
 	["Air", "CAN_SLING", "All"]
 ];
 // ["Air", "CANT_SLING", "Tank"],
+ASL_HEAVY_LIFTING_ENABLED = true;
+ASL_SET_MASS = 8000;
+ASL_Supported_Vehicles_OVERRIDE = ["B_Heli_Transport_03_F"];
 
 // Advanced Towing
 SA_MAX_TOWED_CARGO = 4;
-SA_TOW_RULES_OVERRIDE =[
-	["All", "CAN_TOW", "All"]
+SA_TOW_RULES_OVERRIDE = [
+	["Tank", "CAN_TOW", "Tank"],
+	["Tank", "CAN_TOW", "Car"],
+	["Tank", "CAN_TOW", "Air"],
+	["Car", "CAN_TOW", "Car"],
+	["Car", "CAN_TOW", "Tank"],
+	["Car", "CAN_TOW", "Air"],
+	["Air", "CAN_TOW", "Air"],
+	["Air", "CAN_TOW", "Air"],
+	["Air", "CAN_TOW", "Car"]
 ];
-// ["Car", "CANT_TOW", "Tank"],
-// ["Air", "CANT_TOW", "Air"]
+missionNamespace setVariable ["SA_TOW_SUPPORTED_VEHICLES_OVERRIDE", ["CUP_B_M1A2C_TUSK_II_NATO","BWA3_Leopard2_Tropen"]];
+// ["Car", "CANT_TOW", "Tank"],["Air", "CANT_TOW", "Air"],["All", "CAN_TOW", "All"]
+
+
+
 
 //[AiCacheDistance(players),TargetFPS(-1 for Auto),Debug,CarCacheDistance,AirCacheDistance,BoatCacheDistance]execvm "zbe_cache\main.sqf";
 // if (isServer) then {[2000,-1,false,100,1000,100]execvm "zbe_cache\main.sqf"};

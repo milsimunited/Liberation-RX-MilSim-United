@@ -5,11 +5,11 @@ GRLIB_color_friendly = "ColorBLUFOR";
 // default className: scripts\shared\default_classnames.sqf
 // Advanced definition: scripts\shared\classnames.sqf
 
-huron_typename = "B_Heli_Transport_03_F";
+huron_typename = "B_Heli_Transport_01_F";
 // comment to use value from lobby/server.cfg
-FOB_typename = "LAV25_HQ_unfolded";
+FOB_typename = "CamoNet_BLUFOR_open_F";
 FOB_box_typename = "B_Slingload_01_Cargo_F";
-FOB_truck_typename = "CUP_B_LAV25_HQ_green";
+FOB_truck_typename = "B_Heli_Transport_03_F";
 FOB_outpost = "";
 FOB_box_outpost = "";
 Respawn_truck_typename = "";
@@ -26,16 +26,25 @@ A3W_BoxWps = "B_CargoNet_01_ammo_F";
 
 units_loadout_overide = [];
 
+
+
+// !!!
+// build menu display: \scripts\client\build\open_build_menu.sqf
+// build_lists: \scripts\shared\classnames.sqf
+// !!!
+
+
+
 // [className, MANPOWER, ammo, fuel, rank]
 infantry_units = [
-	["BWA3_Medic_Fleck", 0, ai_value, 0, MSU_Rank_Private]
+	//["BWA3_Medic_Fleck", 0, ai_value, 0, MSU_Rank_Private]
 ];
 
 small_infantry_transport_unarmed = [
+	/*
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
-	["B_Quadbike_01_F", 0, 10, MSU_Fuel_LightVehicle_Class1, MSU_Rank_Private],
-	["C_Offroad_02_unarmed_F", 0, 100, MSU_Fuel_LightVehicle_Class1, MSU_Rank_Private],
-	["B_LSV_01_unarmed_F", 0, 100, MSU_Fuel_LightVehicle_Class1, MSU_Rank_Private],
+	["B_LSV_01_unarmed_F", 50, 100, MSU_Fuel_LightVehicle_Class1, MSU_Rank_Private],
+	["B_Quadbike_01_F", 0, 50, MSU_Fuel_LightVehicle_Class1, MSU_Rank_Private],["C_Offroad_02_unarmed_F", 0, 100, MSU_Fuel_LightVehicle_Class1, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
 	["rhsusf_mrzr4_d", 0, 100, MSU_Fuel_LightVehicle_Class1, MSU_Rank_Private],
 	["rhsusf_m1043_w", 0, 100, MSU_Fuel_LightVehicle_Class1, MSU_Rank_Private],
@@ -51,11 +60,11 @@ small_infantry_transport_unarmed = [
 	["CUP_B_nM1038_4s_USA_DES", 0, 100, MSU_Fuel_LightVehicle_Class1, MSU_Rank_Private],
 	["CUP_I_M151_SYND", 0, 100, MSU_Fuel_LightVehicle_Class1, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
-	["BWA3_Eagle_Fleck", 0, 100, MSU_Fuel_LightVehicle_Class1, MSU_Rank_Private]
+	["BWA3_Eagle_Fleck", 0, 100, MSU_Fuel_LightVehicle_Class1, MSU_Rank_Private]*/
 ];
 
 small_infantry_transport_armed_HMG = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
 	["rhsusf_m1165_asv_m240_usaf_d", 0, 200, MSU_Fuel_LightVehicle_Class2, MSU_Rank_Private],
 	["rhsusf_m1043_w_m2", 0, 200, MSU_Fuel_LightVehicle_Class2, MSU_Rank_Private],
 	["rhsusf_m1165a1_gmv_m2_m240_socom_d", 0, 200, MSU_Fuel_LightVehicle_Class2, MSU_Rank_Private],
@@ -79,11 +88,11 @@ small_infantry_transport_armed_HMG = [
 	["CUP_I_SUV_Armored_ION", 0, 200, MSU_Fuel_LightVehicle_Class2, MSU_Rank_Private],
 	["CUP_I_M151_M2_SYND", 0, 200, MSU_Fuel_LightVehicle_Class2, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
-	["BWA3_Eagle_FLW100_Fleck", 0, 250, MSU_Fuel_LightVehicle_Class2, MSU_Rank_Private]
+	["BWA3_Eagle_FLW100_Fleck", 0, 250, MSU_Fuel_LightVehicle_Class2, MSU_Rank_Private]*/
 ];
 
 small_infantry_transport_armed_GMG = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
 	["rhsusf_m1165a1_gmv_mk19_m240_socom_d", 0, 400, MSU_Fuel_LightVehicle_Class3, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_CUP],
 	["CUP_B_BAF_Coyote_GMG_W", 0, 400, MSU_Fuel_LightVehicle_Class3, MSU_Rank_Private],
@@ -96,32 +105,32 @@ small_infantry_transport_armed_GMG = [
 	["CUP_B_nM1025_Mk19_USA_DES", 0, 400, MSU_Fuel_LightVehicle_Class3, MSU_Rank_Private],
 	["CUP_B_nM1025_SOV_Mk19_USA_WDL", 0, 400, MSU_Fuel_LightVehicle_Class3, MSU_Rank_Private],
 	["CUP_B_nM1025_Mk19_DF_USA_WDL", 0, 400, MSU_Fuel_LightVehicle_Class3, MSU_Rank_Private],
-	["CUP_B_RG31_Mk19_OD_USA", 0, 400, MSU_Fuel_LightVehicle_Class3, MSU_Rank_Private]
+	["CUP_B_RG31_Mk19_OD_USA", 0, 400, MSU_Fuel_LightVehicle_Class3, MSU_Rank_Private]*/
 ];
 
 small_infantry_transport_armed_AT = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
 	["B_LSV_01_AT_F", 0, 300, MSU_Fuel_LightVehicle_Class3, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
 	["rhsusf_m1045_w", 0, 300, MSU_Fuel_LightVehicle_Class3, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_CUP],
 	["CUP_B_nM1036_TOW_DF_USA_WDL", 0, 300, MSU_Fuel_LightVehicle_Class3, MSU_Rank_Private],
-	["CUP_B_M1167_WDL_USA", 0, 300, MSU_Fuel_LightVehicle_Class3, MSU_Rank_Private]
+	["CUP_B_M1167_WDL_USA", 0, 300, MSU_Fuel_LightVehicle_Class3, MSU_Rank_Private]*/
 ];
 
 big_infantry_transport_unarmed = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
 	["B_MRAP_01_F", 0, 150, MSU_Fuel_HeavyVehicle_Class1, MSU_Rank_Private],
 	["I_MRAP_03_F", 0, 200, MSU_Fuel_HeavyVehicle_Class1, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
 	["rhsusf_M1220_usarmy_wd", 0, 150, MSU_Fuel_HeavyVehicle_Class1, MSU_Rank_Private],
 	["rhsusf_M1238A1_socom_d", 0, 150, MSU_Fuel_HeavyVehicle_Class1, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_CUP],
-	["CUP_B_FENNEK_GER_Wdl", 0, 200, MSU_Fuel_HeavyVehicle_Class1, MSU_Rank_Private]
+	["CUP_B_FENNEK_GER_Wdl", 0, 200, MSU_Fuel_HeavyVehicle_Class1, MSU_Rank_Private]*/
 ];
 
 big_infantry_transport_armed_HMG = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
 	["B_MRAP_01_HMG_F", 0, 350, MSU_Fuel_HeavyVehicle_Class2, MSU_Rank_Private],
 	["I_MRAP_03_hmg_F", 0, 400, MSU_Fuel_HeavyVehicle_Class2, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
@@ -138,12 +147,12 @@ big_infantry_transport_armed_HMG = [
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
 	["BWA3_Dingo2_FLW100_MG3_CG13_Fleck", 0, 350, MSU_Fuel_HeavyVehicle_Class2, MSU_Rank_Private],
 	["BWA3_Dingo2_FLW100_MG3_Fleck", 0, 350, MSU_Fuel_HeavyVehicle_Class2, MSU_Rank_Private],
-	["BWA3_Dingo2_FLW200_M2_CG13_Fleck", 0, 350, MSU_Fuel_HeavyVehicle_Class2, MSU_Rank_Private]
+	["BWA3_Dingo2_FLW200_M2_CG13_Fleck", 0, 350, MSU_Fuel_HeavyVehicle_Class2, MSU_Rank_Private]*/
 
 ];
 
 big_infantry_transport_armed_GMG = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
 	["B_MRAP_01_gmg_F", 0, 500, MSU_Fuel_HeavyVehicle_Class3, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
 	["rhsusf_M1220_MK19_usarmy_wd", 0, 500, MSU_Fuel_HeavyVehicle_Class3, MSU_Rank_Private],
@@ -154,11 +163,11 @@ big_infantry_transport_armed_GMG = [
 	["CUP_B_Mastiff_GMG_GB_W", 0, 500, MSU_Fuel_HeavyVehicle_Class3, MSU_Rank_Private],
 	["CUP_B_Wolfhound_GMG_GB_W", 0, 500, MSU_Fuel_HeavyVehicle_Class3, MSU_Rank_Private],
 	["CUP_B_Boxer_GMG_GER_DES", 0, 500, MSU_Fuel_HeavyVehicle_Class3, MSU_Rank_Private],
-	["CUP_B_Dingo_GL_GER_Wdl", 0, 500, MSU_Fuel_HeavyVehicle_Class3, MSU_Rank_Private]
+	["CUP_B_Dingo_GL_GER_Wdl", 0, 500, MSU_Fuel_HeavyVehicle_Class3, MSU_Rank_Private]*/
 ];
 
 armored_infantry_transport = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
 	["rhsusf_stryker_m1126_m2_wd", 0, 450, MSU_Fuel_HeavyVehicle_Class3, MSU_Rank_Private],
 	["rhsusf_stryker_m1127_m2_wd", 0, 450, MSU_Fuel_HeavyVehicle_Class3, MSU_Rank_Private],
 	["rhsusf_stryker_m1132_m2_wd", 0, 450, MSU_Fuel_HeavyVehicle_Class3, MSU_Rank_Private],
@@ -172,12 +181,12 @@ armored_infantry_transport = [
 	["CUP_B_M1126_ICV_MK19_Woodland_Slat", 0, 450, MSU_Fuel_HeavyVehicle_Class3, MSU_Rank_Private],
 	["CUP_B_M1126_ICV_M2_Woodland_Slat", 0, 450, MSU_Fuel_HeavyVehicle_Class3, MSU_Rank_Private],
 	["CUP_B_M1135_ATGMV_Woodland_Slat", 0, 450, MSU_Fuel_HeavyVehicle_Class3, MSU_Rank_Private],
-	["CUP_B_LAV25_HQ_USMC", 0, 450, MSU_Fuel_HeavyVehicle_Class3, MSU_Rank_Private]
+	["CUP_B_LAV25_HQ_USMC", 0, 450, MSU_Fuel_HeavyVehicle_Class3, MSU_Rank_Private]*/
 
 ];
 
 artillery_vehicles = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
 	["B_MBT_01_arty_F", 0, 1500, MSU_Fuel_Artillery_Class1, MSU_Rank_Private],
 	["I_E_Truck_02_MRL_F", 0, 2500, MSU_Fuel_Artillery_Class2, MSU_Rank_Private],
 	// ["B_MBT_01_mlrs_F", 0, 3000, MSU_Fuel_Artillery_Class2, MSU_Rank_Private],
@@ -190,11 +199,11 @@ artillery_vehicles = [
 	["CUP_B_RM70_CZ", 0, 2500, MSU_Fuel_Artillery_Class2, MSU_Rank_Private],
 	["CUP_B_M270_HE_BAF_WOOD", 0, 1300, MSU_Fuel_Artillery_Class1, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
-	["BWA3_Panzerhaubitze2000_Fleck", 0, 1500, MSU_Fuel_Artillery_Class1, MSU_Rank_Private]
+	["BWA3_Panzerhaubitze2000_Fleck", 0, 1500, MSU_Fuel_Artillery_Class1, MSU_Rank_Private]*/
 ];
 
 apc = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
 	["I_LT_01_scout_F", 0, 200, MSU_Fuel_APC_Class1, MSU_Rank_Private],
 	["I_LT_01_AA_F", 0, 600, MSU_Fuel_APC_Class2, MSU_Rank_Private],
 	["I_LT_01_AT_F", 0, 1000, MSU_Fuel_APC_Class2, MSU_Rank_Private],
@@ -223,14 +232,16 @@ apc = [
 	["CUP_B_AAV_USMC", 0, 1000, MSU_Fuel_APC_Class1, MSU_Rank_Private],
 	["CUP_B_LAV25M240_USMC", 0, 1200, MSU_Fuel_APC_Class2, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
-	["BWA3_Puma_Fleck", 0, 1400, MSU_Fuel_APC_Class2, MSU_Rank_Private]
+	["BWA3_Puma_Fleck", 0, 1400, MSU_Fuel_APC_Class2, MSU_Rank_Private]*/
 ];
 
 mbt = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	["BWA3_Leopard2_Tropen", 0, 500, MSU_Fuel_MBT_Class1, MSU_Rank_Private],
+	["CUP_B_M1A2C_TUSK_II_NATO", 0, 500, MSU_Fuel_MBT_Class1, MSU_Rank_Private]
+
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	["I_MBT_03_cannon_F", 0, 500, MSU_Fuel_MBT_Class1, MSU_Rank_Private],
 	["B_AFV_Wheeled_01_up_cannon_F", 0, 1800, MSU_Fuel_MBT_Class1, MSU_Rank_Private],
-	// ["B_MBT_01_TUSK_F", 0, 2000, MSU_Fuel_MBT_Class1, MSU_Rank_Private],
-	// ["I_MBT_03_cannon_F", 0, 2000, MSU_Fuel_MBT_Class1, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
 	["rhsusf_m1a1aim_tuski_wd", 0, 2000, MSU_Fuel_MBT_Class1, MSU_Rank_Private],
 	["rhsusf_m1a2sep1tuskiwd_usarmy", 0, 2000, MSU_Fuel_MBT_Class1, MSU_Rank_Private],
@@ -251,13 +262,12 @@ mbt = [
 	["CUP_B_M1A2SEP_TUSK_OD_US_Army", 0, 2000, MSU_Fuel_MBT_Class1, MSU_Rank_Private],
 	["CUP_B_M1A2C_TUSK_II_OD_US_Army", 0, 2000, MSU_Fuel_MBT_Class1, MSU_Rank_Private],
 	["CUP_B_M1A2C_TUSK_OD_US_Army", 0, 2000, MSU_Fuel_MBT_Class1, MSU_Rank_Private],
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
-	["BWA3_Leopard2_Fleck", 0, 2000, MSU_Fuel_MBT_Class1, MSU_Rank_Private]
+	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD]*/
 
 ];
 
 anti_air = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
 	["B_APC_Tracked_01_AA_F", 0, 700, MSU_Fuel_AA_Class1, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankInvisible, MSU_Placeholder_Mod_PRACS],
 	["PRACS_m48_chapparal", 0, 600, MSU_Fuel_AA_Class1, MSU_Rank_Private],
@@ -268,11 +278,11 @@ anti_air = [
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_CUP],
 	["CUP_B_nM1097_AVENGER_USA_WDL", 0, 600, MSU_Fuel_AA_Class1, MSU_Rank_Private],
 	["CUP_B_M163_Vulcan_USA", 0, 600, MSU_Fuel_AA_Class1, MSU_Rank_Private],
-	["CUP_B_M6LineBacker_USA_W", 0, 1200, MSU_Fuel_AA_Class1, MSU_Rank_Private]
+	["CUP_B_M6LineBacker_USA_W", 0, 1200, MSU_Fuel_AA_Class1, MSU_Rank_Private]*/
 ];
 
 helicopter_personal_transport = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
 	["B_Heli_Transport_01_F", 0, 400, MSU_Fuel_TransportHeli_Infantry_Class2, MSU_Rank_Private],
 	["O_Heli_Light_02_unarmed_F", 0, 400, MSU_Fuel_TransportHeli_Infantry_Class1, MSU_Rank_Private],
 	["I_Heli_Transport_02_F", 0, 400, MSU_Fuel_TransportHeli_Infantry_Class1, MSU_Rank_Private],
@@ -316,11 +326,11 @@ helicopter_personal_transport = [
 	["vtx_MH60M", 0, 400, MSU_Fuel_TransportHeli_Infantry_Class2, MSU_Rank_Private],
 	["vtx_UH60M", 0, 400, MSU_Fuel_TransportHeli_Infantry_Class2, MSU_Rank_Private],
 	["vtx_UH60M_MEDEVAC", 0, 400, MSU_Fuel_MedicVehicles_Class2, MSU_Rank_Private],
-	["vtx_UH60M_SLICK", 0, 400, MSU_Fuel_TransportHeli_Infantry_Class1, MSU_Rank_Private]
+	["vtx_UH60M_SLICK", 0, 400, MSU_Fuel_TransportHeli_Infantry_Class1, MSU_Rank_Private]*/
 ];
 
 helicopter_cargo_transport = [
-	["O_Heli_Transport_04_F", 0, 400, MSU_Fuel_TransportHeli_Vehicle_Class1, MSU_Rank_Private],
+	/*["O_Heli_Transport_04_F", 0, 400, MSU_Fuel_TransportHeli_Vehicle_Class1, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
 	["rhsusf_CH53e_USMC_cargo", 0, 400, MSU_Fuel_TransportHeli_Vehicle_Class1, MSU_Rank_Private],
 	["RHS_CH_47F_10_cargo", 0, 400, MSU_Fuel_TransportHeli_Vehicle_Class2, MSU_Rank_Private],
@@ -331,11 +341,16 @@ helicopter_cargo_transport = [
 	["CUP_B_CH47F_VIV_GB", 0, 400, MSU_Fuel_TransportHeli_Vehicle_Class2, MSU_Rank_Private],
 	["CUP_B_Merlin_HC3_VIV_GB", 0, 400, MSU_Fuel_TransportHeli_Vehicle_Class1, MSU_Rank_Private],
 	["CUP_I_MI6T_UN", 0, 400, MSU_Fuel_TransportHeli_Vehicle_Class1, MSU_Rank_Private],
-	["CUP_B_CH53E_VIV_GER", 0, 400, MSU_Fuel_TransportHeli_Vehicle_Class1, MSU_Rank_Private]
+	["CUP_B_CH53E_VIV_GER", 0, 400, MSU_Fuel_TransportHeli_Vehicle_Class1, MSU_Rank_Private]*/
 ];
 
 helicopter_armed = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	["B_Heli_Light_01_F", 0, 500, MSU_Fuel_TransportHeli_Infantry_Class2, MSU_Rank_Private],
+	["B_Heli_Light_01_dynamicLoadout_F", 0, 500, MSU_Fuel_AttackHeli_Class1, MSU_Rank_Private],
+	["B_Heli_Transport_03_F", 0, 500, MSU_Fuel_TransportHeli_Infantry_Class1, MSU_Rank_Private]
+
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	["CUP_I_Wildcat_Green_AAF", 0, 500, MSU_Fuel_AttackHeli_Class1, MSU_Rank_Private],
 	["B_Heli_Attack_01_dynamicloadout_F", 0, 1700, MSU_Fuel_AttackHeli_Class2, MSU_Rank_Private],  // Groß
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
 	["RHS_MELB_AH6M", 0, 900, MSU_Fuel_AttackHeli_Class1, MSU_Rank_Private], // Klein
@@ -363,11 +378,11 @@ helicopter_armed = [
 	["CUP_I_Ka60_GL_Blk_ION", 0, 700, MSU_Fuel_AttackHeli_Class1, MSU_Rank_Private], // Klein
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
 	["BWA3_Tiger", 0, 1200, MSU_Fuel_AttackHeli_Class1, MSU_Rank_Private], // Groß
-	["BWA3_Tiger_RMK", 0, 1700, MSU_Fuel_AttackHeli_Class2, MSU_Rank_Private] // Groß
+	["BWA3_Tiger_RMK", 0, 1700, MSU_Fuel_AttackHeli_Class2, MSU_Rank_Private] // Groß*/
 ];
 
 planes = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
 	["B_T_VtoL_01_infantry_F", 0, air_vehicle_price_tier_5, MSU_Fuel_TransportPlane_Class2, MSU_Rank_Private],
 	["B_T_VtoL_01_vehicle_F", 0, air_vehicle_price_tier_5, MSU_Fuel_TransportPlane_Class2, MSU_Rank_Private],
 	["B_T_VtoL_01_armed_F", 0, 4000, MSU_Fuel_ArmedPlane_Class2, MSU_Rank_Private], // CAS
@@ -396,11 +411,11 @@ planes = [
 	["USAF_C130J", 0, 400, MSU_Fuel_TransportPlane_Class1, MSU_Rank_Private],
 	["USAF_C130J_Cargo", 0, 400, MSU_Fuel_TransportPlane_Class1, MSU_Rank_Private],
 	["usaf_kc135", 0, 400, MSU_Fuel_TransportPlane_Class1, MSU_Rank_Private],
-	["USAF_C17", 0, 400, MSU_Fuel_TransportPlane_Class2, MSU_Rank_Private]
+	["USAF_C17", 0, 400, MSU_Fuel_TransportPlane_Class2, MSU_Rank_Private]*/
 ];
 
 jets = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
 	["I_Plane_Fighter_03_dynamicloadout_F", 0, 1400, MSU_Fuel_FighterJet_Class1, MSU_Rank_Private],
 	["I_Plane_Fighter_04_F", 0, 1600, MSU_Fuel_FighterJet_Class1, MSU_Rank_Private],
 	["B_Plane_Fighter_01_Stealth_F", 0, 1700, MSU_Fuel_FighterJet_Class1, MSU_Rank_Private],
@@ -426,11 +441,11 @@ jets = [
 	["USAF_F35A", 0, 2200, MSU_Fuel_FighterJet_Class2, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_Other],
 	["JS_JC_FA18E", 0, 2200, MSU_Fuel_FighterJet_Class2, MSU_Rank_Private],
-	["JS_JC_FA18F", 0, 2200, MSU_Fuel_FighterJet_Class2, MSU_Rank_Private]
+	["JS_JC_FA18F", 0, 2200, MSU_Fuel_FighterJet_Class2, MSU_Rank_Private]*/
 ];
 
 drones = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
 	["B_T_UGV_01_olive_F", 0, 150, MSU_Fuel_Drones_Class1, MSU_Rank_Private],
 	["B_T_UGV_01_rcws_olive_F", 0, 600, MSU_Fuel_Drones_Class2, MSU_Rank_Private],
 	["B_UAV_05_F", 0, 1400, MSU_Fuel_Drones_Class2, MSU_Rank_Private],
@@ -440,11 +455,11 @@ drones = [
 	["CUP_B_USMC_DYN_MQ9", 0, 1400, MSU_Fuel_Drones_Class2, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_USAF],
 	["USAF_RQ4A", 0, 400, MSU_Fuel_Drones_Class1, MSU_Rank_Private],
-	["USAF_MQ9", 0, 1400, MSU_Fuel_Drones_Class2, MSU_Rank_Private]
+	["USAF_MQ9", 0, 1400, MSU_Fuel_Drones_Class2, MSU_Rank_Private]*/
 ];
 
 medical_vehicle_ground = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
 	["B_Truck_01_medical_F", 0, 400, MSU_Fuel_MedicVehicles_Class1, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
 	["rhsusf_M1230a1_usarmy_wd", 0, 400, MSU_Fuel_MedicVehicles_Class1, MSU_Rank_Private],
@@ -460,22 +475,22 @@ medical_vehicle_ground = [
 	["CUP_B_LR_Ambulance_GB_W", 0, 400, MSU_Fuel_MedicVehicles_Class1, MSU_Rank_Private],
 	["CUP_B_M113A3_Med_GER", 0, 400, MSU_Fuel_MedicVehicles_Class1, MSU_Rank_Private],
 	["CUP_B_M1133_MEV_Woodland_Slat", 0, 400, MSU_Fuel_MedicVehicles_Class1, MSU_Rank_Private],
-	["CUP_B_nM997_DF_USA_WDL", 0, 400, MSU_Fuel_MedicVehicles_Class1, MSU_Rank_Private]
+	["CUP_B_nM997_DF_USA_WDL", 0, 400, MSU_Fuel_MedicVehicles_Class1, MSU_Rank_Private]*/
 ];
 
 medical_vehicle_air = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
 	["RHS_UH60M_MEV_d", 0, 400, MSU_Fuel_MedicVehicles_Class2, MSU_Rank_Private],
 	["RHS_UH60M_MEV2_d", 0, 400, MSU_Fuel_MedicVehicles_Class2, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankInvisible, MSU_Placeholder_Mod_PRACS],
 	["PRACS_Sa330_Puma_MED", 0, 400, MSU_Fuel_MedicVehicles_Class2, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_CUP],
 	["CUP_B_UH60M_Unarmed_FFV_MEV_US", 0, 400, MSU_Fuel_MedicVehicles_Class2, MSU_Rank_Private],
-	["CUP_B_UH1Y_MEV_USMC", 0, 400, MSU_Fuel_MedicVehicles_Class2, MSU_Rank_Private]
+	["CUP_B_UH1Y_MEV_USMC", 0, 400, MSU_Fuel_MedicVehicles_Class2, MSU_Rank_Private]*/
 ];
 
 logistics_vehicle_ground = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
 	["B_Truck_01_transport_F", 0, 150, MSU_Fuel_LogisticVehicles_Class1, MSU_Rank_Private],
 	["B_Truck_01_covered_F", 0, 150, MSU_Fuel_LogisticVehicles_Class1, MSU_Rank_Private],
 	["B_Truck_01_ammo_F", 0, 150, MSU_Fuel_LogisticVehicles_Class2, MSU_Rank_Private],
@@ -541,31 +556,31 @@ logistics_vehicle_ground = [
 	["CUP_B_nM1038_4s_DF_USA_WDL", 0, 150, MSU_Fuel_LogisticVehicles_Class1, MSU_Rank_Private],
 	["CUP_B_TowingTractor_USMC", 0, 150, MSU_Fuel_LogisticVehicles_Class1, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
-	["BWA3_Multi_Fleck", 0, 150, MSU_Fuel_LogisticVehicles_Class1, MSU_Rank_Private]
+	["BWA3_Multi_Fleck", 0, 150, MSU_Fuel_LogisticVehicles_Class1, MSU_Rank_Private]*/
 ];
 
 boats = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	["B_Boat_Transport_01_F", 0, light_vehicle_price_tier_1, MSU_Fuel_Boats_Class1, MSU_Rank_Private],
+	["CUP_B_LCU1600_USMC", 0, light_vehicle_price_tier_1, MSU_Fuel_Boats_Class1, MSU_Rank_Private]
+
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
 	["C_Scooter_Transport_01_F", 0, 15, MSU_Fuel_Boats_Class1, MSU_Rank_Private],
 	["B_SDV_01_F", 0, light_vehicle_price_tier_1, MSU_Fuel_Boats_Class1, MSU_Rank_Private],
-	["B_Boat_Transport_01_F", 0, light_vehicle_price_tier_1, MSU_Fuel_Boats_Class1, MSU_Rank_Private],
 	["B_Lifeboat", 0, light_vehicle_price_tier_1, MSU_Fuel_Boats_Class1, MSU_Rank_Private],
 	["B_Boat_Armed_01_minigun_F", 0, 125, MSU_Fuel_Boats_Class2, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_RHS],
 	["rhsusf_mkvsoc", 0, light_vehicle_price_tier_2, MSU_Fuel_Boats_Class2, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_CUP],
-	["CUP_B_LCU1600_USMC", 0, light_vehicle_price_tier_1, MSU_Fuel_Boats_Class1, MSU_Rank_Private],
 	["CUP_B_RHIB_USMC", 0, light_vehicle_price_tier_2, MSU_Fuel_Boats_Class2, MSU_Rank_Private],
 	["CUP_B_RHIB2Turret_USMC", 0, light_vehicle_price_tier_2, MSU_Fuel_Boats_Class2, MSU_Rank_Private],
 	["CUP_B_MK10_GB", 0, light_vehicle_price_tier_1, MSU_Fuel_Boats_Class1, MSU_Rank_Private],
 	["CUP_B_RHIB2Turret_HIL", 0, light_vehicle_price_tier_1, MSU_Fuel_Boats_Class2, MSU_Rank_Private],
 	["CUP_B_Zodiac_USMC", 0, light_vehicle_price_tier_1, MSU_Fuel_Boats_Class1, MSU_Rank_Private],
-	["CUP_B_LCU1600_USMC", 0, light_vehicle_price_tier_1, MSU_Fuel_Boats_Class1, MSU_Rank_Private],
-	["CUP_B_Frigate_ANZAC", 0, 2000, MSU_Fuel_Boats_Class2, MSU_Rank_Private]
+	["CUP_B_Frigate_ANZAC", 0, 2000, MSU_Fuel_Boats_Class2, MSU_Rank_Private]*/
 ];
 
 static_vehicles = [
-	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
+	/*[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_A3],
 	["B_radar_System_01_F", 40, 0, MSU_Fuel_StaticVehicles_Class1, MSU_Rank_Private],
 	["B_AAA_System_01_F", 40, 0, MSU_Fuel_StaticVehicles_Class1, MSU_Rank_Private],
 	["B_SAM_System_01_F", 40, 0, MSU_Fuel_StaticVehicles_Class1, MSU_Rank_Private],
@@ -597,7 +612,7 @@ static_vehicles = [
 	["CUP_WV_B_RAM_Launcher", 40, 0, MSU_Fuel_StaticVehicles_Class1, MSU_Rank_Private],
 	["CUP_WV_B_SS_Launcher", 40, 0, MSU_Fuel_StaticVehicles_Class1, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Mod_BWMOD],
-	["BWA3_MRS120_Fleck", 0, 0, MSU_Fuel_StaticVehicles_Class2, MSU_Rank_Private]
+	["BWA3_MRS120_Fleck", 0, 0, MSU_Fuel_StaticVehicles_Class2, MSU_Rank_Private]*/
 ];
 
 // list for vehicle restrictions
@@ -666,13 +681,9 @@ support_crates = [
 	["ACE_Track", 0, 0, 0, MSU_Rank_Private],
 	["ACE_Wheel", 0, 0, 0, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Category_Logistics],
-	["Land_IntravenStand_01_empty_F", 0, 0, 0, MSU_Rank_Private],
 	["Box_IED_exp_F", 0, 0, 0, MSU_Rank_Private],
 	["Land_RepairDepot_01_green_F", 0, 0, 0, MSU_Rank_Private],
-	["US_WarfareBVehicleServicePoint_Base_EP1", 0, 0, 0, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Category_MaintenanceSmall],
-	["B_CargoNet_01_ammo_F", 0, 0, 0, MSU_Rank_Private],
-	["CargoNet_01_box_F", 0, 0, 0, MSU_Rank_Private],
 	["CargoNet_01_barrels_F", 0, 0, 0, MSU_Rank_Private],
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible, MSU_Placeholder_Category_MaintenanceBig],
 	// Huron Container
@@ -680,41 +691,25 @@ support_crates = [
 	[repair_sling_typename, 0, 0, 0, MSU_Rank_Private],
 	[fuel_sling_typename, 0, 0, 0, MSU_Rank_Private],
 	[medic_sling_typename, 0, 0, 0, MSU_Rank_Private],
-	// Taru Container
-	["Land_Pod_Heli_Transport_04_medevac_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_Pod_Heli_Transport_04_covered_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_Pod_Heli_Transport_04_repair_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_Pod_Heli_Transport_04_fuel_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_Pod_Heli_Transport_04_ammo_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_Pod_Heli_Transport_04_box_F", 0, 0, 0, MSU_Rank_Private],
-	["Land_Pod_Heli_Transport_04_bench_F", 0, 0, 0, MSU_Rank_Private],
-	// USAF Container
-	["USAF_Slingload_ammo", 0, 0, 0, MSU_Rank_Private],
-	["USAF_Slingload_Repair", 0, 0, 0, MSU_Rank_Private],
-	["USAF_Slingload_fuel", 0, 0, 0, MSU_Rank_Private],
-	// BundeswehrFleck
-	["BWA3_WLP14_ammo_Fleck", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Flatbed_Oliv", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_TCK9_fuel_Fleck", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Repair_Fleck", 0, 0, 0, MSU_Rank_Private],
-	// Bundeswehr Tropen
-	["BWA3_WLP14_ammo_Tropen", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Flatbed_Tropen", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_TCK9_fuel_Tropen", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Repair_Tropen", 0, 0, 0, MSU_Rank_Private],
-	// BundeswehrWinter
-	["BWA3_WLP14_ammo_Winter", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Flatbed_Winter", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_TCK9_fuel_Winter", 0, 0, 0, MSU_Rank_Private],
-	["BWA3_WLP14_Repair_Winter", 0, 0, 0, MSU_Rank_Private],
-	["B_supplyCrate_F", 0, 0, 0, MSU_Rank_Private],
 	// FOB
-	[FOB_box_typename, 0, 1200, 0, MSU_Rank_Private],
-	[FOB_truck_typename, 0, 1200, 0, MSU_Rank_Private]
+	//["B_supplyCrate_F", 0, 0, 0, MSU_Rank_Private], // Arsenal
+	[FOB_box_typename, 0, 500, 0, MSU_Rank_Private],
+	[FOB_truck_typename, 0, 500, 0, MSU_Rank_Private]
 ];
 
 buildings_west = [
-	// Mauern,Türme
+	["Land_fort_rampart", 0, 0, 0, MSU_Rank_Private],
+	["Land_fort_artillery_nest", 0, 0, 0, MSU_Rank_Private],
+	["CamoNet_BLUFOR_open_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_Campfire_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_Camping_Light_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_Sleeping_bag_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_CampingChair_V1_F", 0, 0, 0, MSU_Rank_Private],
+	["Land_CampingTable_F", 0, 0, 0, MSU_Rank_Private],
+	["ClutterCutter", 0, 0, 0, MSU_Rank_Private],
+	["Land_ClutterCutter_large_F", 0, 0, 0, MSU_Rank_Private]
+
+	/*// Mauern,Türme
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Category_Barricade],
 	["US_WarfareBBarrier10xTall_EP1", 0, 0, 0, MSU_Rank_Private],
 	["US_WarfareBBarrier5x_EP1", 0, 0, 0, MSU_Rank_Private],
@@ -871,7 +866,7 @@ buildings_west = [
 	["Land_Target_Line_PaperTargets_01_F", 0, 0, 0, MSU_Rank_Private],
 	//Other
 	[MSU_PlaceholderClassname, MSU_PlaceholderManpower, MSU_PlaceholderAmmo, MSU_PlaceholderFuel, MSU_Placeholder_RankVisible,MSU_Placeholder_Mod_Other],
-	["Land_Pier_F", 0, 0, 0, MSU_Rank_Private]
+	["Land_Pier_F", 0, 0, 0, MSU_Rank_Private]*/
 ];
 
 if (isnil "blufor_squad_inf_light") then {
