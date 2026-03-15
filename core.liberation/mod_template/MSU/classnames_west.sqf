@@ -9,7 +9,7 @@ huron_typename = "B_Heli_Transport_01_F";
 // comment to use value from lobby/server.cfg
 FOB_typename = "CamoNet_BLUFOR_open_F";
 FOB_box_typename = "B_Slingload_01_Cargo_F";
-FOB_truck_typename = "B_Heli_Transport_03_F";
+FOB_truck_typename = "B_Truck_01_transport_F";
 FOB_outpost = "";
 FOB_box_outpost = "";
 Respawn_truck_typename = "";
